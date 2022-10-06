@@ -1,0 +1,196 @@
+// https://www.terraform.io/docs/providers/nomad/r/sentinel_policy
+// generated from terraform resource schema
+
+import { Construct } from 'constructs';
+import * as cdktf from 'cdktf';
+
+// Configuration
+
+export interface SentinelPolicyConfig extends cdktf.TerraformMetaArguments {
+  /**
+  * Description for this policy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#description SentinelPolicy#description}
+  */
+  readonly description?: string;
+  /**
+  * Specifies the enforcement level of the policy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#enforcement_level SentinelPolicy#enforcement_level}
+  */
+  readonly enforcementLevel: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#id SentinelPolicy#id}
+  *
+  * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
+  * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+  */
+  readonly id?: string;
+  /**
+  * Unique name for this policy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#name SentinelPolicy#name}
+  */
+  readonly name: string;
+  /**
+  * The Sentinel policy.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#policy SentinelPolicy#policy}
+  */
+  readonly policy: string;
+  /**
+  * Specifies the scope for this policy. Only 'submit-job' is currently supported.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#scope SentinelPolicy#scope}
+  */
+  readonly scope: string;
+}
+
+/**
+* Represents a {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy nomad_sentinel_policy}
+*/
+export class SentinelPolicy extends cdktf.TerraformResource {
+
+  // =================
+  // STATIC PROPERTIES
+  // =================
+  public static readonly tfResourceType = "nomad_sentinel_policy";
+
+  // ===========
+  // INITIALIZER
+  // ===========
+
+  /**
+  * Create a new {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy nomad_sentinel_policy} Resource
+  *
+  * @param scope The scope in which to define this construct
+  * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
+  * @param options SentinelPolicyConfig
+  */
+  public constructor(scope: Construct, id: string, config: SentinelPolicyConfig) {
+    super(scope, id, {
+      terraformResourceType: 'nomad_sentinel_policy',
+      terraformGeneratorMetadata: {
+        providerName: 'nomad',
+        providerVersion: '1.4.18',
+        providerVersionConstraint: '~> 1.4'
+      },
+      provider: config.provider,
+      dependsOn: config.dependsOn,
+      count: config.count,
+      lifecycle: config.lifecycle,
+      provisioners: config.provisioners,
+      connection: config.connection,
+      forEach: config.forEach
+    });
+    this._description = config.description;
+    this._enforcementLevel = config.enforcementLevel;
+    this._id = config.id;
+    this._name = config.name;
+    this._policy = config.policy;
+    this._scope = config.scope;
+  }
+
+  // ==========
+  // ATTRIBUTES
+  // ==========
+
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
+  }
+
+  // enforcement_level - computed: false, optional: false, required: true
+  private _enforcementLevel?: string; 
+  public get enforcementLevel() {
+    return this.getStringAttribute('enforcement_level');
+  }
+  public set enforcementLevel(value: string) {
+    this._enforcementLevel = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enforcementLevelInput() {
+    return this._enforcementLevel;
+  }
+
+  // id - computed: true, optional: true, required: false
+  private _id?: string; 
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+  public set id(value: string) {
+    this._id = value;
+  }
+  public resetId() {
+    this._id = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get idInput() {
+    return this._id;
+  }
+
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
+  }
+
+  // policy - computed: false, optional: false, required: true
+  private _policy?: string; 
+  public get policy() {
+    return this.getStringAttribute('policy');
+  }
+  public set policy(value: string) {
+    this._policy = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy;
+  }
+
+  // scope - computed: false, optional: false, required: true
+  private _scope?: string; 
+  public get scope() {
+    return this.getStringAttribute('scope');
+  }
+  public set scope(value: string) {
+    this._scope = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get scopeInput() {
+    return this._scope;
+  }
+
+  // =========
+  // SYNTHESIS
+  // =========
+
+  protected synthesizeAttributes(): { [name: string]: any } {
+    return {
+      description: cdktf.stringToTerraform(this._description),
+      enforcement_level: cdktf.stringToTerraform(this._enforcementLevel),
+      id: cdktf.stringToTerraform(this._id),
+      name: cdktf.stringToTerraform(this._name),
+      policy: cdktf.stringToTerraform(this._policy),
+      scope: cdktf.stringToTerraform(this._scope),
+    };
+  }
+}
