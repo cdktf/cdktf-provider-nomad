@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/nomad/d/acl_tokens
+// https://www.terraform.io/docs/providers/nomad/d/acl_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,23 +6,23 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataNomadAclTokensConfig extends cdktf.TerraformMetaArguments {
+export interface DataNomadAclRolesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_tokens#id DataNomadAclTokens#id}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_roles#id DataNomadAclRoles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_tokens#prefix DataNomadAclTokens#prefix}
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_roles#prefix DataNomadAclRoles#prefix}
   */
   readonly prefix?: string;
 }
-export interface DataNomadAclTokensAclTokensRoles {
+export interface DataNomadAclRolesAclRolesPolicies {
 }
 
-export function dataNomadAclTokensAclTokensRolesToTerraform(struct?: DataNomadAclTokensAclTokensRoles): any {
+export function dataNomadAclRolesAclRolesPoliciesToTerraform(struct?: DataNomadAclRolesAclRolesPolicies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -31,7 +31,7 @@ export function dataNomadAclTokensAclTokensRolesToTerraform(struct?: DataNomadAc
   }
 }
 
-export class DataNomadAclTokensAclTokensRolesOutputReference extends cdktf.ComplexObject {
+export class DataNomadAclRolesAclRolesPoliciesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -44,19 +44,88 @@ export class DataNomadAclTokensAclTokensRolesOutputReference extends cdktf.Compl
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataNomadAclTokensAclTokensRoles | undefined {
+  public get internalValue(): DataNomadAclRolesAclRolesPolicies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataNomadAclTokensAclTokensRoles | undefined) {
+  public set internalValue(value: DataNomadAclRolesAclRolesPolicies | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
     }
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataNomadAclRolesAclRolesPoliciesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataNomadAclRolesAclRolesPoliciesOutputReference {
+    return new DataNomadAclRolesAclRolesPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
+export interface DataNomadAclRolesAclRoles {
+}
+
+export function dataNomadAclRolesAclRolesToTerraform(struct?: DataNomadAclRolesAclRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataNomadAclRolesAclRolesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataNomadAclRolesAclRoles | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataNomadAclRolesAclRoles | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
   }
 
   // id - computed: true, optional: false, required: false
@@ -68,109 +137,15 @@ export class DataNomadAclTokensAclTokensRolesOutputReference extends cdktf.Compl
   public get name() {
     return this.getStringAttribute('name');
   }
-}
-
-export class DataNomadAclTokensAclTokensRolesList extends cdktf.ComplexList {
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
-    super(terraformResource, terraformAttribute, wrapsSet)
-  }
-
-  /**
-  * @param index the index of the item to return
-  */
-  public get(index: number): DataNomadAclTokensAclTokensRolesOutputReference {
-    return new DataNomadAclTokensAclTokensRolesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
-  }
-}
-export interface DataNomadAclTokensAclTokens {
-}
-
-export function dataNomadAclTokensAclTokensToTerraform(struct?: DataNomadAclTokensAclTokens): any {
-  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
-  if (cdktf.isComplexElement(struct)) {
-    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
-  }
-  return {
-  }
-}
-
-export class DataNomadAclTokensAclTokensOutputReference extends cdktf.ComplexObject {
-  private isEmptyObject = false;
-
-  /**
-  * @param terraformResource The parent resource
-  * @param terraformAttribute The attribute on the parent resource this class is referencing
-  * @param complexObjectIndex the index of this item in the list
-  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
-  */
-  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
-    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
-  }
-
-  public get internalValue(): DataNomadAclTokensAclTokens | undefined {
-    let hasAnyValues = this.isEmptyObject;
-    const internalValueResult: any = {};
-    return hasAnyValues ? internalValueResult : undefined;
-  }
-
-  public set internalValue(value: DataNomadAclTokensAclTokens | undefined) {
-    if (value === undefined) {
-      this.isEmptyObject = false;
-    }
-    else {
-      this.isEmptyObject = Object.keys(value).length === 0;
-    }
-  }
-
-  // accessor_id - computed: true, optional: false, required: false
-  public get accessorId() {
-    return this.getStringAttribute('accessor_id');
-  }
-
-  // create_time - computed: true, optional: false, required: false
-  public get createTime() {
-    return this.getStringAttribute('create_time');
-  }
-
-  // expiration_time - computed: true, optional: false, required: false
-  public get expirationTime() {
-    return this.getStringAttribute('expiration_time');
-  }
-
-  // global - computed: true, optional: false, required: false
-  public get global() {
-    return this.getBooleanAttribute('global');
-  }
-
-  // name - computed: true, optional: false, required: false
-  public get name() {
-    return this.getStringAttribute('name');
-  }
 
   // policies - computed: true, optional: false, required: false
+  private _policies = new DataNomadAclRolesAclRolesPoliciesList(this, "policies", true);
   public get policies() {
-    return this.getListAttribute('policies');
-  }
-
-  // roles - computed: true, optional: false, required: false
-  private _roles = new DataNomadAclTokensAclTokensRolesList(this, "roles", true);
-  public get roles() {
-    return this._roles;
-  }
-
-  // type - computed: true, optional: false, required: false
-  public get type() {
-    return this.getStringAttribute('type');
+    return this._policies;
   }
 }
 
-export class DataNomadAclTokensAclTokensList extends cdktf.ComplexList {
+export class DataNomadAclRolesAclRolesList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -184,35 +159,35 @@ export class DataNomadAclTokensAclTokensList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataNomadAclTokensAclTokensOutputReference {
-    return new DataNomadAclTokensAclTokensOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataNomadAclRolesAclRolesOutputReference {
+    return new DataNomadAclRolesAclRolesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/nomad/d/acl_tokens nomad_acl_tokens}
+* Represents a {@link https://www.terraform.io/docs/providers/nomad/d/acl_roles nomad_acl_roles}
 */
-export class DataNomadAclTokens extends cdktf.TerraformDataSource {
+export class DataNomadAclRoles extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "nomad_acl_tokens";
+  public static readonly tfResourceType = "nomad_acl_roles";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/nomad/d/acl_tokens nomad_acl_tokens} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/nomad/d/acl_roles nomad_acl_roles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataNomadAclTokensConfig = {}
+  * @param options DataNomadAclRolesConfig = {}
   */
-  public constructor(scope: Construct, id: string, config: DataNomadAclTokensConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataNomadAclRolesConfig = {}) {
     super(scope, id, {
-      terraformResourceType: 'nomad_acl_tokens',
+      terraformResourceType: 'nomad_acl_roles',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
         providerVersion: '1.4.19',
@@ -234,10 +209,10 @@ export class DataNomadAclTokens extends cdktf.TerraformDataSource {
   // ATTRIBUTES
   // ==========
 
-  // acl_tokens - computed: true, optional: false, required: false
-  private _aclTokens = new DataNomadAclTokensAclTokensList(this, "acl_tokens", false);
-  public get aclTokens() {
-    return this._aclTokens;
+  // acl_roles - computed: true, optional: false, required: false
+  private _aclRoles = new DataNomadAclRolesAclRolesList(this, "acl_roles", false);
+  public get aclRoles() {
+    return this._aclRoles;
   }
 
   // id - computed: true, optional: true, required: false
