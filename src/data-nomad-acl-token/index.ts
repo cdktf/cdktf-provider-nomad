@@ -21,6 +21,75 @@ export interface DataNomadAclTokenConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
 }
+export interface DataNomadAclTokenRoles {
+}
+
+export function dataNomadAclTokenRolesToTerraform(struct?: DataNomadAclTokenRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataNomadAclTokenRolesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataNomadAclTokenRoles | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataNomadAclTokenRoles | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // id - computed: true, optional: false, required: false
+  public get id() {
+    return this.getStringAttribute('id');
+  }
+
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
+  }
+}
+
+export class DataNomadAclTokenRolesList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataNomadAclTokenRolesOutputReference {
+    return new DataNomadAclTokenRolesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
 * Represents a {@link https://www.terraform.io/docs/providers/nomad/d/acl_token nomad_acl_token}
@@ -48,7 +117,7 @@ export class DataNomadAclToken extends cdktf.TerraformDataSource {
       terraformResourceType: 'nomad_acl_token',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.18',
+        providerVersion: '1.4.19',
         providerVersionConstraint: '~> 1.4'
       },
       provider: config.provider,
@@ -85,6 +154,16 @@ export class DataNomadAclToken extends cdktf.TerraformDataSource {
     return this.getStringAttribute('create_time');
   }
 
+  // expiration_time - computed: true, optional: false, required: false
+  public get expirationTime() {
+    return this.getStringAttribute('expiration_time');
+  }
+
+  // expiration_ttl - computed: true, optional: false, required: false
+  public get expirationTtl() {
+    return this.getStringAttribute('expiration_ttl');
+  }
+
   // global - computed: true, optional: false, required: false
   public get global() {
     return this.getBooleanAttribute('global');
@@ -114,6 +193,12 @@ export class DataNomadAclToken extends cdktf.TerraformDataSource {
   // policies - computed: true, optional: false, required: false
   public get policies() {
     return cdktf.Fn.tolist(this.getListAttribute('policies'));
+  }
+
+  // roles - computed: true, optional: false, required: false
+  private _roles = new DataNomadAclTokenRolesList(this, "roles", true);
+  public get roles() {
+    return this._roles;
   }
 
   // secret_id - computed: true, optional: false, required: false
