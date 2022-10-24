@@ -656,7 +656,7 @@ export class Job extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_job',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.18',
+        providerVersion: '1.4.19',
         providerVersionConstraint: '~> 1.4'
       },
       provider: config.provider,
