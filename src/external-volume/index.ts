@@ -825,7 +825,7 @@ export class ExternalVolume extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_external_volume',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.18',
+        providerVersion: '1.4.19',
         providerVersionConstraint: '~> 1.4'
       },
       provider: config.provider,
