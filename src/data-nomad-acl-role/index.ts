@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/nomad/d/acl_policies
+// https://www.terraform.io/docs/providers/nomad/d/acl_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,25 +6,21 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataNomadAclPoliciesConfig extends cdktf.TerraformMetaArguments {
+export interface DataNomadAclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_policies#id DataNomadAclPolicies#id}
+  * The ACL Role unique identifier.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_role#id DataNomadAclRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
-  readonly id?: string;
-  /**
-  * ACL Policy Name Prefix
-  * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_policies#prefix DataNomadAclPolicies#prefix}
-  */
-  readonly prefix?: string;
+  readonly id: string;
 }
-export interface DataNomadAclPoliciesPolicies {
+export interface DataNomadAclRolePolicies {
 }
 
-export function dataNomadAclPoliciesPoliciesToTerraform(struct?: DataNomadAclPoliciesPolicies): any {
+export function dataNomadAclRolePoliciesToTerraform(struct?: DataNomadAclRolePolicies): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
@@ -33,7 +29,7 @@ export function dataNomadAclPoliciesPoliciesToTerraform(struct?: DataNomadAclPol
   }
 }
 
-export class DataNomadAclPoliciesPoliciesOutputReference extends cdktf.ComplexObject {
+export class DataNomadAclRolePoliciesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
   /**
@@ -46,13 +42,13 @@ export class DataNomadAclPoliciesPoliciesOutputReference extends cdktf.ComplexOb
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataNomadAclPoliciesPolicies | undefined {
+  public get internalValue(): DataNomadAclRolePolicies | undefined {
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataNomadAclPoliciesPolicies | undefined) {
+  public set internalValue(value: DataNomadAclRolePolicies | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
     }
@@ -61,18 +57,13 @@ export class DataNomadAclPoliciesPoliciesOutputReference extends cdktf.ComplexOb
     }
   }
 
-  // description - computed: true, optional: false, required: false
-  public get description() {
-    return this.getStringAttribute('description');
-  }
-
   // name - computed: true, optional: false, required: false
   public get name() {
     return this.getStringAttribute('name');
   }
 }
 
-export class DataNomadAclPoliciesPoliciesList extends cdktf.ComplexList {
+export class DataNomadAclRolePoliciesList extends cdktf.ComplexList {
 
   /**
   * @param terraformResource The parent resource
@@ -86,35 +77,35 @@ export class DataNomadAclPoliciesPoliciesList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataNomadAclPoliciesPoliciesOutputReference {
-    return new DataNomadAclPoliciesPoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): DataNomadAclRolePoliciesOutputReference {
+    return new DataNomadAclRolePoliciesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/nomad/d/acl_policies nomad_acl_policies}
+* Represents a {@link https://www.terraform.io/docs/providers/nomad/d/acl_role nomad_acl_role}
 */
-export class DataNomadAclPolicies extends cdktf.TerraformDataSource {
+export class DataNomadAclRole extends cdktf.TerraformDataSource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "nomad_acl_policies";
+  public static readonly tfResourceType = "nomad_acl_role";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/nomad/d/acl_policies nomad_acl_policies} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/nomad/d/acl_role nomad_acl_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataNomadAclPoliciesConfig = {}
+  * @param options DataNomadAclRoleConfig
   */
-  public constructor(scope: Construct, id: string, config: DataNomadAclPoliciesConfig = {}) {
+  public constructor(scope: Construct, id: string, config: DataNomadAclRoleConfig) {
     super(scope, id, {
-      terraformResourceType: 'nomad_acl_policies',
+      terraformResourceType: 'nomad_acl_role',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
         providerVersion: '1.4.19',
@@ -129,14 +120,18 @@ export class DataNomadAclPolicies extends cdktf.TerraformDataSource {
       forEach: config.forEach
     });
     this._id = config.id;
-    this._prefix = config.prefix;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // id - computed: true, optional: true, required: false
+  // description - computed: true, optional: false, required: false
+  public get description() {
+    return this.getStringAttribute('description');
+  }
+
+  // id - computed: false, optional: false, required: true
   private _id?: string; 
   public get id() {
     return this.getStringAttribute('id');
@@ -144,34 +139,20 @@ export class DataNomadAclPolicies extends cdktf.TerraformDataSource {
   public set id(value: string) {
     this._id = value;
   }
-  public resetId() {
-    this._id = undefined;
-  }
   // Temporarily expose input value. Use with caution.
   public get idInput() {
     return this._id;
   }
 
-  // policies - computed: true, optional: false, required: false
-  private _policies = new DataNomadAclPoliciesPoliciesList(this, "policies", false);
-  public get policies() {
-    return this._policies;
+  // name - computed: true, optional: false, required: false
+  public get name() {
+    return this.getStringAttribute('name');
   }
 
-  // prefix - computed: false, optional: true, required: false
-  private _prefix?: string; 
-  public get prefix() {
-    return this.getStringAttribute('prefix');
-  }
-  public set prefix(value: string) {
-    this._prefix = value;
-  }
-  public resetPrefix() {
-    this._prefix = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get prefixInput() {
-    return this._prefix;
+  // policies - computed: true, optional: false, required: false
+  private _policies = new DataNomadAclRolePoliciesList(this, "policies", true);
+  public get policies() {
+    return this._policies;
   }
 
   // =========
@@ -181,7 +162,6 @@ export class DataNomadAclPolicies extends cdktf.TerraformDataSource {
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
       id: cdktf.stringToTerraform(this._id),
-      prefix: cdktf.stringToTerraform(this._prefix),
     };
   }
 }
