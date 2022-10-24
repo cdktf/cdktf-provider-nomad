@@ -151,7 +151,7 @@ export class NomadProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'nomad',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.18',
+        providerVersion: '1.4.19',
         providerVersionConstraint: '~> 1.4'
       },
       terraformProviderSource: 'nomad'
