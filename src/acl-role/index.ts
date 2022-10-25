@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/nomad/d/namespace
+// https://www.terraform.io/docs/providers/nomad/r/acl_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -6,33 +6,55 @@ import * as cdktf from 'cdktf';
 
 // Configuration
 
-export interface DataNomadNamespaceConfig extends cdktf.TerraformMetaArguments {
+export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/namespace#id DataNomadNamespace#id}
+  * Description for this ACL role.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#description AclRole#description}
+  */
+  readonly description?: string;
+  /**
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#id AclRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/namespace#name DataNomadNamespace#name}
+  * Unique name for this ACL role.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#name AclRole#name}
+  */
+  readonly name: string;
+  /**
+  * policy block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#policy AclRole#policy}
+  */
+  readonly policy: AclRolePolicy[] | cdktf.IResolvable;
+}
+export interface AclRolePolicy {
+  /**
+  * The name of the ACL policy to link.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#name AclRole#name}
   */
   readonly name: string;
 }
-export interface DataNomadNamespaceCapabilities {
-}
 
-export function dataNomadNamespaceCapabilitiesToTerraform(struct?: DataNomadNamespaceCapabilities): any {
+export function aclRolePolicyToTerraform(struct?: AclRolePolicy | cdktf.IResolvable): any {
   if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
   if (cdktf.isComplexElement(struct)) {
     throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
   }
   return {
+    name: cdktf.stringToTerraform(struct!.name),
   }
 }
 
-export class DataNomadNamespaceCapabilitiesOutputReference extends cdktf.ComplexObject {
+export class AclRolePolicyOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
+  private resolvableValue?: cdktf.IResolvable;
 
   /**
   * @param terraformResource The parent resource
@@ -44,33 +66,52 @@ export class DataNomadNamespaceCapabilitiesOutputReference extends cdktf.Complex
     super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
   }
 
-  public get internalValue(): DataNomadNamespaceCapabilities | undefined {
+  public get internalValue(): AclRolePolicy | cdktf.IResolvable | undefined {
+    if (this.resolvableValue) {
+      return this.resolvableValue;
+    }
     let hasAnyValues = this.isEmptyObject;
     const internalValueResult: any = {};
+    if (this._name !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.name = this._name;
+    }
     return hasAnyValues ? internalValueResult : undefined;
   }
 
-  public set internalValue(value: DataNomadNamespaceCapabilities | undefined) {
+  public set internalValue(value: AclRolePolicy | cdktf.IResolvable | undefined) {
     if (value === undefined) {
       this.isEmptyObject = false;
+      this.resolvableValue = undefined;
+      this._name = undefined;
+    }
+    else if (cdktf.Tokenization.isResolvable(value)) {
+      this.isEmptyObject = false;
+      this.resolvableValue = value;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
+      this.resolvableValue = undefined;
+      this._name = value.name;
     }
   }
 
-  // disabled_task_drivers - computed: true, optional: false, required: false
-  public get disabledTaskDrivers() {
-    return this.getListAttribute('disabled_task_drivers');
+  // name - computed: false, optional: false, required: true
+  private _name?: string; 
+  public get name() {
+    return this.getStringAttribute('name');
   }
-
-  // enabled_task_drivers - computed: true, optional: false, required: false
-  public get enabledTaskDrivers() {
-    return this.getListAttribute('enabled_task_drivers');
+  public set name(value: string) {
+    this._name = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nameInput() {
+    return this._name;
   }
 }
 
-export class DataNomadNamespaceCapabilitiesList extends cdktf.ComplexList {
+export class AclRolePolicyList extends cdktf.ComplexList {
+  public internalValue? : AclRolePolicy[] | cdktf.IResolvable
 
   /**
   * @param terraformResource The parent resource
@@ -84,35 +125,35 @@ export class DataNomadNamespaceCapabilitiesList extends cdktf.ComplexList {
   /**
   * @param index the index of the item to return
   */
-  public get(index: number): DataNomadNamespaceCapabilitiesOutputReference {
-    return new DataNomadNamespaceCapabilitiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  public get(index: number): AclRolePolicyOutputReference {
+    return new AclRolePolicyOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/nomad/d/namespace nomad_namespace}
+* Represents a {@link https://www.terraform.io/docs/providers/nomad/r/acl_role nomad_acl_role}
 */
-export class DataNomadNamespace extends cdktf.TerraformDataSource {
+export class AclRole extends cdktf.TerraformResource {
 
   // =================
   // STATIC PROPERTIES
   // =================
-  public static readonly tfResourceType = "nomad_namespace";
+  public static readonly tfResourceType = "nomad_acl_role";
 
   // ===========
   // INITIALIZER
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/nomad/d/namespace nomad_namespace} Data Source
+  * Create a new {@link https://www.terraform.io/docs/providers/nomad/r/acl_role nomad_acl_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
-  * @param options DataNomadNamespaceConfig
+  * @param options AclRoleConfig
   */
-  public constructor(scope: Construct, id: string, config: DataNomadNamespaceConfig) {
+  public constructor(scope: Construct, id: string, config: AclRoleConfig) {
     super(scope, id, {
-      terraformResourceType: 'nomad_namespace',
+      terraformResourceType: 'nomad_acl_role',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
         providerVersion: '1.4.19',
@@ -126,23 +167,30 @@ export class DataNomadNamespace extends cdktf.TerraformDataSource {
       connection: config.connection,
       forEach: config.forEach
     });
+    this._description = config.description;
     this._id = config.id;
     this._name = config.name;
+    this._policy.internalValue = config.policy;
   }
 
   // ==========
   // ATTRIBUTES
   // ==========
 
-  // capabilities - computed: true, optional: false, required: false
-  private _capabilities = new DataNomadNamespaceCapabilitiesList(this, "capabilities", true);
-  public get capabilities() {
-    return this._capabilities;
-  }
-
-  // description - computed: true, optional: false, required: false
+  // description - computed: false, optional: true, required: false
+  private _description?: string; 
   public get description() {
     return this.getStringAttribute('description');
+  }
+  public set description(value: string) {
+    this._description = value;
+  }
+  public resetDescription() {
+    this._description = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get descriptionInput() {
+    return this._description;
   }
 
   // id - computed: true, optional: true, required: false
@@ -161,12 +209,6 @@ export class DataNomadNamespace extends cdktf.TerraformDataSource {
     return this._id;
   }
 
-  // meta - computed: true, optional: false, required: false
-  private _meta = new cdktf.StringMap(this, "meta");
-  public get meta() {
-    return this._meta;
-  }
-
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -180,9 +222,17 @@ export class DataNomadNamespace extends cdktf.TerraformDataSource {
     return this._name;
   }
 
-  // quota - computed: true, optional: false, required: false
-  public get quota() {
-    return this.getStringAttribute('quota');
+  // policy - computed: false, optional: false, required: true
+  private _policy = new AclRolePolicyList(this, "policy", true);
+  public get policy() {
+    return this._policy;
+  }
+  public putPolicy(value: AclRolePolicy[] | cdktf.IResolvable) {
+    this._policy.internalValue = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get policyInput() {
+    return this._policy.internalValue;
   }
 
   // =========
@@ -191,8 +241,10 @@ export class DataNomadNamespace extends cdktf.TerraformDataSource {
 
   protected synthesizeAttributes(): { [name: string]: any } {
     return {
+      description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
       name: cdktf.stringToTerraform(this._name),
+      policy: cdktf.listMapper(aclRolePolicyToTerraform, true)(this._policy.internalValue),
     };
   }
 }
