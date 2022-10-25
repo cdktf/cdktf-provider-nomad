@@ -21,6 +21,12 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   */
   readonly id?: string;
   /**
+  * Metadata associated with the namespace.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/namespace#meta Namespace#meta}
+  */
+  readonly meta?: { [key: string]: string };
+  /**
   * Unique name for this namespace.
   * 
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/namespace#name Namespace#name}
@@ -32,6 +38,108 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/namespace#quota Namespace#quota}
   */
   readonly quota?: string;
+  /**
+  * capabilities block
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/namespace#capabilities Namespace#capabilities}
+  */
+  readonly capabilities?: NamespaceCapabilities;
+}
+export interface NamespaceCapabilities {
+  /**
+  * Disabled task drivers for the namespace.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
+  */
+  readonly disabledTaskDrivers?: string[];
+  /**
+  * Enabled task drivers for the namespace.
+  * 
+  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
+  */
+  readonly enabledTaskDrivers?: string[];
+}
+
+export function namespaceCapabilitiesToTerraform(struct?: NamespaceCapabilitiesOutputReference | NamespaceCapabilities): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    disabled_task_drivers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.disabledTaskDrivers),
+    enabled_task_drivers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enabledTaskDrivers),
+  }
+}
+
+export class NamespaceCapabilitiesOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NamespaceCapabilities | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._disabledTaskDrivers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.disabledTaskDrivers = this._disabledTaskDrivers;
+    }
+    if (this._enabledTaskDrivers !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.enabledTaskDrivers = this._enabledTaskDrivers;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NamespaceCapabilities | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._disabledTaskDrivers = undefined;
+      this._enabledTaskDrivers = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._disabledTaskDrivers = value.disabledTaskDrivers;
+      this._enabledTaskDrivers = value.enabledTaskDrivers;
+    }
+  }
+
+  // disabled_task_drivers - computed: false, optional: true, required: false
+  private _disabledTaskDrivers?: string[]; 
+  public get disabledTaskDrivers() {
+    return this.getListAttribute('disabled_task_drivers');
+  }
+  public set disabledTaskDrivers(value: string[]) {
+    this._disabledTaskDrivers = value;
+  }
+  public resetDisabledTaskDrivers() {
+    this._disabledTaskDrivers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get disabledTaskDriversInput() {
+    return this._disabledTaskDrivers;
+  }
+
+  // enabled_task_drivers - computed: false, optional: true, required: false
+  private _enabledTaskDrivers?: string[]; 
+  public get enabledTaskDrivers() {
+    return this.getListAttribute('enabled_task_drivers');
+  }
+  public set enabledTaskDrivers(value: string[]) {
+    this._enabledTaskDrivers = value;
+  }
+  public resetEnabledTaskDrivers() {
+    this._enabledTaskDrivers = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get enabledTaskDriversInput() {
+    return this._enabledTaskDrivers;
+  }
 }
 
 /**
@@ -60,7 +168,7 @@ export class Namespace extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_namespace',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.18',
+        providerVersion: '1.4.19',
         providerVersionConstraint: '~> 1.4'
       },
       provider: config.provider,
@@ -73,8 +181,10 @@ export class Namespace extends cdktf.TerraformResource {
     });
     this._description = config.description;
     this._id = config.id;
+    this._meta = config.meta;
     this._name = config.name;
     this._quota = config.quota;
+    this._capabilities.internalValue = config.capabilities;
   }
 
   // ==========
@@ -113,6 +223,22 @@ export class Namespace extends cdktf.TerraformResource {
     return this._id;
   }
 
+  // meta - computed: false, optional: true, required: false
+  private _meta?: { [key: string]: string }; 
+  public get meta() {
+    return this.getStringMapAttribute('meta');
+  }
+  public set meta(value: { [key: string]: string }) {
+    this._meta = value;
+  }
+  public resetMeta() {
+    this._meta = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get metaInput() {
+    return this._meta;
+  }
+
   // name - computed: false, optional: false, required: true
   private _name?: string; 
   public get name() {
@@ -142,6 +268,22 @@ export class Namespace extends cdktf.TerraformResource {
     return this._quota;
   }
 
+  // capabilities - computed: false, optional: true, required: false
+  private _capabilities = new NamespaceCapabilitiesOutputReference(this, "capabilities");
+  public get capabilities() {
+    return this._capabilities;
+  }
+  public putCapabilities(value: NamespaceCapabilities) {
+    this._capabilities.internalValue = value;
+  }
+  public resetCapabilities() {
+    this._capabilities.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get capabilitiesInput() {
+    return this._capabilities.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -150,8 +292,10 @@ export class Namespace extends cdktf.TerraformResource {
     return {
       description: cdktf.stringToTerraform(this._description),
       id: cdktf.stringToTerraform(this._id),
+      meta: cdktf.hashMapper(cdktf.stringToTerraform)(this._meta),
       name: cdktf.stringToTerraform(this._name),
       quota: cdktf.stringToTerraform(this._quota),
+      capabilities: namespaceCapabilitiesToTerraform(this._capabilities.internalValue),
     };
   }
 }
