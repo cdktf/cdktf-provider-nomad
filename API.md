@@ -272,6 +272,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -304,6 +306,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.isTerraformElement"></a>
+
+```typescript
+import { aclPolicy } from '@cdktf/provider-nomad'
+
+aclPolicy.AclPolicy.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.isTerraformResource"></a>
+
+```typescript
+import { aclPolicy } from '@cdktf/provider-nomad'
+
+aclPolicy.AclPolicy.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -859,6 +889,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -891,6 +923,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.aclRole.AclRole.isTerraformElement"></a>
+
+```typescript
+import { aclRole } from '@cdktf/provider-nomad'
+
+aclRole.AclRole.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.aclRole.AclRole.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.aclRole.AclRole.isTerraformResource"></a>
+
+```typescript
+import { aclRole } from '@cdktf/provider-nomad'
+
+aclRole.AclRole.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.aclRole.AclRole.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -1474,6 +1534,8 @@ public resetRole(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -1506,6 +1568,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.aclToken.AclToken.isTerraformElement"></a>
+
+```typescript
+import { aclToken } from '@cdktf/provider-nomad'
+
+aclToken.AclToken.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.aclToken.AclToken.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.aclToken.AclToken.isTerraformResource"></a>
+
+```typescript
+import { aclToken } from '@cdktf/provider-nomad'
+
+aclToken.AclToken.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.aclToken.AclToken.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2158,6 +2248,8 @@ public resetPrefix(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -2190,6 +2282,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isTerraformElement"></a>
+
+```typescript
+import { dataNomadAclPolicies } from '@cdktf/provider-nomad'
+
+dataNomadAclPolicies.DataNomadAclPolicies.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadAclPolicies } from '@cdktf/provider-nomad'
+
+dataNomadAclPolicies.DataNomadAclPolicies.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -2670,6 +2790,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -2702,6 +2824,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformElement"></a>
+
+```typescript
+import { dataNomadAclPolicy } from '@cdktf/provider-nomad'
+
+dataNomadAclPolicy.DataNomadAclPolicy.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadAclPolicy } from '@cdktf/provider-nomad'
+
+dataNomadAclPolicy.DataNomadAclPolicy.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3186,6 +3336,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -3218,6 +3370,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.isTerraformElement"></a>
+
+```typescript
+import { dataNomadAclRole } from '@cdktf/provider-nomad'
+
+dataNomadAclRole.DataNomadAclRole.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadAclRole } from '@cdktf/provider-nomad'
+
+dataNomadAclRole.DataNomadAclRole.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -3705,6 +3885,8 @@ public resetPrefix(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -3737,6 +3919,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isTerraformElement"></a>
+
+```typescript
+import { dataNomadAclRoles } from '@cdktf/provider-nomad'
+
+dataNomadAclRoles.DataNomadAclRoles.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadAclRoles } from '@cdktf/provider-nomad'
+
+dataNomadAclRoles.DataNomadAclRoles.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4217,6 +4427,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -4249,6 +4461,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isTerraformElement"></a>
+
+```typescript
+import { dataNomadAclToken } from '@cdktf/provider-nomad'
+
+dataNomadAclToken.DataNomadAclToken.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadAclToken } from '@cdktf/provider-nomad'
+
+dataNomadAclToken.DataNomadAclToken.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -4824,6 +5064,8 @@ public resetPrefix(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -4856,6 +5098,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isTerraformElement"></a>
+
+```typescript
+import { dataNomadAclTokens } from '@cdktf/provider-nomad'
+
+dataNomadAclTokens.DataNomadAclTokens.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadAclTokens } from '@cdktf/provider-nomad'
+
+dataNomadAclTokens.DataNomadAclTokens.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5350,6 +5620,8 @@ public resetPrefix(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -5382,6 +5654,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformElement"></a>
+
+```typescript
+import { dataNomadDatacenters } from '@cdktf/provider-nomad'
+
+dataNomadDatacenters.DataNomadDatacenters.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadDatacenters } from '@cdktf/provider-nomad'
+
+dataNomadDatacenters.DataNomadDatacenters.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -5884,6 +6184,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -5916,6 +6218,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isTerraformElement"></a>
+
+```typescript
+import { dataNomadDeployments } from '@cdktf/provider-nomad'
+
+dataNomadDeployments.DataNomadDeployments.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadDeployments } from '@cdktf/provider-nomad'
+
+dataNomadDeployments.DataNomadDeployments.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -6381,6 +6711,8 @@ public resetNamespace(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -6413,6 +6745,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformElement"></a>
+
+```typescript
+import { dataNomadJob } from '@cdktf/provider-nomad'
+
+dataNomadJob.DataNomadJob.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadJob } from '@cdktf/provider-nomad'
+
+dataNomadJob.DataNomadJob.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7120,6 +7480,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -7152,6 +7514,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformElement"></a>
+
+```typescript
+import { dataNomadJobParser } from '@cdktf/provider-nomad'
+
+dataNomadJobParser.DataNomadJobParser.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadJobParser } from '@cdktf/provider-nomad'
+
+dataNomadJobParser.DataNomadJobParser.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -7654,6 +8044,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -7686,6 +8078,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformElement"></a>
+
+```typescript
+import { dataNomadNamespace } from '@cdktf/provider-nomad'
+
+dataNomadNamespace.DataNomadNamespace.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadNamespace } from '@cdktf/provider-nomad'
+
+dataNomadNamespace.DataNomadNamespace.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8199,6 +8619,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -8231,6 +8653,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.isTerraformElement"></a>
+
+```typescript
+import { dataNomadNamespaces } from '@cdktf/provider-nomad'
+
+dataNomadNamespaces.DataNomadNamespaces.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadNamespaces } from '@cdktf/provider-nomad'
+
+dataNomadNamespaces.DataNomadNamespaces.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -8703,6 +9153,8 @@ public resetWaitForRegistration(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -8735,6 +9187,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformElement"></a>
+
+```typescript
+import { dataNomadPlugin } from '@cdktf/provider-nomad'
+
+dataNomadPlugin.DataNomadPlugin.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadPlugin } from '@cdktf/provider-nomad'
+
+dataNomadPlugin.DataNomadPlugin.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -9343,6 +9823,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -9375,6 +9857,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isTerraformElement"></a>
+
+```typescript
+import { dataNomadPlugins } from '@cdktf/provider-nomad'
+
+dataNomadPlugins.DataNomadPlugins.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadPlugins } from '@cdktf/provider-nomad'
+
+dataNomadPlugins.DataNomadPlugins.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -9855,6 +10365,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -9887,6 +10399,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.isTerraformElement"></a>
+
+```typescript
+import { dataNomadRegions } from '@cdktf/provider-nomad'
+
+dataNomadRegions.DataNomadRegions.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadRegions } from '@cdktf/provider-nomad'
+
+dataNomadRegions.DataNomadRegions.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10359,6 +10899,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -10391,6 +10933,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformElement"></a>
+
+```typescript
+import { dataNomadScalingPolicies } from '@cdktf/provider-nomad'
+
+dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadScalingPolicies } from '@cdktf/provider-nomad'
+
+dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -10886,6 +11456,8 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -10918,6 +11490,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.isTerraformElement"></a>
+
+```typescript
+import { dataNomadScalingPolicy } from '@cdktf/provider-nomad'
+
+dataNomadScalingPolicy.DataNomadScalingPolicy.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadScalingPolicy } from '@cdktf/provider-nomad'
+
+dataNomadScalingPolicy.DataNomadScalingPolicy.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -11431,6 +12031,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -11463,6 +12065,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformElement"></a>
+
+```typescript
+import { dataNomadSchedulerConfig } from '@cdktf/provider-nomad'
+
+dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadSchedulerConfig } from '@cdktf/provider-nomad'
+
+dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -11971,6 +12601,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isTerraformDataSource">isTerraformDataSource</a></code> | *No description.* |
 
 ---
 
@@ -12003,6 +12635,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isTerraformElement"></a>
+
+```typescript
+import { dataNomadVolumes } from '@cdktf/provider-nomad'
+
+dataNomadVolumes.DataNomadVolumes.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformDataSource` <a name="isTerraformDataSource" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isTerraformDataSource"></a>
+
+```typescript
+import { dataNomadVolumes } from '@cdktf/provider-nomad'
+
+dataNomadVolumes.DataNomadVolumes.isTerraformDataSource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isTerraformDataSource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -12658,6 +13318,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -12690,6 +13352,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.isTerraformElement"></a>
+
+```typescript
+import { externalVolume } from '@cdktf/provider-nomad'
+
+externalVolume.ExternalVolume.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.isTerraformResource"></a>
+
+```typescript
+import { externalVolume } from '@cdktf/provider-nomad'
+
+externalVolume.ExternalVolume.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -13662,6 +14352,8 @@ public resetVaultToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.job.Job.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -13694,6 +14386,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.job.Job.isTerraformElement"></a>
+
+```typescript
+import { job } from '@cdktf/provider-nomad'
+
+job.Job.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.job.Job.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.job.Job.isTerraformResource"></a>
+
+```typescript
+import { job } from '@cdktf/provider-nomad'
+
+job.Job.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.job.Job.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -14556,6 +15276,8 @@ public resetQuota(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.namespace.Namespace.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.namespace.Namespace.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.Namespace.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -14588,6 +15310,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.namespace.Namespace.isTerraformElement"></a>
+
+```typescript
+import { namespace } from '@cdktf/provider-nomad'
+
+namespace.Namespace.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.namespace.Namespace.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.namespace.Namespace.isTerraformResource"></a>
+
+```typescript
+import { namespace } from '@cdktf/provider-nomad'
+
+namespace.Namespace.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.namespace.Namespace.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15128,6 +15878,8 @@ public resetVaultToken(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.isTerraformProvider">isTerraformProvider</a></code> | *No description.* |
 
 ---
 
@@ -15160,6 +15912,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.provider.NomadProvider.isTerraformElement"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-nomad'
+
+provider.NomadProvider.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.provider.NomadProvider.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformProvider` <a name="isTerraformProvider" id="@cdktf/provider-nomad.provider.NomadProvider.isTerraformProvider"></a>
+
+```typescript
+import { provider } from '@cdktf/provider-nomad'
+
+provider.NomadProvider.isTerraformProvider(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.provider.NomadProvider.isTerraformProvider.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -15891,6 +16671,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -15923,6 +16705,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformElement"></a>
+
+```typescript
+import { quotaSpecification } from '@cdktf/provider-nomad'
+
+quotaSpecification.QuotaSpecification.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformResource"></a>
+
+```typescript
+import { quotaSpecification } from '@cdktf/provider-nomad'
+
+quotaSpecification.QuotaSpecification.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -16479,6 +17289,8 @@ public resetSchedulerAlgorithm(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -16511,6 +17323,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isTerraformElement"></a>
+
+```typescript
+import { schedulerConfig } from '@cdktf/provider-nomad'
+
+schedulerConfig.SchedulerConfig.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isTerraformResource"></a>
+
+```typescript
+import { schedulerConfig } from '@cdktf/provider-nomad'
+
+schedulerConfig.SchedulerConfig.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17053,6 +17893,8 @@ public resetId(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -17085,6 +17927,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isTerraformElement"></a>
+
+```typescript
+import { sentinelPolicy } from '@cdktf/provider-nomad'
+
+sentinelPolicy.SentinelPolicy.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isTerraformResource"></a>
+
+```typescript
+import { sentinelPolicy } from '@cdktf/provider-nomad'
+
+sentinelPolicy.SentinelPolicy.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
@@ -17780,6 +18650,8 @@ public resetType(): void
 | **Name** | **Description** |
 | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.isConstruct">isConstruct</a></code> | Checks if `x` is a construct. |
+| <code><a href="#@cdktf/provider-nomad.volume.Volume.isTerraformElement">isTerraformElement</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.volume.Volume.isTerraformResource">isTerraformResource</a></code> | *No description.* |
 
 ---
 
@@ -17812,6 +18684,34 @@ this type-testing method instead.
 - *Type:* any
 
 Any object.
+
+---
+
+##### `isTerraformElement` <a name="isTerraformElement" id="@cdktf/provider-nomad.volume.Volume.isTerraformElement"></a>
+
+```typescript
+import { volume } from '@cdktf/provider-nomad'
+
+volume.Volume.isTerraformElement(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.volume.Volume.isTerraformElement.parameter.x"></a>
+
+- *Type:* any
+
+---
+
+##### `isTerraformResource` <a name="isTerraformResource" id="@cdktf/provider-nomad.volume.Volume.isTerraformResource"></a>
+
+```typescript
+import { volume } from '@cdktf/provider-nomad'
+
+volume.Volume.isTerraformResource(x: any)
+```
+
+###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.volume.Volume.isTerraformResource.parameter.x"></a>
+
+- *Type:* any
 
 ---
 
