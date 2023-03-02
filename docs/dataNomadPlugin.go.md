@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/nomad/d/plugin nomad
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugin"
 
 datanomadplugin.NewDataNomadPlugin(scope Construct, id *string, config DataNomadPluginConfig) DataNomadPlugin
 ```
@@ -287,7 +287,7 @@ func ResetWaitForRegistration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -333,7 +333,7 @@ datanomadplugin.DataNomadPlugin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -686,7 +686,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugin"
 
 &datanomadplugin.DataNomadPluginConfig {
 	Connection: interface{},
@@ -853,7 +853,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugin"
 
 &datanomadplugin.DataNomadPluginNodes {
 
@@ -868,7 +868,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugin"
 
 datanomadplugin.NewDataNomadPluginNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadPluginNodesList
 ```
@@ -1000,7 +1000,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugin"
 
 datanomadplugin.NewDataNomadPluginNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadPluginNodesOutputReference
 ```
