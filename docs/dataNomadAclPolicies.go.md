@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/nomad/d/acl_policies
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadaclpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicies"
 
 datanomadaclpolicies.NewDataNomadAclPolicies(scope Construct, id *string, config DataNomadAclPoliciesConfig) DataNomadAclPolicies
 ```
@@ -280,7 +280,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadaclpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicies"
 
 datanomadaclpolicies.DataNomadAclPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadaclpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicies"
 
 datanomadaclpolicies.DataNomadAclPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datanomadaclpolicies.DataNomadAclPolicies_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadaclpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicies"
 
 datanomadaclpolicies.DataNomadAclPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadaclpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicies"
 
 &datanomadaclpolicies.DataNomadAclPoliciesConfig {
 	Connection: interface{},
@@ -693,7 +693,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPoliciesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadaclpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicies"
 
 &datanomadaclpolicies.DataNomadAclPoliciesPolicies {
 
@@ -708,7 +708,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadaclpolicies"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPoliciesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadaclpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicies"
 
 datanomadaclpolicies.NewDataNomadAclPoliciesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadAclPoliciesPoliciesList
 ```
@@ -840,7 +840,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclPolicies.DataNomadAclPoliciesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadaclpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicies"
 
 datanomadaclpolicies.NewDataNomadAclPoliciesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadAclPoliciesPoliciesOutputReference
 ```
