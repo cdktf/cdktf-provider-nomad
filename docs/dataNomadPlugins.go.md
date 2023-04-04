@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/nomad/d/plugins noma
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugins"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugins"
 
 datanomadplugins.NewDataNomadPlugins(scope Construct, id *string, config DataNomadPluginsConfig) DataNomadPlugins
 ```
@@ -280,7 +280,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugins"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugins"
 
 datanomadplugins.DataNomadPlugins_IsConstruct(x interface{}) *bool
 ```
@@ -312,7 +312,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugins"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugins"
 
 datanomadplugins.DataNomadPlugins_IsTerraformElement(x interface{}) *bool
 ```
@@ -326,7 +326,7 @@ datanomadplugins.DataNomadPlugins_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugins"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugins"
 
 datanomadplugins.DataNomadPlugins_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -558,7 +558,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPluginsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugins"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadplugins"
 
 &datanomadplugins.DataNomadPluginsConfig {
 	Connection: interface{},
