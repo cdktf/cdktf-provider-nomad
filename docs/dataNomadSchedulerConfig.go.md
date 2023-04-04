@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/nomad/d/scheduler_co
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadschedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadschedulerconfig"
 
 datanomadschedulerconfig.NewDataNomadSchedulerConfig(scope Construct, id *string, config DataNomadSchedulerConfigConfig) DataNomadSchedulerConfig
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadschedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadschedulerconfig"
 
 datanomadschedulerconfig.DataNomadSchedulerConfig_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadschedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadschedulerconfig"
 
 datanomadschedulerconfig.DataNomadSchedulerConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datanomadschedulerconfig.DataNomadSchedulerConfig_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadschedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadschedulerconfig"
 
 datanomadschedulerconfig.DataNomadSchedulerConfig_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -551,7 +551,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadschedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadschedulerconfig"
 
 &datanomadschedulerconfig.DataNomadSchedulerConfigConfig {
 	Connection: interface{},
