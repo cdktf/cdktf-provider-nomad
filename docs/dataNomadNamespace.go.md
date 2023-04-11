@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/nomad/d/namespace no
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespace(scope Construct, id *string, config DataNomadNamespaceConfig) DataNomadNamespace
 ```
@@ -273,7 +273,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -305,7 +305,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -319,7 +319,7 @@ datanomadnamespace.DataNomadNamespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -584,7 +584,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadnamespace"
 
 &datanomadnamespace.DataNomadNamespaceCapabilities {
 
@@ -597,7 +597,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadnamespace"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadnamespace"
 
 &datanomadnamespace.DataNomadNamespaceConfig {
 	Connection: interface{},
@@ -732,7 +732,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceCapabilitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceCapabilitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNamespaceCapabilitiesList
 ```
@@ -864,7 +864,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNamespaceCapabilitiesOutputReference
 ```

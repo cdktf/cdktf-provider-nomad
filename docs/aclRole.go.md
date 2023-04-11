@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/nomad/r/acl_role nom
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclRole.AclRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/aclrole"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclrole"
 
 aclrole.NewAclRole(scope Construct, id *string, config AclRoleConfig) AclRole
 ```
@@ -293,7 +293,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.aclRole.AclRole.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/aclrole"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclrole"
 
 aclrole.AclRole_IsConstruct(x interface{}) *bool
 ```
@@ -325,7 +325,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.aclRole.AclRole.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/aclrole"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclrole"
 
 aclrole.AclRole_IsTerraformElement(x interface{}) *bool
 ```
@@ -339,7 +339,7 @@ aclrole.AclRole_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.aclRole.AclRole.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/aclrole"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclrole"
 
 aclrole.AclRole_IsTerraformResource(x interface{}) *bool
 ```
@@ -626,7 +626,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.aclRole.AclRoleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/aclrole"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclrole"
 
 &aclrole.AclRoleConfig {
 	Connection: interface{},
@@ -793,7 +793,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.aclRole.AclRolePolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/aclrole"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclrole"
 
 &aclrole.AclRolePolicy {
 	Name: *string,
@@ -829,7 +829,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclRole.AclRolePolicyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/aclrole"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclrole"
 
 aclrole.NewAclRolePolicyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclRolePolicyList
 ```
@@ -972,7 +972,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v3/aclrole"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclrole"
 
 aclrole.NewAclRolePolicyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclRolePolicyOutputReference
 ```
