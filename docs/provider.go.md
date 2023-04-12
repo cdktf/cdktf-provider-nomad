@@ -9,7 +9,7 @@ Represents a {@link https://www.terraform.io/docs/providers/nomad nomad}.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/provider"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/provider"
 
 provider.NewNomadProvider(scope Construct, id *string, config NomadProviderConfig) NomadProvider
 ```
@@ -234,7 +234,7 @@ func ResetVaultToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.provider.NomadProvider.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/provider"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/provider"
 
 provider.NomadProvider_IsConstruct(x interface{}) *bool
 ```
@@ -266,7 +266,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.provider.NomadProvider.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/provider"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/provider"
 
 provider.NomadProvider_IsTerraformElement(x interface{}) *bool
 ```
@@ -280,7 +280,7 @@ provider.NomadProvider_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformProvider` <a name="IsTerraformProvider" id="@cdktf/provider-nomad.provider.NomadProvider.isTerraformProvider"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/provider"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/provider"
 
 provider.NomadProvider_IsTerraformProvider(x interface{}) *bool
 ```
@@ -743,7 +743,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.provider.NomadProviderConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/provider"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/provider"
 
 &provider.NomadProviderConfig {
 	Address: *string,
@@ -1001,7 +1001,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.provider.NomadProviderHeaders.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/provider"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/provider"
 
 &provider.NomadProviderHeaders {
 	Name: *string,
