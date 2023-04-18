@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadaclpolicy"
 
 datanomadaclpolicy.NewDataNomadAclPolicy(scope Construct, id *string, config DataNomadAclPolicyConfig) DataNomadAclPolicy
 ```
@@ -277,7 +277,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadaclpolicy"
 
 datanomadaclpolicy.DataNomadAclPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -309,7 +309,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadaclpolicy"
 
 datanomadaclpolicy.DataNomadAclPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ datanomadaclpolicy.DataNomadAclPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadaclpolicy"
 
 datanomadaclpolicy.DataNomadAclPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -566,7 +566,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadaclpolicy"
 
 &datanomadaclpolicy.DataNomadAclPolicyConfig {
 	Connection: interface{},
