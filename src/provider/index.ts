@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/nomad
+// https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,91 +10,91 @@ export interface NomadProviderConfig {
   /**
   * URL of the root of the target Nomad agent.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#address NomadProvider#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#address NomadProvider#address}
   */
   readonly address: string;
   /**
   * A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#ca_file NomadProvider#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#ca_file NomadProvider#ca_file}
   */
   readonly caFile?: string;
   /**
   * PEM-encoded certificate authority used to verify the remote agent's certificate.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#ca_pem NomadProvider#ca_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#ca_pem NomadProvider#ca_pem}
   */
   readonly caPem?: string;
   /**
   * A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#cert_file NomadProvider#cert_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#cert_file NomadProvider#cert_file}
   */
   readonly certFile?: string;
   /**
   * PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#cert_pem NomadProvider#cert_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#cert_pem NomadProvider#cert_pem}
   */
   readonly certPem?: string;
   /**
   * Consul token to validate Consul Connect Service Identity policies specified in the job file.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#consul_token NomadProvider#consul_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#consul_token NomadProvider#consul_token}
   */
   readonly consulToken?: string;
   /**
   * HTTP basic auth configuration.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#http_auth NomadProvider#http_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#http_auth NomadProvider#http_auth}
   */
   readonly httpAuth?: string;
   /**
   * A set of environment variables that are ignored by the provider when configuring the Nomad API client.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#ignore_env_vars NomadProvider#ignore_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#ignore_env_vars NomadProvider#ignore_env_vars}
   */
   readonly ignoreEnvVars?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
   * A path to a PEM-encoded private key, required if cert_file or cert_pem is specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#key_file NomadProvider#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#key_file NomadProvider#key_file}
   */
   readonly keyFile?: string;
   /**
   * PEM-encoded private key, required if cert_file or cert_pem is specified.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#key_pem NomadProvider#key_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#key_pem NomadProvider#key_pem}
   */
   readonly keyPem?: string;
   /**
   * Region of the target Nomad agent.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#region NomadProvider#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#region NomadProvider#region}
   */
   readonly region?: string;
   /**
   * ACL token secret for API requests.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#secret_id NomadProvider#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#secret_id NomadProvider#secret_id}
   */
   readonly secretId?: string;
   /**
   * Vault token if policies are specified in the job file.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#vault_token NomadProvider#vault_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#vault_token NomadProvider#vault_token}
   */
   readonly vaultToken?: string;
   /**
   * Alias name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#alias NomadProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#alias NomadProvider#alias}
   */
   readonly alias?: string;
   /**
   * headers block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#headers NomadProvider#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#headers NomadProvider#headers}
   */
   readonly headers?: NomadProviderHeaders[] | cdktf.IResolvable;
 }
@@ -102,13 +102,13 @@ export interface NomadProviderHeaders {
   /**
   * The header name
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#name NomadProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#name NomadProvider#name}
   */
   readonly name: string;
   /**
   * The header value
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad#value NomadProvider#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs#value NomadProvider#value}
   */
   readonly value: string;
 }
@@ -126,7 +126,7 @@ export function nomadProviderHeadersToTerraform(struct?: NomadProviderHeaders | 
 
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/nomad nomad}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs nomad}
 */
 export class NomadProvider extends cdktf.TerraformProvider {
 
@@ -140,7 +140,7 @@ export class NomadProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/nomad nomad} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs nomad} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

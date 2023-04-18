@@ -1,6 +1,6 @@
 # `nomad_volume`
 
-Refer to the Terraform Registory for docs: [`nomad_volume`](https://www.terraform.io/docs/providers/nomad/r/volume).
+Refer to the Terraform Registory for docs: [`nomad_volume`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume).
 
 # `volume` Submodule <a name="`volume` Submodule" id="@cdktf/provider-nomad.volume"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_volume`](https://www.terrafor
 
 ### Volume <a name="Volume" id="@cdktf/provider-nomad.volume.Volume"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/r/volume nomad_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume nomad_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.Volume.Initializer"></a>
 
@@ -19,7 +19,7 @@ volume.Volume(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -49,7 +49,7 @@ volume.Volume(
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -64,7 +64,7 @@ volume.Volume(
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.capability">capability</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.volume.VolumeCapability">VolumeCapability</a>]]</code> | capability block. |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.context">context</a></code> | <code>typing.Mapping[str]</code> | An optional key-value map of strings passed directly to the CSI plugin to validate the volume. |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the volume will be deregistered on destroy. |
-| <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#id Volume#id}. |
+| <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#id Volume#id}. |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.mountOptions">mount_options</a></code> | <code><a href="#@cdktf/provider-nomad.volume.VolumeMountOptions">VolumeMountOptions</a></code> | mount_options block. |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | The namespace in which to create the volume. |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.Initializer.parameter.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | An optional key-value map of strings passed directly to the CSI plugin to configure the volume. |
@@ -100,7 +100,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.volume.Volume.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -140,7 +140,7 @@ Must be unique amongst siblings in the same scope
 
 The ID of the physical volume from the storage provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#external_id Volume#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#external_id Volume#external_id}
 
 ---
 
@@ -150,7 +150,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The display name of the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#name Volume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#name Volume#name}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The ID of the CSI plugin that manages this volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#plugin_id Volume#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#plugin_id Volume#plugin_id}
 
 ---
 
@@ -170,7 +170,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The unique ID of the volume, how jobs will refer to the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#volume_id Volume#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#volume_id Volume#volume_id}
 
 ---
 
@@ -180,7 +180,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 Defines whether a volume should be available concurrently.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#access_mode Volume#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#access_mode Volume#access_mode}
 
 ---
 
@@ -190,7 +190,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The storage API that will be used by the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#attachment_mode Volume#attachment_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#attachment_mode Volume#attachment_mode}
 
 ---
 
@@ -200,7 +200,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 capability block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#capability Volume#capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#capability Volume#capability}
 
 ---
 
@@ -210,7 +210,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 An optional key-value map of strings passed directly to the CSI plugin to validate the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#context Volume#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#context Volume#context}
 
 ---
 
@@ -220,7 +220,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 If true, the volume will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#deregister_on_destroy Volume#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#deregister_on_destroy Volume#deregister_on_destroy}
 
 ---
 
@@ -228,7 +228,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#id Volume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#id Volume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -241,7 +241,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 mount_options block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#mount_options Volume#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#mount_options Volume#mount_options}
 
 ---
 
@@ -251,7 +251,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The namespace in which to create the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#namespace Volume#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#namespace Volume#namespace}
 
 ---
 
@@ -261,7 +261,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 An optional key-value map of strings passed directly to the CSI plugin to configure the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#parameters Volume#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#parameters Volume#parameters}
 
 ---
 
@@ -271,7 +271,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 An optional key-value map of strings used as credentials for publishing and unpublishing volumes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#secrets Volume#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#secrets Volume#secrets}
 
 ---
 
@@ -281,7 +281,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 topology_request block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#topology_request Volume#topology_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#topology_request Volume#topology_request}
 
 ---
 
@@ -291,7 +291,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The type of the volume. Currently, only 'csi' is supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#type Volume#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#type Volume#type}
 
 ---
 
@@ -571,7 +571,7 @@ def put_mount_options(
 
 The file system type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#fs_type Volume#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#fs_type Volume#fs_type}
 
 ---
 
@@ -581,7 +581,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The flags passed to mount.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#mount_flags Volume#mount_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#mount_flags Volume#mount_flags}
 
 ---
 
@@ -599,7 +599,7 @@ def put_topology_request(
 
 required block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#required Volume#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#required Volume#required}
 
 ---
 
@@ -763,7 +763,7 @@ volume.Volume.is_terraform_resource(
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.volume.Volume.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.volume.Volume.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.Volume.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -898,10 +898,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.volume.Volume.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1417,7 +1417,7 @@ access_mode: str
 
 Defines whether a volume should be available concurrently.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#access_mode Volume#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#access_mode Volume#access_mode}
 
 ---
 
@@ -1431,7 +1431,7 @@ attachment_mode: str
 
 The storage API that will be used by the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#attachment_mode Volume#attachment_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#attachment_mode Volume#attachment_mode}
 
 ---
 
@@ -1444,7 +1444,7 @@ from cdktf_cdktf_provider_nomad import volume
 
 volume.VolumeConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -1474,7 +1474,7 @@ volume.VolumeConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1489,7 +1489,7 @@ volume.VolumeConfig(
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.capability">capability</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.volume.VolumeCapability">VolumeCapability</a>]]</code> | capability block. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.context">context</a></code> | <code>typing.Mapping[str]</code> | An optional key-value map of strings passed directly to the CSI plugin to validate the volume. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the volume will be deregistered on destroy. |
-| <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#id Volume#id}. |
+| <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#id Volume#id}. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.mountOptions">mount_options</a></code> | <code><a href="#@cdktf/provider-nomad.volume.VolumeMountOptions">VolumeMountOptions</a></code> | mount_options block. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.namespace">namespace</a></code> | <code>str</code> | The namespace in which to create the volume. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.parameters">parameters</a></code> | <code>typing.Mapping[str]</code> | An optional key-value map of strings passed directly to the CSI plugin to configure the volume. |
@@ -1512,10 +1512,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.volume.VolumeConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -1579,7 +1579,7 @@ external_id: str
 
 The ID of the physical volume from the storage provider.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#external_id Volume#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#external_id Volume#external_id}
 
 ---
 
@@ -1593,7 +1593,7 @@ name: str
 
 The display name of the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#name Volume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#name Volume#name}
 
 ---
 
@@ -1607,7 +1607,7 @@ plugin_id: str
 
 The ID of the CSI plugin that manages this volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#plugin_id Volume#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#plugin_id Volume#plugin_id}
 
 ---
 
@@ -1621,7 +1621,7 @@ volume_id: str
 
 The unique ID of the volume, how jobs will refer to the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#volume_id Volume#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#volume_id Volume#volume_id}
 
 ---
 
@@ -1635,7 +1635,7 @@ access_mode: str
 
 Defines whether a volume should be available concurrently.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#access_mode Volume#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#access_mode Volume#access_mode}
 
 ---
 
@@ -1649,7 +1649,7 @@ attachment_mode: str
 
 The storage API that will be used by the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#attachment_mode Volume#attachment_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#attachment_mode Volume#attachment_mode}
 
 ---
 
@@ -1663,7 +1663,7 @@ capability: typing.Union[IResolvable, typing.List[VolumeCapability]]
 
 capability block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#capability Volume#capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#capability Volume#capability}
 
 ---
 
@@ -1677,7 +1677,7 @@ context: typing.Mapping[str]
 
 An optional key-value map of strings passed directly to the CSI plugin to validate the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#context Volume#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#context Volume#context}
 
 ---
 
@@ -1691,7 +1691,7 @@ deregister_on_destroy: typing.Union[bool, IResolvable]
 
 If true, the volume will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#deregister_on_destroy Volume#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#deregister_on_destroy Volume#deregister_on_destroy}
 
 ---
 
@@ -1703,7 +1703,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#id Volume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#id Volume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1720,7 +1720,7 @@ mount_options: VolumeMountOptions
 
 mount_options block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#mount_options Volume#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#mount_options Volume#mount_options}
 
 ---
 
@@ -1734,7 +1734,7 @@ namespace: str
 
 The namespace in which to create the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#namespace Volume#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#namespace Volume#namespace}
 
 ---
 
@@ -1748,7 +1748,7 @@ parameters: typing.Mapping[str]
 
 An optional key-value map of strings passed directly to the CSI plugin to configure the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#parameters Volume#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#parameters Volume#parameters}
 
 ---
 
@@ -1762,7 +1762,7 @@ secrets: typing.Mapping[str]
 
 An optional key-value map of strings used as credentials for publishing and unpublishing volumes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#secrets Volume#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#secrets Volume#secrets}
 
 ---
 
@@ -1776,7 +1776,7 @@ topology_request: VolumeTopologyRequest
 
 topology_request block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#topology_request Volume#topology_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#topology_request Volume#topology_request}
 
 ---
 
@@ -1790,7 +1790,7 @@ type: str
 
 The type of the volume. Currently, only 'csi' is supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#type Volume#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#type Volume#type}
 
 ---
 
@@ -1826,7 +1826,7 @@ fs_type: str
 
 The file system type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#fs_type Volume#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#fs_type Volume#fs_type}
 
 ---
 
@@ -1840,7 +1840,7 @@ mount_flags: typing.List[str]
 
 The flags passed to mount.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#mount_flags Volume#mount_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#mount_flags Volume#mount_flags}
 
 ---
 
@@ -1885,7 +1885,7 @@ required: VolumeTopologyRequestRequired
 
 required block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#required Volume#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#required Volume#required}
 
 ---
 
@@ -1919,7 +1919,7 @@ topology: typing.Union[IResolvable, typing.List[VolumeTopologyRequestRequiredTop
 
 topology block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#topology Volume#topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#topology Volume#topology}
 
 ---
 
@@ -1953,7 +1953,7 @@ segments: typing.Mapping[str]
 
 Define attributes for the topology request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#segments Volume#segments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#segments Volume#segments}
 
 ---
 
@@ -3469,7 +3469,7 @@ def put_required(
 
 topology block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/volume#topology Volume#topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/volume#topology Volume#topology}
 
 ---
 
