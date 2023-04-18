@@ -1,3 +1,7 @@
+# `nomad_sentinel_policy`
+
+Refer to the Terraform Registory for docs: [`nomad_sentinel_policy`](https://www.terraform.io/docs/providers/nomad/r/sentinel_policy).
+
 # `sentinelPolicy` Submodule <a name="`sentinelPolicy` Submodule" id="@cdktf/provider-nomad.sentinelPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

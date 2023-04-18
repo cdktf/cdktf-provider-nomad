@@ -1,3 +1,7 @@
+# `data_nomad_job`
+
+Refer to the Terraform Registory for docs: [`data_nomad_job`](https://www.terraform.io/docs/providers/nomad/d/job).
+
 # `dataNomadJob` Submodule <a name="`dataNomadJob` Submodule" id="@cdktf/provider-nomad.dataNomadJob"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

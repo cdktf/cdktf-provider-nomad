@@ -1,3 +1,7 @@
+# `data_nomad_plugins`
+
+Refer to the Terraform Registory for docs: [`data_nomad_plugins`](https://www.terraform.io/docs/providers/nomad/d/plugins).
+
 # `dataNomadPlugins` Submodule <a name="`dataNomadPlugins` Submodule" id="@cdktf/provider-nomad.dataNomadPlugins"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,3 +1,7 @@
+# `data_nomad_namespaces`
+
+Refer to the Terraform Registory for docs: [`data_nomad_namespaces`](https://www.terraform.io/docs/providers/nomad/d/namespaces).
+
 # `dataNomadNamespaces` Submodule <a name="`dataNomadNamespaces` Submodule" id="@cdktf/provider-nomad.dataNomadNamespaces"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
