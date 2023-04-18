@@ -1,3 +1,7 @@
+# `data_nomad_scaling_policy`
+
+Refer to the Terraform Registory for docs: [`data_nomad_scaling_policy`](https://www.terraform.io/docs/providers/nomad/d/scaling_policy).
+
 # `dataNomadScalingPolicy` Submodule <a name="`dataNomadScalingPolicy` Submodule" id="@cdktf/provider-nomad.dataNomadScalingPolicy"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

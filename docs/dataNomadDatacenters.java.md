@@ -1,3 +1,7 @@
+# `data_nomad_datacenters`
+
+Refer to the Terraform Registory for docs: [`data_nomad_datacenters`](https://www.terraform.io/docs/providers/nomad/d/datacenters).
+
 # `dataNomadDatacenters` Submodule <a name="`dataNomadDatacenters` Submodule" id="@cdktf/provider-nomad.dataNomadDatacenters"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
