@@ -1,6 +1,6 @@
 # `nomad_sentinel_policy`
 
-Refer to the Terraform Registory for docs: [`nomad_sentinel_policy`](https://www.terraform.io/docs/providers/nomad/r/sentinel_policy).
+Refer to the Terraform Registory for docs: [`nomad_sentinel_policy`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy).
 
 # `sentinelPolicy` Submodule <a name="`sentinelPolicy` Submodule" id="@cdktf/provider-nomad.sentinelPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_sentinel_policy`](https://www
 
 ### SentinelPolicy <a name="SentinelPolicy" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy nomad_sentinel_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy nomad_sentinel_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.Initializer"></a>
 
@@ -353,7 +353,7 @@ sentinelPolicy.SentinelPolicy.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -459,10 +459,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -671,7 +671,7 @@ const sentinelPolicyConfig: sentinelPolicy.SentinelPolicyConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -682,7 +682,7 @@ const sentinelPolicyConfig: sentinelPolicy.SentinelPolicyConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.policy">policy</a></code> | <code>string</code> | The Sentinel policy. |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.scope">scope</a></code> | <code>string</code> | Specifies the scope for this policy. Only 'submit-job' is currently supported. |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.description">description</a></code> | <code>string</code> | Description for this policy. |
-| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#id SentinelPolicy#id}. |
+| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy#id SentinelPolicy#id}. |
 
 ---
 
@@ -699,10 +699,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -766,7 +766,7 @@ public readonly enforcementLevel: string;
 
 Specifies the enforcement level of the policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#enforcement_level SentinelPolicy#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy#enforcement_level SentinelPolicy#enforcement_level}
 
 ---
 
@@ -780,7 +780,7 @@ public readonly name: string;
 
 Unique name for this policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#name SentinelPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy#name SentinelPolicy#name}
 
 ---
 
@@ -794,7 +794,7 @@ public readonly policy: string;
 
 The Sentinel policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#policy SentinelPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy#policy SentinelPolicy#policy}
 
 ---
 
@@ -808,7 +808,7 @@ public readonly scope: string;
 
 Specifies the scope for this policy. Only 'submit-job' is currently supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#scope SentinelPolicy#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy#scope SentinelPolicy#scope}
 
 ---
 
@@ -822,7 +822,7 @@ public readonly description: string;
 
 Description for this policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#description SentinelPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy#description SentinelPolicy#description}
 
 ---
 
@@ -834,7 +834,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/sentinel_policy#id SentinelPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/sentinel_policy#id SentinelPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

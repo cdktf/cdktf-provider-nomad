@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/nomad/d/scaling_policy
+// https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,7 +10,7 @@ export interface DataNomadScalingPolicyConfig extends cdktf.TerraformMetaArgumen
   /**
   * The scaling policy ID.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policy#id DataNomadScalingPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policy#id DataNomadScalingPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -19,7 +19,7 @@ export interface DataNomadScalingPolicyConfig extends cdktf.TerraformMetaArgumen
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policy nomad_scaling_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policy nomad_scaling_policy}
 */
 export class DataNomadScalingPolicy extends cdktf.TerraformDataSource {
 
@@ -33,7 +33,7 @@ export class DataNomadScalingPolicy extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policy nomad_scaling_policy} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policy nomad_scaling_policy} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

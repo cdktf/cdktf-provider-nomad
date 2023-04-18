@@ -1,6 +1,6 @@
 # `nomad_acl_role`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://www.terraform.io/docs/providers/nomad/r/acl_role).
+Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role).
 
 # `aclRole` Submodule <a name="`aclRole` Submodule" id="@cdktf/provider-nomad.aclRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://www.terraf
 
 ### AclRole <a name="AclRole" id="@cdktf/provider-nomad.aclRole.AclRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/r/acl_role nomad_acl_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclRole.AclRole.Initializer"></a>
 
@@ -19,7 +19,7 @@ aclRole.AclRole(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -37,7 +37,7 @@ aclRole.AclRole(
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -46,7 +46,7 @@ aclRole.AclRole(
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.name">name</a></code> | <code>str</code> | Unique name for this ACL role. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.policy">policy</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]</code> | policy block. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.description">description</a></code> | <code>str</code> | Description for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}. |
 
 ---
 
@@ -76,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -116,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 Unique name for this ACL role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
 
 ---
 
@@ -126,7 +126,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 policy block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#policy AclRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#policy AclRole#policy}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 Description for this ACL role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -500,7 +500,7 @@ aclRole.AclRole.is_terraform_resource(
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -602,10 +602,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.aclRole.AclRole.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -768,7 +768,7 @@ from cdktf_cdktf_provider_nomad import acl_role
 
 aclRole.AclRoleConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -786,7 +786,7 @@ aclRole.AclRoleConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -795,7 +795,7 @@ aclRole.AclRoleConfig(
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.name">name</a></code> | <code>str</code> | Unique name for this ACL role. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy">policy</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]</code> | policy block. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.description">description</a></code> | <code>str</code> | Description for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}. |
 
 ---
 
@@ -812,10 +812,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.aclRole.AclRoleConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -879,7 +879,7 @@ name: str
 
 Unique name for this ACL role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
 
 ---
 
@@ -893,7 +893,7 @@ policy: typing.Union[typing.List[AclRolePolicy], IResolvable]
 
 policy block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#policy AclRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#policy AclRole#policy}
 
 ---
 
@@ -907,7 +907,7 @@ description: str
 
 Description for this ACL role.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -919,7 +919,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -956,7 +956,7 @@ name: str
 
 The name of the ACL policy to link.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
 
 ---
 

@@ -1,6 +1,6 @@
 # `data_nomad_acl_role`
 
-Refer to the Terraform Registory for docs: [`data_nomad_acl_role`](https://www.terraform.io/docs/providers/nomad/d/acl_role).
+Refer to the Terraform Registory for docs: [`data_nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/acl_role).
 
 # `dataNomadAclRole` Submodule <a name="`dataNomadAclRole` Submodule" id="@cdktf/provider-nomad.dataNomadAclRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_nomad_acl_role`](https://www.t
 
 ### DataNomadAclRole <a name="DataNomadAclRole" id="@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/d/acl_role nomad_acl_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/acl_role nomad_acl_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.Initializer"></a>
 
@@ -338,7 +338,7 @@ DataNomadAclRole.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -426,10 +426,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRole.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -552,7 +552,7 @@ using HashiCorp.Cdktf.Providers.Nomad;
 
 new DataNomadAclRoleConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -567,7 +567,7 @@ new DataNomadAclRoleConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRoleConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRoleConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRoleConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRoleConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRoleConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRoleConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -590,10 +590,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.dataNomadAclRole.DataNomadAclRoleConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -657,7 +657,7 @@ public string Id { get; set; }
 
 The ACL Role unique identifier.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_role#id DataNomadAclRole#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/acl_role#id DataNomadAclRole#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

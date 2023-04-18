@@ -1,6 +1,6 @@
 # `nomad_acl_policy`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_policy`](https://www.terraform.io/docs/providers/nomad/r/acl_policy).
+Refer to the Terraform Registory for docs: [`nomad_acl_policy`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy).
 
 # `aclPolicy` Submodule <a name="`aclPolicy` Submodule" id="@cdktf/provider-nomad.aclPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_acl_policy`](https://www.terr
 
 ### AclPolicy <a name="AclPolicy" id="@cdktf/provider-nomad.aclPolicy.AclPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy nomad_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy nomad_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer"></a>
 
@@ -19,6 +19,7 @@ AclPolicy.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -38,7 +39,7 @@ AclPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -47,7 +48,7 @@ AclPolicy.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Unique name for this policy. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.rulesHcl">rulesHcl</a></code> | <code>java.lang.String</code> | HCL or JSON representation of the rules to enforce on this policy. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description for this policy. |
-| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#id AclPolicy#id}. |
 
 ---
 
@@ -77,7 +78,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -117,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Unique name for this policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#name AclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#name AclPolicy#name}
 
 ---
 
@@ -129,7 +130,7 @@ HCL or JSON representation of the rules to enforce on this policy.
 
 Use file() to specify a file as input.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#rules_hcl AclPolicy#rules_hcl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#rules_hcl AclPolicy#rules_hcl}
 
 ---
 
@@ -139,7 +140,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 Description for this policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#description AclPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#description AclPolicy#description}
 
 ---
 
@@ -147,7 +148,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#id AclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#id AclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -457,7 +458,7 @@ AclPolicy.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -559,10 +560,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -727,6 +728,7 @@ AclPolicyConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -746,7 +748,7 @@ AclPolicyConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -755,7 +757,7 @@ AclPolicyConfig.builder()
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.name">name</a></code> | <code>java.lang.String</code> | Unique name for this policy. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.rulesHcl">rulesHcl</a></code> | <code>java.lang.String</code> | HCL or JSON representation of the rules to enforce on this policy. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description for this policy. |
-| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#id AclPolicy#id}. |
 
 ---
 
@@ -772,10 +774,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -839,7 +841,7 @@ public java.lang.String getName();
 
 Unique name for this policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#name AclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#name AclPolicy#name}
 
 ---
 
@@ -855,7 +857,7 @@ HCL or JSON representation of the rules to enforce on this policy.
 
 Use file() to specify a file as input.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#rules_hcl AclPolicy#rules_hcl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#rules_hcl AclPolicy#rules_hcl}
 
 ---
 
@@ -869,7 +871,7 @@ public java.lang.String getDescription();
 
 Description for this policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#description AclPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#description AclPolicy#description}
 
 ---
 
@@ -881,7 +883,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#id AclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#id AclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

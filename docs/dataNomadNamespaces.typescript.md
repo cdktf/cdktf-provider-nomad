@@ -1,6 +1,6 @@
 # `data_nomad_namespaces`
 
-Refer to the Terraform Registory for docs: [`data_nomad_namespaces`](https://www.terraform.io/docs/providers/nomad/d/namespaces).
+Refer to the Terraform Registory for docs: [`data_nomad_namespaces`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/namespaces).
 
 # `dataNomadNamespaces` Submodule <a name="`dataNomadNamespaces` Submodule" id="@cdktf/provider-nomad.dataNomadNamespaces"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_nomad_namespaces`](https://www
 
 ### DataNomadNamespaces <a name="DataNomadNamespaces" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/d/namespaces nomad_namespaces}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/namespaces nomad_namespaces}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataNomadNamespaces.DataNomadNamespaces.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -431,10 +431,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -543,13 +543,13 @@ const dataNomadNamespacesConfig: dataNomadNamespaces.DataNomadNamespacesConfig =
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/namespaces#id DataNomadNamespaces#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/namespaces#id DataNomadNamespaces#id}. |
 
 ---
 
@@ -566,10 +566,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -631,7 +631,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/namespaces#id DataNomadNamespaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/namespaces#id DataNomadNamespaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

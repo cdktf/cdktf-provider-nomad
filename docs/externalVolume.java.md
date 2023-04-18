@@ -1,6 +1,6 @@
 # `nomad_external_volume`
 
-Refer to the Terraform Registory for docs: [`nomad_external_volume`](https://www.terraform.io/docs/providers/nomad/r/external_volume).
+Refer to the Terraform Registory for docs: [`nomad_external_volume`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume).
 
 # `externalVolume` Submodule <a name="`externalVolume` Submodule" id="@cdktf/provider-nomad.externalVolume"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_external_volume`](https://www
 
 ### ExternalVolume <a name="ExternalVolume" id="@cdktf/provider-nomad.externalVolume.ExternalVolume"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/r/external_volume nomad_external_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume nomad_external_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer"></a>
 
@@ -19,6 +19,7 @@ ExternalVolume.Builder.create(Construct scope, java.lang.String id)
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -50,7 +51,7 @@ ExternalVolume.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -63,7 +64,7 @@ ExternalVolume.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.capacityMax">capacityMax</a></code> | <code>java.lang.String</code> | Defines how large the volume can be. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.capacityMin">capacityMin</a></code> | <code>java.lang.String</code> | Defines how small the volume can be. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.cloneId">cloneId</a></code> | <code>java.lang.String</code> | The volume ID to clone when creating this volume. Storage provider must support cloning. Conflicts with 'snapshot_id'. |
-| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#id ExternalVolume#id}. |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#id ExternalVolume#id}. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.mountOptions">mountOptions</a></code> | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeMountOptions">ExternalVolumeMountOptions</a></code> | mount_options block. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.namespace">namespace</a></code> | <code>java.lang.String</code> | The namespace in which to create the volume. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | An optional key-value map of strings passed directly to the CSI plugin to configure the volume. |
@@ -100,7 +101,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -140,7 +141,7 @@ Must be unique amongst siblings in the same scope
 
 capability block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#capability ExternalVolume#capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#capability ExternalVolume#capability}
 
 ---
 
@@ -150,7 +151,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The display name of the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#name ExternalVolume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#name ExternalVolume#name}
 
 ---
 
@@ -160,7 +161,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The ID of the CSI plugin that manages this volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#plugin_id ExternalVolume#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#plugin_id ExternalVolume#plugin_id}
 
 ---
 
@@ -170,7 +171,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The unique ID of the volume, how jobs will refer to the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#volume_id ExternalVolume#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#volume_id ExternalVolume#volume_id}
 
 ---
 
@@ -182,7 +183,7 @@ Defines how large the volume can be.
 
 The storage provider may return a volume that is smaller than this value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#capacity_max ExternalVolume#capacity_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#capacity_max ExternalVolume#capacity_max}
 
 ---
 
@@ -194,7 +195,7 @@ Defines how small the volume can be.
 
 The storage provider may return a volume that is larger than this value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#capacity_min ExternalVolume#capacity_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#capacity_min ExternalVolume#capacity_min}
 
 ---
 
@@ -204,7 +205,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The volume ID to clone when creating this volume. Storage provider must support cloning. Conflicts with 'snapshot_id'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#clone_id ExternalVolume#clone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#clone_id ExternalVolume#clone_id}
 
 ---
 
@@ -212,7 +213,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#id ExternalVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#id ExternalVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -225,7 +226,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 mount_options block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#mount_options ExternalVolume#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#mount_options ExternalVolume#mount_options}
 
 ---
 
@@ -235,7 +236,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The namespace in which to create the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#namespace ExternalVolume#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#namespace ExternalVolume#namespace}
 
 ---
 
@@ -245,7 +246,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 An optional key-value map of strings passed directly to the CSI plugin to configure the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#parameters ExternalVolume#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#parameters ExternalVolume#parameters}
 
 ---
 
@@ -255,7 +256,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 An optional key-value map of strings used as credentials for publishing and unpublishing volumes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#secrets ExternalVolume#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#secrets ExternalVolume#secrets}
 
 ---
 
@@ -265,7 +266,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The snapshot ID to restore when creating this volume. Storage provider must support snapshots. Conflicts with 'clone_id'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#snapshot_id ExternalVolume#snapshot_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#snapshot_id ExternalVolume#snapshot_id}
 
 ---
 
@@ -275,7 +276,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 topology_request block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#topology_request ExternalVolume#topology_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#topology_request ExternalVolume#topology_request}
 
 ---
 
@@ -285,7 +286,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 The type of the volume. Currently, only 'csi' is supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#type ExternalVolume#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#type ExternalVolume#type}
 
 ---
 
@@ -694,7 +695,7 @@ ExternalVolume.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolume.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -827,10 +828,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1326,7 +1327,7 @@ public java.lang.String getAccessMode();
 
 Defines whether a volume should be available concurrently.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#access_mode ExternalVolume#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#access_mode ExternalVolume#access_mode}
 
 ---
 
@@ -1340,7 +1341,7 @@ public java.lang.String getAttachmentMode();
 
 The storage API that will be used by the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#attachment_mode ExternalVolume#attachment_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#attachment_mode ExternalVolume#attachment_mode}
 
 ---
 
@@ -1355,6 +1356,7 @@ ExternalVolumeConfig.builder()
 //  .connection(SSHProvisionerConnection)
 //  .connection(WinrmProvisionerConnection)
 //  .count(java.lang.Number)
+//  .count(TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
@@ -1386,7 +1388,7 @@ ExternalVolumeConfig.builder()
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.count">count</a></code> | <code>java.lang.Number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1399,7 +1401,7 @@ ExternalVolumeConfig.builder()
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.capacityMax">capacityMax</a></code> | <code>java.lang.String</code> | Defines how large the volume can be. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.capacityMin">capacityMin</a></code> | <code>java.lang.String</code> | Defines how small the volume can be. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.cloneId">cloneId</a></code> | <code>java.lang.String</code> | The volume ID to clone when creating this volume. Storage provider must support cloning. Conflicts with 'snapshot_id'. |
-| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#id ExternalVolume#id}. |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#id ExternalVolume#id}. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.mountOptions">mountOptions</a></code> | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeMountOptions">ExternalVolumeMountOptions</a></code> | mount_options block. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.namespace">namespace</a></code> | <code>java.lang.String</code> | The namespace in which to create the volume. |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.parameters">parameters</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | An optional key-value map of strings passed directly to the CSI plugin to configure the volume. |
@@ -1423,10 +1425,10 @@ public java.lang.Object getConnection();
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.property.count"></a>
 
 ```java
-public java.lang.Number getCount();
+public java.lang.Object getCount();
 ```
 
-- *Type:* java.lang.Number
+- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1490,7 +1492,7 @@ public java.lang.Object getCapability();
 
 capability block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#capability ExternalVolume#capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#capability ExternalVolume#capability}
 
 ---
 
@@ -1504,7 +1506,7 @@ public java.lang.String getName();
 
 The display name of the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#name ExternalVolume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#name ExternalVolume#name}
 
 ---
 
@@ -1518,7 +1520,7 @@ public java.lang.String getPluginId();
 
 The ID of the CSI plugin that manages this volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#plugin_id ExternalVolume#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#plugin_id ExternalVolume#plugin_id}
 
 ---
 
@@ -1532,7 +1534,7 @@ public java.lang.String getVolumeId();
 
 The unique ID of the volume, how jobs will refer to the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#volume_id ExternalVolume#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#volume_id ExternalVolume#volume_id}
 
 ---
 
@@ -1548,7 +1550,7 @@ Defines how large the volume can be.
 
 The storage provider may return a volume that is smaller than this value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#capacity_max ExternalVolume#capacity_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#capacity_max ExternalVolume#capacity_max}
 
 ---
 
@@ -1564,7 +1566,7 @@ Defines how small the volume can be.
 
 The storage provider may return a volume that is larger than this value.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#capacity_min ExternalVolume#capacity_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#capacity_min ExternalVolume#capacity_min}
 
 ---
 
@@ -1578,7 +1580,7 @@ public java.lang.String getCloneId();
 
 The volume ID to clone when creating this volume. Storage provider must support cloning. Conflicts with 'snapshot_id'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#clone_id ExternalVolume#clone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#clone_id ExternalVolume#clone_id}
 
 ---
 
@@ -1590,7 +1592,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#id ExternalVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#id ExternalVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1607,7 +1609,7 @@ public ExternalVolumeMountOptions getMountOptions();
 
 mount_options block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#mount_options ExternalVolume#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#mount_options ExternalVolume#mount_options}
 
 ---
 
@@ -1621,7 +1623,7 @@ public java.lang.String getNamespace();
 
 The namespace in which to create the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#namespace ExternalVolume#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#namespace ExternalVolume#namespace}
 
 ---
 
@@ -1635,7 +1637,7 @@ public java.util.Map<java.lang.String, java.lang.String> getParameters();
 
 An optional key-value map of strings passed directly to the CSI plugin to configure the volume.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#parameters ExternalVolume#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#parameters ExternalVolume#parameters}
 
 ---
 
@@ -1649,7 +1651,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSecrets();
 
 An optional key-value map of strings used as credentials for publishing and unpublishing volumes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#secrets ExternalVolume#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#secrets ExternalVolume#secrets}
 
 ---
 
@@ -1663,7 +1665,7 @@ public java.lang.String getSnapshotId();
 
 The snapshot ID to restore when creating this volume. Storage provider must support snapshots. Conflicts with 'clone_id'.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#snapshot_id ExternalVolume#snapshot_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#snapshot_id ExternalVolume#snapshot_id}
 
 ---
 
@@ -1677,7 +1679,7 @@ public ExternalVolumeTopologyRequest getTopologyRequest();
 
 topology_request block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#topology_request ExternalVolume#topology_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#topology_request ExternalVolume#topology_request}
 
 ---
 
@@ -1691,7 +1693,7 @@ public java.lang.String getType();
 
 The type of the volume. Currently, only 'csi' is supported.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#type ExternalVolume#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#type ExternalVolume#type}
 
 ---
 
@@ -1727,7 +1729,7 @@ public java.lang.String getFsType();
 
 The file system type.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#fs_type ExternalVolume#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#fs_type ExternalVolume#fs_type}
 
 ---
 
@@ -1741,7 +1743,7 @@ public java.util.List<java.lang.String> getMountFlags();
 
 The flags passed to mount.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#mount_flags ExternalVolume#mount_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#mount_flags ExternalVolume#mount_flags}
 
 ---
 
@@ -1789,7 +1791,7 @@ public ExternalVolumeTopologyRequestPreferred getPreferred();
 
 preferred block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#preferred ExternalVolume#preferred}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#preferred ExternalVolume#preferred}
 
 ---
 
@@ -1803,7 +1805,7 @@ public ExternalVolumeTopologyRequestRequired getRequired();
 
 required block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#required ExternalVolume#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#required ExternalVolume#required}
 
 ---
 
@@ -1838,7 +1840,7 @@ public java.lang.Object getTopology();
 
 topology block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#topology ExternalVolume#topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#topology ExternalVolume#topology}
 
 ---
 
@@ -1872,7 +1874,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSegments();
 
 Define the attributes for the topology request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#segments ExternalVolume#segments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#segments ExternalVolume#segments}
 
 ---
 
@@ -1907,7 +1909,7 @@ public java.lang.Object getTopology();
 
 topology block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#topology ExternalVolume#topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#topology ExternalVolume#topology}
 
 ---
 
@@ -1941,7 +1943,7 @@ public java.util.Map<java.lang.String, java.lang.String> getSegments();
 
 Define the attributes for the topology request.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/external_volume#segments ExternalVolume#segments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/external_volume#segments ExternalVolume#segments}
 
 ---
 

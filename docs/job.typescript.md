@@ -1,6 +1,6 @@
 # `nomad_job`
 
-Refer to the Terraform Registory for docs: [`nomad_job`](https://www.terraform.io/docs/providers/nomad/r/job).
+Refer to the Terraform Registory for docs: [`nomad_job`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job).
 
 # `job` Submodule <a name="`job` Submodule" id="@cdktf/provider-nomad.job"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_job`](https://www.terraform.i
 
 ### Job <a name="Job" id="@cdktf/provider-nomad.job.Job"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/r/job nomad_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job nomad_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.Job.Initializer"></a>
 
@@ -442,7 +442,7 @@ job.Job.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -570,10 +570,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.job.Job.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1002,7 +1002,7 @@ const jobConfig: job.JobConfig = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -1014,7 +1014,7 @@ const jobConfig: job.JobConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange">deregisterOnIdChange</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the job will be deregistered when the job ID changes. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">detach</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl2">hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#id Job#id}. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">json</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">policyOverride</a></code> | <code>boolean \| cdktf.IResolvable</code> | Override any soft-mandatory Sentinel policies that fail. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">purgeOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to purge the job when the resource is destroyed. |
@@ -1036,10 +1036,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.job.JobConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -1103,7 +1103,7 @@ public readonly jobspec: string;
 
 Job specification. If you want to point to a file use the file() function.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#jobspec Job#jobspec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#jobspec Job#jobspec}
 
 ---
 
@@ -1117,7 +1117,7 @@ public readonly consulToken: string;
 
 The Consul token used to submit this job.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#consul_token Job#consul_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#consul_token Job#consul_token}
 
 ---
 
@@ -1131,7 +1131,7 @@ public readonly deregisterOnDestroy: boolean | IResolvable;
 
 If true, the job will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#deregister_on_destroy Job#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
 
 ---
 
@@ -1145,7 +1145,7 @@ public readonly deregisterOnIdChange: boolean | IResolvable;
 
 If true, the job will be deregistered when the job ID changes.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#deregister_on_id_change Job#deregister_on_id_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
 
 ---
 
@@ -1159,7 +1159,7 @@ public readonly detach: boolean | IResolvable;
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#detach Job#detach}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#detach Job#detach}
 
 ---
 
@@ -1173,7 +1173,7 @@ public readonly hcl2: JobHcl2;
 
 hcl2 block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#hcl2 Job#hcl2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#hcl2 Job#hcl2}
 
 ---
 
@@ -1185,7 +1185,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1202,7 +1202,7 @@ public readonly json: boolean | IResolvable;
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#json Job#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#json Job#json}
 
 ---
 
@@ -1216,7 +1216,7 @@ public readonly policyOverride: boolean | IResolvable;
 
 Override any soft-mandatory Sentinel policies that fail.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#policy_override Job#policy_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#policy_override Job#policy_override}
 
 ---
 
@@ -1230,7 +1230,7 @@ public readonly purgeOnDestroy: boolean | IResolvable;
 
 Whether to purge the job when the resource is destroyed.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#purge_on_destroy Job#purge_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
 
 ---
 
@@ -1244,7 +1244,7 @@ public readonly timeouts: JobTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#timeouts Job#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#timeouts Job#timeouts}
 
 ---
 
@@ -1258,7 +1258,7 @@ public readonly vaultToken: string;
 
 The Vault token used to submit this job.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#vault_token Job#vault_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#vault_token Job#vault_token}
 
 ---
 
@@ -1292,7 +1292,7 @@ public readonly allowFs: boolean | IResolvable;
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#allow_fs Job#allow_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#allow_fs Job#allow_fs}
 
 ---
 
@@ -1306,7 +1306,7 @@ public readonly enabled: boolean | IResolvable;
 
 If true, the `jobspec` will be parsed as HCL2 instead of HCL.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#enabled Job#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#enabled Job#enabled}
 
 ---
 
@@ -1320,7 +1320,7 @@ public readonly vars: {[ key: string ]: string};
 
 Additional variables to use when templating the job with HCL2.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#vars Job#vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#vars Job#vars}
 
 ---
 
@@ -1382,8 +1382,8 @@ const jobTimeouts: job.JobTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#create Job#create}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#update Job#update}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#create Job#create}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#update Job#update}. |
 
 ---
 
@@ -1395,7 +1395,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#create Job#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#create Job#create}.
 
 ---
 
@@ -1407,7 +1407,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/job#update Job#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/job#update Job#update}.
 
 ---
 

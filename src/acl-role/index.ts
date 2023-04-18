@@ -1,4 +1,4 @@
-// https://www.terraform.io/docs/providers/nomad/r/acl_role
+// https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -10,11 +10,11 @@ export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this ACL role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#description AclRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#description AclRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#id AclRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -23,13 +23,13 @@ export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name for this ACL role.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#name AclRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
   */
   readonly name: string;
   /**
   * policy block
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#policy AclRole#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#policy AclRole#policy}
   */
   readonly policy: AclRolePolicy[] | cdktf.IResolvable;
 }
@@ -37,7 +37,7 @@ export interface AclRolePolicy {
   /**
   * The name of the ACL policy to link.
   * 
-  * Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_role#name AclRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
   */
   readonly name: string;
 }
@@ -131,7 +131,7 @@ export class AclRolePolicyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://www.terraform.io/docs/providers/nomad/r/acl_role nomad_acl_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role}
 */
 export class AclRole extends cdktf.TerraformResource {
 
@@ -145,7 +145,7 @@ export class AclRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://www.terraform.io/docs/providers/nomad/r/acl_role nomad_acl_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope

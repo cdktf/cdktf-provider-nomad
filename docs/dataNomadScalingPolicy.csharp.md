@@ -1,6 +1,6 @@
 # `data_nomad_scaling_policy`
 
-Refer to the Terraform Registory for docs: [`data_nomad_scaling_policy`](https://www.terraform.io/docs/providers/nomad/d/scaling_policy).
+Refer to the Terraform Registory for docs: [`data_nomad_scaling_policy`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policy).
 
 # `dataNomadScalingPolicy` Submodule <a name="`dataNomadScalingPolicy` Submodule" id="@cdktf/provider-nomad.dataNomadScalingPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_nomad_scaling_policy`](https:/
 
 ### DataNomadScalingPolicy <a name="DataNomadScalingPolicy" id="@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policy nomad_scaling_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policy nomad_scaling_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.Initializer"></a>
 
@@ -338,7 +338,7 @@ DataNomadScalingPolicy.IsTerraformDataSource(object X);
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -429,10 +429,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicy.property.count"></a>
 
 ```csharp
-public double Count { get; }
+public object Count { get; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -585,7 +585,7 @@ using HashiCorp.Cdktf.Providers.Nomad;
 
 new DataNomadScalingPolicyConfig {
     object Connection = null,
-    double Count = null,
+    object Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
@@ -600,7 +600,7 @@ new DataNomadScalingPolicyConfig {
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicyConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicyConfig.property.count">Count</a></code> | <code>double</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicyConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicyConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -623,10 +623,10 @@ public object Connection { get; set; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.dataNomadScalingPolicy.DataNomadScalingPolicyConfig.property.count"></a>
 
 ```csharp
-public double Count { get; set; }
+public object Count { get; set; }
 ```
 
-- *Type:* double
+- *Type:* object
 
 ---
 
@@ -690,7 +690,7 @@ public string Id { get; set; }
 
 The scaling policy ID.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policy#id DataNomadScalingPolicy#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policy#id DataNomadScalingPolicy#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

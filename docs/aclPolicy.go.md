@@ -1,6 +1,6 @@
 # `nomad_acl_policy`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_policy`](https://www.terraform.io/docs/providers/nomad/r/acl_policy).
+Refer to the Terraform Registory for docs: [`nomad_acl_policy`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy).
 
 # `aclPolicy` Submodule <a name="`aclPolicy` Submodule" id="@cdktf/provider-nomad.aclPolicy"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`nomad_acl_policy`](https://www.terr
 
 ### AclPolicy <a name="AclPolicy" id="@cdktf/provider-nomad.aclPolicy.AclPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy nomad_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy nomad_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclpolicy"
 
 aclpolicy.NewAclPolicy(scope Construct, id *string, config AclPolicyConfig) AclPolicy
 ```
@@ -284,7 +284,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclpolicy"
 
 aclpolicy.AclPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +316,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclpolicy"
 
 aclpolicy.AclPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +330,7 @@ aclpolicy.AclPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclpolicy"
 
 aclpolicy.AclPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -353,7 +353,7 @@ aclpolicy.AclPolicy_IsTerraformResource(x interface{}) *bool
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.terraformResourceType">TerraformResourceType</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.dependsOn">DependsOn</a></code> | <code>*[]*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -455,10 +455,10 @@ func Connection() interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.property.count"></a>
 
 ```go
-func Count() *f64
+func Count() interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -617,11 +617,11 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclpolicy"
 
 &aclpolicy.AclPolicyConfig {
 	Connection: interface{},
-	Count: *f64,
+	Count: interface{},
 	DependsOn: *[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable,
 	ForEach: github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator,
 	Lifecycle: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle,
@@ -639,7 +639,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclpolicy"
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.connection">Connection</a></code> | <code>interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.count">Count</a></code> | <code>*f64</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.count">Count</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.dependsOn">DependsOn</a></code> | <code>*[]github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformDependable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.forEach">ForEach</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -648,7 +648,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/aclpolicy"
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Unique name for this policy. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.rulesHcl">RulesHcl</a></code> | <code>*string</code> | HCL or JSON representation of the rules to enforce on this policy. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.description">Description</a></code> | <code>*string</code> | Description for this policy. |
-| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#id AclPolicy#id}. |
 
 ---
 
@@ -665,10 +665,10 @@ Connection interface{}
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.count"></a>
 
 ```go
-Count *f64
+Count interface{}
 ```
 
-- *Type:* *f64
+- *Type:* interface{}
 
 ---
 
@@ -732,7 +732,7 @@ Name *string
 
 Unique name for this policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#name AclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#name AclPolicy#name}
 
 ---
 
@@ -748,7 +748,7 @@ HCL or JSON representation of the rules to enforce on this policy.
 
 Use file() to specify a file as input.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#rules_hcl AclPolicy#rules_hcl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#rules_hcl AclPolicy#rules_hcl}
 
 ---
 
@@ -762,7 +762,7 @@ Description *string
 
 Description for this policy.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#description AclPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#description AclPolicy#description}
 
 ---
 
@@ -774,7 +774,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/r/acl_policy#id AclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_policy#id AclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

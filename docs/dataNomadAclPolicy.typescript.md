@@ -1,6 +1,6 @@
 # `data_nomad_acl_policy`
 
-Refer to the Terraform Registory for docs: [`data_nomad_acl_policy`](https://www.terraform.io/docs/providers/nomad/d/acl_policy).
+Refer to the Terraform Registory for docs: [`data_nomad_acl_policy`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/acl_policy).
 
 # `dataNomadAclPolicy` Submodule <a name="`dataNomadAclPolicy` Submodule" id="@cdktf/provider-nomad.dataNomadAclPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_nomad_acl_policy`](https://www
 
 ### DataNomadAclPolicy <a name="DataNomadAclPolicy" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/d/acl_policy nomad_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/acl_policy nomad_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.Initializer"></a>
 
@@ -345,7 +345,7 @@ dataNomadAclPolicy.DataNomadAclPolicy.isTerraformDataSource(x: any)
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>{[ key: string ]: any}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.property.terraformResourceType">terraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.property.dependsOn">dependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -434,10 +434,10 @@ public readonly terraformGeneratorMetadata: TerraformProviderGeneratorMetadata;
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -576,14 +576,14 @@ const dataNomadAclPolicyConfig: dataNomadAclPolicy.DataNomadAclPolicyConfig = { 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.count">count</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.count">count</a></code> | <code>number \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.dependsOn">dependsOn</a></code> | <code>cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.forEach">forEach</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.name">name</a></code> | <code>string</code> | Name. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_policy#id DataNomadAclPolicy#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/acl_policy#id DataNomadAclPolicy#id}. |
 
 ---
 
@@ -600,10 +600,10 @@ public readonly connection: SSHProvisionerConnection | WinrmProvisionerConnectio
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.count"></a>
 
 ```typescript
-public readonly count: number;
+public readonly count: number | TerraformCount;
 ```
 
-- *Type:* number
+- *Type:* number | cdktf.TerraformCount
 
 ---
 
@@ -667,7 +667,7 @@ public readonly name: string;
 
 Name.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_policy#name DataNomadAclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/acl_policy#name DataNomadAclPolicy#name}
 
 ---
 
@@ -679,7 +679,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/acl_policy#id DataNomadAclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/acl_policy#id DataNomadAclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

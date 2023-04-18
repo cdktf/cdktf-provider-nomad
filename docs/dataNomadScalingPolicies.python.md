@@ -1,6 +1,6 @@
 # `data_nomad_scaling_policies`
 
-Refer to the Terraform Registory for docs: [`data_nomad_scaling_policies`](https://www.terraform.io/docs/providers/nomad/d/scaling_policies).
+Refer to the Terraform Registory for docs: [`data_nomad_scaling_policies`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies).
 
 # `dataNomadScalingPolicies` Submodule <a name="`dataNomadScalingPolicies` Submodule" id="@cdktf/provider-nomad.dataNomadScalingPolicies"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_nomad_scaling_policies`](https
 
 ### DataNomadScalingPolicies <a name="DataNomadScalingPolicies" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies"></a>
 
-Represents a {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policies nomad_scaling_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies nomad_scaling_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer"></a>
 
@@ -19,7 +19,7 @@ dataNomadScalingPolicies.DataNomadScalingPolicies(
   scope: Construct,
   id: str,
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -36,13 +36,13 @@ dataNomadScalingPolicies.DataNomadScalingPolicies(
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policies#id DataNomadScalingPolicies#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies#id DataNomadScalingPolicies#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.jobId">job_id</a></code> | <code>str</code> | Job ID to use to filter scaling policies. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.type">type</a></code> | <code>str</code> | Scaling policy type used to filter scaling policies. |
 
@@ -74,7 +74,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policies#id DataNomadScalingPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies#id DataNomadScalingPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -125,7 +125,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Job ID to use to filter scaling policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policies#job_id DataNomadScalingPolicies#job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies#job_id DataNomadScalingPolicies#job_id}
 
 ---
 
@@ -135,7 +135,7 @@ Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad
 
 Scaling policy type used to filter scaling policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policies#type DataNomadScalingPolicies#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies#type DataNomadScalingPolicies#type}
 
 ---
 
@@ -479,7 +479,7 @@ dataNomadScalingPolicies.DataNomadScalingPolicies.is_terraform_data_source(
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
@@ -569,10 +569,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -715,7 +715,7 @@ from cdktf_cdktf_provider_nomad import data_nomad_scaling_policies
 
 dataNomadScalingPolicies.DataNomadScalingPoliciesConfig(
   connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[int, float] = None,
+  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
@@ -732,13 +732,13 @@ dataNomadScalingPolicies.DataNomadScalingPoliciesConfig(
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.count">count</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policies#id DataNomadScalingPolicies#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies#id DataNomadScalingPolicies#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.jobId">job_id</a></code> | <code>str</code> | Job ID to use to filter scaling policies. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.type">type</a></code> | <code>str</code> | Scaling policy type used to filter scaling policies. |
 
@@ -757,10 +757,10 @@ connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.count"></a>
 
 ```python
-count: typing.Union[int, float]
+count: typing.Union[typing.Union[int, float], TerraformCount]
 ```
 
-- *Type:* typing.Union[int, float]
+- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
 
 ---
 
@@ -822,7 +822,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policies#id DataNomadScalingPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies#id DataNomadScalingPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -839,7 +839,7 @@ job_id: str
 
 Job ID to use to filter scaling policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policies#job_id DataNomadScalingPolicies#job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies#job_id DataNomadScalingPolicies#job_id}
 
 ---
 
@@ -853,7 +853,7 @@ type: str
 
 Scaling policy type used to filter scaling policies.
 
-Docs at Terraform Registry: {@link https://www.terraform.io/docs/providers/nomad/d/scaling_policies#type DataNomadScalingPolicies#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scaling_policies#type DataNomadScalingPolicies#type}
 
 ---
 
