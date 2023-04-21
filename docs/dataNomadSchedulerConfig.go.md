@@ -1,6 +1,6 @@
 # `data_nomad_scheduler_config`
 
-Refer to the Terraform Registory for docs: [`data_nomad_scheduler_config`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scheduler_config).
+Refer to the Terraform Registory for docs: [`data_nomad_scheduler_config`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config).
 
 # `dataNomadSchedulerConfig` Submodule <a name="`dataNomadSchedulerConfig` Submodule" id="@cdktf/provider-nomad.dataNomadSchedulerConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_nomad_scheduler_config`](https
 
 ### DataNomadSchedulerConfig <a name="DataNomadSchedulerConfig" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scheduler_config nomad_scheduler_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config nomad_scheduler_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfig.Initializer"></a>
 
@@ -580,7 +580,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/datanomadschedulerconf
 | <code><a href="#@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scheduler_config#id DataNomadSchedulerConfig#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadSchedulerConfig.DataNomadSchedulerConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config#id DataNomadSchedulerConfig#id}. |
 
 ---
 
@@ -662,7 +662,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/scheduler_config#id DataNomadSchedulerConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scheduler_config#id DataNomadSchedulerConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

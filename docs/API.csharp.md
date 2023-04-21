@@ -1,6 +1,8 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [aclAuthMethod](./aclAuthMethod.csharp.md)
+- [aclBindingRule](./aclBindingRule.csharp.md)
 - [aclPolicy](./aclPolicy.csharp.md)
 - [aclRole](./aclRole.csharp.md)
 - [aclToken](./aclToken.csharp.md)

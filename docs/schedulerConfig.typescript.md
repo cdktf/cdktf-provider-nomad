@@ -1,6 +1,6 @@
 # `nomad_scheduler_config`
 
-Refer to the Terraform Registory for docs: [`nomad_scheduler_config`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/scheduler_config).
+Refer to the Terraform Registory for docs: [`nomad_scheduler_config`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config).
 
 # `schedulerConfig` Submodule <a name="`schedulerConfig` Submodule" id="@cdktf/provider-nomad.schedulerConfig"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_scheduler_config`](https://re
 
 ### SchedulerConfig <a name="SchedulerConfig" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/scheduler_config nomad_scheduler_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config nomad_scheduler_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.Initializer"></a>
 
@@ -647,7 +647,7 @@ const schedulerConfigConfig: schedulerConfig.SchedulerConfigConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/scheduler_config#id SchedulerConfig#id}. |
+| <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config#id SchedulerConfig#id}. |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.memoryOversubscriptionEnabled">memoryOversubscriptionEnabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | When true, tasks may exceed their reserved memory limit. |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.preemptionConfig">preemptionConfig</a></code> | <code>{[ key: string ]: boolean \| cdktf.IResolvable}</code> | Options to enable preemption for various schedulers. |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.schedulerAlgorithm">schedulerAlgorithm</a></code> | <code>string</code> | Specifies whether scheduler binpacks or spreads allocations on available nodes. |
@@ -732,7 +732,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/scheduler_config#id SchedulerConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config#id SchedulerConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -749,7 +749,7 @@ public readonly memoryOversubscriptionEnabled: boolean | IResolvable;
 
 When true, tasks may exceed their reserved memory limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/scheduler_config#memory_oversubscription_enabled SchedulerConfig#memory_oversubscription_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config#memory_oversubscription_enabled SchedulerConfig#memory_oversubscription_enabled}
 
 ---
 
@@ -763,7 +763,7 @@ public readonly preemptionConfig: {[ key: string ]: boolean | IResolvable};
 
 Options to enable preemption for various schedulers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/scheduler_config#preemption_config SchedulerConfig#preemption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config#preemption_config SchedulerConfig#preemption_config}
 
 ---
 
@@ -777,7 +777,7 @@ public readonly schedulerAlgorithm: string;
 
 Specifies whether scheduler binpacks or spreads allocations on available nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/scheduler_config#scheduler_algorithm SchedulerConfig#scheduler_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config#scheduler_algorithm SchedulerConfig#scheduler_algorithm}
 
 ---
 

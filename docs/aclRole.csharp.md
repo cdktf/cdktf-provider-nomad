@@ -1,6 +1,6 @@
 # `nomad_acl_role`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role).
+Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role).
 
 # `aclRole` Submodule <a name="`aclRole` Submodule" id="@cdktf/provider-nomad.aclRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.t
 
 ### AclRole <a name="AclRole" id="@cdktf/provider-nomad.aclRole.AclRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role nomad_acl_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclRole.AclRole.Initializer"></a>
 
@@ -661,7 +661,7 @@ new AclRoleConfig {
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.name">Name</a></code> | <code>string</code> | Unique name for this ACL role. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy">Policy</a></code> | <code>object</code> | policy block. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.description">Description</a></code> | <code>string</code> | Description for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}. |
 
 ---
 
@@ -745,7 +745,7 @@ public string Name { get; set; }
 
 Unique name for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 
@@ -759,7 +759,7 @@ public object Policy { get; set; }
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#policy AclRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#policy AclRole#policy}
 
 ---
 
@@ -773,7 +773,7 @@ public string Description { get; set; }
 
 Description for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -785,7 +785,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -822,7 +822,7 @@ public string Name { get; set; }
 
 The name of the ACL policy to link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 

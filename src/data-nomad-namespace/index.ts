@@ -1,4 +1,4 @@
-// https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/namespace
+// https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -8,14 +8,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataNomadNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/namespace#id DataNomadNamespace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace#id DataNomadNamespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/namespace#name DataNomadNamespace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace#name DataNomadNamespace#name}
   */
   readonly name: string;
 }
@@ -90,7 +90,7 @@ export class DataNomadNamespaceCapabilitiesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/namespace nomad_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace nomad_namespace}
 */
 export class DataNomadNamespace extends cdktf.TerraformDataSource {
 
@@ -104,7 +104,7 @@ export class DataNomadNamespace extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/namespace nomad_namespace} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace nomad_namespace} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -115,7 +115,7 @@ export class DataNomadNamespace extends cdktf.TerraformDataSource {
       terraformResourceType: 'nomad_namespace',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.19',
+        providerVersion: '1.4.20',
         providerVersionConstraint: '~> 1.4'
       },
       provider: config.provider,

@@ -1,6 +1,6 @@
 # `data_nomad_regions`
 
-Refer to the Terraform Registory for docs: [`data_nomad_regions`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/regions).
+Refer to the Terraform Registory for docs: [`data_nomad_regions`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/regions).
 
 # `dataNomadRegions` Submodule <a name="`dataNomadRegions` Submodule" id="@cdktf/provider-nomad.dataNomadRegions"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_nomad_regions`](https://regist
 
 ### DataNomadRegions <a name="DataNomadRegions" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/regions nomad_regions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/regions nomad_regions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.Initializer"></a>
 
@@ -558,7 +558,7 @@ new DataNomadRegionsConfig {
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/regions#id DataNomadRegions#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/regions#id DataNomadRegions#id}. |
 
 ---
 
@@ -640,7 +640,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/data-sources/regions#id DataNomadRegions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/regions#id DataNomadRegions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
