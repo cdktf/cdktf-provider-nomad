@@ -1,6 +1,8 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [aclAuthMethod](./aclAuthMethod.typescript.md)
+- [aclBindingRule](./aclBindingRule.typescript.md)
 - [aclPolicy](./aclPolicy.typescript.md)
 - [aclRole](./aclRole.typescript.md)
 - [aclToken](./aclToken.typescript.md)

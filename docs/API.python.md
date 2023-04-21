@@ -1,6 +1,8 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [aclAuthMethod](./aclAuthMethod.python.md)
+- [aclBindingRule](./aclBindingRule.python.md)
 - [aclPolicy](./aclPolicy.python.md)
 - [aclRole](./aclRole.python.md)
 - [aclToken](./aclToken.python.md)

@@ -1,6 +1,6 @@
 # `nomad_acl_role`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role).
+Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role).
 
 # `aclRole` Submodule <a name="`aclRole` Submodule" id="@cdktf/provider-nomad.aclRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.t
 
 ### AclRole <a name="AclRole" id="@cdktf/provider-nomad.aclRole.AclRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role nomad_acl_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclRole.AclRole.Initializer"></a>
 
@@ -26,7 +26,7 @@ aclRole.AclRole(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
-  policy: typing.Union[typing.List[AclRolePolicy], IResolvable],
+  policy: typing.Union[IResolvable, typing.List[AclRolePolicy]],
   description: str = None,
   id: str = None
 )
@@ -44,9 +44,9 @@ aclRole.AclRole(
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.name">name</a></code> | <code>str</code> | Unique name for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.policy">policy</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]</code> | policy block. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.policy">policy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]]</code> | policy block. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.description">description</a></code> | <code>str</code> | Description for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}. |
 
 ---
 
@@ -116,17 +116,17 @@ Must be unique amongst siblings in the same scope
 
 Unique name for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 
 ##### `policy`<sup>Required</sup> <a name="policy" id="@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.policy"></a>
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]]
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#policy AclRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#policy AclRole#policy}
 
 ---
 
@@ -136,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -390,13 +390,13 @@ def interpolation_for_attribute(
 
 ```python
 def put_policy(
-  value: typing.Union[typing.List[AclRolePolicy], IResolvable]
+  value: typing.Union[IResolvable, typing.List[AclRolePolicy]]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-nomad.aclRole.AclRole.putPolicy.parameter.value"></a>
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]]
 
 ---
 
@@ -510,7 +510,7 @@ aclRole.AclRole.is_terraform_resource(
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.descriptionInput">description_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.policyInput">policy_input</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.policyInput">policy_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.description">description</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.name">name</a></code> | <code>str</code> | *No description.* |
@@ -702,10 +702,10 @@ name_input: str
 ##### `policy_input`<sup>Optional</sup> <a name="policy_input" id="@cdktf/provider-nomad.aclRole.AclRole.property.policyInput"></a>
 
 ```python
-policy_input: typing.Union[typing.List[AclRolePolicy], IResolvable]
+policy_input: typing.Union[IResolvable, typing.List[AclRolePolicy]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]]
 
 ---
 
@@ -775,7 +775,7 @@ aclRole.AclRoleConfig(
   provider: TerraformProvider = None,
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   name: str,
-  policy: typing.Union[typing.List[AclRolePolicy], IResolvable],
+  policy: typing.Union[IResolvable, typing.List[AclRolePolicy]],
   description: str = None,
   id: str = None
 )
@@ -793,9 +793,9 @@ aclRole.AclRoleConfig(
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.name">name</a></code> | <code>str</code> | Unique name for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy">policy</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]</code> | policy block. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy">policy</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]]</code> | policy block. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.description">description</a></code> | <code>str</code> | Description for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}. |
 
 ---
 
@@ -879,21 +879,21 @@ name: str
 
 Unique name for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 
 ##### `policy`<sup>Required</sup> <a name="policy" id="@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy"></a>
 
 ```python
-policy: typing.Union[typing.List[AclRolePolicy], IResolvable]
+policy: typing.Union[IResolvable, typing.List[AclRolePolicy]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]]
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#policy AclRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#policy AclRole#policy}
 
 ---
 
@@ -907,7 +907,7 @@ description: str
 
 Description for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -919,7 +919,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -956,7 +956,7 @@ name: str
 
 The name of the ACL policy to link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 
@@ -1074,7 +1074,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.internalValue">internal_value</a></code> | <code>typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]]</code> | *No description.* |
 
 ---
 
@@ -1105,10 +1105,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[typing.List[AclRolePolicy], IResolvable]
+internal_value: typing.Union[IResolvable, typing.List[AclRolePolicy]]
 ```
 
-- *Type:* typing.Union[typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>], cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]]
 
 ---
 

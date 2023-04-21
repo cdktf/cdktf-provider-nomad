@@ -1,6 +1,6 @@
 # `nomad_acl_role`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role).
+Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role).
 
 # `aclRole` Submodule <a name="`aclRole` Submodule" id="@cdktf/provider-nomad.aclRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.t
 
 ### AclRole <a name="AclRole" id="@cdktf/provider-nomad.aclRole.AclRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role nomad_acl_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclRole.AclRole.Initializer"></a>
 
@@ -28,8 +28,8 @@ AclRole.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
-    .policy(java.util.List<AclRolePolicy>)
     .policy(IResolvable)
+    .policy(java.util.List<AclRolePolicy>)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
     .build();
@@ -47,9 +47,9 @@ AclRole.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.name">name</a></code> | <code>java.lang.String</code> | Unique name for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.policy">policy</a></code> | <code>java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>> OR com.hashicorp.cdktf.IResolvable</code> | policy block. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.policy">policy</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>></code> | policy block. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}. |
 
 ---
 
@@ -119,17 +119,17 @@ Must be unique amongst siblings in the same scope
 
 Unique name for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 
 ##### `policy`<sup>Required</sup> <a name="policy" id="@cdktf/provider-nomad.aclRole.AclRole.Initializer.parameter.policy"></a>
 
-- *Type:* java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>>
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#policy AclRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#policy AclRole#policy}
 
 ---
 
@@ -139,7 +139,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -147,7 +147,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -367,12 +367,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 ##### `putPolicy` <a name="putPolicy" id="@cdktf/provider-nomad.aclRole.AclRole.putPolicy"></a>
 
 ```java
-public void putPolicy(java.util.List<AclRolePolicy> OR IResolvable value)
+public void putPolicy(IResolvable OR java.util.List<AclRolePolicy> value)
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-nomad.aclRole.AclRole.putPolicy.parameter.value"></a>
 
-- *Type:* java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>>
 
 ---
 
@@ -480,7 +480,7 @@ AclRole.isTerraformResource(java.lang.Object x)
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.descriptionInput">descriptionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.nameInput">nameInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.policyInput">policyInput</a></code> | <code>java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.policyInput">policyInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.description">description</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.name">name</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -675,7 +675,7 @@ public java.lang.String getNameInput();
 public java.lang.Object getPolicyInput();
 ```
 
-- *Type:* java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>>
 
 ---
 
@@ -749,8 +749,8 @@ AclRoleConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .name(java.lang.String)
-    .policy(java.util.List<AclRolePolicy>)
     .policy(IResolvable)
+    .policy(java.util.List<AclRolePolicy>)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
     .build();
@@ -768,9 +768,9 @@ AclRoleConfig.builder()
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.name">name</a></code> | <code>java.lang.String</code> | Unique name for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy">policy</a></code> | <code>java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>> OR com.hashicorp.cdktf.IResolvable</code> | policy block. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy">policy</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>></code> | policy block. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}. |
 
 ---
 
@@ -854,7 +854,7 @@ public java.lang.String getName();
 
 Unique name for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 
@@ -864,11 +864,11 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 public java.lang.Object getPolicy();
 ```
 
-- *Type:* java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>>
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#policy AclRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#policy AclRole#policy}
 
 ---
 
@@ -882,7 +882,7 @@ public java.lang.String getDescription();
 
 Description for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -894,7 +894,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -931,7 +931,7 @@ public java.lang.String getName();
 
 The name of the ACL policy to link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 
@@ -1041,7 +1041,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.internalValue">internalValue</a></code> | <code>java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>> OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>></code> | *No description.* |
 
 ---
 
@@ -1075,7 +1075,7 @@ public java.lang.String getFqn();
 public java.lang.Object getInternalValue();
 ```
 
-- *Type:* java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>> OR com.hashicorp.cdktf.IResolvable
+- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>>
 
 ---
 

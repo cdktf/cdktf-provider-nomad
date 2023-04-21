@@ -1,6 +1,8 @@
 # Submodules <a name="Submodules" id="submodules"></a>
 
 The following submodules are available:
+- [aclAuthMethod](./aclAuthMethod.java.md)
+- [aclBindingRule](./aclBindingRule.java.md)
 - [aclPolicy](./aclPolicy.java.md)
 - [aclRole](./aclRole.java.md)
 - [aclToken](./aclToken.java.md)

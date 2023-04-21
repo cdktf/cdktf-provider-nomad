@@ -1,6 +1,6 @@
 # `nomad_acl_role`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role).
+Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role).
 
 # `aclRole` Submodule <a name="`aclRole` Submodule" id="@cdktf/provider-nomad.aclRole"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.t
 
 ### AclRole <a name="AclRole" id="@cdktf/provider-nomad.aclRole.AclRole"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role nomad_acl_role}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role nomad_acl_role}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclRole.AclRole.Initializer"></a>
 
@@ -263,12 +263,12 @@ public interpolationForAttribute(terraformAttribute: string): IResolvable
 ##### `putPolicy` <a name="putPolicy" id="@cdktf/provider-nomad.aclRole.AclRole.putPolicy"></a>
 
 ```typescript
-public putPolicy(value: AclRolePolicy[] | IResolvable): void
+public putPolicy(value: IResolvable | AclRolePolicy[]): void
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-nomad.aclRole.AclRole.putPolicy.parameter.value"></a>
 
-- *Type:* <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[] | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[]
 
 ---
 
@@ -376,7 +376,7 @@ aclRole.AclRole.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.descriptionInput">descriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.policyInput">policyInput</a></code> | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[] \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.policyInput">policyInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.description">description</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRole.property.name">name</a></code> | <code>string</code> | *No description.* |
@@ -568,10 +568,10 @@ public readonly nameInput: string;
 ##### `policyInput`<sup>Optional</sup> <a name="policyInput" id="@cdktf/provider-nomad.aclRole.AclRole.property.policyInput"></a>
 
 ```typescript
-public readonly policyInput: AclRolePolicy[] | IResolvable;
+public readonly policyInput: IResolvable | AclRolePolicy[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[] | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[]
 
 ---
 
@@ -647,9 +647,9 @@ const aclRoleConfig: aclRole.AclRoleConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.name">name</a></code> | <code>string</code> | Unique name for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy">policy</a></code> | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[] \| cdktf.IResolvable</code> | policy block. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy">policy</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[]</code> | policy block. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.description">description</a></code> | <code>string</code> | Description for this ACL role. |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRoleConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}. |
 
 ---
 
@@ -733,21 +733,21 @@ public readonly name: string;
 
 Unique name for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 
 ##### `policy`<sup>Required</sup> <a name="policy" id="@cdktf/provider-nomad.aclRole.AclRoleConfig.property.policy"></a>
 
 ```typescript
-public readonly policy: AclRolePolicy[] | IResolvable;
+public readonly policy: IResolvable | AclRolePolicy[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[] | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[]
 
 policy block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#policy AclRole#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#policy AclRole#policy}
 
 ---
 
@@ -761,7 +761,7 @@ public readonly description: string;
 
 Description for this ACL role.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#description AclRole#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#description AclRole#description}
 
 ---
 
@@ -773,7 +773,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#id AclRole#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#id AclRole#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -808,7 +808,7 @@ public readonly name: string;
 
 The name of the ACL policy to link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.19/docs/resources/acl_role#name AclRole#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
 
 ---
 
@@ -918,7 +918,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[] \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[]</code> | *No description.* |
 
 ---
 
@@ -949,10 +949,10 @@ public readonly fqn: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.aclRole.AclRolePolicyList.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AclRolePolicy[] | IResolvable;
+public readonly internalValue: IResolvable | AclRolePolicy[];
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[] | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>[]
 
 ---
 
