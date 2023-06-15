@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolume(scope Construct, id *string, config ExternalVolumeConfig) ExternalVolume
 ```
@@ -386,7 +386,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.ExternalVolume_IsConstruct(x interface{}) *bool
 ```
@@ -418,7 +418,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.ExternalVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ externalvolume.ExternalVolume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.externalVolume.ExternalVolume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.ExternalVolume_IsTerraformResource(x interface{}) *bool
 ```
@@ -1060,7 +1060,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeCapability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 &externalvolume.ExternalVolumeCapability {
 	AccessMode: *string,
@@ -1110,7 +1110,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 &externalvolume.ExternalVolumeConfig {
 	Connection: interface{},
@@ -1128,12 +1128,12 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
 	CapacityMin: *string,
 	CloneId: *string,
 	Id: *string,
-	MountOptions: github.com/cdktf/cdktf-provider-nomad-go/nomad/v4.externalVolume.ExternalVolumeMountOptions,
+	MountOptions: github.com/cdktf/cdktf-provider-nomad-go/nomad/v5.externalVolume.ExternalVolumeMountOptions,
 	Namespace: *string,
 	Parameters: *map[string]*string,
 	Secrets: *map[string]*string,
 	SnapshotId: *string,
-	TopologyRequest: github.com/cdktf/cdktf-provider-nomad-go/nomad/v4.externalVolume.ExternalVolumeTopologyRequest,
+	TopologyRequest: github.com/cdktf/cdktf-provider-nomad-go/nomad/v5.externalVolume.ExternalVolumeTopologyRequest,
 	Type: *string,
 }
 ```
@@ -1457,7 +1457,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeMountOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 &externalvolume.ExternalVolumeMountOptions {
 	FsType: *string,
@@ -1507,7 +1507,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 &externalvolume.ExternalVolumeTopologies {
 
@@ -1520,11 +1520,11 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 &externalvolume.ExternalVolumeTopologyRequest {
-	Preferred: github.com/cdktf/cdktf-provider-nomad-go/nomad/v4.externalVolume.ExternalVolumeTopologyRequestPreferred,
-	Required: github.com/cdktf/cdktf-provider-nomad-go/nomad/v4.externalVolume.ExternalVolumeTopologyRequestRequired,
+	Preferred: github.com/cdktf/cdktf-provider-nomad-go/nomad/v5.externalVolume.ExternalVolumeTopologyRequestPreferred,
+	Required: github.com/cdktf/cdktf-provider-nomad-go/nomad/v5.externalVolume.ExternalVolumeTopologyRequestRequired,
 }
 ```
 
@@ -1570,7 +1570,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferred.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 &externalvolume.ExternalVolumeTopologyRequestPreferred {
 	Topology: interface{},
@@ -1604,7 +1604,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopology.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 &externalvolume.ExternalVolumeTopologyRequestPreferredTopology {
 	Segments: *map[string]*string,
@@ -1638,7 +1638,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequired.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 &externalvolume.ExternalVolumeTopologyRequestRequired {
 	Topology: interface{},
@@ -1672,7 +1672,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopology.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 &externalvolume.ExternalVolumeTopologyRequestRequiredTopology {
 	Segments: *map[string]*string,
@@ -1708,7 +1708,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeCapabilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeCapabilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeCapabilityList
 ```
@@ -1851,7 +1851,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeCapabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeCapabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeCapabilityOutputReference
 ```
@@ -2162,7 +2162,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeMountOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeMountOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalVolumeMountOptionsOutputReference
 ```
@@ -2469,7 +2469,7 @@ func InternalValue() ExternalVolumeMountOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeTopologiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeTopologiesList
 ```
@@ -2601,7 +2601,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeTopologiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeTopologiesOutputReference
 ```
@@ -2879,7 +2879,7 @@ func InternalValue() ExternalVolumeTopologies
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeTopologyRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalVolumeTopologyRequestOutputReference
 ```
@@ -3212,7 +3212,7 @@ func InternalValue() ExternalVolumeTopologyRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeTopologyRequestPreferredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalVolumeTopologyRequestPreferredOutputReference
 ```
@@ -3496,7 +3496,7 @@ func InternalValue() ExternalVolumeTopologyRequestPreferred
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopologyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeTopologyRequestPreferredTopologyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeTopologyRequestPreferredTopologyList
 ```
@@ -3639,7 +3639,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopologyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeTopologyRequestPreferredTopologyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeTopologyRequestPreferredTopologyOutputReference
 ```
@@ -3928,7 +3928,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeTopologyRequestRequiredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) ExternalVolumeTopologyRequestRequiredOutputReference
 ```
@@ -4212,7 +4212,7 @@ func InternalValue() ExternalVolumeTopologyRequestRequired
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopologyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeTopologyRequestRequiredTopologyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ExternalVolumeTopologyRequestRequiredTopologyList
 ```
@@ -4355,7 +4355,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopologyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v4/externalvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/externalvolume"
 
 externalvolume.NewExternalVolumeTopologyRequestRequiredTopologyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) ExternalVolumeTopologyRequestRequiredTopologyOutputReference
 ```
