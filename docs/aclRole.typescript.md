@@ -1187,7 +1187,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.nameInput">nameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.name">name</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a></code> | *No description.* |
 
 ---
 
@@ -1238,10 +1238,10 @@ public readonly name: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: AclRolePolicy | IResolvable;
+public readonly internalValue: IResolvable | AclRolePolicy;
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>
 
 ---
 

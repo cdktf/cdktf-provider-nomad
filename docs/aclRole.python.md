@@ -1370,7 +1370,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.nameInput">name_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.name">name</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]</code> | *No description.* |
 
 ---
 
@@ -1421,10 +1421,10 @@ name: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.aclRole.AclRolePolicyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[AclRolePolicy, IResolvable]
+internal_value: typing.Union[IResolvable, AclRolePolicy]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.aclRole.AclRolePolicy">AclRolePolicy</a>]
 
 ---
 
