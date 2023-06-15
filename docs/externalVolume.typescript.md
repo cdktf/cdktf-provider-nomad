@@ -2036,7 +2036,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeCapabilityOutputReference.property.attachmentModeInput">attachmentModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeCapabilityOutputReference.property.accessMode">accessMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeCapabilityOutputReference.property.attachmentMode">attachmentMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeCapabilityOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeCapability">ExternalVolumeCapability</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeCapabilityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeCapability">ExternalVolumeCapability</a></code> | *No description.* |
 
 ---
 
@@ -2107,10 +2107,10 @@ public readonly attachmentMode: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeCapabilityOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ExternalVolumeCapability | IResolvable;
+public readonly internalValue: IResolvable | ExternalVolumeCapability;
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeCapability">ExternalVolumeCapability</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeCapability">ExternalVolumeCapability</a>
 
 ---
 
@@ -3822,7 +3822,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopologyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopologyOutputReference.property.segmentsInput">segmentsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopologyOutputReference.property.segments">segments</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopologyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopology">ExternalVolumeTopologyRequestPreferredTopology</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopologyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopology">ExternalVolumeTopologyRequestPreferredTopology</a></code> | *No description.* |
 
 ---
 
@@ -3873,10 +3873,10 @@ public readonly segments: {[ key: string ]: string};
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopologyOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ExternalVolumeTopologyRequestPreferredTopology | IResolvable;
+public readonly internalValue: IResolvable | ExternalVolumeTopologyRequestPreferredTopology;
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopology">ExternalVolumeTopologyRequestPreferredTopology</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestPreferredTopology">ExternalVolumeTopologyRequestPreferredTopology</a>
 
 ---
 
@@ -4538,7 +4538,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopologyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopologyOutputReference.property.segmentsInput">segmentsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopologyOutputReference.property.segments">segments</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopologyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopology">ExternalVolumeTopologyRequestRequiredTopology</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopologyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopology">ExternalVolumeTopologyRequestRequiredTopology</a></code> | *No description.* |
 
 ---
 
@@ -4589,10 +4589,10 @@ public readonly segments: {[ key: string ]: string};
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopologyOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: ExternalVolumeTopologyRequestRequiredTopology | IResolvable;
+public readonly internalValue: IResolvable | ExternalVolumeTopologyRequestRequiredTopology;
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopology">ExternalVolumeTopologyRequestRequiredTopology</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.externalVolume.ExternalVolumeTopologyRequestRequiredTopology">ExternalVolumeTopologyRequestRequiredTopology</a>
 
 ---
 

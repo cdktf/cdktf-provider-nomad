@@ -1260,7 +1260,7 @@ public putRegionLimit(value: QuotaSpecificationLimitsRegionLimit): void
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.regionInput">regionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.regionLimitInput">regionLimitInput</a></code> | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit">QuotaSpecificationLimitsRegionLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.region">region</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits">QuotaSpecificationLimits</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits">QuotaSpecificationLimits</a></code> | *No description.* |
 
 ---
 
@@ -1331,10 +1331,10 @@ public readonly region: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: QuotaSpecificationLimits | IResolvable;
+public readonly internalValue: IResolvable | QuotaSpecificationLimits;
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits">QuotaSpecificationLimits</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits">QuotaSpecificationLimits</a>
 
 ---
 

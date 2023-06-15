@@ -739,7 +739,7 @@ job.Job.is_terraform_resource(
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jsonInput">json_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">policy_override_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">purge_on_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.vaultTokenInput">vault_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.consulToken">consul_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
@@ -1119,10 +1119,10 @@ purge_on_destroy_input: typing.Union[bool, IResolvable]
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-nomad.job.Job.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[JobTimeouts, IResolvable]
+timeouts_input: typing.Union[IResolvable, JobTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>]
 
 ---
 
@@ -4235,7 +4235,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>]</code> | *No description.* |
 
 ---
 
@@ -4306,10 +4306,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[JobTimeouts, IResolvable]
+internal_value: typing.Union[IResolvable, JobTimeouts]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>]
 
 ---
 

@@ -470,7 +470,7 @@ job.Job.isTerraformResource(x: any)
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jsonInput">jsonInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">policyOverrideInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">purgeOnDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">timeoutsInput</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.vaultTokenInput">vaultTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.consulToken">consulToken</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -850,10 +850,10 @@ public readonly purgeOnDestroyInput: boolean | IResolvable;
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-nomad.job.Job.property.timeoutsInput"></a>
 
 ```typescript
-public readonly timeoutsInput: JobTimeouts | IResolvable;
+public readonly timeoutsInput: IResolvable | JobTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
 
 ---
 
@@ -3749,7 +3749,7 @@ public resetUpdate(): void
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.create">create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.update">update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3820,10 +3820,10 @@ public readonly update: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: JobTimeouts | IResolvable;
+public readonly internalValue: IResolvable | JobTimeouts;
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
 
 ---
 

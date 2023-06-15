@@ -1460,7 +1460,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.regionLimitInput">region_limit_input</a></code> | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit">QuotaSpecificationLimitsRegionLimit</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.region">region</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[<a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits">QuotaSpecificationLimits</a>, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits">QuotaSpecificationLimits</a>]</code> | *No description.* |
 
 ---
 
@@ -1531,10 +1531,10 @@ region: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[QuotaSpecificationLimits, IResolvable]
+internal_value: typing.Union[IResolvable, QuotaSpecificationLimits]
 ```
 
-- *Type:* typing.Union[<a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits">QuotaSpecificationLimits</a>, cdktf.IResolvable]
+- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits">QuotaSpecificationLimits</a>]
 
 ---
 

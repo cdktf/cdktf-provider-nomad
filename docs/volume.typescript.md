@@ -1997,7 +1997,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeCapabilityOutputReference.property.attachmentModeInput">attachmentModeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeCapabilityOutputReference.property.accessMode">accessMode</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeCapabilityOutputReference.property.attachmentMode">attachmentMode</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.volume.VolumeCapabilityOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.volume.VolumeCapability">VolumeCapability</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.volume.VolumeCapabilityOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.volume.VolumeCapability">VolumeCapability</a></code> | *No description.* |
 
 ---
 
@@ -2068,10 +2068,10 @@ public readonly attachmentMode: string;
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.volume.VolumeCapabilityOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: VolumeCapability | IResolvable;
+public readonly internalValue: IResolvable | VolumeCapability;
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.volume.VolumeCapability">VolumeCapability</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.volume.VolumeCapability">VolumeCapability</a>
 
 ---
 
@@ -3741,7 +3741,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopologyOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopologyOutputReference.property.segmentsInput">segmentsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopologyOutputReference.property.segments">segments</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopologyOutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopology">VolumeTopologyRequestRequiredTopology</a> \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopologyOutputReference.property.internalValue">internalValue</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopology">VolumeTopologyRequestRequiredTopology</a></code> | *No description.* |
 
 ---
 
@@ -3792,10 +3792,10 @@ public readonly segments: {[ key: string ]: string};
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopologyOutputReference.property.internalValue"></a>
 
 ```typescript
-public readonly internalValue: VolumeTopologyRequestRequiredTopology | IResolvable;
+public readonly internalValue: IResolvable | VolumeTopologyRequestRequiredTopology;
 ```
 
-- *Type:* <a href="#@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopology">VolumeTopologyRequestRequiredTopology</a> | cdktf.IResolvable
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopology">VolumeTopologyRequestRequiredTopology</a>
 
 ---
 
