@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 quotaspecification.NewQuotaSpecification(scope Construct, id *string, config QuotaSpecificationConfig) QuotaSpecification
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 quotaspecification.QuotaSpecification_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 quotaspecification.QuotaSpecification_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ quotaspecification.QuotaSpecification_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 quotaspecification.QuotaSpecification_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 &quotaspecification.QuotaSpecificationConfig {
 	Connection: interface{},
@@ -797,11 +797,11 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 &quotaspecification.QuotaSpecificationLimits {
 	Region: *string,
-	RegionLimit: github.com/cdktf/cdktf-provider-nomad-go/nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit,
+	RegionLimit: github.com/cdktf/cdktf-provider-nomad-go/nomad/v5.quotaSpecification.QuotaSpecificationLimitsRegionLimit,
 }
 ```
 
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 &quotaspecification.QuotaSpecificationLimitsRegionLimit {
 	Cpu: *f64,
@@ -895,7 +895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 quotaspecification.NewQuotaSpecificationLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuotaSpecificationLimitsList
 ```
@@ -1038,7 +1038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 quotaspecification.NewQuotaSpecificationLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuotaSpecificationLimitsOutputReference
 ```
@@ -1362,7 +1362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v5/quotaspecification"
 
 quotaspecification.NewQuotaSpecificationLimitsRegionLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuotaSpecificationLimitsRegionLimitOutputReference
 ```
