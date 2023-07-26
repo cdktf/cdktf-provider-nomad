@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface AclBindingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the auth method for which this rule applies to.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
   */
   readonly authMethod: string;
   /**
   * Target of the binding.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
   */
   readonly bindName: string;
   /**
   * Adjusts how this binding rule is applied at login time. Valid values are "role" and "policy".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
   */
   readonly bindType: string;
   /**
   * Description for this ACL binding rule.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#description AclBindingRule#description}
   */
   readonly description?: string;
@@ -45,7 +40,7 @@ export interface AclBindingRuleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * A boolean expression that matches against verified identity attributes returned from the auth method during login.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
   */
   readonly selector?: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes
 // generated from terraform resource schema
 
@@ -21,25 +16,25 @@ export interface DataNomadVolumesConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Volume namespace filter
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#namespace DataNomadVolumes#namespace}
   */
   readonly namespace?: string;
   /**
   * Volume node filter
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#node_id DataNomadVolumes#node_id}
   */
   readonly nodeId?: string;
   /**
   * Plugin ID filter
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#plugin_id DataNomadVolumes#plugin_id}
   */
   readonly pluginId?: string;
   /**
   * Volume Type (currently only 'csi')
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#type DataNomadVolumes#type}
   */
   readonly type?: string;

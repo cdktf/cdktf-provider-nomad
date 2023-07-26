@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job
 // generated from terraform resource schema
 
@@ -14,25 +9,25 @@ import * as cdktf from 'cdktf';
 export interface JobConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Consul token used to submit this job.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#consul_token Job#consul_token}
   */
   readonly consulToken?: string;
   /**
   * If true, the job will be deregistered on destroy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
   */
   readonly deregisterOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * If true, the job will be deregistered when the job ID changes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
   */
   readonly deregisterOnIdChange?: boolean | cdktf.IResolvable;
   /**
   * If true, the provider will return immediately after creating or updating, instead of monitoring.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#detach Job#detach}
   */
   readonly detach?: boolean | cdktf.IResolvable;
@@ -45,43 +40,43 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Job specification. If you want to point to a file use the file() function.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#jobspec Job#jobspec}
   */
   readonly jobspec: string;
   /**
   * If true, the `jobspec` will be parsed as json instead of HCL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#json Job#json}
   */
   readonly json?: boolean | cdktf.IResolvable;
   /**
   * Override any soft-mandatory Sentinel policies that fail.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#policy_override Job#policy_override}
   */
   readonly policyOverride?: boolean | cdktf.IResolvable;
   /**
   * Whether to purge the job when the resource is destroyed.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
   */
   readonly purgeOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * The Vault token used to submit this job.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#vault_token Job#vault_token}
   */
   readonly vaultToken?: string;
   /**
   * hcl2 block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#hcl2 Job#hcl2}
   */
   readonly hcl2?: JobHcl2;
   /**
   * timeouts block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#timeouts Job#timeouts}
   */
   readonly timeouts?: JobTimeouts;
@@ -410,19 +405,19 @@ export class JobTaskGroupsList extends cdktf.ComplexList {
 export interface JobHcl2 {
   /**
   * If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#allow_fs Job#allow_fs}
   */
   readonly allowFs?: boolean | cdktf.IResolvable;
   /**
   * If true, the `jobspec` will be parsed as HCL2 instead of HCL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#enabled Job#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Additional variables to use when templating the job with HCL2
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#vars Job#vars}
   */
   readonly vars?: { [key: string]: string };

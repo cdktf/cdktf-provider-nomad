@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this namespace.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#description Namespace#description}
   */
   readonly description?: string;
@@ -27,25 +22,25 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Metadata associated with the namespace.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#meta Namespace#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
   * Unique name for this namespace.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#name Namespace#name}
   */
   readonly name: string;
   /**
   * Quota to set for this namespace.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#quota Namespace#quota}
   */
   readonly quota?: string;
   /**
   * capabilities block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#capabilities Namespace#capabilities}
   */
   readonly capabilities?: NamespaceCapabilities;
@@ -53,13 +48,13 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
 export interface NamespaceCapabilities {
   /**
   * Disabled task drivers for the namespace.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
   */
   readonly disabledTaskDrivers?: string[];
   /**
   * Enabled task drivers for the namespace.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
   */
   readonly enabledTaskDrivers?: string[];

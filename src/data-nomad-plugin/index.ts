@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin
 // generated from terraform resource schema
 
@@ -21,19 +16,19 @@ export interface DataNomadPluginConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Plugin ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin#plugin_id DataNomadPlugin#plugin_id}
   */
   readonly pluginId: string;
   /**
   * Wait for to be backed by a specified number of controllers
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin#wait_for_healthy DataNomadPlugin#wait_for_healthy}
   */
   readonly waitForHealthy?: boolean | cdktf.IResolvable;
   /**
   * Wait for the plugin to be registered in Noamd
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin#wait_for_registration DataNomadPlugin#wait_for_registration}
   */
   readonly waitForRegistration?: boolean | cdktf.IResolvable;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config
 // generated from terraform resource schema
 
@@ -21,19 +16,19 @@ export interface SchedulerConfigConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * When true, tasks may exceed their reserved memory limit.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config#memory_oversubscription_enabled SchedulerConfig#memory_oversubscription_enabled}
   */
   readonly memoryOversubscriptionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Options to enable preemption for various schedulers.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config#preemption_config SchedulerConfig#preemption_config}
   */
   readonly preemptionConfig?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
   * Specifies whether scheduler binpacks or spreads allocations on available nodes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/scheduler_config#scheduler_algorithm SchedulerConfig#scheduler_algorithm}
   */
   readonly schedulerAlgorithm?: string;

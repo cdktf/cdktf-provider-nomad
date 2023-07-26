@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this ACL role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#description AclRole#description}
   */
   readonly description?: string;
@@ -27,13 +22,13 @@ export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Unique name for this ACL role.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
   */
   readonly name: string;
   /**
   * policy block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#policy AclRole#policy}
   */
   readonly policy: AclRolePolicy[] | cdktf.IResolvable;
@@ -41,7 +36,7 @@ export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
 export interface AclRolePolicy {
   /**
   * The name of the ACL policy to link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_role#name AclRole#name}
   */
   readonly name: string;

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AclPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy#description AclPolicy#description}
   */
   readonly description?: string;
@@ -27,13 +22,13 @@ export interface AclPolicyConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Unique name for this policy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy#name AclPolicy#name}
   */
   readonly name: string;
   /**
   * HCL or JSON representation of the rules to enforce on this policy. Use file() to specify a file as input.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy#rules_hcl AclPolicy#rules_hcl}
   */
   readonly rulesHcl: string;

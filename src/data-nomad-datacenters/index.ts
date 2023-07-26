@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/datacenters
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataNomadDatacentersConfig extends cdktf.TerraformMetaArguments
   readonly id?: string;
   /**
   * If enabled, this flag will ignore nodes that are down when listing datacenters.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/datacenters#ignore_down_nodes DataNomadDatacenters#ignore_down_nodes}
   */
   readonly ignoreDownNodes?: boolean | cdktf.IResolvable;
   /**
   * Prefix value used for filtering results.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/datacenters#prefix DataNomadDatacenters#prefix}
   */
   readonly prefix?: string;
