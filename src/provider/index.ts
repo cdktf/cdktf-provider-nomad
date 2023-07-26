@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs
 // generated from terraform resource schema
 
@@ -14,91 +9,91 @@ import * as cdktf from 'cdktf';
 export interface NomadProviderConfig {
   /**
   * URL of the root of the target Nomad agent.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#address NomadProvider#address}
   */
   readonly address: string;
   /**
   * A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#ca_file NomadProvider#ca_file}
   */
   readonly caFile?: string;
   /**
   * PEM-encoded certificate authority used to verify the remote agent's certificate.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#ca_pem NomadProvider#ca_pem}
   */
   readonly caPem?: string;
   /**
   * A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#cert_file NomadProvider#cert_file}
   */
   readonly certFile?: string;
   /**
   * PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#cert_pem NomadProvider#cert_pem}
   */
   readonly certPem?: string;
   /**
   * Consul token to validate Consul Connect Service Identity policies specified in the job file.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#consul_token NomadProvider#consul_token}
   */
   readonly consulToken?: string;
   /**
   * HTTP basic auth configuration.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#http_auth NomadProvider#http_auth}
   */
   readonly httpAuth?: string;
   /**
   * A set of environment variables that are ignored by the provider when configuring the Nomad API client.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#ignore_env_vars NomadProvider#ignore_env_vars}
   */
   readonly ignoreEnvVars?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
   * A path to a PEM-encoded private key, required if cert_file or cert_pem is specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#key_file NomadProvider#key_file}
   */
   readonly keyFile?: string;
   /**
   * PEM-encoded private key, required if cert_file or cert_pem is specified.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#key_pem NomadProvider#key_pem}
   */
   readonly keyPem?: string;
   /**
   * Region of the target Nomad agent.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#region NomadProvider#region}
   */
   readonly region?: string;
   /**
   * ACL token secret for API requests.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#secret_id NomadProvider#secret_id}
   */
   readonly secretId?: string;
   /**
   * Vault token if policies are specified in the job file.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#vault_token NomadProvider#vault_token}
   */
   readonly vaultToken?: string;
   /**
   * Alias name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#alias NomadProvider#alias}
   */
   readonly alias?: string;
   /**
   * headers block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#headers NomadProvider#headers}
   */
   readonly headers?: NomadProviderHeaders[] | cdktf.IResolvable;
@@ -106,13 +101,13 @@ export interface NomadProviderConfig {
 export interface NomadProviderHeaders {
   /**
   * The header name
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#name NomadProvider#name}
   */
   readonly name: string;
   /**
   * The header value
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#value NomadProvider#value}
   */
   readonly value: string;

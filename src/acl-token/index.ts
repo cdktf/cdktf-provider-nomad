@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_token
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface AclTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Provides a TTL for the token in the form of a time duration such as "5m" or "1h".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_token#expiration_ttl AclToken#expiration_ttl}
   */
   readonly expirationTtl?: string;
   /**
   * Whether the token should be replicated to all regions or not.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_token#global AclToken#global}
   */
   readonly global?: boolean | cdktf.IResolvable;
@@ -33,25 +28,25 @@ export interface AclTokenConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Human-readable name for this token.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_token#name AclToken#name}
   */
   readonly name?: string;
   /**
   * The ACL policies to associate with the token, if it's a 'client' type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_token#policies AclToken#policies}
   */
   readonly policies?: string[];
   /**
   * The type of token to create, 'client' or 'management'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_token#type AclToken#type}
   */
   readonly type: string;
   /**
   * role block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_token#role AclToken#role}
   */
   readonly role?: AclTokenRole[] | cdktf.IResolvable;
@@ -59,7 +54,7 @@ export interface AclTokenConfig extends cdktf.TerraformMetaArguments {
 export interface AclTokenRole {
   /**
   * The ID of the ACL role to link.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_token#id AclToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.

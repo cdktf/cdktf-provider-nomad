@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface AclAuthMethodConfig extends cdktf.TerraformMetaArguments {
   /**
   * Defines whether this ACL Auth Method is to be set as default.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#default AclAuthMethod#default}
   */
   readonly default?: boolean | cdktf.IResolvable;
@@ -27,31 +22,31 @@ export interface AclAuthMethodConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Defines the maximum life of a token created by this method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
   */
   readonly maxTokenTtl: string;
   /**
   * The identifier of the ACL Auth Method.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#name AclAuthMethod#name}
   */
   readonly name: string;
   /**
   * Defines whether the ACL Auth Method creates a local or global token when performing SSO login. This field must be set to either "local" or "global".
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#token_locality AclAuthMethod#token_locality}
   */
   readonly tokenLocality: string;
   /**
   * ACL Auth Method SSO workflow type. Currently, the only supported type is "OIDC."
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#type AclAuthMethod#type}
   */
   readonly type: string;
   /**
   * config block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#config AclAuthMethod#config}
   */
   readonly config: AclAuthMethodConfigA;
@@ -59,61 +54,61 @@ export interface AclAuthMethodConfig extends cdktf.TerraformMetaArguments {
 export interface AclAuthMethodConfigA {
   /**
   * A list of allowed values that can be used for the redirect URI.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#allowed_redirect_uris AclAuthMethod#allowed_redirect_uris}
   */
   readonly allowedRedirectUris: string[];
   /**
   * List of auth claims that are valid for login.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#bound_audiences AclAuthMethod#bound_audiences}
   */
   readonly boundAudiences?: string[];
   /**
   * Mappings of claims (key) that will be copied to a metadata field (value).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#claim_mappings AclAuthMethod#claim_mappings}
   */
   readonly claimMappings?: { [key: string]: string };
   /**
   * PEM encoded CA certs for use by the TLS client used to talk with the OIDC Discovery URL.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#discovery_ca_pem AclAuthMethod#discovery_ca_pem}
   */
   readonly discoveryCaPem?: string[];
   /**
   * Mappings of list claims (key) that will be copied to a metadata field (value).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#list_claim_mappings AclAuthMethod#list_claim_mappings}
   */
   readonly listClaimMappings?: { [key: string]: string };
   /**
   * The OAuth Client ID configured with the OIDC provider.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#oidc_client_id AclAuthMethod#oidc_client_id}
   */
   readonly oidcClientId: string;
   /**
   * The OAuth Client Secret configured with the OIDC provider.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#oidc_client_secret AclAuthMethod#oidc_client_secret}
   */
   readonly oidcClientSecret: string;
   /**
   * The OIDC Discovery URL, without any .well-known component (base path).
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#oidc_discovery_url AclAuthMethod#oidc_discovery_url}
   */
   readonly oidcDiscoveryUrl: string;
   /**
   * List of OIDC scopes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#oidc_scopes AclAuthMethod#oidc_scopes}
   */
   readonly oidcScopes?: string[];
   /**
   * A list of supported signing algorithms.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_auth_method#signing_algs AclAuthMethod#signing_algs}
   */
   readonly signingAlgs?: string[];

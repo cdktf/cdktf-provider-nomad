@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification
 // generated from terraform resource schema
 
@@ -14,7 +9,7 @@ import * as cdktf from 'cdktf';
 export interface QuotaSpecificationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this quota specification.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#description QuotaSpecification#description}
   */
   readonly description?: string;
@@ -27,13 +22,13 @@ export interface QuotaSpecificationConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Unique name for this quota specification.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#name QuotaSpecification#name}
   */
   readonly name: string;
   /**
   * limits block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#limits QuotaSpecification#limits}
   */
   readonly limits: QuotaSpecificationLimits[] | cdktf.IResolvable;
@@ -133,13 +128,13 @@ export class QuotaSpecificationLimitsRegionLimitOutputReference extends cdktf.Co
 export interface QuotaSpecificationLimits {
   /**
   * Region in which this limit has affect.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#region QuotaSpecification#region}
   */
   readonly region: string;
   /**
   * region_limit block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#region_limit QuotaSpecification#region_limit}
   */
   readonly regionLimit: QuotaSpecificationLimitsRegionLimit;

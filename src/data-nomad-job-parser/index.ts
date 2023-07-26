@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser
 // generated from terraform resource schema
 
@@ -14,13 +9,13 @@ import * as cdktf from 'cdktf';
 export interface DataNomadJobParserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Flag to enable setting any unset fields to their default values.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser#canonicalize DataNomadJobParser#canonicalize}
   */
   readonly canonicalize?: boolean | cdktf.IResolvable;
   /**
   * Specifies the HCL definition of the job encoded in a JSON string.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser#hcl DataNomadJobParser#hcl}
   */
   readonly hcl: string;

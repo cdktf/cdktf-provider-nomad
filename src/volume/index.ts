@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume
 // generated from terraform resource schema
 
@@ -14,31 +9,31 @@ import * as cdktf from 'cdktf';
 export interface VolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Defines whether a volume should be available concurrently.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#access_mode Volume#access_mode}
   */
   readonly accessMode?: string;
   /**
   * The storage API that will be used by the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#attachment_mode Volume#attachment_mode}
   */
   readonly attachmentMode?: string;
   /**
   * An optional key-value map of strings passed directly to the CSI plugin to validate the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#context Volume#context}
   */
   readonly context?: { [key: string]: string };
   /**
   * If true, the volume will be deregistered on destroy.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#deregister_on_destroy Volume#deregister_on_destroy}
   */
   readonly deregisterOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * The ID of the physical volume from the storage provider.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#external_id Volume#external_id}
   */
   readonly externalId: string;
@@ -51,61 +46,61 @@ export interface VolumeConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The display name of the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#name Volume#name}
   */
   readonly name: string;
   /**
   * The namespace in which to create the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#namespace Volume#namespace}
   */
   readonly namespace?: string;
   /**
   * An optional key-value map of strings passed directly to the CSI plugin to configure the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#parameters Volume#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * The ID of the CSI plugin that manages this volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#plugin_id Volume#plugin_id}
   */
   readonly pluginId: string;
   /**
   * An optional key-value map of strings used as credentials for publishing and unpublishing volumes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#secrets Volume#secrets}
   */
   readonly secrets?: { [key: string]: string };
   /**
   * The type of the volume. Currently, only 'csi' is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#type Volume#type}
   */
   readonly type?: string;
   /**
   * The unique ID of the volume, how jobs will refer to the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#volume_id Volume#volume_id}
   */
   readonly volumeId: string;
   /**
   * capability block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#capability Volume#capability}
   */
   readonly capability?: VolumeCapability[] | cdktf.IResolvable;
   /**
   * mount_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#mount_options Volume#mount_options}
   */
   readonly mountOptions?: VolumeMountOptions;
   /**
   * topology_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#topology_request Volume#topology_request}
   */
   readonly topologyRequest?: VolumeTopologyRequest;
@@ -178,13 +173,13 @@ export class VolumeTopologiesList extends cdktf.ComplexList {
 export interface VolumeCapability {
   /**
   * Defines whether a volume should be available concurrently.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#access_mode Volume#access_mode}
   */
   readonly accessMode: string;
   /**
   * The storage API that will be used by the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#attachment_mode Volume#attachment_mode}
   */
   readonly attachmentMode: string;
@@ -300,13 +295,13 @@ export class VolumeCapabilityList extends cdktf.ComplexList {
 export interface VolumeMountOptions {
   /**
   * The file system type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#fs_type Volume#fs_type}
   */
   readonly fsType?: string;
   /**
   * The flags passed to mount.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#mount_flags Volume#mount_flags}
   */
   readonly mountFlags?: string[];
@@ -396,7 +391,7 @@ export class VolumeMountOptionsOutputReference extends cdktf.ComplexObject {
 export interface VolumeTopologyRequestRequiredTopology {
   /**
   * Define attributes for the topology request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#segments Volume#segments}
   */
   readonly segments: { [key: string]: string };
@@ -492,7 +487,7 @@ export class VolumeTopologyRequestRequiredTopologyList extends cdktf.ComplexList
 export interface VolumeTopologyRequestRequired {
   /**
   * topology block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#topology Volume#topology}
   */
   readonly topology: VolumeTopologyRequestRequiredTopology[] | cdktf.IResolvable;
@@ -556,7 +551,7 @@ export class VolumeTopologyRequestRequiredOutputReference extends cdktf.ComplexO
 export interface VolumeTopologyRequest {
   /**
   * required block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#required Volume#required}
   */
   readonly required?: VolumeTopologyRequestRequired;

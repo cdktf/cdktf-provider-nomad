@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job
 // generated from terraform resource schema
 
@@ -21,13 +16,13 @@ export interface DataNomadJobConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * Job ID
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job#job_id DataNomadJob#job_id}
   */
   readonly jobId: string;
   /**
   * Job Namespace
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job#namespace DataNomadJob#namespace}
   */
   readonly namespace?: string;

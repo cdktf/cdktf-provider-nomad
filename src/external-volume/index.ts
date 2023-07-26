@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume
 // generated from terraform resource schema
 
@@ -14,19 +9,19 @@ import * as cdktf from 'cdktf';
 export interface ExternalVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Defines how large the volume can be. The storage provider may return a volume that is smaller than this value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#capacity_max ExternalVolume#capacity_max}
   */
   readonly capacityMax?: string;
   /**
   * Defines how small the volume can be. The storage provider may return a volume that is larger than this value.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#capacity_min ExternalVolume#capacity_min}
   */
   readonly capacityMin?: string;
   /**
   * The volume ID to clone when creating this volume. Storage provider must support cloning. Conflicts with 'snapshot_id'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#clone_id ExternalVolume#clone_id}
   */
   readonly cloneId?: string;
@@ -39,67 +34,67 @@ export interface ExternalVolumeConfig extends cdktf.TerraformMetaArguments {
   readonly id?: string;
   /**
   * The display name of the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#name ExternalVolume#name}
   */
   readonly name: string;
   /**
   * The namespace in which to create the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#namespace ExternalVolume#namespace}
   */
   readonly namespace?: string;
   /**
   * An optional key-value map of strings passed directly to the CSI plugin to configure the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#parameters ExternalVolume#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * The ID of the CSI plugin that manages this volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#plugin_id ExternalVolume#plugin_id}
   */
   readonly pluginId: string;
   /**
   * An optional key-value map of strings used as credentials for publishing and unpublishing volumes.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#secrets ExternalVolume#secrets}
   */
   readonly secrets?: { [key: string]: string };
   /**
   * The snapshot ID to restore when creating this volume. Storage provider must support snapshots. Conflicts with 'clone_id'.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#snapshot_id ExternalVolume#snapshot_id}
   */
   readonly snapshotId?: string;
   /**
   * The type of the volume. Currently, only 'csi' is supported.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#type ExternalVolume#type}
   */
   readonly type?: string;
   /**
   * The unique ID of the volume, how jobs will refer to the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#volume_id ExternalVolume#volume_id}
   */
   readonly volumeId: string;
   /**
   * capability block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#capability ExternalVolume#capability}
   */
   readonly capability: ExternalVolumeCapability[] | cdktf.IResolvable;
   /**
   * mount_options block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#mount_options ExternalVolume#mount_options}
   */
   readonly mountOptions?: ExternalVolumeMountOptions;
   /**
   * topology_request block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#topology_request ExternalVolume#topology_request}
   */
   readonly topologyRequest?: ExternalVolumeTopologyRequest;
@@ -172,13 +167,13 @@ export class ExternalVolumeTopologiesList extends cdktf.ComplexList {
 export interface ExternalVolumeCapability {
   /**
   * Defines whether a volume should be available concurrently.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#access_mode ExternalVolume#access_mode}
   */
   readonly accessMode: string;
   /**
   * The storage API that will be used by the volume.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#attachment_mode ExternalVolume#attachment_mode}
   */
   readonly attachmentMode: string;
@@ -294,13 +289,13 @@ export class ExternalVolumeCapabilityList extends cdktf.ComplexList {
 export interface ExternalVolumeMountOptions {
   /**
   * The file system type.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#fs_type ExternalVolume#fs_type}
   */
   readonly fsType?: string;
   /**
   * The flags passed to mount.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#mount_flags ExternalVolume#mount_flags}
   */
   readonly mountFlags?: string[];
@@ -390,7 +385,7 @@ export class ExternalVolumeMountOptionsOutputReference extends cdktf.ComplexObje
 export interface ExternalVolumeTopologyRequestPreferredTopology {
   /**
   * Define the attributes for the topology request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#segments ExternalVolume#segments}
   */
   readonly segments: { [key: string]: string };
@@ -486,7 +481,7 @@ export class ExternalVolumeTopologyRequestPreferredTopologyList extends cdktf.Co
 export interface ExternalVolumeTopologyRequestPreferred {
   /**
   * topology block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#topology ExternalVolume#topology}
   */
   readonly topology: ExternalVolumeTopologyRequestPreferredTopology[] | cdktf.IResolvable;
@@ -550,7 +545,7 @@ export class ExternalVolumeTopologyRequestPreferredOutputReference extends cdktf
 export interface ExternalVolumeTopologyRequestRequiredTopology {
   /**
   * Define the attributes for the topology request.
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#segments ExternalVolume#segments}
   */
   readonly segments: { [key: string]: string };
@@ -646,7 +641,7 @@ export class ExternalVolumeTopologyRequestRequiredTopologyList extends cdktf.Com
 export interface ExternalVolumeTopologyRequestRequired {
   /**
   * topology block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#topology ExternalVolume#topology}
   */
   readonly topology: ExternalVolumeTopologyRequestRequiredTopology[] | cdktf.IResolvable;
@@ -710,13 +705,13 @@ export class ExternalVolumeTopologyRequestRequiredOutputReference extends cdktf.
 export interface ExternalVolumeTopologyRequest {
   /**
   * preferred block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#preferred ExternalVolume#preferred}
   */
   readonly preferred?: ExternalVolumeTopologyRequestPreferred;
   /**
   * required block
-  * 
+  *
   * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/external_volume#required ExternalVolume#required}
   */
   readonly required?: ExternalVolumeTopologyRequestRequired;
