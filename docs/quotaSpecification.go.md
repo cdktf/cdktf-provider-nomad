@@ -1,6 +1,6 @@
 # `nomad_quota_specification`
 
-Refer to the Terraform Registory for docs: [`nomad_quota_specification`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification).
+Refer to the Terraform Registory for docs: [`nomad_quota_specification`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification).
 
 # `quotaSpecification` Submodule <a name="`quotaSpecification` Submodule" id="@cdktf/provider-nomad.quotaSpecification"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`nomad_quota_specification`](https:/
 
 ### QuotaSpecification <a name="QuotaSpecification" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification nomad_quota_specification}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification nomad_quota_specification}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 quotaspecification.NewQuotaSpecification(scope Construct, id *string, config QuotaSpecificationConfig) QuotaSpecification
 ```
@@ -297,7 +297,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 quotaspecification.QuotaSpecification_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 quotaspecification.QuotaSpecification_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ quotaspecification.QuotaSpecification_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecification.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 quotaspecification.QuotaSpecification_IsTerraformResource(x interface{}) *bool
 ```
@@ -630,7 +630,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 &quotaspecification.QuotaSpecificationConfig {
 	Connection: interface{},
@@ -661,7 +661,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationConfig.property.limits">Limits</a></code> | <code>interface{}</code> | limits block. |
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationConfig.property.name">Name</a></code> | <code>*string</code> | Unique name for this quota specification. |
 | <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationConfig.property.description">Description</a></code> | <code>*string</code> | Description for this quota specification. |
-| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#id QuotaSpecification#id}. |
+| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#id QuotaSpecification#id}. |
 
 ---
 
@@ -745,7 +745,7 @@ Limits interface{}
 
 limits block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#limits QuotaSpecification#limits}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#limits QuotaSpecification#limits}
 
 ---
 
@@ -759,7 +759,7 @@ Name *string
 
 Unique name for this quota specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#name QuotaSpecification#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#name QuotaSpecification#name}
 
 ---
 
@@ -773,7 +773,7 @@ Description *string
 
 Description for this quota specification.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#description QuotaSpecification#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#description QuotaSpecification#description}
 
 ---
 
@@ -785,7 +785,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#id QuotaSpecification#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#id QuotaSpecification#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -797,11 +797,11 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimits.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 &quotaspecification.QuotaSpecificationLimits {
 	Region: *string,
-	RegionLimit: github.com/cdktf/cdktf-provider-nomad-go/nomad/v6.quotaSpecification.QuotaSpecificationLimitsRegionLimit,
+	RegionLimit: github.com/cdktf/cdktf-provider-nomad-go/nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit,
 }
 ```
 
@@ -824,7 +824,7 @@ Region *string
 
 Region in which this limit has affect.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#region QuotaSpecification#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#region QuotaSpecification#region}
 
 ---
 
@@ -838,7 +838,7 @@ RegionLimit QuotaSpecificationLimitsRegionLimit
 
 region_limit block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#region_limit QuotaSpecification#region_limit}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#region_limit QuotaSpecification#region_limit}
 
 ---
 
@@ -847,7 +847,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 &quotaspecification.QuotaSpecificationLimitsRegionLimit {
 	Cpu: *f64,
@@ -859,8 +859,8 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit.property.cpu">Cpu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#cpu QuotaSpecification#cpu}. |
-| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit.property.memoryMb">MemoryMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#memory_mb QuotaSpecification#memory_mb}. |
+| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit.property.cpu">Cpu</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#cpu QuotaSpecification#cpu}. |
+| <code><a href="#@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimit.property.memoryMb">MemoryMb</a></code> | <code>*f64</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#memory_mb QuotaSpecification#memory_mb}. |
 
 ---
 
@@ -872,7 +872,7 @@ Cpu *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#cpu QuotaSpecification#cpu}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#cpu QuotaSpecification#cpu}.
 
 ---
 
@@ -884,7 +884,7 @@ MemoryMb *f64
 
 - *Type:* *f64
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/quota_specification#memory_mb QuotaSpecification#memory_mb}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/quota_specification#memory_mb QuotaSpecification#memory_mb}.
 
 ---
 
@@ -895,7 +895,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 quotaspecification.NewQuotaSpecificationLimitsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) QuotaSpecificationLimitsList
 ```
@@ -1038,7 +1038,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 quotaspecification.NewQuotaSpecificationLimitsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) QuotaSpecificationLimitsOutputReference
 ```
@@ -1362,7 +1362,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.quotaSpecification.QuotaSpecificationLimitsRegionLimitOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/quotaspecification"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/quotaspecification"
 
 quotaspecification.NewQuotaSpecificationLimitsRegionLimitOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) QuotaSpecificationLimitsRegionLimitOutputReference
 ```

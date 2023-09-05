@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule
+// https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +10,29 @@ export interface AclBindingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the auth method for which this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
   */
   readonly authMethod: string;
   /**
   * Target of the binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
   */
-  readonly bindName: string;
+  readonly bindName?: string;
   /**
   * Adjusts how this binding rule is applied at login time. Valid values are "role" and "policy".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
   */
   readonly bindType: string;
   /**
   * Description for this ACL binding rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#description AclBindingRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#description AclBindingRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#id AclBindingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#id AclBindingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,13 +41,13 @@ export interface AclBindingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * A boolean expression that matches against verified identity attributes returned from the auth method during login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
   */
   readonly selector?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule nomad_acl_binding_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule nomad_acl_binding_rule}
 */
 export class AclBindingRule extends cdktf.TerraformResource {
 
@@ -66,7 +61,7 @@ export class AclBindingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -77,8 +72,8 @@ export class AclBindingRule extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_acl_binding_rule',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.20',
-        providerVersionConstraint: '~> 1.4'
+        providerVersion: '2.0.0',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -113,13 +108,16 @@ export class AclBindingRule extends cdktf.TerraformResource {
     return this._authMethod;
   }
 
-  // bind_name - computed: false, optional: false, required: true
+  // bind_name - computed: false, optional: true, required: false
   private _bindName?: string; 
   public get bindName() {
     return this.getStringAttribute('bind_name');
   }
   public set bindName(value: string) {
     this._bindName = value;
+  }
+  public resetBindName() {
+    this._bindName = undefined;
   }
   // Temporarily expose input value. Use with caution.
   public get bindNameInput() {

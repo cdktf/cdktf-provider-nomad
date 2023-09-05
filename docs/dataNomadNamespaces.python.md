@@ -1,6 +1,6 @@
 # `data_nomad_namespaces`
 
-Refer to the Terraform Registory for docs: [`data_nomad_namespaces`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespaces).
+Refer to the Terraform Registory for docs: [`data_nomad_namespaces`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespaces).
 
 # `dataNomadNamespaces` Submodule <a name="`dataNomadNamespaces` Submodule" id="@cdktf/provider-nomad.dataNomadNamespaces"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_nomad_namespaces`](https://reg
 
 ### DataNomadNamespaces <a name="DataNomadNamespaces" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespaces nomad_namespaces}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespaces nomad_namespaces}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.Initializer"></a>
 
@@ -40,7 +40,7 @@ dataNomadNamespaces.DataNomadNamespaces(
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespaces#id DataNomadNamespaces#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespaces.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespaces#id DataNomadNamespaces#id}. |
 
 ---
 
@@ -108,7 +108,7 @@ Must be unique amongst siblings in the same scope
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespaces#id DataNomadNamespaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespaces#id DataNomadNamespaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -654,7 +654,7 @@ dataNomadNamespaces.DataNomadNamespacesConfig(
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespaces#id DataNomadNamespaces#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespaces.DataNomadNamespacesConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespaces#id DataNomadNamespaces#id}. |
 
 ---
 
@@ -736,7 +736,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespaces#id DataNomadNamespaces#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespaces#id DataNomadNamespaces#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

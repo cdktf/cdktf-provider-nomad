@@ -1,6 +1,6 @@
 # `data_nomad_volumes`
 
-Refer to the Terraform Registory for docs: [`data_nomad_volumes`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes).
+Refer to the Terraform Registory for docs: [`data_nomad_volumes`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/volumes).
 
 # `dataNomadVolumes` Submodule <a name="`dataNomadVolumes` Submodule" id="@cdktf/provider-nomad.dataNomadVolumes"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_nomad_volumes`](https://regist
 
 ### DataNomadVolumes <a name="DataNomadVolumes" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes nomad_volumes}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/volumes nomad_volumes}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadvolumes"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvolumes"
 
 datanomadvolumes.NewDataNomadVolumes(scope Construct, id *string, config DataNomadVolumesConfig) DataNomadVolumes
 ```
@@ -305,7 +305,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadvolumes"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvolumes"
 
 datanomadvolumes.DataNomadVolumes_IsConstruct(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadvolumes"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvolumes"
 
 datanomadvolumes.DataNomadVolumes_IsTerraformElement(x interface{}) *bool
 ```
@@ -351,7 +351,7 @@ datanomadvolumes.DataNomadVolumes_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumes.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadvolumes"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvolumes"
 
 datanomadvolumes.DataNomadVolumes_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -649,7 +649,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadvolumes"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvolumes"
 
 &datanomadvolumes.DataNomadVolumesConfig {
 	Connection: interface{},
@@ -678,7 +678,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadvolumes"
 | <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#id DataNomadVolumes#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/volumes#id DataNomadVolumes#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumesConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Volume namespace filter. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumesConfig.property.nodeId">NodeId</a></code> | <code>*string</code> | Volume node filter. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVolumes.DataNomadVolumesConfig.property.pluginId">PluginId</a></code> | <code>*string</code> | Plugin ID filter. |
@@ -764,7 +764,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#id DataNomadVolumes#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/volumes#id DataNomadVolumes#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -781,7 +781,7 @@ Namespace *string
 
 Volume namespace filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#namespace DataNomadVolumes#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/volumes#namespace DataNomadVolumes#namespace}
 
 ---
 
@@ -795,7 +795,7 @@ NodeId *string
 
 Volume node filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#node_id DataNomadVolumes#node_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/volumes#node_id DataNomadVolumes#node_id}
 
 ---
 
@@ -809,7 +809,7 @@ PluginId *string
 
 Plugin ID filter.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#plugin_id DataNomadVolumes#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/volumes#plugin_id DataNomadVolumes#plugin_id}
 
 ---
 
@@ -823,7 +823,7 @@ Type *string
 
 Volume Type (currently only 'csi').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/volumes#type DataNomadVolumes#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/volumes#type DataNomadVolumes#type}
 
 ---
 

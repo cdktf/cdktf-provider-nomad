@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace
+// https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#description Namespace#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#description Namespace#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#id Namespace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#id Namespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,39 +23,45 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Metadata associated with the namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#meta Namespace#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#meta Namespace#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
   * Unique name for this namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#name Namespace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#name Namespace#name}
   */
   readonly name: string;
   /**
   * Quota to set for this namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#quota Namespace#quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#quota Namespace#quota}
   */
   readonly quota?: string;
   /**
   * capabilities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#capabilities Namespace#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#capabilities Namespace#capabilities}
   */
   readonly capabilities?: NamespaceCapabilities;
+  /**
+  * node_pool_config block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#node_pool_config Namespace#node_pool_config}
+  */
+  readonly nodePoolConfig?: NamespaceNodePoolConfig;
 }
 export interface NamespaceCapabilities {
   /**
   * Disabled task drivers for the namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
   */
   readonly disabledTaskDrivers?: string[];
   /**
   * Enabled task drivers for the namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
   */
   readonly enabledTaskDrivers?: string[];
 }
@@ -146,9 +147,134 @@ export class NamespaceCapabilitiesOutputReference extends cdktf.ComplexObject {
     return this._enabledTaskDrivers;
   }
 }
+export interface NamespaceNodePoolConfig {
+  /**
+  * The list of node pools allowed to be used in this namespace. Cannot be used with denied.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#allowed Namespace#allowed}
+  */
+  readonly allowed?: string[];
+  /**
+  * The node pool to use when none are specified in the job.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#default Namespace#default}
+  */
+  readonly default?: string;
+  /**
+  * The list of node pools not allowed to be used in this namespace. Cannot be used with allowed.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace#denied Namespace#denied}
+  */
+  readonly denied?: string[];
+}
+
+export function namespaceNodePoolConfigToTerraform(struct?: NamespaceNodePoolConfigOutputReference | NamespaceNodePoolConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    allowed: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.allowed),
+    default: cdktf.stringToTerraform(struct!.default),
+    denied: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.denied),
+  }
+}
+
+export class NamespaceNodePoolConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): NamespaceNodePoolConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._allowed !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.allowed = this._allowed;
+    }
+    if (this._default !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.default = this._default;
+    }
+    if (this._denied !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.denied = this._denied;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: NamespaceNodePoolConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._allowed = undefined;
+      this._default = undefined;
+      this._denied = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._allowed = value.allowed;
+      this._default = value.default;
+      this._denied = value.denied;
+    }
+  }
+
+  // allowed - computed: false, optional: true, required: false
+  private _allowed?: string[]; 
+  public get allowed() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed'));
+  }
+  public set allowed(value: string[]) {
+    this._allowed = value;
+  }
+  public resetAllowed() {
+    this._allowed = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get allowedInput() {
+    return this._allowed;
+  }
+
+  // default - computed: true, optional: true, required: false
+  private _default?: string; 
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+  public set default(value: string) {
+    this._default = value;
+  }
+  public resetDefault() {
+    this._default = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get defaultInput() {
+    return this._default;
+  }
+
+  // denied - computed: false, optional: true, required: false
+  private _denied?: string[]; 
+  public get denied() {
+    return cdktf.Fn.tolist(this.getListAttribute('denied'));
+  }
+  public set denied(value: string[]) {
+    this._denied = value;
+  }
+  public resetDenied() {
+    this._denied = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get deniedInput() {
+    return this._denied;
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace nomad_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace nomad_namespace}
 */
 export class Namespace extends cdktf.TerraformResource {
 
@@ -162,7 +288,7 @@ export class Namespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/namespace nomad_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace nomad_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -173,8 +299,8 @@ export class Namespace extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_namespace',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.20',
-        providerVersionConstraint: '~> 1.4'
+        providerVersion: '2.0.0',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -190,6 +316,7 @@ export class Namespace extends cdktf.TerraformResource {
     this._name = config.name;
     this._quota = config.quota;
     this._capabilities.internalValue = config.capabilities;
+    this._nodePoolConfig.internalValue = config.nodePoolConfig;
   }
 
   // ==========
@@ -289,6 +416,22 @@ export class Namespace extends cdktf.TerraformResource {
     return this._capabilities.internalValue;
   }
 
+  // node_pool_config - computed: false, optional: true, required: false
+  private _nodePoolConfig = new NamespaceNodePoolConfigOutputReference(this, "node_pool_config");
+  public get nodePoolConfig() {
+    return this._nodePoolConfig;
+  }
+  public putNodePoolConfig(value: NamespaceNodePoolConfig) {
+    this._nodePoolConfig.internalValue = value;
+  }
+  public resetNodePoolConfig() {
+    this._nodePoolConfig.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get nodePoolConfigInput() {
+    return this._nodePoolConfig.internalValue;
+  }
+
   // =========
   // SYNTHESIS
   // =========
@@ -301,6 +444,7 @@ export class Namespace extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       quota: cdktf.stringToTerraform(this._quota),
       capabilities: namespaceCapabilitiesToTerraform(this._capabilities.internalValue),
+      node_pool_config: namespaceNodePoolConfigToTerraform(this._nodePoolConfig.internalValue),
     };
   }
 }

@@ -1,6 +1,6 @@
 # `data_nomad_scaling_policies`
 
-Refer to the Terraform Registory for docs: [`data_nomad_scaling_policies`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scaling_policies).
+Refer to the Terraform Registory for docs: [`data_nomad_scaling_policies`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/scaling_policies).
 
 # `dataNomadScalingPolicies` Submodule <a name="`dataNomadScalingPolicies` Submodule" id="@cdktf/provider-nomad.dataNomadScalingPolicies"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_nomad_scaling_policies`](https
 
 ### DataNomadScalingPolicies <a name="DataNomadScalingPolicies" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scaling_policies nomad_scaling_policies}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/scaling_policies nomad_scaling_policies}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.NewDataNomadScalingPolicies(scope Construct, id *string, config DataNomadScalingPoliciesConfig) DataNomadScalingPolicies
 ```
@@ -291,7 +291,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.DataNomadScalingPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.DataNomadScalingPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datanomadscalingpolicies.DataNomadScalingPolicies_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.DataNomadScalingPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 &datanomadscalingpolicies.DataNomadScalingPoliciesConfig {
 	Connection: interface{},
@@ -618,7 +618,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolici
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scaling_policies#id DataNomadScalingPolicies#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/scaling_policies#id DataNomadScalingPolicies#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.jobId">JobId</a></code> | <code>*string</code> | Job ID to use to filter scaling policies. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.property.type">Type</a></code> | <code>*string</code> | Scaling policy type used to filter scaling policies. |
 
@@ -702,7 +702,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scaling_policies#id DataNomadScalingPolicies#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/scaling_policies#id DataNomadScalingPolicies#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -719,7 +719,7 @@ JobId *string
 
 Job ID to use to filter scaling policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scaling_policies#job_id DataNomadScalingPolicies#job_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/scaling_policies#job_id DataNomadScalingPolicies#job_id}
 
 ---
 
@@ -733,7 +733,7 @@ Type *string
 
 Scaling policy type used to filter scaling policies.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/scaling_policies#type DataNomadScalingPolicies#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/scaling_policies#type DataNomadScalingPolicies#type}
 
 ---
 
@@ -742,7 +742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 &datanomadscalingpolicies.DataNomadScalingPoliciesPolicies {
 
@@ -757,7 +757,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolici
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.NewDataNomadScalingPoliciesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadScalingPoliciesPoliciesList
 ```
@@ -889,7 +889,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.NewDataNomadScalingPoliciesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadScalingPoliciesPoliciesOutputReference
 ```
