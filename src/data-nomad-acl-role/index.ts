@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/acl_role
+// https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,7 +15,7 @@ export interface DataNomadAclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * The ACL Role unique identifier.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/acl_role#id DataNomadAclRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_role#id DataNomadAclRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -88,7 +88,7 @@ export class DataNomadAclRolePoliciesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/acl_role nomad_acl_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_role nomad_acl_role}
 */
 export class DataNomadAclRole extends cdktf.TerraformDataSource {
 
@@ -102,7 +102,7 @@ export class DataNomadAclRole extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/acl_role nomad_acl_role} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_role nomad_acl_role} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -113,8 +113,8 @@ export class DataNomadAclRole extends cdktf.TerraformDataSource {
       terraformResourceType: 'nomad_acl_role',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.20',
-        providerVersionConstraint: '~> 1.4'
+        providerVersion: '2.0.0',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,

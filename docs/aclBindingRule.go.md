@@ -1,6 +1,6 @@
 # `nomad_acl_binding_rule`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_binding_rule`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule).
+Refer to the Terraform Registory for docs: [`nomad_acl_binding_rule`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule).
 
 # `aclBindingRule` Submodule <a name="`aclBindingRule` Submodule" id="@cdktf/provider-nomad.aclBindingRule"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`nomad_acl_binding_rule`](https://re
 
 ### AclBindingRule <a name="AclBindingRule" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule nomad_acl_binding_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule nomad_acl_binding_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/aclbindingrule"
 
 aclbindingrule.NewAclBindingRule(scope Construct, id *string, config AclBindingRuleConfig) AclBindingRule
 ```
@@ -70,6 +70,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetBindName">ResetBindName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetId">ResetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetSelector">ResetSelector</a></code> | *No description.* |
@@ -260,6 +261,12 @@ func InterpolationForAttribute(terraformAttribute *string) IResolvable
 
 ---
 
+##### `ResetBindName` <a name="ResetBindName" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetBindName"></a>
+
+```go
+func ResetBindName()
+```
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetDescription"></a>
 
 ```go
@@ -291,7 +298,7 @@ func ResetSelector()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +330,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +344,7 @@ aclbindingrule.AclBindingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -668,7 +675,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/aclbindingrule"
 
 &aclbindingrule.AclBindingRuleConfig {
 	Connection: interface{},
@@ -679,8 +686,8 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/aclbindingrule"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	AuthMethod: *string,
-	BindName: *string,
 	BindType: *string,
+	BindName: *string,
 	Description: *string,
 	Id: *string,
 	Selector: *string,
@@ -699,10 +706,10 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/aclbindingrule"
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.authMethod">AuthMethod</a></code> | <code>*string</code> | Name of the auth method for which this rule applies to. |
-| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindName">BindName</a></code> | <code>*string</code> | Target of the binding. |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindType">BindType</a></code> | <code>*string</code> | Adjusts how this binding rule is applied at login time. Valid values are "role" and "policy". |
+| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindName">BindName</a></code> | <code>*string</code> | Target of the binding. |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.description">Description</a></code> | <code>*string</code> | Description for this ACL binding rule. |
-| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#id AclBindingRule#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#id AclBindingRule#id}. |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.selector">Selector</a></code> | <code>*string</code> | A boolean expression that matches against verified identity attributes returned from the auth method during login. |
 
 ---
@@ -787,21 +794,7 @@ AuthMethod *string
 
 Name of the auth method for which this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
-
----
-
-##### `BindName`<sup>Required</sup> <a name="BindName" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindName"></a>
-
-```go
-BindName *string
-```
-
-- *Type:* *string
-
-Target of the binding.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
 
 ---
 
@@ -815,7 +808,21 @@ BindType *string
 
 Adjusts how this binding rule is applied at login time. Valid values are "role" and "policy".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
+
+---
+
+##### `BindName`<sup>Optional</sup> <a name="BindName" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindName"></a>
+
+```go
+BindName *string
+```
+
+- *Type:* *string
+
+Target of the binding.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
 
 ---
 
@@ -829,7 +836,7 @@ Description *string
 
 Description for this ACL binding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#description AclBindingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#description AclBindingRule#description}
 
 ---
 
@@ -841,7 +848,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#id AclBindingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#id AclBindingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -858,7 +865,7 @@ Selector *string
 
 A boolean expression that matches against verified identity attributes returned from the auth method during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
 
 ---
 

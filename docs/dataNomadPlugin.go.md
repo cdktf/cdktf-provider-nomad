@@ -1,6 +1,6 @@
 # `data_nomad_plugin`
 
-Refer to the Terraform Registory for docs: [`data_nomad_plugin`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin).
+Refer to the Terraform Registory for docs: [`data_nomad_plugin`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/plugin).
 
 # `dataNomadPlugin` Submodule <a name="`dataNomadPlugin` Submodule" id="@cdktf/provider-nomad.dataNomadPlugin"></a>
 
@@ -8,12 +8,12 @@ Refer to the Terraform Registory for docs: [`data_nomad_plugin`](https://registr
 
 ### DataNomadPlugin <a name="DataNomadPlugin" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin nomad_plugin}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/plugin nomad_plugin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadplugin"
 
 datanomadplugin.NewDataNomadPlugin(scope Construct, id *string, config DataNomadPluginConfig) DataNomadPlugin
 ```
@@ -291,7 +291,7 @@ func ResetWaitForRegistration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datanomadplugin.DataNomadPlugin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -690,7 +690,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadplugin"
 
 &datanomadplugin.DataNomadPluginConfig {
 	Connection: interface{},
@@ -719,7 +719,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.pluginId">PluginId</a></code> | <code>*string</code> | Plugin ID. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin#id DataNomadPlugin#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/plugin#id DataNomadPlugin#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.waitForHealthy">WaitForHealthy</a></code> | <code>interface{}</code> | Wait for to be backed by a specified number of controllers. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.waitForRegistration">WaitForRegistration</a></code> | <code>interface{}</code> | Wait for the plugin to be registered in Noamd. |
 
@@ -805,7 +805,7 @@ PluginId *string
 
 Plugin ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin#plugin_id DataNomadPlugin#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/plugin#plugin_id DataNomadPlugin#plugin_id}
 
 ---
 
@@ -817,7 +817,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin#id DataNomadPlugin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/plugin#id DataNomadPlugin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -834,7 +834,7 @@ WaitForHealthy interface{}
 
 Wait for to be backed by a specified number of controllers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin#wait_for_healthy DataNomadPlugin#wait_for_healthy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/plugin#wait_for_healthy DataNomadPlugin#wait_for_healthy}
 
 ---
 
@@ -848,7 +848,7 @@ WaitForRegistration interface{}
 
 Wait for the plugin to be registered in Noamd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/plugin#wait_for_registration DataNomadPlugin#wait_for_registration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/plugin#wait_for_registration DataNomadPlugin#wait_for_registration}
 
 ---
 
@@ -857,7 +857,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadplugin"
 
 &datanomadplugin.DataNomadPluginNodes {
 
@@ -872,7 +872,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadplugin"
 
 datanomadplugin.NewDataNomadPluginNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadPluginNodesList
 ```
@@ -1004,7 +1004,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v6/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomadplugin"
 
 datanomadplugin.NewDataNomadPluginNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadPluginNodesOutputReference
 ```

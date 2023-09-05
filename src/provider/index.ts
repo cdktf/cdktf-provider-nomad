@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs
+// https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,91 +15,97 @@ export interface NomadProviderConfig {
   /**
   * URL of the root of the target Nomad agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#address NomadProvider#address}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#address NomadProvider#address}
   */
   readonly address: string;
   /**
   * A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#ca_file NomadProvider#ca_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#ca_file NomadProvider#ca_file}
   */
   readonly caFile?: string;
   /**
   * PEM-encoded certificate authority used to verify the remote agent's certificate.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#ca_pem NomadProvider#ca_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#ca_pem NomadProvider#ca_pem}
   */
   readonly caPem?: string;
   /**
   * A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#cert_file NomadProvider#cert_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#cert_file NomadProvider#cert_file}
   */
   readonly certFile?: string;
   /**
   * PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#cert_pem NomadProvider#cert_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#cert_pem NomadProvider#cert_pem}
   */
   readonly certPem?: string;
   /**
   * Consul token to validate Consul Connect Service Identity policies specified in the job file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#consul_token NomadProvider#consul_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#consul_token NomadProvider#consul_token}
   */
   readonly consulToken?: string;
   /**
   * HTTP basic auth configuration.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#http_auth NomadProvider#http_auth}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#http_auth NomadProvider#http_auth}
   */
   readonly httpAuth?: string;
   /**
   * A set of environment variables that are ignored by the provider when configuring the Nomad API client.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#ignore_env_vars NomadProvider#ignore_env_vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#ignore_env_vars NomadProvider#ignore_env_vars}
   */
   readonly ignoreEnvVars?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
   * A path to a PEM-encoded private key, required if cert_file or cert_pem is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#key_file NomadProvider#key_file}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#key_file NomadProvider#key_file}
   */
   readonly keyFile?: string;
   /**
   * PEM-encoded private key, required if cert_file or cert_pem is specified.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#key_pem NomadProvider#key_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#key_pem NomadProvider#key_pem}
   */
   readonly keyPem?: string;
   /**
   * Region of the target Nomad agent.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#region NomadProvider#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#region NomadProvider#region}
   */
   readonly region?: string;
   /**
   * ACL token secret for API requests.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#secret_id NomadProvider#secret_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#secret_id NomadProvider#secret_id}
   */
   readonly secretId?: string;
   /**
+  * Skip TLS verification on client side.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#skip_verify NomadProvider#skip_verify}
+  */
+  readonly skipVerify?: boolean | cdktf.IResolvable;
+  /**
   * Vault token if policies are specified in the job file.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#vault_token NomadProvider#vault_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#vault_token NomadProvider#vault_token}
   */
   readonly vaultToken?: string;
   /**
   * Alias name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#alias NomadProvider#alias}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#alias NomadProvider#alias}
   */
   readonly alias?: string;
   /**
   * headers block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#headers NomadProvider#headers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#headers NomadProvider#headers}
   */
   readonly headers?: NomadProviderHeaders[] | cdktf.IResolvable;
 }
@@ -107,13 +113,13 @@ export interface NomadProviderHeaders {
   /**
   * The header name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#name NomadProvider#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#name NomadProvider#name}
   */
   readonly name: string;
   /**
   * The header value
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#value NomadProvider#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#value NomadProvider#value}
   */
   readonly value: string;
 }
@@ -131,7 +137,7 @@ export function nomadProviderHeadersToTerraform(struct?: NomadProviderHeaders | 
 
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs nomad}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs nomad}
 */
 export class NomadProvider extends cdktf.TerraformProvider {
 
@@ -145,7 +151,7 @@ export class NomadProvider extends cdktf.TerraformProvider {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs nomad} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs nomad} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -156,8 +162,8 @@ export class NomadProvider extends cdktf.TerraformProvider {
       terraformResourceType: 'nomad',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.20',
-        providerVersionConstraint: '~> 1.4'
+        providerVersion: '2.0.0',
+        providerVersionConstraint: '~> 2.0'
       },
       terraformProviderSource: 'nomad'
     });
@@ -173,6 +179,7 @@ export class NomadProvider extends cdktf.TerraformProvider {
     this._keyPem = config.keyPem;
     this._region = config.region;
     this._secretId = config.secretId;
+    this._skipVerify = config.skipVerify;
     this._vaultToken = config.vaultToken;
     this._alias = config.alias;
     this._headers = config.headers;
@@ -371,6 +378,22 @@ export class NomadProvider extends cdktf.TerraformProvider {
     return this._secretId;
   }
 
+  // skip_verify - computed: false, optional: true, required: false
+  private _skipVerify?: boolean | cdktf.IResolvable; 
+  public get skipVerify() {
+    return this._skipVerify;
+  }
+  public set skipVerify(value: boolean | cdktf.IResolvable | undefined) {
+    this._skipVerify = value;
+  }
+  public resetSkipVerify() {
+    this._skipVerify = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get skipVerifyInput() {
+    return this._skipVerify;
+  }
+
   // vault_token - computed: false, optional: true, required: false
   private _vaultToken?: string; 
   public get vaultToken() {
@@ -437,6 +460,7 @@ export class NomadProvider extends cdktf.TerraformProvider {
       key_pem: cdktf.stringToTerraform(this._keyPem),
       region: cdktf.stringToTerraform(this._region),
       secret_id: cdktf.stringToTerraform(this._secretId),
+      skip_verify: cdktf.booleanToTerraform(this._skipVerify),
       vault_token: cdktf.stringToTerraform(this._vaultToken),
       alias: cdktf.stringToTerraform(this._alias),
       headers: cdktf.listMapper(nomadProviderHeadersToTerraform, true)(this._headers),

@@ -1,6 +1,6 @@
 # `nomad_acl_policy`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_policy`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy).
+Refer to the Terraform Registory for docs: [`nomad_acl_policy`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy).
 
 # `aclPolicy` Submodule <a name="`aclPolicy` Submodule" id="@cdktf/provider-nomad.aclPolicy"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_acl_policy`](https://registry
 
 ### AclPolicy <a name="AclPolicy" id="@cdktf/provider-nomad.aclPolicy.AclPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy nomad_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy nomad_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.Initializer"></a>
 
@@ -70,8 +70,10 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.putJobAcl">PutJobAcl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.resetDescription">ResetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.resetId">ResetId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.resetJobAcl">ResetJobAcl</a></code> | *No description.* |
 
 ---
 
@@ -259,6 +261,18 @@ private IResolvable InterpolationForAttribute(string TerraformAttribute)
 
 ---
 
+##### `PutJobAcl` <a name="PutJobAcl" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.putJobAcl"></a>
+
+```csharp
+private void PutJobAcl(AclPolicyJobAcl Value)
+```
+
+###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.putJobAcl.parameter.value"></a>
+
+- *Type:* <a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl">AclPolicyJobAcl</a>
+
+---
+
 ##### `ResetDescription` <a name="ResetDescription" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.resetDescription"></a>
 
 ```csharp
@@ -269,6 +283,12 @@ private void ResetDescription()
 
 ```csharp
 private void ResetId()
+```
+
+##### `ResetJobAcl` <a name="ResetJobAcl" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.resetJobAcl"></a>
+
+```csharp
+private void ResetJobAcl()
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -359,8 +379,10 @@ AclPolicy.IsTerraformResource(object X);
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.jobAcl">JobAcl</a></code> | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference">AclPolicyJobAclOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.descriptionInput">DescriptionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.jobAclInput">JobAclInput</a></code> | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl">AclPolicyJobAcl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.rulesHclInput">RulesHclInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicy.property.description">Description</a></code> | <code>string</code> | *No description.* |
@@ -512,6 +534,16 @@ public object[] Provisioners { get; }
 
 ---
 
+##### `JobAcl`<sup>Required</sup> <a name="JobAcl" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.property.jobAcl"></a>
+
+```csharp
+public AclPolicyJobAclOutputReference JobAcl { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference">AclPolicyJobAclOutputReference</a>
+
+---
+
 ##### `DescriptionInput`<sup>Optional</sup> <a name="DescriptionInput" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.property.descriptionInput"></a>
 
 ```csharp
@@ -529,6 +561,16 @@ public string IdInput { get; }
 ```
 
 - *Type:* string
+
+---
+
+##### `JobAclInput`<sup>Optional</sup> <a name="JobAclInput" id="@cdktf/provider-nomad.aclPolicy.AclPolicy.property.jobAclInput"></a>
+
+```csharp
+public AclPolicyJobAcl JobAclInput { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl">AclPolicyJobAcl</a>
 
 ---
 
@@ -630,7 +672,8 @@ new AclPolicyConfig {
     string Name,
     string RulesHcl,
     string Description = null,
-    string Id = null
+    string Id = null,
+    AclPolicyJobAcl JobAcl = null
 };
 ```
 
@@ -648,7 +691,8 @@ new AclPolicyConfig {
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.name">Name</a></code> | <code>string</code> | Unique name for this policy. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.rulesHcl">RulesHcl</a></code> | <code>string</code> | HCL or JSON representation of the rules to enforce on this policy. |
 | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.description">Description</a></code> | <code>string</code> | Description for this policy. |
-| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#id AclPolicy#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.jobAcl">JobAcl</a></code> | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl">AclPolicyJobAcl</a></code> | job_acl block. |
 
 ---
 
@@ -732,7 +776,7 @@ public string Name { get; set; }
 
 Unique name for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy#name AclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#name AclPolicy#name}
 
 ---
 
@@ -748,7 +792,7 @@ HCL or JSON representation of the rules to enforce on this policy.
 
 Use file() to specify a file as input.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy#rules_hcl AclPolicy#rules_hcl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#rules_hcl AclPolicy#rules_hcl}
 
 ---
 
@@ -762,7 +806,7 @@ public string Description { get; set; }
 
 Description for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy#description AclPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#description AclPolicy#description}
 
 ---
 
@@ -774,10 +818,465 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_policy#id AclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#id AclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `JobAcl`<sup>Optional</sup> <a name="JobAcl" id="@cdktf/provider-nomad.aclPolicy.AclPolicyConfig.property.jobAcl"></a>
+
+```csharp
+public AclPolicyJobAcl JobAcl { get; set; }
+```
+
+- *Type:* <a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl">AclPolicyJobAcl</a>
+
+job_acl block.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#job_acl AclPolicy#job_acl}
+
+---
+
+### AclPolicyJobAcl <a name="AclPolicyJobAcl" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl"></a>
+
+#### Initializer <a name="Initializer" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Nomad;
+
+new AclPolicyJobAcl {
+    string JobId,
+    string Group = null,
+    string Namespace = null,
+    string Task = null
+};
+```
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl.property.jobId">JobId</a></code> | <code>string</code> | Job. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl.property.group">Group</a></code> | <code>string</code> | Group. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl.property.namespace">Namespace</a></code> | <code>string</code> | Namespace. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl.property.task">Task</a></code> | <code>string</code> | Task. |
+
+---
+
+##### `JobId`<sup>Required</sup> <a name="JobId" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl.property.jobId"></a>
+
+```csharp
+public string JobId { get; set; }
+```
+
+- *Type:* string
+
+Job.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#job_id AclPolicy#job_id}
+
+---
+
+##### `Group`<sup>Optional</sup> <a name="Group" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl.property.group"></a>
+
+```csharp
+public string Group { get; set; }
+```
+
+- *Type:* string
+
+Group.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#group AclPolicy#group}
+
+---
+
+##### `Namespace`<sup>Optional</sup> <a name="Namespace" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl.property.namespace"></a>
+
+```csharp
+public string Namespace { get; set; }
+```
+
+- *Type:* string
+
+Namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#namespace AclPolicy#namespace}
+
+---
+
+##### `Task`<sup>Optional</sup> <a name="Task" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl.property.task"></a>
+
+```csharp
+public string Task { get; set; }
+```
+
+- *Type:* string
+
+Task.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_policy#task AclPolicy#task}
+
+---
+
+## Classes <a name="Classes" id="Classes"></a>
+
+### AclPolicyJobAclOutputReference <a name="AclPolicyJobAclOutputReference" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference"></a>
+
+#### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.Initializer"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Nomad;
+
+new AclPolicyJobAclOutputReference(IInterpolatingParent TerraformResource, string TerraformAttribute);
+```
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.Initializer.parameter.terraformResource">TerraformResource</a></code> | <code>HashiCorp.Cdktf.IInterpolatingParent</code> | The parent resource. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.Initializer.parameter.terraformAttribute">TerraformAttribute</a></code> | <code>string</code> | The attribute on the parent resource this class is referencing. |
+
+---
+
+##### `TerraformResource`<sup>Required</sup> <a name="TerraformResource" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.Initializer.parameter.terraformResource"></a>
+
+- *Type:* HashiCorp.Cdktf.IInterpolatingParent
+
+The parent resource.
+
+---
+
+##### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.Initializer.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+The attribute on the parent resource this class is referencing.
+
+---
+
+#### Methods <a name="Methods" id="Methods"></a>
+
+| **Name** | **Description** |
+| --- | --- |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.computeFqn">ComputeFqn</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getBooleanAttribute">GetBooleanAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getBooleanMapAttribute">GetBooleanMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getListAttribute">GetListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getNumberAttribute">GetNumberAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getNumberListAttribute">GetNumberListAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getNumberMapAttribute">GetNumberMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getStringAttribute">GetStringAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getStringMapAttribute">GetStringMapAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.resetGroup">ResetGroup</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.resetNamespace">ResetNamespace</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.resetTask">ResetTask</a></code> | *No description.* |
+
+---
+
+##### `ComputeFqn` <a name="ComputeFqn" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.computeFqn"></a>
+
+```csharp
+private string ComputeFqn()
+```
+
+##### `GetAnyMapAttribute` <a name="GetAnyMapAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getAnyMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, object> GetAnyMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getAnyMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanAttribute` <a name="GetBooleanAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getBooleanAttribute"></a>
+
+```csharp
+private IResolvable GetBooleanAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getBooleanAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetBooleanMapAttribute` <a name="GetBooleanMapAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getBooleanMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, bool> GetBooleanMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getBooleanMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetListAttribute` <a name="GetListAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getListAttribute"></a>
+
+```csharp
+private string[] GetListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberAttribute` <a name="GetNumberAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getNumberAttribute"></a>
+
+```csharp
+private double GetNumberAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getNumberAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberListAttribute` <a name="GetNumberListAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getNumberListAttribute"></a>
+
+```csharp
+private double[] GetNumberListAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getNumberListAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetNumberMapAttribute` <a name="GetNumberMapAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getNumberMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, double> GetNumberMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getNumberMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringAttribute` <a name="GetStringAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getStringAttribute"></a>
+
+```csharp
+private string GetStringAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getStringAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `GetStringMapAttribute` <a name="GetStringMapAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getStringMapAttribute"></a>
+
+```csharp
+private System.Collections.Generic.IDictionary<string, string> GetStringMapAttribute(string TerraformAttribute)
+```
+
+###### `TerraformAttribute`<sup>Required</sup> <a name="TerraformAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.getStringMapAttribute.parameter.terraformAttribute"></a>
+
+- *Type:* string
+
+---
+
+##### `InterpolationForAttribute` <a name="InterpolationForAttribute" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.interpolationForAttribute"></a>
+
+```csharp
+private IResolvable InterpolationForAttribute(string Property)
+```
+
+###### `Property`<sup>Required</sup> <a name="Property" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.interpolationForAttribute.parameter.property"></a>
+
+- *Type:* string
+
+---
+
+##### `Resolve` <a name="Resolve" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.resolve"></a>
+
+```csharp
+private object Resolve(IResolveContext Context)
+```
+
+Produce the Token's value at resolution time.
+
+###### `Context`<sup>Required</sup> <a name="Context" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.resolve.parameter._context"></a>
+
+- *Type:* HashiCorp.Cdktf.IResolveContext
+
+---
+
+##### `ToString` <a name="ToString" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.toString"></a>
+
+```csharp
+private string ToString()
+```
+
+Return a string representation of this resolvable object.
+
+Returns a reversible string representation.
+
+##### `ResetGroup` <a name="ResetGroup" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.resetGroup"></a>
+
+```csharp
+private void ResetGroup()
+```
+
+##### `ResetNamespace` <a name="ResetNamespace" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.resetNamespace"></a>
+
+```csharp
+private void ResetNamespace()
+```
+
+##### `ResetTask` <a name="ResetTask" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.resetTask"></a>
+
+```csharp
+private void ResetTask()
+```
+
+
+#### Properties <a name="Properties" id="Properties"></a>
+
+| **Name** | **Type** | **Description** |
+| --- | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.groupInput">GroupInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.jobIdInput">JobIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.namespaceInput">NamespaceInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.taskInput">TaskInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.group">Group</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.jobId">JobId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.namespace">Namespace</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.task">Task</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl">AclPolicyJobAcl</a></code> | *No description.* |
+
+---
+
+##### `CreationStack`<sup>Required</sup> <a name="CreationStack" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.creationStack"></a>
+
+```csharp
+public string[] CreationStack { get; }
+```
+
+- *Type:* string[]
+
+The creation stack of this resolvable which will be appended to errors thrown during resolution.
+
+If this returns an empty array the stack will not be attached.
+
+---
+
+##### `Fqn`<sup>Required</sup> <a name="Fqn" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.fqn"></a>
+
+```csharp
+public string Fqn { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `GroupInput`<sup>Optional</sup> <a name="GroupInput" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.groupInput"></a>
+
+```csharp
+public string GroupInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `JobIdInput`<sup>Optional</sup> <a name="JobIdInput" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.jobIdInput"></a>
+
+```csharp
+public string JobIdInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `NamespaceInput`<sup>Optional</sup> <a name="NamespaceInput" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.namespaceInput"></a>
+
+```csharp
+public string NamespaceInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `TaskInput`<sup>Optional</sup> <a name="TaskInput" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.taskInput"></a>
+
+```csharp
+public string TaskInput { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Group`<sup>Required</sup> <a name="Group" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.group"></a>
+
+```csharp
+public string Group { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `JobId`<sup>Required</sup> <a name="JobId" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.jobId"></a>
+
+```csharp
+public string JobId { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Namespace`<sup>Required</sup> <a name="Namespace" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.namespace"></a>
+
+```csharp
+public string Namespace { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `Task`<sup>Required</sup> <a name="Task" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.task"></a>
+
+```csharp
+public string Task { get; }
+```
+
+- *Type:* string
+
+---
+
+##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-nomad.aclPolicy.AclPolicyJobAclOutputReference.property.internalValue"></a>
+
+```csharp
+public AclPolicyJobAcl InternalValue { get; }
+```
+
+- *Type:* <a href="#@cdktf/provider-nomad.aclPolicy.AclPolicyJobAcl">AclPolicyJobAcl</a>
 
 ---
 

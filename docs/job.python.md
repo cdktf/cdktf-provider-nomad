@@ -1,6 +1,6 @@
 # `nomad_job`
 
-Refer to the Terraform Registory for docs: [`nomad_job`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job).
+Refer to the Terraform Registory for docs: [`nomad_job`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job).
 
 # `job` Submodule <a name="`job` Submodule" id="@cdktf/provider-nomad.job"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_job`](https://registry.terraf
 
 ### Job <a name="Job" id="@cdktf/provider-nomad.job.Job"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job nomad_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job nomad_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.Job.Initializer"></a>
 
@@ -30,11 +30,13 @@ job.Job(
   deregister_on_destroy: typing.Union[bool, IResolvable] = None,
   deregister_on_id_change: typing.Union[bool, IResolvable] = None,
   detach: typing.Union[bool, IResolvable] = None,
+  hcl1: typing.Union[bool, IResolvable] = None,
   hcl2: JobHcl2 = None,
   id: str = None,
   json: typing.Union[bool, IResolvable] = None,
   policy_override: typing.Union[bool, IResolvable] = None,
   purge_on_destroy: typing.Union[bool, IResolvable] = None,
+  read_allocation_ids: typing.Union[bool, IResolvable] = None,
   timeouts: JobTimeouts = None,
   vault_token: str = None
 )
@@ -56,11 +58,13 @@ job.Job(
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the job will be deregistered on destroy. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnIdChange">deregister_on_id_change</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the job will be deregistered when the job ID changes. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.detach">detach</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.hcl1">hcl1</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the `jobspec` will be parsed using the HCL1 format. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.hcl2">hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#id Job#id}. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.json">json</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.policyOverride">policy_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Override any soft-mandatory Sentinel policies that fail. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.purgeOnDestroy">purge_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to purge the job when the resource is destroyed. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.readAllocationIds">read_allocation_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.vaultToken">vault_token</a></code> | <code>str</code> | The Vault token used to submit this job. |
 
@@ -132,7 +136,7 @@ Must be unique amongst siblings in the same scope
 
 Job specification. If you want to point to a file use the file() function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#jobspec Job#jobspec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#jobspec Job#jobspec}
 
 ---
 
@@ -142,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Consul token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#consul_token Job#consul_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#consul_token Job#consul_token}
 
 ---
 
@@ -152,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, the job will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
 
 ---
 
@@ -162,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, the job will be deregistered when the job ID changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
 
 ---
 
@@ -172,7 +176,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#detach Job#detach}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#detach Job#detach}
+
+---
+
+##### `hcl1`<sup>Optional</sup> <a name="hcl1" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.hcl1"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If true, the `jobspec` will be parsed using the HCL1 format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#hcl1 Job#hcl1}
 
 ---
 
@@ -182,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 hcl2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#hcl2 Job#hcl2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#hcl2 Job#hcl2}
 
 ---
 
@@ -190,7 +204,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -203,7 +217,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#json Job#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#json Job#json}
 
 ---
 
@@ -213,7 +227,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Override any soft-mandatory Sentinel policies that fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#policy_override Job#policy_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#policy_override Job#policy_override}
 
 ---
 
@@ -223,7 +237,15 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Whether to purge the job when the resource is destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
+
+---
+
+##### `read_allocation_ids`<sup>Optional</sup> <a name="read_allocation_ids" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.readAllocationIds"></a>
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
 
 ---
 
@@ -233,7 +255,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#timeouts Job#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#timeouts Job#timeouts}
 
 ---
 
@@ -243,7 +265,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The Vault token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#vault_token Job#vault_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#vault_token Job#vault_token}
 
 ---
 
@@ -273,11 +295,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetDeregisterOnDestroy">reset_deregister_on_destroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetDeregisterOnIdChange">reset_deregister_on_id_change</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetDetach">reset_detach</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.resetHcl1">reset_hcl1</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetHcl2">reset_hcl2</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetId">reset_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetJson">reset_json</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetPolicyOverride">reset_policy_override</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetPurgeOnDestroy">reset_purge_on_destroy</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.resetReadAllocationIds">reset_read_allocation_ids</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetTimeouts">reset_timeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetVaultToken">reset_vault_token</a></code> | *No description.* |
 
@@ -508,7 +532,7 @@ def put_hcl2(
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#allow_fs Job#allow_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#allow_fs Job#allow_fs}
 
 ---
 
@@ -518,7 +542,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 If true, the `jobspec` will be parsed as HCL2 instead of HCL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#enabled Job#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#enabled Job#enabled}
 
 ---
 
@@ -528,7 +552,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Additional variables to use when templating the job with HCL2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#vars Job#vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#vars Job#vars}
 
 ---
 
@@ -545,7 +569,7 @@ def put_timeouts(
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#create Job#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#create Job#create}.
 
 ---
 
@@ -553,7 +577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#update Job#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#update Job#update}.
 
 ---
 
@@ -579,6 +603,12 @@ def reset_deregister_on_id_change() -> None
 
 ```python
 def reset_detach() -> None
+```
+
+##### `reset_hcl1` <a name="reset_hcl1" id="@cdktf/provider-nomad.job.Job.resetHcl1"></a>
+
+```python
+def reset_hcl1() -> None
 ```
 
 ##### `reset_hcl2` <a name="reset_hcl2" id="@cdktf/provider-nomad.job.Job.resetHcl2"></a>
@@ -609,6 +639,12 @@ def reset_policy_override() -> None
 
 ```python
 def reset_purge_on_destroy() -> None
+```
+
+##### `reset_read_allocation_ids` <a name="reset_read_allocation_ids" id="@cdktf/provider-nomad.job.Job.resetReadAllocationIds"></a>
+
+```python
+def reset_read_allocation_ids() -> None
 ```
 
 ##### `reset_timeouts` <a name="reset_timeouts" id="@cdktf/provider-nomad.job.Job.resetTimeouts"></a>
@@ -733,23 +769,27 @@ job.Job.is_terraform_resource(
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput">deregister_on_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput">deregister_on_id_change_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.detachInput">detach_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.hcl1Input">hcl1_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.hcl2Input">hcl2_input</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspecInput">jobspec_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jsonInput">json_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">policy_override_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">purge_on_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput">read_allocation_ids_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.vaultTokenInput">vault_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.consulToken">consul_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange">deregister_on_id_change</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.detach">detach</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.hcl1">hcl1</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspec">jobspec</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.json">json</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverride">policy_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroy">purge_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIds">read_allocation_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.vaultToken">vault_token</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -1056,6 +1096,16 @@ detach_input: typing.Union[bool, IResolvable]
 
 ---
 
+##### `hcl1_input`<sup>Optional</sup> <a name="hcl1_input" id="@cdktf/provider-nomad.job.Job.property.hcl1Input"></a>
+
+```python
+hcl1_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `hcl2_input`<sup>Optional</sup> <a name="hcl2_input" id="@cdktf/provider-nomad.job.Job.property.hcl2Input"></a>
 
 ```python
@@ -1110,6 +1160,16 @@ policy_override_input: typing.Union[bool, IResolvable]
 
 ```python
 purge_on_destroy_input: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `read_allocation_ids_input`<sup>Optional</sup> <a name="read_allocation_ids_input" id="@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput"></a>
+
+```python
+read_allocation_ids_input: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -1176,6 +1236,16 @@ detach: typing.Union[bool, IResolvable]
 
 ---
 
+##### `hcl1`<sup>Required</sup> <a name="hcl1" id="@cdktf/provider-nomad.job.Job.property.hcl1"></a>
+
+```python
+hcl1: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-nomad.job.Job.property.id"></a>
 
 ```python
@@ -1220,6 +1290,16 @@ policy_override: typing.Union[bool, IResolvable]
 
 ```python
 purge_on_destroy: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+---
+
+##### `read_allocation_ids`<sup>Required</sup> <a name="read_allocation_ids" id="@cdktf/provider-nomad.job.Job.property.readAllocationIds"></a>
+
+```python
+read_allocation_ids: typing.Union[bool, IResolvable]
 ```
 
 - *Type:* typing.Union[bool, cdktf.IResolvable]
@@ -1276,11 +1356,13 @@ job.JobConfig(
   deregister_on_destroy: typing.Union[bool, IResolvable] = None,
   deregister_on_id_change: typing.Union[bool, IResolvable] = None,
   detach: typing.Union[bool, IResolvable] = None,
+  hcl1: typing.Union[bool, IResolvable] = None,
   hcl2: JobHcl2 = None,
   id: str = None,
   json: typing.Union[bool, IResolvable] = None,
   policy_override: typing.Union[bool, IResolvable] = None,
   purge_on_destroy: typing.Union[bool, IResolvable] = None,
+  read_allocation_ids: typing.Union[bool, IResolvable] = None,
   timeouts: JobTimeouts = None,
   vault_token: str = None
 )
@@ -1302,11 +1384,13 @@ job.JobConfig(
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the job will be deregistered on destroy. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange">deregister_on_id_change</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the job will be deregistered when the job ID changes. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">detach</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl1">hcl1</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the `jobspec` will be parsed using the HCL1 format. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl2">hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#id Job#id}. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">json</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">policy_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Override any soft-mandatory Sentinel policies that fail. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">purge_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to purge the job when the resource is destroyed. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">read_allocation_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.vaultToken">vault_token</a></code> | <code>str</code> | The Vault token used to submit this job. |
 
@@ -1392,7 +1476,7 @@ jobspec: str
 
 Job specification. If you want to point to a file use the file() function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#jobspec Job#jobspec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#jobspec Job#jobspec}
 
 ---
 
@@ -1406,7 +1490,7 @@ consul_token: str
 
 The Consul token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#consul_token Job#consul_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#consul_token Job#consul_token}
 
 ---
 
@@ -1420,7 +1504,7 @@ deregister_on_destroy: typing.Union[bool, IResolvable]
 
 If true, the job will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
 
 ---
 
@@ -1434,7 +1518,7 @@ deregister_on_id_change: typing.Union[bool, IResolvable]
 
 If true, the job will be deregistered when the job ID changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
 
 ---
 
@@ -1448,7 +1532,21 @@ detach: typing.Union[bool, IResolvable]
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#detach Job#detach}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#detach Job#detach}
+
+---
+
+##### `hcl1`<sup>Optional</sup> <a name="hcl1" id="@cdktf/provider-nomad.job.JobConfig.property.hcl1"></a>
+
+```python
+hcl1: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+If true, the `jobspec` will be parsed using the HCL1 format.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#hcl1 Job#hcl1}
 
 ---
 
@@ -1462,7 +1560,7 @@ hcl2: JobHcl2
 
 hcl2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#hcl2 Job#hcl2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#hcl2 Job#hcl2}
 
 ---
 
@@ -1474,7 +1572,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1491,7 +1589,7 @@ json: typing.Union[bool, IResolvable]
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#json Job#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#json Job#json}
 
 ---
 
@@ -1505,7 +1603,7 @@ policy_override: typing.Union[bool, IResolvable]
 
 Override any soft-mandatory Sentinel policies that fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#policy_override Job#policy_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#policy_override Job#policy_override}
 
 ---
 
@@ -1519,7 +1617,19 @@ purge_on_destroy: typing.Union[bool, IResolvable]
 
 Whether to purge the job when the resource is destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
+
+---
+
+##### `read_allocation_ids`<sup>Optional</sup> <a name="read_allocation_ids" id="@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds"></a>
+
+```python
+read_allocation_ids: typing.Union[bool, IResolvable]
+```
+
+- *Type:* typing.Union[bool, cdktf.IResolvable]
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
 
 ---
 
@@ -1533,7 +1643,7 @@ timeouts: JobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#timeouts Job#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#timeouts Job#timeouts}
 
 ---
 
@@ -1547,7 +1657,7 @@ vault_token: str
 
 The Vault token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#vault_token Job#vault_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#vault_token Job#vault_token}
 
 ---
 
@@ -1585,7 +1695,7 @@ allow_fs: typing.Union[bool, IResolvable]
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#allow_fs Job#allow_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#allow_fs Job#allow_fs}
 
 ---
 
@@ -1599,7 +1709,7 @@ enabled: typing.Union[bool, IResolvable]
 
 If true, the `jobspec` will be parsed as HCL2 instead of HCL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#enabled Job#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#enabled Job#enabled}
 
 ---
 
@@ -1613,7 +1723,7 @@ vars: typing.Mapping[str]
 
 Additional variables to use when templating the job with HCL2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#vars Job#vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#vars Job#vars}
 
 ---
 
@@ -1678,8 +1788,8 @@ job.JobTimeouts(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#create Job#create}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#update Job#update}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">create</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#create Job#create}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">update</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#update Job#update}. |
 
 ---
 
@@ -1691,7 +1801,7 @@ create: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#create Job#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#create Job#create}.
 
 ---
 
@@ -1703,7 +1813,7 @@ update: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/job#update Job#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#update Job#update}.
 
 ---
 

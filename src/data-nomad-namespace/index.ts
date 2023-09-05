@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace
+// https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataNomadNamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace#id DataNomadNamespace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace#id DataNomadNamespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace#name DataNomadNamespace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace#name DataNomadNamespace#name}
   */
   readonly name: string;
 }
@@ -93,9 +93,83 @@ export class DataNomadNamespaceCapabilitiesList extends cdktf.ComplexList {
     return new DataNomadNamespaceCapabilitiesOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
   }
 }
+export interface DataNomadNamespaceNodePoolConfig {
+}
+
+export function dataNomadNamespaceNodePoolConfigToTerraform(struct?: DataNomadNamespaceNodePoolConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+  }
+}
+
+export class DataNomadNamespaceNodePoolConfigOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param complexObjectIndex the index of this item in the list
+  * @param complexObjectIsFromSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string, complexObjectIndex: number, complexObjectIsFromSet: boolean) {
+    super(terraformResource, terraformAttribute, complexObjectIsFromSet, complexObjectIndex);
+  }
+
+  public get internalValue(): DataNomadNamespaceNodePoolConfig | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: DataNomadNamespaceNodePoolConfig | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+    }
+  }
+
+  // allowed - computed: true, optional: false, required: false
+  public get allowed() {
+    return cdktf.Fn.tolist(this.getListAttribute('allowed'));
+  }
+
+  // default - computed: true, optional: false, required: false
+  public get default() {
+    return this.getStringAttribute('default');
+  }
+
+  // denied - computed: true, optional: false, required: false
+  public get denied() {
+    return cdktf.Fn.tolist(this.getListAttribute('denied'));
+  }
+}
+
+export class DataNomadNamespaceNodePoolConfigList extends cdktf.ComplexList {
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  * @param wrapsSet whether the list is wrapping a set (will add tolist() to be able to access an item via an index)
+  */
+  constructor(protected terraformResource: cdktf.IInterpolatingParent, protected terraformAttribute: string, protected wrapsSet: boolean) {
+    super(terraformResource, terraformAttribute, wrapsSet)
+  }
+
+  /**
+  * @param index the index of the item to return
+  */
+  public get(index: number): DataNomadNamespaceNodePoolConfigOutputReference {
+    return new DataNomadNamespaceNodePoolConfigOutputReference(this.terraformResource, this.terraformAttribute, index, this.wrapsSet);
+  }
+}
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace nomad_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace nomad_namespace}
 */
 export class DataNomadNamespace extends cdktf.TerraformDataSource {
 
@@ -109,7 +183,7 @@ export class DataNomadNamespace extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/namespace nomad_namespace} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace nomad_namespace} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -120,8 +194,8 @@ export class DataNomadNamespace extends cdktf.TerraformDataSource {
       terraformResourceType: 'nomad_namespace',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '1.4.20',
-        providerVersionConstraint: '~> 1.4'
+        providerVersion: '2.0.0',
+        providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
       dependsOn: config.dependsOn,
@@ -183,6 +257,12 @@ export class DataNomadNamespace extends cdktf.TerraformDataSource {
   // Temporarily expose input value. Use with caution.
   public get nameInput() {
     return this._name;
+  }
+
+  // node_pool_config - computed: true, optional: false, required: false
+  private _nodePoolConfig = new DataNomadNamespaceNodePoolConfigList(this, "node_pool_config", false);
+  public get nodePoolConfig() {
+    return this._nodePoolConfig;
   }
 
   // quota - computed: true, optional: false, required: false

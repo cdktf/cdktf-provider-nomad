@@ -1,6 +1,6 @@
 # `data_nomad_job_parser`
 
-Refer to the Terraform Registory for docs: [`data_nomad_job_parser`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser).
+Refer to the Terraform Registory for docs: [`data_nomad_job_parser`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser).
 
 # `dataNomadJobParser` Submodule <a name="`dataNomadJobParser` Submodule" id="@cdktf/provider-nomad.dataNomadJobParser"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`data_nomad_job_parser`](https://reg
 
 ### DataNomadJobParser <a name="DataNomadJobParser" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser nomad_job_parser}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser nomad_job_parser}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer"></a>
 
@@ -613,7 +613,7 @@ new DataNomadJobParserConfig {
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.hcl">Hcl</a></code> | <code>string</code> | Specifies the HCL definition of the job encoded in a JSON string. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.canonicalize">Canonicalize</a></code> | <code>object</code> | Flag to enable setting any unset fields to their default values. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser#id DataNomadJobParser#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser#id DataNomadJobParser#id}. |
 
 ---
 
@@ -697,7 +697,7 @@ public string Hcl { get; set; }
 
 Specifies the HCL definition of the job encoded in a JSON string.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser#hcl DataNomadJobParser#hcl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser#hcl DataNomadJobParser#hcl}
 
 ---
 
@@ -711,7 +711,7 @@ public object Canonicalize { get; set; }
 
 Flag to enable setting any unset fields to their default values.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser#canonicalize DataNomadJobParser#canonicalize}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser#canonicalize DataNomadJobParser#canonicalize}
 
 ---
 
@@ -723,7 +723,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/data-sources/job_parser#id DataNomadJobParser#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser#id DataNomadJobParser#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

@@ -1,6 +1,6 @@
 # `nomad_volume`
 
-Refer to the Terraform Registory for docs: [`nomad_volume`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume).
+Refer to the Terraform Registory for docs: [`nomad_volume`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume).
 
 # `volume` Submodule <a name="`volume` Submodule" id="@cdktf/provider-nomad.volume"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_volume`](https://registry.ter
 
 ### Volume <a name="Volume" id="@cdktf/provider-nomad.volume.Volume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume nomad_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume nomad_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.Volume.Initializer"></a>
 
@@ -1113,7 +1113,7 @@ public readonly accessMode: string;
 
 Defines whether a volume should be available concurrently.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#access_mode Volume#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#access_mode Volume#access_mode}
 
 ---
 
@@ -1127,7 +1127,7 @@ public readonly attachmentMode: string;
 
 The storage API that will be used by the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#attachment_mode Volume#attachment_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#attachment_mode Volume#attachment_mode}
 
 ---
 
@@ -1161,7 +1161,7 @@ const volumeConfig: volume.VolumeConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.capability">capability</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.volume.VolumeCapability">VolumeCapability</a>[]</code> | capability block. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.context">context</a></code> | <code>{[ key: string ]: string}</code> | An optional key-value map of strings passed directly to the CSI plugin to validate the volume. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the volume will be deregistered on destroy. |
-| <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#id Volume#id}. |
+| <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#id Volume#id}. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.mountOptions">mountOptions</a></code> | <code><a href="#@cdktf/provider-nomad.volume.VolumeMountOptions">VolumeMountOptions</a></code> | mount_options block. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.namespace">namespace</a></code> | <code>string</code> | The namespace in which to create the volume. |
 | <code><a href="#@cdktf/provider-nomad.volume.VolumeConfig.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | An optional key-value map of strings passed directly to the CSI plugin to configure the volume. |
@@ -1251,7 +1251,7 @@ public readonly externalId: string;
 
 The ID of the physical volume from the storage provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#external_id Volume#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#external_id Volume#external_id}
 
 ---
 
@@ -1265,7 +1265,7 @@ public readonly name: string;
 
 The display name of the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#name Volume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#name Volume#name}
 
 ---
 
@@ -1279,7 +1279,7 @@ public readonly pluginId: string;
 
 The ID of the CSI plugin that manages this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#plugin_id Volume#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#plugin_id Volume#plugin_id}
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly volumeId: string;
 
 The unique ID of the volume, how jobs will refer to the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#volume_id Volume#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#volume_id Volume#volume_id}
 
 ---
 
@@ -1307,7 +1307,7 @@ public readonly accessMode: string;
 
 Defines whether a volume should be available concurrently.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#access_mode Volume#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#access_mode Volume#access_mode}
 
 ---
 
@@ -1321,7 +1321,7 @@ public readonly attachmentMode: string;
 
 The storage API that will be used by the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#attachment_mode Volume#attachment_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#attachment_mode Volume#attachment_mode}
 
 ---
 
@@ -1335,7 +1335,7 @@ public readonly capability: IResolvable | VolumeCapability[];
 
 capability block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#capability Volume#capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#capability Volume#capability}
 
 ---
 
@@ -1349,7 +1349,7 @@ public readonly context: {[ key: string ]: string};
 
 An optional key-value map of strings passed directly to the CSI plugin to validate the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#context Volume#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#context Volume#context}
 
 ---
 
@@ -1363,7 +1363,7 @@ public readonly deregisterOnDestroy: boolean | IResolvable;
 
 If true, the volume will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#deregister_on_destroy Volume#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#deregister_on_destroy Volume#deregister_on_destroy}
 
 ---
 
@@ -1375,7 +1375,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#id Volume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#id Volume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1392,7 +1392,7 @@ public readonly mountOptions: VolumeMountOptions;
 
 mount_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#mount_options Volume#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#mount_options Volume#mount_options}
 
 ---
 
@@ -1406,7 +1406,7 @@ public readonly namespace: string;
 
 The namespace in which to create the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#namespace Volume#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#namespace Volume#namespace}
 
 ---
 
@@ -1420,7 +1420,7 @@ public readonly parameters: {[ key: string ]: string};
 
 An optional key-value map of strings passed directly to the CSI plugin to configure the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#parameters Volume#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#parameters Volume#parameters}
 
 ---
 
@@ -1434,7 +1434,7 @@ public readonly secrets: {[ key: string ]: string};
 
 An optional key-value map of strings used as credentials for publishing and unpublishing volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#secrets Volume#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#secrets Volume#secrets}
 
 ---
 
@@ -1448,7 +1448,7 @@ public readonly topologyRequest: VolumeTopologyRequest;
 
 topology_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#topology_request Volume#topology_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#topology_request Volume#topology_request}
 
 ---
 
@@ -1462,7 +1462,7 @@ public readonly type: string;
 
 The type of the volume. Currently, only 'csi' is supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#type Volume#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#type Volume#type}
 
 ---
 
@@ -1495,7 +1495,7 @@ public readonly fsType: string;
 
 The file system type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#fs_type Volume#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#fs_type Volume#fs_type}
 
 ---
 
@@ -1509,7 +1509,7 @@ public readonly mountFlags: string[];
 
 The flags passed to mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#mount_flags Volume#mount_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#mount_flags Volume#mount_flags}
 
 ---
 
@@ -1552,7 +1552,7 @@ public readonly required: VolumeTopologyRequestRequired;
 
 required block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#required Volume#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#required Volume#required}
 
 ---
 
@@ -1584,7 +1584,7 @@ public readonly topology: IResolvable | VolumeTopologyRequestRequiredTopology[];
 
 topology block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#topology Volume#topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#topology Volume#topology}
 
 ---
 
@@ -1616,7 +1616,7 @@ public readonly segments: {[ key: string ]: string};
 
 Define attributes for the topology request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/volume#segments Volume#segments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume#segments Volume#segments}
 
 ---
 

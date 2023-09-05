@@ -1,6 +1,6 @@
 # `provider`
 
-Refer to the Terraform Registory for docs: [`nomad`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs).
+Refer to the Terraform Registory for docs: [`nomad`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs).
 
 # `provider` Submodule <a name="`provider` Submodule" id="@cdktf/provider-nomad.provider"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad`](https://registry.terraform.
 
 ### NomadProvider <a name="NomadProvider" id="@cdktf/provider-nomad.provider.NomadProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs nomad}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs nomad}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer"></a>
 
@@ -73,6 +73,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetKeyPem">ResetKeyPem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetRegion">ResetRegion</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetSecretId">ResetSecretId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetSkipVerify">ResetSkipVerify</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetVaultToken">ResetVaultToken</a></code> | *No description.* |
 
 ---
@@ -219,6 +220,12 @@ private void ResetRegion()
 private void ResetSecretId()
 ```
 
+##### `ResetSkipVerify` <a name="ResetSkipVerify" id="@cdktf/provider-nomad.provider.NomadProvider.resetSkipVerify"></a>
+
+```csharp
+private void ResetSkipVerify()
+```
+
 ##### `ResetVaultToken` <a name="ResetVaultToken" id="@cdktf/provider-nomad.provider.NomadProvider.resetVaultToken"></a>
 
 ```csharp
@@ -322,6 +329,7 @@ NomadProvider.IsTerraformProvider(object X);
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyPemInput">KeyPemInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretIdInput">SecretIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput">SkipVerifyInput</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.vaultTokenInput">VaultTokenInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.address">Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
@@ -336,6 +344,7 @@ NomadProvider.IsTerraformProvider(object X);
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyPem">KeyPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretId">SecretId</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify">SkipVerify</a></code> | <code>object</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.vaultToken">VaultToken</a></code> | <code>string</code> | *No description.* |
 
 ---
@@ -572,6 +581,16 @@ public string SecretIdInput { get; }
 
 ---
 
+##### `SkipVerifyInput`<sup>Optional</sup> <a name="SkipVerifyInput" id="@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput"></a>
+
+```csharp
+public object SkipVerifyInput { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `VaultTokenInput`<sup>Optional</sup> <a name="VaultTokenInput" id="@cdktf/provider-nomad.provider.NomadProvider.property.vaultTokenInput"></a>
 
 ```csharp
@@ -712,6 +731,16 @@ public string SecretId { get; }
 
 ---
 
+##### `SkipVerify`<sup>Optional</sup> <a name="SkipVerify" id="@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify"></a>
+
+```csharp
+public object SkipVerify { get; }
+```
+
+- *Type:* object
+
+---
+
 ##### `VaultToken`<sup>Optional</sup> <a name="VaultToken" id="@cdktf/provider-nomad.provider.NomadProvider.property.vaultToken"></a>
 
 ```csharp
@@ -764,6 +793,7 @@ new NomadProviderConfig {
     string KeyPem = null,
     string Region = null,
     string SecretId = null,
+    object SkipVerify = null,
     string VaultToken = null
 };
 ```
@@ -786,6 +816,7 @@ new NomadProviderConfig {
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.keyPem">KeyPem</a></code> | <code>string</code> | PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.region">Region</a></code> | <code>string</code> | Region of the target Nomad agent. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.secretId">SecretId</a></code> | <code>string</code> | ACL token secret for API requests. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify">SkipVerify</a></code> | <code>object</code> | Skip TLS verification on client side. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.vaultToken">VaultToken</a></code> | <code>string</code> | Vault token if policies are specified in the job file. |
 
 ---
@@ -800,7 +831,7 @@ public string Address { get; set; }
 
 URL of the root of the target Nomad agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#address NomadProvider#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#address NomadProvider#address}
 
 ---
 
@@ -814,7 +845,7 @@ public string Alias { get; set; }
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#alias NomadProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#alias NomadProvider#alias}
 
 ---
 
@@ -828,7 +859,7 @@ public string CaFile { get; set; }
 
 A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#ca_file NomadProvider#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#ca_file NomadProvider#ca_file}
 
 ---
 
@@ -842,7 +873,7 @@ public string CaPem { get; set; }
 
 PEM-encoded certificate authority used to verify the remote agent's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#ca_pem NomadProvider#ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#ca_pem NomadProvider#ca_pem}
 
 ---
 
@@ -856,7 +887,7 @@ public string CertFile { get; set; }
 
 A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#cert_file NomadProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#cert_file NomadProvider#cert_file}
 
 ---
 
@@ -870,7 +901,7 @@ public string CertPem { get; set; }
 
 PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#cert_pem NomadProvider#cert_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#cert_pem NomadProvider#cert_pem}
 
 ---
 
@@ -884,7 +915,7 @@ public string ConsulToken { get; set; }
 
 Consul token to validate Consul Connect Service Identity policies specified in the job file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#consul_token NomadProvider#consul_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#consul_token NomadProvider#consul_token}
 
 ---
 
@@ -898,7 +929,7 @@ public object Headers { get; set; }
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#headers NomadProvider#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#headers NomadProvider#headers}
 
 ---
 
@@ -912,7 +943,7 @@ public string HttpAuth { get; set; }
 
 HTTP basic auth configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#http_auth NomadProvider#http_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#http_auth NomadProvider#http_auth}
 
 ---
 
@@ -926,7 +957,7 @@ public System.Collections.Generic.IDictionary<string, object> IgnoreEnvVars { ge
 
 A set of environment variables that are ignored by the provider when configuring the Nomad API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#ignore_env_vars NomadProvider#ignore_env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#ignore_env_vars NomadProvider#ignore_env_vars}
 
 ---
 
@@ -940,7 +971,7 @@ public string KeyFile { get; set; }
 
 A path to a PEM-encoded private key, required if cert_file or cert_pem is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#key_file NomadProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#key_file NomadProvider#key_file}
 
 ---
 
@@ -954,7 +985,7 @@ public string KeyPem { get; set; }
 
 PEM-encoded private key, required if cert_file or cert_pem is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#key_pem NomadProvider#key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#key_pem NomadProvider#key_pem}
 
 ---
 
@@ -968,7 +999,7 @@ public string Region { get; set; }
 
 Region of the target Nomad agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#region NomadProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#region NomadProvider#region}
 
 ---
 
@@ -982,7 +1013,21 @@ public string SecretId { get; set; }
 
 ACL token secret for API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#secret_id NomadProvider#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#secret_id NomadProvider#secret_id}
+
+---
+
+##### `SkipVerify`<sup>Optional</sup> <a name="SkipVerify" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify"></a>
+
+```csharp
+public object SkipVerify { get; set; }
+```
+
+- *Type:* object
+
+Skip TLS verification on client side.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#skip_verify NomadProvider#skip_verify}
 
 ---
 
@@ -996,7 +1041,7 @@ public string VaultToken { get; set; }
 
 Vault token if policies are specified in the job file.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#vault_token NomadProvider#vault_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#vault_token NomadProvider#vault_token}
 
 ---
 
@@ -1032,7 +1077,7 @@ public string Name { get; set; }
 
 The header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#name NomadProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#name NomadProvider#name}
 
 ---
 
@@ -1046,7 +1091,7 @@ public string Value { get; set; }
 
 The header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs#value NomadProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#value NomadProvider#value}
 
 ---
 

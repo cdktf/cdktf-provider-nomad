@@ -1,6 +1,6 @@
 # `nomad_acl_binding_rule`
 
-Refer to the Terraform Registory for docs: [`nomad_acl_binding_rule`](https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule).
+Refer to the Terraform Registory for docs: [`nomad_acl_binding_rule`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule).
 
 # `aclBindingRule` Submodule <a name="`aclBindingRule` Submodule" id="@cdktf/provider-nomad.aclBindingRule"></a>
 
@@ -8,7 +8,7 @@ Refer to the Terraform Registory for docs: [`nomad_acl_binding_rule`](https://re
 
 ### AclBindingRule <a name="AclBindingRule" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule nomad_acl_binding_rule}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule nomad_acl_binding_rule}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer"></a>
 
@@ -28,8 +28,8 @@ AclBindingRule.Builder.create(Construct scope, java.lang.String id)
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .authMethod(java.lang.String)
-    .bindName(java.lang.String)
     .bindType(java.lang.String)
+//  .bindName(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .selector(java.lang.String)
@@ -48,10 +48,10 @@ AclBindingRule.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.authMethod">authMethod</a></code> | <code>java.lang.String</code> | Name of the auth method for which this rule applies to. |
-| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.bindName">bindName</a></code> | <code>java.lang.String</code> | Target of the binding. |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.bindType">bindType</a></code> | <code>java.lang.String</code> | Adjusts how this binding rule is applied at login time. Valid values are "role" and "policy". |
+| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.bindName">bindName</a></code> | <code>java.lang.String</code> | Target of the binding. |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.description">description</a></code> | <code>java.lang.String</code> | Description for this ACL binding rule. |
-| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#id AclBindingRule#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#id AclBindingRule#id}. |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.selector">selector</a></code> | <code>java.lang.String</code> | A boolean expression that matches against verified identity attributes returned from the auth method during login. |
 
 ---
@@ -122,17 +122,7 @@ Must be unique amongst siblings in the same scope
 
 Name of the auth method for which this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
-
----
-
-##### `bindName`<sup>Required</sup> <a name="bindName" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.bindName"></a>
-
-- *Type:* java.lang.String
-
-Target of the binding.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
 
 ---
 
@@ -142,7 +132,17 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Adjusts how this binding rule is applied at login time. Valid values are "role" and "policy".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
+
+---
+
+##### `bindName`<sup>Optional</sup> <a name="bindName" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer.parameter.bindName"></a>
+
+- *Type:* java.lang.String
+
+Target of the binding.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
 
 ---
 
@@ -152,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description for this ACL binding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#description AclBindingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#description AclBindingRule#description}
 
 ---
 
@@ -160,7 +160,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#id AclBindingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#id AclBindingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -173,7 +173,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 A boolean expression that matches against verified identity attributes returned from the auth method during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
 
 ---
 
@@ -197,6 +197,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.getStringAttribute">getStringAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.getStringMapAttribute">getStringMapAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetBindName">resetBindName</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetDescription">resetDescription</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetSelector">resetSelector</a></code> | *No description.* |
@@ -386,6 +387,12 @@ public IResolvable interpolationForAttribute(java.lang.String terraformAttribute
 - *Type:* java.lang.String
 
 ---
+
+##### `resetBindName` <a name="resetBindName" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetBindName"></a>
+
+```java
+public void resetBindName()
+```
 
 ##### `resetDescription` <a name="resetDescription" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.resetDescription"></a>
 
@@ -810,8 +817,8 @@ AclBindingRuleConfig.builder()
 //  .provisioners(LocalExecProvisioner)
 //  .provisioners(RemoteExecProvisioner>)
     .authMethod(java.lang.String)
-    .bindName(java.lang.String)
     .bindType(java.lang.String)
+//  .bindName(java.lang.String)
 //  .description(java.lang.String)
 //  .id(java.lang.String)
 //  .selector(java.lang.String)
@@ -830,10 +837,10 @@ AclBindingRuleConfig.builder()
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.authMethod">authMethod</a></code> | <code>java.lang.String</code> | Name of the auth method for which this rule applies to. |
-| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindName">bindName</a></code> | <code>java.lang.String</code> | Target of the binding. |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindType">bindType</a></code> | <code>java.lang.String</code> | Adjusts how this binding rule is applied at login time. Valid values are "role" and "policy". |
+| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindName">bindName</a></code> | <code>java.lang.String</code> | Target of the binding. |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.description">description</a></code> | <code>java.lang.String</code> | Description for this ACL binding rule. |
-| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#id AclBindingRule#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#id AclBindingRule#id}. |
 | <code><a href="#@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.selector">selector</a></code> | <code>java.lang.String</code> | A boolean expression that matches against verified identity attributes returned from the auth method during login. |
 
 ---
@@ -918,21 +925,7 @@ public java.lang.String getAuthMethod();
 
 Name of the auth method for which this rule applies to.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
-
----
-
-##### `bindName`<sup>Required</sup> <a name="bindName" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindName"></a>
-
-```java
-public java.lang.String getBindName();
-```
-
-- *Type:* java.lang.String
-
-Target of the binding.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
 
 ---
 
@@ -946,7 +939,21 @@ public java.lang.String getBindType();
 
 Adjusts how this binding rule is applied at login time. Valid values are "role" and "policy".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
+
+---
+
+##### `bindName`<sup>Optional</sup> <a name="bindName" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.property.bindName"></a>
+
+```java
+public java.lang.String getBindName();
+```
+
+- *Type:* java.lang.String
+
+Target of the binding.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
 
 ---
 
@@ -960,7 +967,7 @@ public java.lang.String getDescription();
 
 Description for this ACL binding rule.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#description AclBindingRule#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#description AclBindingRule#description}
 
 ---
 
@@ -972,7 +979,7 @@ public java.lang.String getId();
 
 - *Type:* java.lang.String
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#id AclBindingRule#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#id AclBindingRule#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -989,7 +996,7 @@ public java.lang.String getSelector();
 
 A boolean expression that matches against verified identity attributes returned from the auth method during login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/1.4.20/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
 
 ---
 
