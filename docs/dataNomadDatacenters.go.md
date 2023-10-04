@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomaddatacenters"
 
 datanomaddatacenters.NewDataNomadDatacenters(scope Construct, id *string, config DataNomadDatacentersConfig) DataNomadDatacenters
 ```
@@ -291,7 +291,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_IsConstruct(x interface{}) *bool
 ```
@@ -323,7 +323,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_IsTerraformElement(x interface{}) *bool
 ```
@@ -337,7 +337,7 @@ datanomaddatacenters.DataNomadDatacenters_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -591,7 +591,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v7/datanomaddatacenters"
 
 &datanomaddatacenters.DataNomadDatacentersConfig {
 	Connection: interface{},
