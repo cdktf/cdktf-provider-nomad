@@ -239,6 +239,7 @@ private void ResetVaultToken()
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.isTerraformProvider">IsTerraformProvider</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a NomadProvider resource upon running "cdktf plan <stack-name>". |
 
 ---
 
@@ -299,6 +300,50 @@ NomadProvider.IsTerraformProvider(object X);
 ###### `X`<sup>Required</sup> <a name="X" id="@cdktf/provider-nomad.provider.NomadProvider.isTerraformProvider.parameter.x"></a>
 
 - *Type:* object
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.provider.NomadProvider.generateConfigForImport"></a>
+
+```csharp
+using HashiCorp.Cdktf.Providers.Nomad;
+
+NomadProvider.GenerateConfigForImport(Construct Scope, string ImportToId, string ImportFromId, TerraformProvider Provider = null);
+```
+
+Generates CDKTF code for importing a NomadProvider resource upon running "cdktf plan <stack-name>".
+
+###### `Scope`<sup>Required</sup> <a name="Scope" id="@cdktf/provider-nomad.provider.NomadProvider.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* Constructs.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `ImportToId`<sup>Required</sup> <a name="ImportToId" id="@cdktf/provider-nomad.provider.NomadProvider.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* string
+
+The construct id used in the generated config for the NomadProvider to import.
+
+---
+
+###### `ImportFromId`<sup>Required</sup> <a name="ImportFromId" id="@cdktf/provider-nomad.provider.NomadProvider.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* string
+
+The id of the existing NomadProvider that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `Provider`<sup>Optional</sup> <a name="Provider" id="@cdktf/provider-nomad.provider.NomadProvider.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* HashiCorp.Cdktf.TerraformProvider
+
+? Optional instance of the provider where the NomadProvider to import is found.
 
 ---
 
