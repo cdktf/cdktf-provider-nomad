@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.NewDataNomadScalingPolicies(scope Construct, id *string, config DataNomadScalingPoliciesConfig) DataNomadScalingPolicies
 ```
@@ -292,7 +292,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.DataNomadScalingPolicies_IsConstruct(x interface{}) *bool
 ```
@@ -324,7 +324,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.DataNomadScalingPolicies_IsTerraformElement(x interface{}) *bool
 ```
@@ -338,7 +338,7 @@ datanomadscalingpolicies.DataNomadScalingPolicies_IsTerraformElement(x interface
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.DataNomadScalingPolicies_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -352,7 +352,7 @@ datanomadscalingpolicies.DataNomadScalingPolicies_IsTerraformDataSource(x interf
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPolicies.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.DataNomadScalingPolicies_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -636,7 +636,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 &datanomadscalingpolicies.DataNomadScalingPoliciesConfig {
 	Connection: interface{},
@@ -787,7 +787,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 &datanomadscalingpolicies.DataNomadScalingPoliciesPolicies {
 
@@ -802,7 +802,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolici
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.NewDataNomadScalingPoliciesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadScalingPoliciesPoliciesList
 ```
@@ -934,7 +934,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadScalingPolicies.DataNomadScalingPoliciesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadscalingpolicies"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadscalingpolicies"
 
 datanomadscalingpolicies.NewDataNomadScalingPoliciesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadScalingPoliciesPoliciesOutputReference
 ```
