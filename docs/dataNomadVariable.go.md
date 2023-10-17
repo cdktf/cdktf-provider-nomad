@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadvariable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvariable"
 
 datanomadvariable.NewDataNomadVariable(scope Construct, id *string, config DataNomadVariableConfig) DataNomadVariable
 ```
@@ -278,13 +278,14 @@ func ResetNamespace()
 | <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataNomadVariable resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadvariable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvariable"
 
 datanomadvariable.DataNomadVariable_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadvariable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvariable"
 
 datanomadvariable.DataNomadVariable_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ datanomadvariable.DataNomadVariable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadvariable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvariable"
 
 datanomadvariable.DataNomadVariable_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ datanomadvariable.DataNomadVariable_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvariable"
+
+datanomadvariable.DataNomadVariable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataNomadVariable resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataNomadVariable to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataNomadVariable that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/variable#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataNomadVariable to import is found.
 
 ---
 
@@ -584,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadvariable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadvariable"
 
 &datanomadvariable.DataNomadVariableConfig {
 	Connection: interface{},

@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJob(scope Construct, id *string, config DataNomadJobConfig) DataNomadJob
 ```
@@ -278,13 +278,14 @@ func ResetNamespace()
 | <code><a href="#@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isConstruct">IsConstruct</a></code> | Checks if `x` is a construct. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformElement">IsTerraformElement</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformDataSource">IsTerraformDataSource</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJob.DataNomadJob.generateConfigForImport">GenerateConfigForImport</a></code> | Generates CDKTF code for importing a DataNomadJob resource upon running "cdktf plan <stack-name>". |
 
 ---
 
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.DataNomadJob_IsConstruct(x interface{}) *bool
 ```
@@ -316,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.DataNomadJob_IsTerraformElement(x interface{}) *bool
 ```
@@ -330,7 +331,7 @@ datanomadjob.DataNomadJob_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.DataNomadJob_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -338,6 +339,50 @@ datanomadjob.DataNomadJob_IsTerraformDataSource(x interface{}) *bool
 ###### `x`<sup>Required</sup> <a name="x" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.isTerraformDataSource.parameter.x"></a>
 
 - *Type:* interface{}
+
+---
+
+##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.generateConfigForImport"></a>
+
+```go
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
+
+datanomadjob.DataNomadJob_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
+```
+
+Generates CDKTF code for importing a DataNomadJob resource upon running "cdktf plan <stack-name>".
+
+###### `scope`<sup>Required</sup> <a name="scope" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.generateConfigForImport.parameter.scope"></a>
+
+- *Type:* github.com/aws/constructs-go/constructs/v10.Construct
+
+The scope in which to define this construct.
+
+---
+
+###### `importToId`<sup>Required</sup> <a name="importToId" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.generateConfigForImport.parameter.importToId"></a>
+
+- *Type:* *string
+
+The construct id used in the generated config for the DataNomadJob to import.
+
+---
+
+###### `importFromId`<sup>Required</sup> <a name="importFromId" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.generateConfigForImport.parameter.importFromId"></a>
+
+- *Type:* *string
+
+The id of the existing DataNomadJob that should be imported.
+
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job#import import section} in the documentation of this resource for the id to use
+
+---
+
+###### `provider`<sup>Optional</sup> <a name="provider" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJob.generateConfigForImport.parameter.provider"></a>
+
+- *Type:* github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider
+
+? Optional instance of the provider where the DataNomadJob to import is found.
 
 ---
 
@@ -782,7 +827,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 &datanomadjob.DataNomadJobConfig {
 	Connection: interface{},
@@ -933,7 +978,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobConstraints.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 &datanomadjob.DataNomadJobConstraints {
 
@@ -946,7 +991,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobPeriodicConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 &datanomadjob.DataNomadJobPeriodicConfig {
 
@@ -959,7 +1004,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 &datanomadjob.DataNomadJobTaskGroups {
 
@@ -972,7 +1017,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 &datanomadjob.DataNomadJobTaskGroupsTask {
 
@@ -985,7 +1030,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsTaskVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 &datanomadjob.DataNomadJobTaskGroupsTaskVolumeMounts {
 
@@ -998,7 +1043,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 &datanomadjob.DataNomadJobTaskGroupsVolumes {
 
@@ -1013,7 +1058,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobConstraintsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobConstraintsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadJobConstraintsList
 ```
@@ -1145,7 +1190,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobConstraintsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobConstraintsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadJobConstraintsOutputReference
 ```
@@ -1445,7 +1490,7 @@ func InternalValue() DataNomadJobConstraints
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobPeriodicConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobPeriodicConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadJobPeriodicConfigList
 ```
@@ -1577,7 +1622,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobPeriodicConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobPeriodicConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadJobPeriodicConfigOutputReference
 ```
@@ -1899,7 +1944,7 @@ func InternalValue() DataNomadJobPeriodicConfig
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobTaskGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadJobTaskGroupsList
 ```
@@ -2031,7 +2076,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobTaskGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadJobTaskGroupsOutputReference
 ```
@@ -2353,7 +2398,7 @@ func InternalValue() DataNomadJobTaskGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsTaskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobTaskGroupsTaskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadJobTaskGroupsTaskList
 ```
@@ -2485,7 +2530,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobTaskGroupsTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadJobTaskGroupsTaskOutputReference
 ```
@@ -2796,7 +2841,7 @@ func InternalValue() DataNomadJobTaskGroupsTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsTaskVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobTaskGroupsTaskVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadJobTaskGroupsTaskVolumeMountsList
 ```
@@ -2928,7 +2973,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsTaskVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobTaskGroupsTaskVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadJobTaskGroupsTaskVolumeMountsOutputReference
 ```
@@ -3228,7 +3273,7 @@ func InternalValue() DataNomadJobTaskGroupsTaskVolumeMounts
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobTaskGroupsVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadJobTaskGroupsVolumesList
 ```
@@ -3360,7 +3405,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJob.DataNomadJobTaskGroupsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjob"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjob"
 
 datanomadjob.NewDataNomadJobTaskGroupsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadJobTaskGroupsVolumesOutputReference
 ```
