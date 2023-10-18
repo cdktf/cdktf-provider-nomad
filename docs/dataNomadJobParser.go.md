@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.NewDataNomadJobParser(scope Construct, id *string, config DataNomadJobParserConfig) DataNomadJobParser
 ```
@@ -285,7 +285,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.DataNomadJobParser_IsConstruct(x interface{}) *bool
 ```
@@ -317,7 +317,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.DataNomadJobParser_IsTerraformElement(x interface{}) *bool
 ```
@@ -331,7 +331,7 @@ datanomadjobparser.DataNomadJobParser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.DataNomadJobParser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -345,7 +345,7 @@ datanomadjobparser.DataNomadJobParser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.DataNomadJobParser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -629,7 +629,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 &datanomadjobparser.DataNomadJobParserConfig {
 	Connection: interface{},
