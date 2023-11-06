@@ -1,7 +1,9 @@
 
-# Terraform CDK nomad Provider ~> 2.0
+# Terraform CDK nomad Provider tracks ~> 2.0
 
 This repo builds and publishes the Terraform nomad Provider bindings for [CDK for Terraform](https://cdk.tf).
+
+Is based directly on nomad 2.0.0
 
 ## Available Packages
 
