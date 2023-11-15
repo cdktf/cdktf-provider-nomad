@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistration(scope Construct, id *string, config CsiVolumeRegistrationConfig) CsiVolumeRegistration
 ```
@@ -454,7 +454,7 @@ func ResetTopologyRequest()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.CsiVolumeRegistration_IsConstruct(x interface{}) *bool
 ```
@@ -486,7 +486,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.CsiVolumeRegistration_IsTerraformElement(x interface{}) *bool
 ```
@@ -500,7 +500,7 @@ csivolumeregistration.CsiVolumeRegistration_IsTerraformElement(x interface{}) *b
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.CsiVolumeRegistration_IsTerraformResource(x interface{}) *bool
 ```
@@ -514,7 +514,7 @@ csivolumeregistration.CsiVolumeRegistration_IsTerraformResource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.CsiVolumeRegistration_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1150,7 +1150,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationCapability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 &csivolumeregistration.CsiVolumeRegistrationCapability {
 	AccessMode: *string,
@@ -1200,7 +1200,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 &csivolumeregistration.CsiVolumeRegistrationConfig {
 	Connection: interface{},
@@ -1218,12 +1218,12 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
 	Context: *map[string]*string,
 	DeregisterOnDestroy: interface{},
 	Id: *string,
-	MountOptions: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.csiVolumeRegistration.CsiVolumeRegistrationMountOptions,
+	MountOptions: github.com/cdktf/cdktf-provider-nomad-go/nomad.csiVolumeRegistration.CsiVolumeRegistrationMountOptions,
 	Namespace: *string,
 	Parameters: *map[string]*string,
 	Secrets: *map[string]*string,
-	Timeouts: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.csiVolumeRegistration.CsiVolumeRegistrationTimeouts,
-	TopologyRequest: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequest,
+	Timeouts: github.com/cdktf/cdktf-provider-nomad-go/nomad.csiVolumeRegistration.CsiVolumeRegistrationTimeouts,
+	TopologyRequest: github.com/cdktf/cdktf-provider-nomad-go/nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequest,
 }
 ```
 
@@ -1527,7 +1527,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationMountOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 &csivolumeregistration.CsiVolumeRegistrationMountOptions {
 	FsType: *string,
@@ -1577,7 +1577,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 &csivolumeregistration.CsiVolumeRegistrationTimeouts {
 	Create: *string,
@@ -1623,7 +1623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 &csivolumeregistration.CsiVolumeRegistrationTopologies {
 
@@ -1636,10 +1636,10 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 &csivolumeregistration.CsiVolumeRegistrationTopologyRequest {
-	Required: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequestRequired,
+	Required: github.com/cdktf/cdktf-provider-nomad-go/nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequestRequired,
 }
 ```
 
@@ -1670,7 +1670,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequestRequired.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 &csivolumeregistration.CsiVolumeRegistrationTopologyRequestRequired {
 	Topology: interface{},
@@ -1704,7 +1704,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequestRequiredTopology.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 &csivolumeregistration.CsiVolumeRegistrationTopologyRequestRequiredTopology {
 	Segments: *map[string]*string,
@@ -1740,7 +1740,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationCapabilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationCapabilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CsiVolumeRegistrationCapabilityList
 ```
@@ -1883,7 +1883,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationCapabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationCapabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CsiVolumeRegistrationCapabilityOutputReference
 ```
@@ -2194,7 +2194,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationMountOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationMountOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CsiVolumeRegistrationMountOptionsOutputReference
 ```
@@ -2501,7 +2501,7 @@ func InternalValue() CsiVolumeRegistrationMountOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CsiVolumeRegistrationTimeoutsOutputReference
 ```
@@ -2808,7 +2808,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationTopologiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CsiVolumeRegistrationTopologiesList
 ```
@@ -2940,7 +2940,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationTopologiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CsiVolumeRegistrationTopologiesOutputReference
 ```
@@ -3218,7 +3218,7 @@ func InternalValue() CsiVolumeRegistrationTopologies
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationTopologyRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CsiVolumeRegistrationTopologyRequestOutputReference
 ```
@@ -3509,7 +3509,7 @@ func InternalValue() CsiVolumeRegistrationTopologyRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequestRequiredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationTopologyRequestRequiredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) CsiVolumeRegistrationTopologyRequestRequiredOutputReference
 ```
@@ -3793,7 +3793,7 @@ func InternalValue() CsiVolumeRegistrationTopologyRequestRequired
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequestRequiredTopologyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationTopologyRequestRequiredTopologyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) CsiVolumeRegistrationTopologyRequestRequiredTopologyList
 ```
@@ -3936,7 +3936,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequestRequiredTopologyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/csivolumeregistration"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/csivolumeregistration"
 
 csivolumeregistration.NewCsiVolumeRegistrationTopologyRequestRequiredTopologyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) CsiVolumeRegistrationTopologyRequestRequiredTopologyOutputReference
 ```
