@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.Job.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJob(scope Construct, id *string, config JobConfig) Job
 ```
@@ -449,7 +449,7 @@ func ResetVaultToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.job.Job.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.Job_IsConstruct(x interface{}) *bool
 ```
@@ -481,7 +481,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.job.Job.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.Job_IsTerraformElement(x interface{}) *bool
 ```
@@ -495,7 +495,7 @@ job.Job_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.job.Job.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.Job_IsTerraformResource(x interface{}) *bool
 ```
@@ -509,7 +509,7 @@ job.Job_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.job.Job.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.Job_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1156,7 +1156,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 &job.JobConfig {
 	Connection: interface{},
@@ -1172,13 +1172,13 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 	DeregisterOnIdChange: interface{},
 	Detach: interface{},
 	Hcl1: interface{},
-	Hcl2: github.com/cdktf/cdktf-provider-nomad-go/nomad.job.JobHcl2,
+	Hcl2: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.job.JobHcl2,
 	Id: *string,
 	Json: interface{},
 	PolicyOverride: interface{},
 	PurgeOnDestroy: interface{},
 	ReadAllocationIds: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-nomad-go/nomad.job.JobTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.job.JobTimeouts,
 	VaultToken: *string,
 }
 ```
@@ -1481,7 +1481,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobHcl2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 &job.JobHcl2 {
 	AllowFs: interface{},
@@ -1547,7 +1547,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 &job.JobTaskGroups {
 
@@ -1560,7 +1560,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroupsTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 &job.JobTaskGroupsTask {
 
@@ -1573,7 +1573,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 &job.JobTaskGroupsTaskVolumeMounts {
 
@@ -1586,7 +1586,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 &job.JobTaskGroupsVolumes {
 
@@ -1599,7 +1599,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 &job.JobTimeouts {
 	Create: *string,
@@ -1647,7 +1647,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobHcl2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JobHcl2OutputReference
 ```
@@ -1983,7 +1983,7 @@ func InternalValue() JobHcl2
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobTaskGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsList
 ```
@@ -2115,7 +2115,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobTaskGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsOutputReference
 ```
@@ -2437,7 +2437,7 @@ func InternalValue() JobTaskGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobTaskGroupsTaskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsTaskList
 ```
@@ -2569,7 +2569,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobTaskGroupsTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsTaskOutputReference
 ```
@@ -2880,7 +2880,7 @@ func InternalValue() JobTaskGroupsTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobTaskGroupsTaskVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsTaskVolumeMountsList
 ```
@@ -3012,7 +3012,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobTaskGroupsTaskVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsTaskVolumeMountsOutputReference
 ```
@@ -3312,7 +3312,7 @@ func InternalValue() JobTaskGroupsTaskVolumeMounts
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobTaskGroupsVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsVolumesList
 ```
@@ -3444,7 +3444,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobTaskGroupsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsVolumesOutputReference
 ```
@@ -3755,7 +3755,7 @@ func InternalValue() JobTaskGroupsVolumes
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 job.NewJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JobTimeoutsOutputReference
 ```

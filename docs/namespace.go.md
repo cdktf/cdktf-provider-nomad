@@ -13,7 +13,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.namespace.Namespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 namespace.NewNamespace(scope Construct, id *string, config NamespaceConfig) Namespace
 ```
@@ -400,7 +400,7 @@ func ResetQuota()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.namespace.Namespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 namespace.Namespace_IsConstruct(x interface{}) *bool
 ```
@@ -432,7 +432,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.namespace.Namespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 namespace.Namespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -446,7 +446,7 @@ namespace.Namespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.namespace.Namespace.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 namespace.Namespace_IsTerraformResource(x interface{}) *bool
 ```
@@ -460,7 +460,7 @@ namespace.Namespace_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.namespace.Namespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 namespace.Namespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -843,7 +843,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.namespace.NamespaceCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 &namespace.NamespaceCapabilities {
 	DisabledTaskDrivers: *[]*string,
@@ -893,7 +893,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.namespace.NamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 &namespace.NamespaceConfig {
 	Connection: interface{},
@@ -904,11 +904,11 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
 	Provider: github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider,
 	Provisioners: *[]interface{},
 	Name: *string,
-	Capabilities: github.com/cdktf/cdktf-provider-nomad-go/nomad.namespace.NamespaceCapabilities,
+	Capabilities: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.namespace.NamespaceCapabilities,
 	Description: *string,
 	Id: *string,
 	Meta: *map[string]*string,
-	NodePoolConfig: github.com/cdktf/cdktf-provider-nomad-go/nomad.namespace.NamespaceNodePoolConfig,
+	NodePoolConfig: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.namespace.NamespaceNodePoolConfig,
 	Quota: *string,
 }
 ```
@@ -1108,7 +1108,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.namespace.NamespaceNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 &namespace.NamespaceNodePoolConfig {
 	Allowed: *[]*string,
@@ -1176,7 +1176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 namespace.NewNamespaceCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NamespaceCapabilitiesOutputReference
 ```
@@ -1483,7 +1483,7 @@ func InternalValue() NamespaceCapabilities
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.namespace.NamespaceNodePoolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/namespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/namespace"
 
 namespace.NewNamespaceNodePoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NamespaceNodePoolConfigOutputReference
 ```
