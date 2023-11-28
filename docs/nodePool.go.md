@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.nodePool.NodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/nodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/nodepool"
 
 nodepool.NewNodePool(scope Construct, id *string, config NodePoolConfig) NodePool
 ```
@@ -369,7 +369,7 @@ func ResetSchedulerConfig()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.nodePool.NodePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/nodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/nodepool"
 
 nodepool.NodePool_IsConstruct(x interface{}) *bool
 ```
@@ -401,7 +401,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.nodePool.NodePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/nodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/nodepool"
 
 nodepool.NodePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -415,7 +415,7 @@ nodepool.NodePool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.nodePool.NodePool.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/nodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/nodepool"
 
 nodepool.NodePool_IsTerraformResource(x interface{}) *bool
 ```
@@ -429,7 +429,7 @@ nodepool.NodePool_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.nodePool.NodePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/nodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/nodepool"
 
 nodepool.NodePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -768,7 +768,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.nodePool.NodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/nodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/nodepool"
 
 &nodepool.NodePoolConfig {
 	Connection: interface{},
@@ -782,7 +782,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/nodepool"
 	Description: *string,
 	Id: *string,
 	Meta: *map[string]*string,
-	SchedulerConfig: github.com/cdktf/cdktf-provider-nomad-go/nomad.nodePool.NodePoolSchedulerConfig,
+	SchedulerConfig: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.nodePool.NodePoolSchedulerConfig,
 }
 ```
 
@@ -951,7 +951,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.nodePool.NodePoolSchedulerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/nodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/nodepool"
 
 &nodepool.NodePoolSchedulerConfig {
 	MemoryOversubscription: *string,
@@ -1003,7 +1003,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.nodePool.NodePoolSchedulerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/nodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/nodepool"
 
 nodepool.NewNodePoolSchedulerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) NodePoolSchedulerConfigOutputReference
 ```
