@@ -1,7 +1,3 @@
-# `data_nomad_variable`
-
-Refer to the Terraform Registory for docs: [`data_nomad_variable`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/variable).
-
 # `dataNomadVariable` Submodule <a name="`dataNomadVariable` Submodule" id="@cdktf/provider-nomad.dataNomadVariable"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

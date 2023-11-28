@@ -1,7 +1,3 @@
-# `nomad_namespace`
-
-Refer to the Terraform Registory for docs: [`nomad_namespace`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/namespace).
-
 # `namespace` Submodule <a name="`namespace` Submodule" id="@cdktf/provider-nomad.namespace"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `data_nomad_volumes`
-
-Refer to the Terraform Registory for docs: [`data_nomad_volumes`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/volumes).
-
 # `dataNomadVolumes` Submodule <a name="`dataNomadVolumes` Submodule" id="@cdktf/provider-nomad.dataNomadVolumes"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
