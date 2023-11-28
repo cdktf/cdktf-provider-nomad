@@ -1,7 +1,3 @@
-# `nomad_acl_role`
-
-Refer to the Terraform Registory for docs: [`nomad_acl_role`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_role).
-
 # `aclRole` Submodule <a name="`aclRole` Submodule" id="@cdktf/provider-nomad.aclRole"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

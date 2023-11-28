@@ -1,7 +1,3 @@
-# `nomad_volume`
-
-Refer to the Terraform Registory for docs: [`nomad_volume`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/volume).
-
 # `volume` Submodule <a name="`volume` Submodule" id="@cdktf/provider-nomad.volume"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>

@@ -1,7 +1,3 @@
-# `nomad_acl_binding_rule`
-
-Refer to the Terraform Registory for docs: [`nomad_acl_binding_rule`](https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_binding_rule).
-
 # `aclBindingRule` Submodule <a name="`aclBindingRule` Submodule" id="@cdktf/provider-nomad.aclBindingRule"></a>
 
 ## Constructs <a name="Constructs" id="Constructs"></a>
@@ -13,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclbindingrule"
 
 aclbindingrule.NewAclBindingRule(scope Construct, id *string, config AclBindingRuleConfig) AclBindingRule
 ```
@@ -360,7 +356,7 @@ func ResetSelector()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsConstruct(x interface{}) *bool
 ```
@@ -392,7 +388,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsTerraformElement(x interface{}) *bool
 ```
@@ -406,7 +402,7 @@ aclbindingrule.AclBindingRule_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclbindingrule"
 
 aclbindingrule.AclBindingRule_IsTerraformResource(x interface{}) *bool
 ```
@@ -420,7 +416,7 @@ aclbindingrule.AclBindingRule_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRule.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclbindingrule"
 
 aclbindingrule.AclBindingRule_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -781,7 +777,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.aclBindingRule.AclBindingRuleConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/aclbindingrule"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/aclbindingrule"
 
 &aclbindingrule.AclBindingRuleConfig {
 	Connection: interface{},
