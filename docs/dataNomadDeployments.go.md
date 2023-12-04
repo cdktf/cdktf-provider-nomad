@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddeployments"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddeployments"
 
 datanomaddeployments.NewDataNomadDeployments(scope Construct, id *string, config DataNomadDeploymentsConfig) DataNomadDeployments
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddeployments"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddeployments"
 
 datanomaddeployments.DataNomadDeployments_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddeployments"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddeployments"
 
 datanomaddeployments.DataNomadDeployments_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datanomaddeployments.DataNomadDeployments_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddeployments"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddeployments"
 
 datanomaddeployments.DataNomadDeployments_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datanomaddeployments.DataNomadDeployments_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeployments.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddeployments"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddeployments"
 
 datanomaddeployments.DataNomadDeployments_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -574,7 +574,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadDeployments.DataNomadDeploymentsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddeployments"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddeployments"
 
 &datanomaddeployments.DataNomadDeploymentsConfig {
 	Connection: interface{},
