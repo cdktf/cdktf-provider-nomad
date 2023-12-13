@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespace(scope Construct, id *string, config DataNomadNamespaceConfig) DataNomadNamespace
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datanomadnamespace.DataNomadNamespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datanomadnamespace.DataNomadNamespace_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -640,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 &datanomadnamespace.DataNomadNamespaceCapabilities {
 
@@ -653,7 +653,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 &datanomadnamespace.DataNomadNamespaceConfig {
 	Connection: interface{},
@@ -786,7 +786,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 &datanomadnamespace.DataNomadNamespaceNodePoolConfig {
 
@@ -801,7 +801,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceCapabilitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceCapabilitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNamespaceCapabilitiesList
 ```
@@ -933,7 +933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNamespaceCapabilitiesOutputReference
 ```
@@ -1222,7 +1222,7 @@ func InternalValue() DataNomadNamespaceCapabilities
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceNodePoolConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceNodePoolConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNamespaceNodePoolConfigList
 ```
@@ -1354,7 +1354,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceNodePoolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceNodePoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNamespaceNodePoolConfigOutputReference
 ```
