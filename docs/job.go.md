@@ -4,12 +4,12 @@
 
 ### Job <a name="Job" id="@cdktf/provider-nomad.job.Job"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job nomad_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job nomad_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.Job.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJob(scope Construct, id *string, config JobConfig) Job
 ```
@@ -85,6 +85,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetPolicyOverride">ResetPolicyOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetPurgeOnDestroy">ResetPurgeOnDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetReadAllocationIds">ResetReadAllocationIds</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.resetRerunIfDead">ResetRerunIfDead</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetTimeouts">ResetTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetVaultToken">ResetVaultToken</a></code> | *No description.* |
 
@@ -462,6 +463,12 @@ func ResetPurgeOnDestroy()
 func ResetReadAllocationIds()
 ```
 
+##### `ResetRerunIfDead` <a name="ResetRerunIfDead" id="@cdktf/provider-nomad.job.Job.resetRerunIfDead"></a>
+
+```go
+func ResetRerunIfDead()
+```
+
 ##### `ResetTimeouts` <a name="ResetTimeouts" id="@cdktf/provider-nomad.job.Job.resetTimeouts"></a>
 
 ```go
@@ -488,7 +495,7 @@ func ResetVaultToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.job.Job.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.Job_IsConstruct(x interface{}) *bool
 ```
@@ -520,7 +527,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.job.Job.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.Job_IsTerraformElement(x interface{}) *bool
 ```
@@ -534,7 +541,7 @@ job.Job_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.job.Job.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.Job_IsTerraformResource(x interface{}) *bool
 ```
@@ -548,7 +555,7 @@ job.Job_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.job.Job.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.Job_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -577,7 +584,7 @@ The construct id used in the generated config for the Job to import.
 
 The id of the existing Job that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,6 +623,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.name">Name</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.namespace">Namespace</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.region">Region</a></code> | <code>*string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.status">Status</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.taskGroups">TaskGroups</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsList">JobTaskGroupsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference">JobTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.type">Type</a></code> | <code>*string</code> | *No description.* |
@@ -631,6 +639,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">PolicyOverrideInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">PurgeOnDestroyInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput">ReadAllocationIdsInput</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput">RerunIfDeadInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">TimeoutsInput</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.vaultTokenInput">VaultTokenInput</a></code> | <code>*string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.consulToken">ConsulToken</a></code> | <code>*string</code> | *No description.* |
@@ -644,6 +653,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverride">PolicyOverride</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroy">PurgeOnDestroy</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIds">ReadAllocationIds</a></code> | <code>interface{}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDead">RerunIfDead</a></code> | <code>interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.vaultToken">VaultToken</a></code> | <code>*string</code> | *No description.* |
 
 ---
@@ -880,6 +890,16 @@ func Region() *string
 
 ---
 
+##### `Status`<sup>Required</sup> <a name="Status" id="@cdktf/provider-nomad.job.Job.property.status"></a>
+
+```go
+func Status() *string
+```
+
+- *Type:* *string
+
+---
+
 ##### `TaskGroups`<sup>Required</sup> <a name="TaskGroups" id="@cdktf/provider-nomad.job.Job.property.taskGroups"></a>
 
 ```go
@@ -1030,6 +1050,16 @@ func ReadAllocationIdsInput() interface{}
 
 ---
 
+##### `RerunIfDeadInput`<sup>Optional</sup> <a name="RerunIfDeadInput" id="@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput"></a>
+
+```go
+func RerunIfDeadInput() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-nomad.job.Job.property.timeoutsInput"></a>
 
 ```go
@@ -1160,6 +1190,16 @@ func ReadAllocationIds() interface{}
 
 ---
 
+##### `RerunIfDead`<sup>Required</sup> <a name="RerunIfDead" id="@cdktf/provider-nomad.job.Job.property.rerunIfDead"></a>
+
+```go
+func RerunIfDead() interface{}
+```
+
+- *Type:* interface{}
+
+---
+
 ##### `VaultToken`<sup>Required</sup> <a name="VaultToken" id="@cdktf/provider-nomad.job.Job.property.vaultToken"></a>
 
 ```go
@@ -1195,7 +1235,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobConfig {
 	Connection: interface{},
@@ -1211,13 +1251,14 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 	DeregisterOnIdChange: interface{},
 	Detach: interface{},
 	Hcl1: interface{},
-	Hcl2: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.job.JobHcl2,
+	Hcl2: github.com/cdktf/cdktf-provider-nomad-go/nomad.job.JobHcl2,
 	Id: *string,
 	Json: interface{},
 	PolicyOverride: interface{},
 	PurgeOnDestroy: interface{},
 	ReadAllocationIds: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.job.JobTimeouts,
+	RerunIfDead: interface{},
+	Timeouts: github.com/cdktf/cdktf-provider-nomad-go/nomad.job.JobTimeouts,
 	VaultToken: *string,
 }
 ```
@@ -1240,11 +1281,12 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">Detach</a></code> | <code>interface{}</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl1">Hcl1</a></code> | <code>interface{}</code> | If true, the `jobspec` will be parsed using the HCL1 format. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl2">Hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#id Job#id}. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">Json</a></code> | <code>interface{}</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">PolicyOverride</a></code> | <code>interface{}</code> | Override any soft-mandatory Sentinel policies that fail. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">PurgeOnDestroy</a></code> | <code>interface{}</code> | Whether to purge the job when the resource is destroyed. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">ReadAllocationIds</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">ReadAllocationIds</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead">RerunIfDead</a></code> | <code>interface{}</code> | If true, forces the job to run again on apply if it is currently dead. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.vaultToken">VaultToken</a></code> | <code>*string</code> | The Vault token used to submit this job. |
 
@@ -1330,7 +1372,7 @@ Jobspec *string
 
 Job specification. If you want to point to a file use the file() function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#jobspec Job#jobspec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#jobspec Job#jobspec}
 
 ---
 
@@ -1344,7 +1386,7 @@ ConsulToken *string
 
 The Consul token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#consul_token Job#consul_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#consul_token Job#consul_token}
 
 ---
 
@@ -1358,7 +1400,7 @@ DeregisterOnDestroy interface{}
 
 If true, the job will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
 
 ---
 
@@ -1372,7 +1414,7 @@ DeregisterOnIdChange interface{}
 
 If true, the job will be deregistered when the job ID changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
 
 ---
 
@@ -1386,7 +1428,7 @@ Detach interface{}
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#detach Job#detach}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#detach Job#detach}
 
 ---
 
@@ -1400,7 +1442,7 @@ Hcl1 interface{}
 
 If true, the `jobspec` will be parsed using the HCL1 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#hcl1 Job#hcl1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#hcl1 Job#hcl1}
 
 ---
 
@@ -1414,7 +1456,7 @@ Hcl2 JobHcl2
 
 hcl2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#hcl2 Job#hcl2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#hcl2 Job#hcl2}
 
 ---
 
@@ -1426,7 +1468,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1443,7 +1485,7 @@ Json interface{}
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#json Job#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#json Job#json}
 
 ---
 
@@ -1457,7 +1499,7 @@ PolicyOverride interface{}
 
 Override any soft-mandatory Sentinel policies that fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#policy_override Job#policy_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#policy_override Job#policy_override}
 
 ---
 
@@ -1471,7 +1513,7 @@ PurgeOnDestroy interface{}
 
 Whether to purge the job when the resource is destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
 
 ---
 
@@ -1483,7 +1525,21 @@ ReadAllocationIds interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
+
+---
+
+##### `RerunIfDead`<sup>Optional</sup> <a name="RerunIfDead" id="@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead"></a>
+
+```go
+RerunIfDead interface{}
+```
+
+- *Type:* interface{}
+
+If true, forces the job to run again on apply if it is currently dead.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#rerun_if_dead Job#rerun_if_dead}
 
 ---
 
@@ -1497,7 +1553,7 @@ Timeouts JobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#timeouts Job#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#timeouts Job#timeouts}
 
 ---
 
@@ -1511,7 +1567,7 @@ VaultToken *string
 
 The Vault token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#vault_token Job#vault_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#vault_token Job#vault_token}
 
 ---
 
@@ -1520,7 +1576,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobHcl2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobHcl2 {
 	AllowFs: interface{},
@@ -1549,7 +1605,7 @@ AllowFs interface{}
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#allow_fs Job#allow_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#allow_fs Job#allow_fs}
 
 ---
 
@@ -1563,7 +1619,7 @@ Enabled interface{}
 
 If true, the `jobspec` will be parsed as HCL2 instead of HCL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#enabled Job#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#enabled Job#enabled}
 
 ---
 
@@ -1577,7 +1633,7 @@ Vars *map[string]*string
 
 Additional variables to use when templating the job with HCL2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#vars Job#vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#vars Job#vars}
 
 ---
 
@@ -1586,7 +1642,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTaskGroups {
 
@@ -1599,7 +1655,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroupsTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTaskGroupsTask {
 
@@ -1612,7 +1668,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTaskGroupsTaskVolumeMounts {
 
@@ -1625,7 +1681,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTaskGroupsVolumes {
 
@@ -1638,7 +1694,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTimeouts {
 	Create: *string,
@@ -1650,8 +1706,8 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#create Job#create}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#update Job#update}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#create Job#create}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#update Job#update}. |
 
 ---
 
@@ -1663,7 +1719,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#create Job#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#create Job#create}.
 
 ---
 
@@ -1675,7 +1731,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/job#update Job#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#update Job#update}.
 
 ---
 
@@ -1686,7 +1742,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobHcl2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JobHcl2OutputReference
 ```
@@ -2022,7 +2078,7 @@ func InternalValue() JobHcl2
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsList
 ```
@@ -2154,7 +2210,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsOutputReference
 ```
@@ -2476,7 +2532,7 @@ func InternalValue() JobTaskGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsTaskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsTaskList
 ```
@@ -2608,7 +2664,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsTaskOutputReference
 ```
@@ -2919,7 +2975,7 @@ func InternalValue() JobTaskGroupsTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsTaskVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsTaskVolumeMountsList
 ```
@@ -3051,7 +3107,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsTaskVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsTaskVolumeMountsOutputReference
 ```
@@ -3351,7 +3407,7 @@ func InternalValue() JobTaskGroupsTaskVolumeMounts
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsVolumesList
 ```
@@ -3483,7 +3539,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsVolumesOutputReference
 ```
@@ -3794,7 +3850,7 @@ func InternalValue() JobTaskGroupsVolumes
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JobTimeoutsOutputReference
 ```

@@ -4,12 +4,12 @@
 
 ### DataNomadNamespace <a name="DataNomadNamespace" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace nomad_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/namespace nomad_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespace(scope Construct, id *string, config DataNomadNamespaceConfig) DataNomadNamespace
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datanomadnamespace.DataNomadNamespace_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datanomadnamespace.DataNomadNamespace_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespace.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.DataNomadNamespace_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataNomadNamespace to impo
 
 The id of the existing DataNomadNamespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -640,7 +640,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceCapabilities.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 &datanomadnamespace.DataNomadNamespaceCapabilities {
 
@@ -653,7 +653,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 &datanomadnamespace.DataNomadNamespaceConfig {
 	Connection: interface{},
@@ -679,8 +679,8 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace#name DataNomadNamespace#name}. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace#id DataNomadNamespace#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.property.name">Name</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/namespace#name DataNomadNamespace#name}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/namespace#id DataNomadNamespace#id}. |
 
 ---
 
@@ -762,7 +762,7 @@ Name *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace#name DataNomadNamespace#name}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/namespace#name DataNomadNamespace#name}.
 
 ---
 
@@ -774,7 +774,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/namespace#id DataNomadNamespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/namespace#id DataNomadNamespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -786,7 +786,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 &datanomadnamespace.DataNomadNamespaceNodePoolConfig {
 
@@ -801,7 +801,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceCapabilitiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceCapabilitiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNamespaceCapabilitiesList
 ```
@@ -933,7 +933,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceCapabilitiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceCapabilitiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNamespaceCapabilitiesOutputReference
 ```
@@ -1222,7 +1222,7 @@ func InternalValue() DataNomadNamespaceCapabilities
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceNodePoolConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceNodePoolConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNamespaceNodePoolConfigList
 ```
@@ -1354,7 +1354,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNamespace.DataNomadNamespaceNodePoolConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnamespace"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnamespace"
 
 datanomadnamespace.NewDataNomadNamespaceNodePoolConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNamespaceNodePoolConfigOutputReference
 ```

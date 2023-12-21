@@ -4,12 +4,12 @@
 
 ### DataNomadAclToken <a name="DataNomadAclToken" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_token nomad_acl_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_token nomad_acl_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltoken"
 
 datanomadacltoken.NewDataNomadAclToken(scope Construct, id *string, config DataNomadAclTokenConfig) DataNomadAclToken
 ```
@@ -274,7 +274,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltoken"
 
 datanomadacltoken.DataNomadAclToken_IsConstruct(x interface{}) *bool
 ```
@@ -306,7 +306,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltoken"
 
 datanomadacltoken.DataNomadAclToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ datanomadacltoken.DataNomadAclToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltoken"
 
 datanomadacltoken.DataNomadAclToken_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datanomadacltoken.DataNomadAclToken_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltoken"
 
 datanomadacltoken.DataNomadAclToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -363,7 +363,7 @@ The construct id used in the generated config for the DataNomadAclToken to impor
 
 The id of the existing DataNomadAclToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -684,7 +684,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltoken"
 
 &datanomadacltoken.DataNomadAclTokenConfig {
 	Connection: interface{},
@@ -711,7 +711,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclTokenConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclTokenConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclTokenConfig.property.accessorId">AccessorId</a></code> | <code>*string</code> | Non-sensitive identifier for this token. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_token#id DataNomadAclToken#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_token#id DataNomadAclToken#id}. |
 
 ---
 
@@ -795,7 +795,7 @@ AccessorId *string
 
 Non-sensitive identifier for this token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_token#accessor_id DataNomadAclToken#accessor_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_token#accessor_id DataNomadAclToken#accessor_id}
 
 ---
 
@@ -807,7 +807,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_token#id DataNomadAclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_token#id DataNomadAclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -819,7 +819,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclTokenRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltoken"
 
 &datanomadacltoken.DataNomadAclTokenRoles {
 
@@ -834,7 +834,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclTokenRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltoken"
 
 datanomadacltoken.NewDataNomadAclTokenRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadAclTokenRolesList
 ```
@@ -966,7 +966,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclToken.DataNomadAclTokenRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltoken"
 
 datanomadacltoken.NewDataNomadAclTokenRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadAclTokenRolesOutputReference
 ```
