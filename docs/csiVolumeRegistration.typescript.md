@@ -4,7 +4,7 @@
 
 ### CsiVolumeRegistration <a name="CsiVolumeRegistration" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration nomad_csi_volume_registration}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration nomad_csi_volume_registration}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.Initializer"></a>
 
@@ -77,6 +77,8 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.putTimeouts">putTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.putTopologyRequest">putTopologyRequest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.resetCapability">resetCapability</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.resetCapacityMax">resetCapacityMax</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.resetCapacityMin">resetCapacityMin</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.resetContext">resetContext</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.resetDeregisterOnDestroy">resetDeregisterOnDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.resetId">resetId</a></code> | *No description.* |
@@ -425,6 +427,18 @@ public putTopologyRequest(value: CsiVolumeRegistrationTopologyRequest): void
 public resetCapability(): void
 ```
 
+##### `resetCapacityMax` <a name="resetCapacityMax" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.resetCapacityMax"></a>
+
+```typescript
+public resetCapacityMax(): void
+```
+
+##### `resetCapacityMin` <a name="resetCapacityMin" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.resetCapacityMin"></a>
+
+```typescript
+public resetCapacityMin(): void
+```
+
 ##### `resetContext` <a name="resetContext" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.resetContext"></a>
 
 ```typescript
@@ -582,7 +596,7 @@ The construct id used in the generated config for the CsiVolumeRegistration to i
 
 The id of the existing CsiVolumeRegistration that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -613,6 +627,9 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capability">capability</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationCapabilityList">CsiVolumeRegistrationCapabilityList</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacity">capacity</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMaxBytes">capacityMaxBytes</a></code> | <code>number</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMinBytes">capacityMinBytes</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.controllerRequired">controllerRequired</a></code> | <code>cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.controllersExpected">controllersExpected</a></code> | <code>number</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.controllersHealthy">controllersHealthy</a></code> | <code>number</code> | *No description.* |
@@ -626,6 +643,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.topologies">topologies</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologiesList">CsiVolumeRegistrationTopologiesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.topologyRequest">topologyRequest</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequestOutputReference">CsiVolumeRegistrationTopologyRequestOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capabilityInput">capabilityInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationCapability">CsiVolumeRegistrationCapability</a>[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMaxInput">capacityMaxInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMinInput">capacityMinInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.contextInput">contextInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.deregisterOnDestroyInput">deregisterOnDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.externalIdInput">externalIdInput</a></code> | <code>string</code> | *No description.* |
@@ -639,6 +658,8 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.timeoutsInput">timeoutsInput</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTimeouts">CsiVolumeRegistrationTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.topologyRequestInput">topologyRequestInput</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTopologyRequest">CsiVolumeRegistrationTopologyRequest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.volumeIdInput">volumeIdInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMax">capacityMax</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMin">capacityMin</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.context">context</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.externalId">externalId</a></code> | <code>string</code> | *No description.* |
@@ -804,6 +825,36 @@ public readonly capability: CsiVolumeRegistrationCapabilityList;
 
 ---
 
+##### `capacity`<sup>Required</sup> <a name="capacity" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacity"></a>
+
+```typescript
+public readonly capacity: number;
+```
+
+- *Type:* number
+
+---
+
+##### `capacityMaxBytes`<sup>Required</sup> <a name="capacityMaxBytes" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMaxBytes"></a>
+
+```typescript
+public readonly capacityMaxBytes: number;
+```
+
+- *Type:* number
+
+---
+
+##### `capacityMinBytes`<sup>Required</sup> <a name="capacityMinBytes" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMinBytes"></a>
+
+```typescript
+public readonly capacityMinBytes: number;
+```
+
+- *Type:* number
+
+---
+
 ##### `controllerRequired`<sup>Required</sup> <a name="controllerRequired" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.controllerRequired"></a>
 
 ```typescript
@@ -934,6 +985,26 @@ public readonly capabilityInput: IResolvable | CsiVolumeRegistrationCapability[]
 
 ---
 
+##### `capacityMaxInput`<sup>Optional</sup> <a name="capacityMaxInput" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMaxInput"></a>
+
+```typescript
+public readonly capacityMaxInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `capacityMinInput`<sup>Optional</sup> <a name="capacityMinInput" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMinInput"></a>
+
+```typescript
+public readonly capacityMinInput: string;
+```
+
+- *Type:* string
+
+---
+
 ##### `contextInput`<sup>Optional</sup> <a name="contextInput" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.contextInput"></a>
 
 ```typescript
@@ -1058,6 +1129,26 @@ public readonly topologyRequestInput: CsiVolumeRegistrationTopologyRequest;
 
 ```typescript
 public readonly volumeIdInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `capacityMax`<sup>Required</sup> <a name="capacityMax" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMax"></a>
+
+```typescript
+public readonly capacityMax: string;
+```
+
+- *Type:* string
+
+---
+
+##### `capacityMin`<sup>Required</sup> <a name="capacityMin" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistration.property.capacityMin"></a>
+
+```typescript
+public readonly capacityMin: string;
 ```
 
 - *Type:* string
@@ -1213,7 +1304,7 @@ public readonly accessMode: string;
 
 Defines whether a volume should be available concurrently.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#access_mode CsiVolumeRegistration#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#access_mode CsiVolumeRegistration#access_mode}
 
 ---
 
@@ -1227,7 +1318,7 @@ public readonly attachmentMode: string;
 
 The storage API that will be used by the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#attachment_mode CsiVolumeRegistration#attachment_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#attachment_mode CsiVolumeRegistration#attachment_mode}
 
 ---
 
@@ -1257,9 +1348,11 @@ const csiVolumeRegistrationConfig: csiVolumeRegistration.CsiVolumeRegistrationCo
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.pluginId">pluginId</a></code> | <code>string</code> | The ID of the CSI plugin that manages this volume. |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.volumeId">volumeId</a></code> | <code>string</code> | The unique ID of the volume, how jobs will refer to the volume. |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.capability">capability</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationCapability">CsiVolumeRegistrationCapability</a>[]</code> | capability block. |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.capacityMax">capacityMax</a></code> | <code>string</code> | Defines how large the volume can be. |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.capacityMin">capacityMin</a></code> | <code>string</code> | Defines how small the volume can be. |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.context">context</a></code> | <code>{[ key: string ]: string}</code> | An optional key-value map of strings passed directly to the CSI plugin to validate the volume. |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the volume will be deregistered on destroy. |
-| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#id CsiVolumeRegistration#id}. |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#id CsiVolumeRegistration#id}. |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.mountOptions">mountOptions</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationMountOptions">CsiVolumeRegistrationMountOptions</a></code> | mount_options block. |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.namespace">namespace</a></code> | <code>string</code> | The namespace in which to create the volume. |
 | <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | An optional key-value map of strings passed directly to the CSI plugin to configure the volume. |
@@ -1349,7 +1442,7 @@ public readonly externalId: string;
 
 The ID of the physical volume from the storage provider.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#external_id CsiVolumeRegistration#external_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#external_id CsiVolumeRegistration#external_id}
 
 ---
 
@@ -1363,7 +1456,7 @@ public readonly name: string;
 
 The display name of the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#name CsiVolumeRegistration#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#name CsiVolumeRegistration#name}
 
 ---
 
@@ -1377,7 +1470,7 @@ public readonly pluginId: string;
 
 The ID of the CSI plugin that manages this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#plugin_id CsiVolumeRegistration#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#plugin_id CsiVolumeRegistration#plugin_id}
 
 ---
 
@@ -1391,7 +1484,7 @@ public readonly volumeId: string;
 
 The unique ID of the volume, how jobs will refer to the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#volume_id CsiVolumeRegistration#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#volume_id CsiVolumeRegistration#volume_id}
 
 ---
 
@@ -1405,7 +1498,39 @@ public readonly capability: IResolvable | CsiVolumeRegistrationCapability[];
 
 capability block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#capability CsiVolumeRegistration#capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#capability CsiVolumeRegistration#capability}
+
+---
+
+##### `capacityMax`<sup>Optional</sup> <a name="capacityMax" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.capacityMax"></a>
+
+```typescript
+public readonly capacityMax: string;
+```
+
+- *Type:* string
+
+Defines how large the volume can be.
+
+The storage provider may return a volume that is smaller than this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#capacity_max CsiVolumeRegistration#capacity_max}
+
+---
+
+##### `capacityMin`<sup>Optional</sup> <a name="capacityMin" id="@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationConfig.property.capacityMin"></a>
+
+```typescript
+public readonly capacityMin: string;
+```
+
+- *Type:* string
+
+Defines how small the volume can be.
+
+The storage provider may return a volume that is larger than this value.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#capacity_min CsiVolumeRegistration#capacity_min}
 
 ---
 
@@ -1419,7 +1544,7 @@ public readonly context: {[ key: string ]: string};
 
 An optional key-value map of strings passed directly to the CSI plugin to validate the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#context CsiVolumeRegistration#context}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#context CsiVolumeRegistration#context}
 
 ---
 
@@ -1433,7 +1558,7 @@ public readonly deregisterOnDestroy: boolean | IResolvable;
 
 If true, the volume will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#deregister_on_destroy CsiVolumeRegistration#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#deregister_on_destroy CsiVolumeRegistration#deregister_on_destroy}
 
 ---
 
@@ -1445,7 +1570,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#id CsiVolumeRegistration#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#id CsiVolumeRegistration#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1462,7 +1587,7 @@ public readonly mountOptions: CsiVolumeRegistrationMountOptions;
 
 mount_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#mount_options CsiVolumeRegistration#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#mount_options CsiVolumeRegistration#mount_options}
 
 ---
 
@@ -1476,7 +1601,7 @@ public readonly namespace: string;
 
 The namespace in which to create the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#namespace CsiVolumeRegistration#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#namespace CsiVolumeRegistration#namespace}
 
 ---
 
@@ -1490,7 +1615,7 @@ public readonly parameters: {[ key: string ]: string};
 
 An optional key-value map of strings passed directly to the CSI plugin to configure the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#parameters CsiVolumeRegistration#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#parameters CsiVolumeRegistration#parameters}
 
 ---
 
@@ -1504,7 +1629,7 @@ public readonly secrets: {[ key: string ]: string};
 
 An optional key-value map of strings used as credentials for publishing and unpublishing volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#secrets CsiVolumeRegistration#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#secrets CsiVolumeRegistration#secrets}
 
 ---
 
@@ -1518,7 +1643,7 @@ public readonly timeouts: CsiVolumeRegistrationTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#timeouts CsiVolumeRegistration#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#timeouts CsiVolumeRegistration#timeouts}
 
 ---
 
@@ -1532,7 +1657,7 @@ public readonly topologyRequest: CsiVolumeRegistrationTopologyRequest;
 
 topology_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#topology_request CsiVolumeRegistration#topology_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#topology_request CsiVolumeRegistration#topology_request}
 
 ---
 
@@ -1565,7 +1690,7 @@ public readonly fsType: string;
 
 The file system type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#fs_type CsiVolumeRegistration#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#fs_type CsiVolumeRegistration#fs_type}
 
 ---
 
@@ -1579,7 +1704,7 @@ public readonly mountFlags: string[];
 
 The flags passed to mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#mount_flags CsiVolumeRegistration#mount_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#mount_flags CsiVolumeRegistration#mount_flags}
 
 ---
 
@@ -1597,8 +1722,8 @@ const csiVolumeRegistrationTimeouts: csiVolumeRegistration.CsiVolumeRegistration
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#create CsiVolumeRegistration#create}. |
-| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#delete CsiVolumeRegistration#delete}. |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#create CsiVolumeRegistration#create}. |
+| <code><a href="#@cdktf/provider-nomad.csiVolumeRegistration.CsiVolumeRegistrationTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#delete CsiVolumeRegistration#delete}. |
 
 ---
 
@@ -1610,7 +1735,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#create CsiVolumeRegistration#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#create CsiVolumeRegistration#create}.
 
 ---
 
@@ -1622,7 +1747,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#delete CsiVolumeRegistration#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#delete CsiVolumeRegistration#delete}.
 
 ---
 
@@ -1665,7 +1790,7 @@ public readonly required: CsiVolumeRegistrationTopologyRequestRequired;
 
 required block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#required CsiVolumeRegistration#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#required CsiVolumeRegistration#required}
 
 ---
 
@@ -1697,7 +1822,7 @@ public readonly topology: IResolvable | CsiVolumeRegistrationTopologyRequestRequ
 
 topology block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#topology CsiVolumeRegistration#topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#topology CsiVolumeRegistration#topology}
 
 ---
 
@@ -1729,7 +1854,7 @@ public readonly segments: {[ key: string ]: string};
 
 Define attributes for the topology request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/csi_volume_registration#segments CsiVolumeRegistration#segments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/csi_volume_registration#segments CsiVolumeRegistration#segments}
 
 ---
 

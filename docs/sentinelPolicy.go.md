@@ -4,7 +4,7 @@
 
 ### SentinelPolicy <a name="SentinelPolicy" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/sentinel_policy nomad_sentinel_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/sentinel_policy nomad_sentinel_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.Initializer"></a>
 
@@ -474,7 +474,7 @@ The construct id used in the generated config for the SentinelPolicy to import.
 
 The id of the existing SentinelPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/sentinel_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/sentinel_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -841,7 +841,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/sentinelpolicy"
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.policy">Policy</a></code> | <code>*string</code> | The Sentinel policy. |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.scope">Scope</a></code> | <code>*string</code> | Specifies the scope for this policy. Only 'submit-job' is currently supported. |
 | <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.description">Description</a></code> | <code>*string</code> | Description for this policy. |
-| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/sentinel_policy#id SentinelPolicy#id}. |
+| <code><a href="#@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/sentinel_policy#id SentinelPolicy#id}. |
 
 ---
 
@@ -925,7 +925,7 @@ EnforcementLevel *string
 
 Specifies the enforcement level of the policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/sentinel_policy#enforcement_level SentinelPolicy#enforcement_level}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/sentinel_policy#enforcement_level SentinelPolicy#enforcement_level}
 
 ---
 
@@ -939,7 +939,7 @@ Name *string
 
 Unique name for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/sentinel_policy#name SentinelPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/sentinel_policy#name SentinelPolicy#name}
 
 ---
 
@@ -953,7 +953,7 @@ Policy *string
 
 The Sentinel policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/sentinel_policy#policy SentinelPolicy#policy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/sentinel_policy#policy SentinelPolicy#policy}
 
 ---
 
@@ -967,7 +967,7 @@ Scope *string
 
 Specifies the scope for this policy. Only 'submit-job' is currently supported.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/sentinel_policy#scope SentinelPolicy#scope}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/sentinel_policy#scope SentinelPolicy#scope}
 
 ---
 
@@ -981,7 +981,7 @@ Description *string
 
 Description for this policy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/sentinel_policy#description SentinelPolicy#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/sentinel_policy#description SentinelPolicy#description}
 
 ---
 
@@ -993,7 +993,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/sentinel_policy#id SentinelPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/sentinel_policy#id SentinelPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

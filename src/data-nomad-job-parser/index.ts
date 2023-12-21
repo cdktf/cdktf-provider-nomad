@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser
+// https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/job_parser
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface DataNomadJobParserConfig extends cdktf.TerraformMetaArguments {
   /**
   * Flag to enable setting any unset fields to their default values.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser#canonicalize DataNomadJobParser#canonicalize}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/job_parser#canonicalize DataNomadJobParser#canonicalize}
   */
   readonly canonicalize?: boolean | cdktf.IResolvable;
   /**
   * Specifies the HCL definition of the job encoded in a JSON string.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser#hcl DataNomadJobParser#hcl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/job_parser#hcl DataNomadJobParser#hcl}
   */
   readonly hcl: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser#id DataNomadJobParser#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/job_parser#id DataNomadJobParser#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,7 +34,7 @@ export interface DataNomadJobParserConfig extends cdktf.TerraformMetaArguments {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser nomad_job_parser}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/job_parser nomad_job_parser}
 */
 export class DataNomadJobParser extends cdktf.TerraformDataSource {
 
@@ -50,7 +50,7 @@ export class DataNomadJobParser extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataNomadJobParser resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNomadJobParser to import
-  * @param importFromId The id of the existing DataNomadJobParser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNomadJobParser that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/job_parser#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNomadJobParser to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -62,7 +62,7 @@ export class DataNomadJobParser extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/job_parser nomad_job_parser} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/job_parser nomad_job_parser} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -73,7 +73,7 @@ export class DataNomadJobParser extends cdktf.TerraformDataSource {
       terraformResourceType: 'nomad_job_parser',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.0.0',
+        providerVersion: '2.1.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

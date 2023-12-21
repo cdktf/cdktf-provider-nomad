@@ -4,7 +4,7 @@
 
 ### DataNomadAclRoles <a name="DataNomadAclRoles" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_roles nomad_acl_roles}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles nomad_acl_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.Initializer"></a>
 
@@ -370,7 +370,7 @@ The construct id used in the generated config for the DataNomadAclRoles to impor
 
 The id of the existing DataNomadAclRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -655,8 +655,8 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadaclroles"
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_roles#id DataNomadAclRoles#id}. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles#id DataNomadAclRoles#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}. |
 
 ---
 
@@ -738,7 +738,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_roles#id DataNomadAclRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles#id DataNomadAclRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -753,7 +753,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}.
 
 ---
 

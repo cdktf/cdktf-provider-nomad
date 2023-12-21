@@ -4,7 +4,7 @@
 
 ### AclToken <a name="AclToken" id="@cdktf/provider-nomad.aclToken.AclToken"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token nomad_acl_token}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token nomad_acl_token}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclToken.AclToken.Initializer"></a>
 
@@ -515,7 +515,7 @@ The construct id used in the generated config for the AclToken to import.
 
 The id of the existing AclToken that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -947,7 +947,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/acltoken"
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.type">Type</a></code> | <code>*string</code> | The type of token to create, 'client' or 'management'. |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.expirationTtl">ExpirationTtl</a></code> | <code>*string</code> | Provides a TTL for the token in the form of a time duration such as "5m" or "1h". |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.global">Global</a></code> | <code>interface{}</code> | Whether the token should be replicated to all regions or not. |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#id AclToken#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#id AclToken#id}. |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.name">Name</a></code> | <code>*string</code> | Human-readable name for this token. |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.policies">Policies</a></code> | <code>*[]*string</code> | The ACL policies to associate with the token, if it's a 'client' type. |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.role">Role</a></code> | <code>interface{}</code> | role block. |
@@ -1034,7 +1034,7 @@ Type *string
 
 The type of token to create, 'client' or 'management'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#type AclToken#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#type AclToken#type}
 
 ---
 
@@ -1048,7 +1048,7 @@ ExpirationTtl *string
 
 Provides a TTL for the token in the form of a time duration such as "5m" or "1h".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#expiration_ttl AclToken#expiration_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#expiration_ttl AclToken#expiration_ttl}
 
 ---
 
@@ -1062,7 +1062,7 @@ Global interface{}
 
 Whether the token should be replicated to all regions or not.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#global AclToken#global}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#global AclToken#global}
 
 ---
 
@@ -1074,7 +1074,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#id AclToken#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#id AclToken#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1091,7 +1091,7 @@ Name *string
 
 Human-readable name for this token.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#name AclToken#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#name AclToken#name}
 
 ---
 
@@ -1105,7 +1105,7 @@ Policies *[]*string
 
 The ACL policies to associate with the token, if it's a 'client' type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#policies AclToken#policies}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#policies AclToken#policies}
 
 ---
 
@@ -1119,7 +1119,7 @@ Role interface{}
 
 role block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#role AclToken#role}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#role AclToken#role}
 
 ---
 
@@ -1153,7 +1153,7 @@ Id *string
 
 The ID of the ACL role to link.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.0.0/docs/resources/acl_token#id AclToken#id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/acl_token#id AclToken#id}
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
