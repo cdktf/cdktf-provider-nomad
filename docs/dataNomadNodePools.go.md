@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePools(scope Construct, id *string, config DataNomadNodePoolsConfig) DataNomadNodePools
 ```
@@ -288,7 +288,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 datanomadnodepools.DataNomadNodePools_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +320,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 datanomadnodepools.DataNomadNodePools_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +334,7 @@ datanomadnodepools.DataNomadNodePools_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 datanomadnodepools.DataNomadNodePools_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +348,7 @@ datanomadnodepools.DataNomadNodePools_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 datanomadnodepools.DataNomadNodePools_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -632,7 +632,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 &datanomadnodepools.DataNomadNodePoolsConfig {
 	Connection: interface{},
@@ -783,7 +783,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 &datanomadnodepools.DataNomadNodePoolsNodePools {
 
@@ -796,7 +796,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsSchedulerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 &datanomadnodepools.DataNomadNodePoolsNodePoolsSchedulerConfig {
 
@@ -811,7 +811,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePoolsNodePoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNodePoolsNodePoolsList
 ```
@@ -943,7 +943,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePoolsNodePoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNodePoolsNodePoolsOutputReference
 ```
@@ -1254,7 +1254,7 @@ func InternalValue() DataNomadNodePoolsNodePools
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsSchedulerConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePoolsNodePoolsSchedulerConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNodePoolsNodePoolsSchedulerConfigList
 ```
@@ -1386,7 +1386,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsSchedulerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePoolsNodePoolsSchedulerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNodePoolsNodePoolsSchedulerConfigOutputReference
 ```

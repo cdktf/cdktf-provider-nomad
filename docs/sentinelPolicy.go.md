@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/sentinelpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/sentinelpolicy"
 
 sentinelpolicy.NewSentinelPolicy(scope Construct, id *string, config SentinelPolicyConfig) SentinelPolicy
 ```
@@ -385,7 +385,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/sentinelpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/sentinelpolicy"
 
 sentinelpolicy.SentinelPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -417,7 +417,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/sentinelpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/sentinelpolicy"
 
 sentinelpolicy.SentinelPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -431,7 +431,7 @@ sentinelpolicy.SentinelPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/sentinelpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/sentinelpolicy"
 
 sentinelpolicy.SentinelPolicy_IsTerraformResource(x interface{}) *bool
 ```
@@ -445,7 +445,7 @@ sentinelpolicy.SentinelPolicy_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/sentinelpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/sentinelpolicy"
 
 sentinelpolicy.SentinelPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -806,7 +806,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.sentinelPolicy.SentinelPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/sentinelpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/sentinelpolicy"
 
 &sentinelpolicy.SentinelPolicyConfig {
 	Connection: interface{},
