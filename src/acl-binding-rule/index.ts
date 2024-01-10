@@ -218,4 +218,48 @@ export class AclBindingRule extends cdktf.TerraformResource {
       selector: cdktf.stringToTerraform(this._selector),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      auth_method: {
+        value: cdktf.stringToHclTerraform(this._authMethod),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bind_name: {
+        value: cdktf.stringToHclTerraform(this._bindName),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      bind_type: {
+        value: cdktf.stringToHclTerraform(this._bindType),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      selector: {
+        value: cdktf.stringToHclTerraform(this._selector),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

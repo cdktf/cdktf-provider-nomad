@@ -60,6 +60,31 @@ export function quotaSpecificationLimitsRegionLimitToTerraform(struct?: QuotaSpe
   }
 }
 
+
+export function quotaSpecificationLimitsRegionLimitToHclTerraform(struct?: QuotaSpecificationLimitsRegionLimitOutputReference | QuotaSpecificationLimitsRegionLimit): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    cpu: {
+      value: cdktf.numberToHclTerraform(struct!.cpu),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+    memory_mb: {
+      value: cdktf.numberToHclTerraform(struct!.memoryMb),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "number",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class QuotaSpecificationLimitsRegionLimitOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -154,6 +179,31 @@ export function quotaSpecificationLimitsToTerraform(struct?: QuotaSpecificationL
     region: cdktf.stringToTerraform(struct!.region),
     region_limit: quotaSpecificationLimitsRegionLimitToTerraform(struct!.regionLimit),
   }
+}
+
+
+export function quotaSpecificationLimitsToHclTerraform(struct?: QuotaSpecificationLimits | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    region: {
+      value: cdktf.stringToHclTerraform(struct!.region),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    region_limit: {
+      value: quotaSpecificationLimitsRegionLimitToHclTerraform(struct!.regionLimit),
+      isBlock: true,
+      type: "set",
+      storageClassType: "QuotaSpecificationLimitsRegionLimitList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class QuotaSpecificationLimitsOutputReference extends cdktf.ComplexObject {
@@ -383,5 +433,37 @@ export class QuotaSpecification extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       limits: cdktf.listMapper(quotaSpecificationLimitsToTerraform, true)(this._limits.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      limits: {
+        value: cdktf.listMapperHcl(quotaSpecificationLimitsToHclTerraform, true)(this._limits.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "QuotaSpecificationLimitsList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

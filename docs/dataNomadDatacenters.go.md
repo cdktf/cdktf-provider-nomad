@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
 
 datanomaddatacenters.NewDataNomadDatacenters(scope Construct, id *string, config DataNomadDatacentersConfig) DataNomadDatacenters
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -121,6 +122,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.toMetadata"></a>
 
@@ -288,7 +297,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_IsConstruct(x interface{}) *bool
 ```
@@ -320,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_IsTerraformElement(x interface{}) *bool
 ```
@@ -334,7 +343,7 @@ datanomaddatacenters.DataNomadDatacenters_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -348,7 +357,7 @@ datanomaddatacenters.DataNomadDatacenters_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -632,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
 
 &datanomaddatacenters.DataNomadDatacentersConfig {
 	Connection: interface{},

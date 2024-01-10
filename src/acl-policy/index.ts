@@ -84,6 +84,43 @@ export function aclPolicyJobAclToTerraform(struct?: AclPolicyJobAclOutputReferen
   }
 }
 
+
+export function aclPolicyJobAclToHclTerraform(struct?: AclPolicyJobAclOutputReference | AclPolicyJobAcl): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    group: {
+      value: cdktf.stringToHclTerraform(struct!.group),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    job_id: {
+      value: cdktf.stringToHclTerraform(struct!.jobId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    namespace: {
+      value: cdktf.stringToHclTerraform(struct!.namespace),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    task: {
+      value: cdktf.stringToHclTerraform(struct!.task),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class AclPolicyJobAclOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -344,5 +381,43 @@ export class AclPolicy extends cdktf.TerraformResource {
       rules_hcl: cdktf.stringToTerraform(this._rulesHcl),
       job_acl: aclPolicyJobAclToTerraform(this._jobAcl.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      rules_hcl: {
+        value: cdktf.stringToHclTerraform(this._rulesHcl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      job_acl: {
+        value: aclPolicyJobAclToHclTerraform(this._jobAcl.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "AclPolicyJobAclList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

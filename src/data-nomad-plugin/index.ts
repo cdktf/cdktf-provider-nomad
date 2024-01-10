@@ -50,6 +50,17 @@ export function dataNomadPluginNodesToTerraform(struct?: DataNomadPluginNodes): 
   }
 }
 
+
+export function dataNomadPluginNodesToHclTerraform(struct?: DataNomadPluginNodes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class DataNomadPluginNodesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -287,5 +298,37 @@ export class DataNomadPlugin extends cdktf.TerraformDataSource {
       wait_for_healthy: cdktf.booleanToTerraform(this._waitForHealthy),
       wait_for_registration: cdktf.booleanToTerraform(this._waitForRegistration),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      plugin_id: {
+        value: cdktf.stringToHclTerraform(this._pluginId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      wait_for_healthy: {
+        value: cdktf.booleanToHclTerraform(this._waitForHealthy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      wait_for_registration: {
+        value: cdktf.booleanToHclTerraform(this._waitForRegistration),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -70,6 +70,31 @@ export function nodePoolSchedulerConfigToTerraform(struct?: NodePoolSchedulerCon
   }
 }
 
+
+export function nodePoolSchedulerConfigToHclTerraform(struct?: NodePoolSchedulerConfigOutputReference | NodePoolSchedulerConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    memory_oversubscription: {
+      value: cdktf.stringToHclTerraform(struct!.memoryOversubscription),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    scheduler_algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.schedulerAlgorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class NodePoolSchedulerConfigOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -292,5 +317,43 @@ export class NodePool extends cdktf.TerraformResource {
       name: cdktf.stringToTerraform(this._name),
       scheduler_config: nodePoolSchedulerConfigToTerraform(this._schedulerConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._meta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      scheduler_config: {
+        value: nodePoolSchedulerConfigToHclTerraform(this._schedulerConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NodePoolSchedulerConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

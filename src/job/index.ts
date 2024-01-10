@@ -114,6 +114,17 @@ export function jobTaskGroupsTaskVolumeMountsToTerraform(struct?: JobTaskGroupsT
   }
 }
 
+
+export function jobTaskGroupsTaskVolumeMountsToHclTerraform(struct?: JobTaskGroupsTaskVolumeMounts): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class JobTaskGroupsTaskVolumeMountsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -186,6 +197,17 @@ export function jobTaskGroupsTaskToTerraform(struct?: JobTaskGroupsTask): any {
   }
   return {
   }
+}
+
+
+export function jobTaskGroupsTaskToHclTerraform(struct?: JobTaskGroupsTask): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class JobTaskGroupsTaskOutputReference extends cdktf.ComplexObject {
@@ -269,6 +291,17 @@ export function jobTaskGroupsVolumesToTerraform(struct?: JobTaskGroupsVolumes): 
   }
 }
 
+
+export function jobTaskGroupsVolumesToHclTerraform(struct?: JobTaskGroupsVolumes): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class JobTaskGroupsVolumesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -346,6 +379,17 @@ export function jobTaskGroupsToTerraform(struct?: JobTaskGroups): any {
   }
   return {
   }
+}
+
+
+export function jobTaskGroupsToHclTerraform(struct?: JobTaskGroups): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class JobTaskGroupsOutputReference extends cdktf.ComplexObject {
@@ -454,6 +498,37 @@ export function jobHcl2ToTerraform(struct?: JobHcl2OutputReference | JobHcl2): a
     enabled: cdktf.booleanToTerraform(struct!.enabled),
     vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.vars),
   }
+}
+
+
+export function jobHcl2ToHclTerraform(struct?: JobHcl2OutputReference | JobHcl2): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allow_fs: {
+      value: cdktf.booleanToHclTerraform(struct!.allowFs),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    enabled: {
+      value: cdktf.booleanToHclTerraform(struct!.enabled),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    vars: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.vars),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JobHcl2OutputReference extends cdktf.ComplexObject {
@@ -568,6 +643,31 @@ export function jobTimeoutsToTerraform(struct?: JobTimeouts | cdktf.IResolvable)
     create: cdktf.stringToTerraform(struct!.create),
     update: cdktf.stringToTerraform(struct!.update),
   }
+}
+
+
+export function jobTimeoutsToHclTerraform(struct?: JobTimeouts | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    create: {
+      value: cdktf.stringToHclTerraform(struct!.create),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    update: {
+      value: cdktf.stringToHclTerraform(struct!.update),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class JobTimeoutsOutputReference extends cdktf.ComplexObject {
@@ -1038,5 +1138,103 @@ export class Job extends cdktf.TerraformResource {
       hcl2: jobHcl2ToTerraform(this._hcl2.internalValue),
       timeouts: jobTimeoutsToTerraform(this._timeouts.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      consul_token: {
+        value: cdktf.stringToHclTerraform(this._consulToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      deregister_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._deregisterOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      deregister_on_id_change: {
+        value: cdktf.booleanToHclTerraform(this._deregisterOnIdChange),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      detach: {
+        value: cdktf.booleanToHclTerraform(this._detach),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hcl1: {
+        value: cdktf.booleanToHclTerraform(this._hcl1),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      jobspec: {
+        value: cdktf.stringToHclTerraform(this._jobspec),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      json: {
+        value: cdktf.booleanToHclTerraform(this._json),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      policy_override: {
+        value: cdktf.booleanToHclTerraform(this._policyOverride),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      purge_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._purgeOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      read_allocation_ids: {
+        value: cdktf.booleanToHclTerraform(this._readAllocationIds),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      rerun_if_dead: {
+        value: cdktf.booleanToHclTerraform(this._rerunIfDead),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      vault_token: {
+        value: cdktf.stringToHclTerraform(this._vaultToken),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      hcl2: {
+        value: jobHcl2ToHclTerraform(this._hcl2.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "JobHcl2List",
+      },
+      timeouts: {
+        value: jobTimeoutsToHclTerraform(this._timeouts.internalValue),
+        isBlock: true,
+        type: "struct",
+        storageClassType: "JobTimeouts",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

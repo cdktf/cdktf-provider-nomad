@@ -157,4 +157,30 @@ export class DataNomadDatacenters extends cdktf.TerraformDataSource {
       prefix: cdktf.stringToTerraform(this._prefix),
     };
   }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      ignore_down_nodes: {
+        value: cdktf.booleanToHclTerraform(this._ignoreDownNodes),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      prefix: {
+        value: cdktf.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
+  }
 }

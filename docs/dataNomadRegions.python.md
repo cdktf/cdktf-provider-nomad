@@ -119,6 +119,7 @@ If you experience problems setting this value it might not be settable. Please t
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.addOverride">add_override</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.overrideLogicalId">override_logical_id</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.resetOverrideLogicalId">reset_override_logical_id</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.toHclTerraform">to_hcl_terraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.toMetadata">to_metadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.toTerraform">to_terraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.getAnyMapAttribute">get_any_map_attribute</a></code> | *No description.* |
@@ -189,6 +190,14 @@ def reset_override_logical_id() -> None
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `to_hcl_terraform` <a name="to_hcl_terraform" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.toHclTerraform"></a>
+
+```python
+def to_hcl_terraform() -> typing.Any
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `to_metadata` <a name="to_metadata" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.toMetadata"></a>
 
