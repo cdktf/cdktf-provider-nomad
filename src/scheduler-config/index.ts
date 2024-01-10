@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/scheduler_config
 // generated from terraform resource schema
 
@@ -175,5 +170,37 @@ export class SchedulerConfig extends cdktf.TerraformResource {
       preemption_config: cdktf.hashMapper(cdktf.booleanToTerraform)(this._preemptionConfig),
       scheduler_algorithm: cdktf.stringToTerraform(this._schedulerAlgorithm),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      memory_oversubscription_enabled: {
+        value: cdktf.booleanToHclTerraform(this._memoryOversubscriptionEnabled),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      preemption_config: {
+        value: cdktf.hashMapperHcl(cdktf.booleanToHclTerraform)(this._preemptionConfig),
+        isBlock: false,
+        type: "map",
+        storageClassType: "booleanMap",
+      },
+      scheduler_algorithm: {
+        value: cdktf.stringToHclTerraform(this._schedulerAlgorithm),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

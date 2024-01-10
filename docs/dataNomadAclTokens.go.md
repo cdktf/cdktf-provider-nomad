@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 datanomadacltokens.NewDataNomadAclTokens(scope Construct, id *string, config DataNomadAclTokensConfig) DataNomadAclTokens
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 datanomadacltokens.DataNomadAclTokens_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 datanomadacltokens.DataNomadAclTokens_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datanomadacltokens.DataNomadAclTokens_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 datanomadacltokens.DataNomadAclTokens_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datanomadacltokens.DataNomadAclTokens_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokens.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 datanomadacltokens.DataNomadAclTokens_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -603,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokens.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 &datanomadacltokens.DataNomadAclTokensAclTokens {
 
@@ -616,7 +625,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 &datanomadacltokens.DataNomadAclTokensAclTokensRoles {
 
@@ -629,7 +638,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 &datanomadacltokens.DataNomadAclTokensConfig {
 	Connection: interface{},
@@ -764,7 +773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 datanomadacltokens.NewDataNomadAclTokensAclTokensList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadAclTokensAclTokensList
 ```
@@ -805,10 +814,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -896,7 +922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 datanomadacltokens.NewDataNomadAclTokensAclTokensOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadAclTokensAclTokensOutputReference
 ```
@@ -1251,7 +1277,7 @@ func InternalValue() DataNomadAclTokensAclTokens
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 datanomadacltokens.NewDataNomadAclTokensAclTokensRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadAclTokensAclTokensRolesList
 ```
@@ -1292,10 +1318,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRolesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRolesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRolesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRolesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRolesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRolesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRolesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -1383,7 +1426,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclTokens.DataNomadAclTokensAclTokensRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadacltokens"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadacltokens"
 
 datanomadacltokens.NewDataNomadAclTokensAclTokensRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadAclTokensAclTokensRolesOutputReference
 ```

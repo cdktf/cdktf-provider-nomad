@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.Job.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJob(scope Construct, id *string, config JobConfig) Job
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.job.Job.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.toHclTerraform">ToHclTerraform</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.addMoveTarget">AddMoveTarget</a></code> | Adds a user defined moveTarget string to this resource to be later used in .moveTo(moveTarget) to resolve the location of the move. |
@@ -140,6 +141,12 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-nomad.job.Job.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-nomad.job.Job.toMetadata"></a>
 
@@ -495,7 +502,7 @@ func ResetVaultToken()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.job.Job.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.Job_IsConstruct(x interface{}) *bool
 ```
@@ -527,7 +534,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.job.Job.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.Job_IsTerraformElement(x interface{}) *bool
 ```
@@ -541,7 +548,7 @@ job.Job_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.job.Job.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.Job_IsTerraformResource(x interface{}) *bool
 ```
@@ -555,7 +562,7 @@ job.Job_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.job.Job.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.Job_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1235,7 +1242,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobConfig {
 	Connection: interface{},
@@ -1251,14 +1258,14 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 	DeregisterOnIdChange: interface{},
 	Detach: interface{},
 	Hcl1: interface{},
-	Hcl2: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.job.JobHcl2,
+	Hcl2: github.com/cdktf/cdktf-provider-nomad-go/nomad.job.JobHcl2,
 	Id: *string,
 	Json: interface{},
 	PolicyOverride: interface{},
 	PurgeOnDestroy: interface{},
 	ReadAllocationIds: interface{},
 	RerunIfDead: interface{},
-	Timeouts: github.com/cdktf/cdktf-provider-nomad-go/nomad/v8.job.JobTimeouts,
+	Timeouts: github.com/cdktf/cdktf-provider-nomad-go/nomad.job.JobTimeouts,
 	VaultToken: *string,
 }
 ```
@@ -1576,7 +1583,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobHcl2.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobHcl2 {
 	AllowFs: interface{},
@@ -1642,7 +1649,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroups.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTaskGroups {
 
@@ -1655,7 +1662,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroupsTask.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTaskGroupsTask {
 
@@ -1668,7 +1675,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMounts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTaskGroupsTaskVolumeMounts {
 
@@ -1681,7 +1688,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTaskGroupsVolumes {
 
@@ -1694,7 +1701,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.job.JobTimeouts.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 &job.JobTimeouts {
 	Create: *string,
@@ -1742,7 +1749,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobHcl2OutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JobHcl2OutputReference
 ```
@@ -2078,7 +2085,7 @@ func InternalValue() JobHcl2
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsList
 ```
@@ -2119,10 +2126,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-nomad.job.JobTaskGroupsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-nomad.job.JobTaskGroupsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2210,7 +2234,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsOutputReference
 ```
@@ -2532,7 +2556,7 @@ func InternalValue() JobTaskGroups
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsTaskList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsTaskList
 ```
@@ -2573,10 +2597,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -2664,7 +2705,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsTaskOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsTaskOutputReference
 ```
@@ -2975,7 +3016,7 @@ func InternalValue() JobTaskGroupsTask
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsTaskVolumeMountsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsTaskVolumeMountsList
 ```
@@ -3016,10 +3057,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3107,7 +3165,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsTaskVolumeMountsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsTaskVolumeMountsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsTaskVolumeMountsOutputReference
 ```
@@ -3407,7 +3465,7 @@ func InternalValue() JobTaskGroupsTaskVolumeMounts
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsVolumesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) JobTaskGroupsVolumesList
 ```
@@ -3448,10 +3506,27 @@ whether the list is wrapping a set (will add tolist() to be able to access an it
 
 | **Name** | **Description** |
 | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.allWithMapKey">AllWithMapKey</a></code> | Creating an iterator for this complex list. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.computeFqn">ComputeFqn</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.toString">ToString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.get">Get</a></code> | *No description.* |
+
+---
+
+##### `AllWithMapKey` <a name="AllWithMapKey" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.allWithMapKey"></a>
+
+```go
+func AllWithMapKey(mapKeyAttributeName *string) DynamicListTerraformIterator
+```
+
+Creating an iterator for this complex list.
+
+The list will be converted into a map with the mapKeyAttributeName as the key.
+
+###### `mapKeyAttributeName`<sup>Required</sup> <a name="mapKeyAttributeName" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumesList.allWithMapKey.parameter.mapKeyAttributeName"></a>
+
+- *Type:* *string
 
 ---
 
@@ -3539,7 +3614,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTaskGroupsVolumesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTaskGroupsVolumesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) JobTaskGroupsVolumesOutputReference
 ```
@@ -3850,7 +3925,7 @@ func InternalValue() JobTaskGroupsVolumes
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.JobTimeoutsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/job"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/job"
 
 job.NewJobTimeoutsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) JobTimeoutsOutputReference
 ```

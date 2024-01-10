@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles
 // generated from terraform resource schema
 
@@ -34,6 +29,17 @@ export function dataNomadAclRolesAclRolesPoliciesToTerraform(struct?: DataNomadA
   }
   return {
   }
+}
+
+
+export function dataNomadAclRolesAclRolesPoliciesToHclTerraform(struct?: DataNomadAclRolesAclRolesPolicies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataNomadAclRolesAclRolesPoliciesOutputReference extends cdktf.ComplexObject {
@@ -98,6 +104,17 @@ export function dataNomadAclRolesAclRolesToTerraform(struct?: DataNomadAclRolesA
   }
   return {
   }
+}
+
+
+export function dataNomadAclRolesAclRolesToHclTerraform(struct?: DataNomadAclRolesAclRoles): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
 }
 
 export class DataNomadAclRolesAclRolesOutputReference extends cdktf.ComplexObject {
@@ -275,5 +292,25 @@ export class DataNomadAclRoles extends cdktf.TerraformDataSource {
       id: cdktf.stringToTerraform(this._id),
       prefix: cdktf.stringToTerraform(this._prefix),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      prefix: {
+        value: cdktf.stringToHclTerraform(this._prefix),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.NewDataNomadJobParser(scope Construct, id *string, config DataNomadJobParserConfig) DataNomadJobParser
 ```
@@ -54,6 +54,7 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.addOverride">AddOverride</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.overrideLogicalId">OverrideLogicalId</a></code> | Overrides the auto-generated logical ID with a specific ID. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.resetOverrideLogicalId">ResetOverrideLogicalId</a></code> | Resets a previously passed logical Id to use the auto-generated logical id again. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.toHclTerraform">ToHclTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.toMetadata">ToMetadata</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.toTerraform">ToTerraform</a></code> | Adds this resource to the terraform JSON output. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.getAnyMapAttribute">GetAnyMapAttribute</a></code> | *No description.* |
@@ -120,6 +121,14 @@ func ResetOverrideLogicalId()
 ```
 
 Resets a previously passed logical Id to use the auto-generated logical id again.
+
+##### `ToHclTerraform` <a name="ToHclTerraform" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.toHclTerraform"></a>
+
+```go
+func ToHclTerraform() interface{}
+```
+
+Adds this resource to the terraform JSON output.
 
 ##### `ToMetadata` <a name="ToMetadata" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.toMetadata"></a>
 
@@ -281,7 +290,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.DataNomadJobParser_IsConstruct(x interface{}) *bool
 ```
@@ -313,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.DataNomadJobParser_IsTerraformElement(x interface{}) *bool
 ```
@@ -327,7 +336,7 @@ datanomadjobparser.DataNomadJobParser_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.DataNomadJobParser_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -341,7 +350,7 @@ datanomadjobparser.DataNomadJobParser_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 datanomadjobparser.DataNomadJobParser_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -625,7 +634,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v8/datanomadjobparser"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjobparser"
 
 &datanomadjobparser.DataNomadJobParserConfig {
 	Connection: interface{},

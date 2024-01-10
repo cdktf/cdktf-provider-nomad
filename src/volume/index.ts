@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/volume
 // generated from terraform resource schema
 
@@ -122,6 +117,17 @@ export function volumeTopologiesToTerraform(struct?: VolumeTopologies): any {
   }
 }
 
+
+export function volumeTopologiesToHclTerraform(struct?: VolumeTopologies): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+  };
+  return attrs;
+}
+
 export class VolumeTopologiesOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -199,6 +205,31 @@ export function volumeCapabilityToTerraform(struct?: VolumeCapability | cdktf.IR
     access_mode: cdktf.stringToTerraform(struct!.accessMode),
     attachment_mode: cdktf.stringToTerraform(struct!.attachmentMode),
   }
+}
+
+
+export function volumeCapabilityToHclTerraform(struct?: VolumeCapability | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    access_mode: {
+      value: cdktf.stringToHclTerraform(struct!.accessMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    attachment_mode: {
+      value: cdktf.stringToHclTerraform(struct!.attachmentMode),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VolumeCapabilityOutputReference extends cdktf.ComplexObject {
@@ -323,6 +354,31 @@ export function volumeMountOptionsToTerraform(struct?: VolumeMountOptionsOutputR
   }
 }
 
+
+export function volumeMountOptionsToHclTerraform(struct?: VolumeMountOptionsOutputReference | VolumeMountOptions): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    fs_type: {
+      value: cdktf.stringToHclTerraform(struct!.fsType),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    mount_flags: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.mountFlags),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VolumeMountOptionsOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -410,6 +466,25 @@ export function volumeTopologyRequestRequiredTopologyToTerraform(struct?: Volume
   return {
     segments: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.segments),
   }
+}
+
+
+export function volumeTopologyRequestRequiredTopologyToHclTerraform(struct?: VolumeTopologyRequestRequiredTopology | cdktf.IResolvable): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    segments: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.segments),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VolumeTopologyRequestRequiredTopologyOutputReference extends cdktf.ComplexObject {
@@ -508,6 +583,25 @@ export function volumeTopologyRequestRequiredToTerraform(struct?: VolumeTopology
   }
 }
 
+
+export function volumeTopologyRequestRequiredToHclTerraform(struct?: VolumeTopologyRequestRequiredOutputReference | VolumeTopologyRequestRequired): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    topology: {
+      value: cdktf.listMapperHcl(volumeTopologyRequestRequiredTopologyToHclTerraform, true)(struct!.topology),
+      isBlock: true,
+      type: "list",
+      storageClassType: "VolumeTopologyRequestRequiredTopologyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
 export class VolumeTopologyRequestRequiredOutputReference extends cdktf.ComplexObject {
   private isEmptyObject = false;
 
@@ -570,6 +664,25 @@ export function volumeTopologyRequestToTerraform(struct?: VolumeTopologyRequestO
   return {
     required: volumeTopologyRequestRequiredToTerraform(struct!.required),
   }
+}
+
+
+export function volumeTopologyRequestToHclTerraform(struct?: VolumeTopologyRequestOutputReference | VolumeTopologyRequest): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    required: {
+      value: volumeTopologyRequestRequiredToHclTerraform(struct!.required),
+      isBlock: true,
+      type: "list",
+      storageClassType: "VolumeTopologyRequestRequiredList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class VolumeTopologyRequestOutputReference extends cdktf.ComplexObject {
@@ -1007,5 +1120,109 @@ export class Volume extends cdktf.TerraformResource {
       mount_options: volumeMountOptionsToTerraform(this._mountOptions.internalValue),
       topology_request: volumeTopologyRequestToTerraform(this._topologyRequest.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      access_mode: {
+        value: cdktf.stringToHclTerraform(this._accessMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      attachment_mode: {
+        value: cdktf.stringToHclTerraform(this._attachmentMode),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      context: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._context),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      deregister_on_destroy: {
+        value: cdktf.booleanToHclTerraform(this._deregisterOnDestroy),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      external_id: {
+        value: cdktf.stringToHclTerraform(this._externalId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      parameters: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._parameters),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      plugin_id: {
+        value: cdktf.stringToHclTerraform(this._pluginId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      secrets: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._secrets),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      type: {
+        value: cdktf.stringToHclTerraform(this._type),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      volume_id: {
+        value: cdktf.stringToHclTerraform(this._volumeId),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      capability: {
+        value: cdktf.listMapperHcl(volumeCapabilityToHclTerraform, true)(this._capability.internalValue),
+        isBlock: true,
+        type: "set",
+        storageClassType: "VolumeCapabilityList",
+      },
+      mount_options: {
+        value: volumeMountOptionsToHclTerraform(this._mountOptions.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VolumeMountOptionsList",
+      },
+      topology_request: {
+        value: volumeTopologyRequestToHclTerraform(this._topologyRequest.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "VolumeTopologyRequestList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

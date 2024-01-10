@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/namespace
 // generated from terraform resource schema
 
@@ -80,6 +75,31 @@ export function namespaceCapabilitiesToTerraform(struct?: NamespaceCapabilitiesO
     disabled_task_drivers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.disabledTaskDrivers),
     enabled_task_drivers: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.enabledTaskDrivers),
   }
+}
+
+
+export function namespaceCapabilitiesToHclTerraform(struct?: NamespaceCapabilitiesOutputReference | NamespaceCapabilities): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    disabled_task_drivers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.disabledTaskDrivers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    enabled_task_drivers: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.enabledTaskDrivers),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NamespaceCapabilitiesOutputReference extends cdktf.ComplexObject {
@@ -183,6 +203,37 @@ export function namespaceNodePoolConfigToTerraform(struct?: NamespaceNodePoolCon
     default: cdktf.stringToTerraform(struct!.default),
     denied: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.denied),
   }
+}
+
+
+export function namespaceNodePoolConfigToHclTerraform(struct?: NamespaceNodePoolConfigOutputReference | NamespaceNodePoolConfig): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    allowed: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.allowed),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+    default: {
+      value: cdktf.stringToHclTerraform(struct!.default),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    denied: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.denied),
+      isBlock: false,
+      type: "set",
+      storageClassType: "stringList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
 }
 
 export class NamespaceNodePoolConfigOutputReference extends cdktf.ComplexObject {
@@ -465,5 +516,55 @@ export class Namespace extends cdktf.TerraformResource {
       capabilities: namespaceCapabilitiesToTerraform(this._capabilities.internalValue),
       node_pool_config: namespaceNodePoolConfigToTerraform(this._nodePoolConfig.internalValue),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      description: {
+        value: cdktf.stringToHclTerraform(this._description),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      meta: {
+        value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(this._meta),
+        isBlock: false,
+        type: "map",
+        storageClassType: "stringMap",
+      },
+      name: {
+        value: cdktf.stringToHclTerraform(this._name),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      quota: {
+        value: cdktf.stringToHclTerraform(this._quota),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      capabilities: {
+        value: namespaceCapabilitiesToHclTerraform(this._capabilities.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NamespaceCapabilitiesList",
+      },
+      node_pool_config: {
+        value: namespaceNodePoolConfigToHclTerraform(this._nodePoolConfig.internalValue),
+        isBlock: true,
+        type: "list",
+        storageClassType: "NamespaceNodePoolConfigList",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }

@@ -1,8 +1,3 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
 // https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/job_parser
 // generated from terraform resource schema
 
@@ -153,5 +148,31 @@ export class DataNomadJobParser extends cdktf.TerraformDataSource {
       hcl: cdktf.stringToTerraform(this._hcl),
       id: cdktf.stringToTerraform(this._id),
     };
+  }
+
+  protected synthesizeHclAttributes(): { [name: string]: any } {
+    const attrs = {
+      canonicalize: {
+        value: cdktf.booleanToHclTerraform(this._canonicalize),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "boolean",
+      },
+      hcl: {
+        value: cdktf.stringToHclTerraform(this._hcl),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      id: {
+        value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+    };
+
+    // remove undefined attributes
+    return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined ))
   }
 }
