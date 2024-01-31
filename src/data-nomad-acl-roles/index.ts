@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles
+// https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_roles
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,14 +13,14 @@ import * as cdktf from 'cdktf';
 
 export interface DataNomadAclRolesConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles#id DataNomadAclRoles#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_roles#id DataNomadAclRoles#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}
   */
   readonly prefix?: string;
 }
@@ -192,7 +192,7 @@ export class DataNomadAclRolesAclRolesList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles nomad_acl_roles}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_roles nomad_acl_roles}
 */
 export class DataNomadAclRoles extends cdktf.TerraformDataSource {
 
@@ -208,7 +208,7 @@ export class DataNomadAclRoles extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataNomadAclRoles resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNomadAclRoles to import
-  * @param importFromId The id of the existing DataNomadAclRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNomadAclRoles that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_roles#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNomadAclRoles to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -220,7 +220,7 @@ export class DataNomadAclRoles extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_roles nomad_acl_roles} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_roles nomad_acl_roles} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -231,7 +231,7 @@ export class DataNomadAclRoles extends cdktf.TerraformDataSource {
       terraformResourceType: 'nomad_acl_roles',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.1.0',
+        providerVersion: '2.1.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

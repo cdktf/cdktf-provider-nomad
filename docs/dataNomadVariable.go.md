@@ -4,7 +4,7 @@
 
 ### DataNomadVariable <a name="DataNomadVariable" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/variable nomad_variable}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/variable nomad_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadVariable.DataNomadVariable.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataNomadVariable to impor
 
 The id of the existing DataNomadVariable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -662,7 +662,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadvariable"
 | <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariableConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariableConfig.property.path">Path</a></code> | <code>*string</code> | The path of the variable. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/variable#id DataNomadVariable#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/variable#id DataNomadVariable#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadVariable.DataNomadVariableConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Variable namespace. |
 
 ---
@@ -747,7 +747,7 @@ Path *string
 
 The path of the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/variable#path DataNomadVariable#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/variable#path DataNomadVariable#path}
 
 ---
 
@@ -759,7 +759,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/variable#id DataNomadVariable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/variable#id DataNomadVariable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -776,7 +776,7 @@ Namespace *string
 
 Variable namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/variable#namespace DataNomadVariable#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/variable#namespace DataNomadVariable#namespace}
 
 ---
 

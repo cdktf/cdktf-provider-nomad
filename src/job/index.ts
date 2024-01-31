@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job
+// https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +15,35 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Consul token used to submit this job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#consul_token Job#consul_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#consul_token Job#consul_token}
   */
   readonly consulToken?: string;
   /**
   * If true, the job will be deregistered on destroy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
   */
   readonly deregisterOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * If true, the job will be deregistered when the job ID changes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
   */
   readonly deregisterOnIdChange?: boolean | cdktf.IResolvable;
   /**
   * If true, the provider will return immediately after creating or updating, instead of monitoring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#detach Job#detach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#detach Job#detach}
   */
   readonly detach?: boolean | cdktf.IResolvable;
   /**
   * If true, the `jobspec` will be parsed using the HCL1 format.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#hcl1 Job#hcl1}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#hcl1 Job#hcl1}
   */
   readonly hcl1?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,53 +52,53 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Job specification. If you want to point to a file use the file() function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#jobspec Job#jobspec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#jobspec Job#jobspec}
   */
   readonly jobspec: string;
   /**
   * If true, the `jobspec` will be parsed as json instead of HCL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#json Job#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#json Job#json}
   */
   readonly json?: boolean | cdktf.IResolvable;
   /**
   * Override any soft-mandatory Sentinel policies that fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#policy_override Job#policy_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#policy_override Job#policy_override}
   */
   readonly policyOverride?: boolean | cdktf.IResolvable;
   /**
   * Whether to purge the job when the resource is destroyed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
   */
   readonly purgeOnDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}
   */
   readonly readAllocationIds?: boolean | cdktf.IResolvable;
   /**
   * If true, forces the job to run again on apply if it is currently dead
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#rerun_if_dead Job#rerun_if_dead}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#rerun_if_dead Job#rerun_if_dead}
   */
   readonly rerunIfDead?: boolean | cdktf.IResolvable;
   /**
   * The Vault token used to submit this job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#vault_token Job#vault_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#vault_token Job#vault_token}
   */
   readonly vaultToken?: string;
   /**
   * hcl2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#hcl2 Job#hcl2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#hcl2 Job#hcl2}
   */
   readonly hcl2?: JobHcl2;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#timeouts Job#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#timeouts Job#timeouts}
   */
   readonly timeouts?: JobTimeouts;
 }
@@ -471,19 +471,19 @@ export interface JobHcl2 {
   /**
   * If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#allow_fs Job#allow_fs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#allow_fs Job#allow_fs}
   */
   readonly allowFs?: boolean | cdktf.IResolvable;
   /**
   * If true, the `jobspec` will be parsed as HCL2 instead of HCL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#enabled Job#enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#enabled Job#enabled}
   */
   readonly enabled?: boolean | cdktf.IResolvable;
   /**
   * Additional variables to use when templating the job with HCL2
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#vars Job#vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#vars Job#vars}
   */
   readonly vars?: { [key: string]: string };
 }
@@ -625,11 +625,11 @@ export class JobHcl2OutputReference extends cdktf.ComplexObject {
 }
 export interface JobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#create Job#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#create Job#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#update Job#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#update Job#update}
   */
   readonly update?: string;
 }
@@ -752,7 +752,7 @@ export class JobTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job nomad_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job nomad_job}
 */
 export class Job extends cdktf.TerraformResource {
 
@@ -768,7 +768,7 @@ export class Job extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Job resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Job to import
-  * @param importFromId The id of the existing Job that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Job that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Job to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -780,7 +780,7 @@ export class Job extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/job nomad_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job nomad_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -791,7 +791,7 @@ export class Job extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_job',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.1.0',
+        providerVersion: '2.1.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
