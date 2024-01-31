@@ -4,12 +4,12 @@
 
 ### DataNomadAclPolicy <a name="DataNomadAclPolicy" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_policy nomad_acl_policy}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_policy nomad_acl_policy}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
 
 datanomadaclpolicy.NewDataNomadAclPolicy(scope Construct, id *string, config DataNomadAclPolicyConfig) DataNomadAclPolicy
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
 
 datanomadaclpolicy.DataNomadAclPolicy_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
 
 datanomadaclpolicy.DataNomadAclPolicy_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datanomadaclpolicy.DataNomadAclPolicy_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
 
 datanomadaclpolicy.DataNomadAclPolicy_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datanomadaclpolicy.DataNomadAclPolicy_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicy.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
 
 datanomadaclpolicy.DataNomadAclPolicy_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataNomadAclPolicy to impo
 
 The id of the existing DataNomadAclPolicy that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_policy#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_policy#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -616,7 +616,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclpolicy"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclpolicy"
 
 &datanomadaclpolicy.DataNomadAclPolicyConfig {
 	Connection: interface{},
@@ -643,7 +643,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclpolicy"
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.name">Name</a></code> | <code>*string</code> | Name. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_policy#id DataNomadAclPolicy#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclPolicy.DataNomadAclPolicyConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_policy#id DataNomadAclPolicy#id}. |
 
 ---
 
@@ -727,7 +727,7 @@ Name *string
 
 Name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_policy#name DataNomadAclPolicy#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_policy#name DataNomadAclPolicy#name}
 
 ---
 
@@ -739,7 +739,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/data-sources/acl_policy#id DataNomadAclPolicy#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/acl_policy#id DataNomadAclPolicy#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

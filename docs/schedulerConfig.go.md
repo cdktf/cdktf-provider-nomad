@@ -4,12 +4,12 @@
 
 ### SchedulerConfig <a name="SchedulerConfig" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/scheduler_config nomad_scheduler_config}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/scheduler_config nomad_scheduler_config}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/schedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/schedulerconfig"
 
 schedulerconfig.NewSchedulerConfig(scope Construct, id *string, config SchedulerConfigConfig) SchedulerConfig
 ```
@@ -406,7 +406,7 @@ func ResetSchedulerAlgorithm()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/schedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/schedulerconfig"
 
 schedulerconfig.SchedulerConfig_IsConstruct(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/schedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/schedulerconfig"
 
 schedulerconfig.SchedulerConfig_IsTerraformElement(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ schedulerconfig.SchedulerConfig_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/schedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/schedulerconfig"
 
 schedulerconfig.SchedulerConfig_IsTerraformResource(x interface{}) *bool
 ```
@@ -466,7 +466,7 @@ schedulerconfig.SchedulerConfig_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfig.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/schedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/schedulerconfig"
 
 schedulerconfig.SchedulerConfig_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -495,7 +495,7 @@ The construct id used in the generated config for the SchedulerConfig to import.
 
 The id of the existing SchedulerConfig that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/scheduler_config#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/scheduler_config#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -783,7 +783,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/schedulerconfig"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/schedulerconfig"
 
 &schedulerconfig.SchedulerConfigConfig {
 	Connection: interface{},
@@ -811,7 +811,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/schedulerconfig"
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/scheduler_config#id SchedulerConfig#id}. |
+| <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/scheduler_config#id SchedulerConfig#id}. |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.memoryOversubscriptionEnabled">MemoryOversubscriptionEnabled</a></code> | <code>interface{}</code> | When true, tasks may exceed their reserved memory limit. |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.preemptionConfig">PreemptionConfig</a></code> | <code>*map[string]interface{}</code> | Options to enable preemption for various schedulers. |
 | <code><a href="#@cdktf/provider-nomad.schedulerConfig.SchedulerConfigConfig.property.schedulerAlgorithm">SchedulerAlgorithm</a></code> | <code>*string</code> | Specifies whether scheduler binpacks or spreads allocations on available nodes. |
@@ -896,7 +896,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/scheduler_config#id SchedulerConfig#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/scheduler_config#id SchedulerConfig#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -913,7 +913,7 @@ MemoryOversubscriptionEnabled interface{}
 
 When true, tasks may exceed their reserved memory limit.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/scheduler_config#memory_oversubscription_enabled SchedulerConfig#memory_oversubscription_enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/scheduler_config#memory_oversubscription_enabled SchedulerConfig#memory_oversubscription_enabled}
 
 ---
 
@@ -927,7 +927,7 @@ PreemptionConfig *map[string]interface{}
 
 Options to enable preemption for various schedulers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/scheduler_config#preemption_config SchedulerConfig#preemption_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/scheduler_config#preemption_config SchedulerConfig#preemption_config}
 
 ---
 
@@ -941,7 +941,7 @@ SchedulerAlgorithm *string
 
 Specifies whether scheduler binpacks or spreads allocations on available nodes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.0/docs/resources/scheduler_config#scheduler_algorithm SchedulerConfig#scheduler_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/scheduler_config#scheduler_algorithm SchedulerConfig#scheduler_algorithm}
 
 ---
 
