@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclToken.AclToken.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/acltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/acltoken"
 
 acltoken.NewAclToken(scope Construct, id *string, config AclTokenConfig) AclToken
 ```
@@ -433,7 +433,7 @@ func ResetRole()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.aclToken.AclToken.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/acltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/acltoken"
 
 acltoken.AclToken_IsConstruct(x interface{}) *bool
 ```
@@ -465,7 +465,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.aclToken.AclToken.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/acltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/acltoken"
 
 acltoken.AclToken_IsTerraformElement(x interface{}) *bool
 ```
@@ -479,7 +479,7 @@ acltoken.AclToken_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.aclToken.AclToken.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/acltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/acltoken"
 
 acltoken.AclToken_IsTerraformResource(x interface{}) *bool
 ```
@@ -493,7 +493,7 @@ acltoken.AclToken_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.aclToken.AclToken.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/acltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/acltoken"
 
 acltoken.AclToken_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -920,7 +920,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.aclToken.AclTokenConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/acltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/acltoken"
 
 &acltoken.AclTokenConfig {
 	Connection: interface{},
@@ -1135,7 +1135,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.aclToken.AclTokenRole.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/acltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/acltoken"
 
 &acltoken.AclTokenRole {
 	Id: *string,
@@ -1174,7 +1174,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclToken.AclTokenRoleList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/acltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/acltoken"
 
 acltoken.NewAclTokenRoleList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) AclTokenRoleList
 ```
@@ -1334,7 +1334,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclToken.AclTokenRoleOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/acltoken"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/acltoken"
 
 acltoken.NewAclTokenRoleOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) AclTokenRoleOutputReference
 ```
