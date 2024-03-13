@@ -4,7 +4,7 @@
 
 ### DataNomadPlugin <a name="DataNomadPlugin" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugin nomad_plugin}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugin nomad_plugin}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.Initializer"></a>
 
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataNomadPlugin to import.
 
 The id of the existing DataNomadPlugin that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugin#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugin#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -757,7 +757,7 @@ const dataNomadPluginConfig: dataNomadPlugin.DataNomadPluginConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.pluginId">pluginId</a></code> | <code>string</code> | Plugin ID. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugin#id DataNomadPlugin#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugin#id DataNomadPlugin#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.waitForHealthy">waitForHealthy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Wait for to be backed by a specified number of controllers. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.property.waitForRegistration">waitForRegistration</a></code> | <code>boolean \| cdktf.IResolvable</code> | Wait for the plugin to be registered in Noamd. |
 
@@ -843,7 +843,7 @@ public readonly pluginId: string;
 
 Plugin ID.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugin#plugin_id DataNomadPlugin#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugin#plugin_id DataNomadPlugin#plugin_id}
 
 ---
 
@@ -855,7 +855,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugin#id DataNomadPlugin#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugin#id DataNomadPlugin#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -872,7 +872,7 @@ public readonly waitForHealthy: boolean | IResolvable;
 
 Wait for to be backed by a specified number of controllers.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugin#wait_for_healthy DataNomadPlugin#wait_for_healthy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugin#wait_for_healthy DataNomadPlugin#wait_for_healthy}
 
 ---
 
@@ -886,7 +886,7 @@ public readonly waitForRegistration: boolean | IResolvable;
 
 Wait for the plugin to be registered in Noamd.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/plugin#wait_for_registration DataNomadPlugin#wait_for_registration}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/plugin#wait_for_registration DataNomadPlugin#wait_for_registration}
 
 ---
 

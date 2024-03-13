@@ -4,7 +4,7 @@
 
 ### Job <a name="Job" id="@cdktf/provider-nomad.job.Job"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job nomad_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job nomad_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.Job.Initializer"></a>
 
@@ -591,7 +591,7 @@ The construct id used in the generated config for the Job to import.
 
 The id of the existing Job that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1288,11 +1288,11 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/job"
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">Detach</a></code> | <code>interface{}</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl1">Hcl1</a></code> | <code>interface{}</code> | If true, the `jobspec` will be parsed using the HCL1 format. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl2">Hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#id Job#id}. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">Json</a></code> | <code>interface{}</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">PolicyOverride</a></code> | <code>interface{}</code> | Override any soft-mandatory Sentinel policies that fail. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">PurgeOnDestroy</a></code> | <code>interface{}</code> | Whether to purge the job when the resource is destroyed. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">ReadAllocationIds</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">ReadAllocationIds</a></code> | <code>interface{}</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead">RerunIfDead</a></code> | <code>interface{}</code> | If true, forces the job to run again on apply if it is currently dead. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.vaultToken">VaultToken</a></code> | <code>*string</code> | The Vault token used to submit this job. |
@@ -1379,7 +1379,7 @@ Jobspec *string
 
 Job specification. If you want to point to a file use the file() function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#jobspec Job#jobspec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#jobspec Job#jobspec}
 
 ---
 
@@ -1393,7 +1393,7 @@ ConsulToken *string
 
 The Consul token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#consul_token Job#consul_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#consul_token Job#consul_token}
 
 ---
 
@@ -1407,7 +1407,7 @@ DeregisterOnDestroy interface{}
 
 If true, the job will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
 
 ---
 
@@ -1421,7 +1421,7 @@ DeregisterOnIdChange interface{}
 
 If true, the job will be deregistered when the job ID changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
 
 ---
 
@@ -1435,7 +1435,7 @@ Detach interface{}
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#detach Job#detach}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#detach Job#detach}
 
 ---
 
@@ -1449,7 +1449,7 @@ Hcl1 interface{}
 
 If true, the `jobspec` will be parsed using the HCL1 format.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#hcl1 Job#hcl1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#hcl1 Job#hcl1}
 
 ---
 
@@ -1463,7 +1463,7 @@ Hcl2 JobHcl2
 
 hcl2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#hcl2 Job#hcl2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#hcl2 Job#hcl2}
 
 ---
 
@@ -1475,7 +1475,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1492,7 +1492,7 @@ Json interface{}
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#json Job#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#json Job#json}
 
 ---
 
@@ -1506,7 +1506,7 @@ PolicyOverride interface{}
 
 Override any soft-mandatory Sentinel policies that fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#policy_override Job#policy_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#policy_override Job#policy_override}
 
 ---
 
@@ -1520,7 +1520,7 @@ PurgeOnDestroy interface{}
 
 Whether to purge the job when the resource is destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
 
 ---
 
@@ -1532,7 +1532,7 @@ ReadAllocationIds interface{}
 
 - *Type:* interface{}
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
 
 ---
 
@@ -1546,7 +1546,7 @@ RerunIfDead interface{}
 
 If true, forces the job to run again on apply if it is currently dead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#rerun_if_dead Job#rerun_if_dead}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#rerun_if_dead Job#rerun_if_dead}
 
 ---
 
@@ -1560,7 +1560,7 @@ Timeouts JobTimeouts
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#timeouts Job#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#timeouts Job#timeouts}
 
 ---
 
@@ -1574,7 +1574,7 @@ VaultToken *string
 
 The Vault token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#vault_token Job#vault_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#vault_token Job#vault_token}
 
 ---
 
@@ -1612,7 +1612,7 @@ AllowFs interface{}
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#allow_fs Job#allow_fs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#allow_fs Job#allow_fs}
 
 ---
 
@@ -1626,7 +1626,7 @@ Enabled interface{}
 
 If true, the `jobspec` will be parsed as HCL2 instead of HCL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#enabled Job#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#enabled Job#enabled}
 
 ---
 
@@ -1640,7 +1640,7 @@ Vars *map[string]*string
 
 Additional variables to use when templating the job with HCL2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#vars Job#vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#vars Job#vars}
 
 ---
 
@@ -1713,8 +1713,8 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/job"
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#create Job#create}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#update Job#update}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">Create</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#create Job#create}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">Update</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#update Job#update}. |
 
 ---
 
@@ -1726,7 +1726,7 @@ Create *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#create Job#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#create Job#create}.
 
 ---
 
@@ -1738,7 +1738,7 @@ Update *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/job#update Job#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/job#update Job#update}.
 
 ---
 

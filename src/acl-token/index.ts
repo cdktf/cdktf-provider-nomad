@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token
+// https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +15,17 @@ export interface AclTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Provides a TTL for the token in the form of a time duration such as "5m" or "1h".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token#expiration_ttl AclToken#expiration_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token#expiration_ttl AclToken#expiration_ttl}
   */
   readonly expirationTtl?: string;
   /**
   * Whether the token should be replicated to all regions or not.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token#global AclToken#global}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token#global AclToken#global}
   */
   readonly global?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token#id AclToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token#id AclToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +34,25 @@ export interface AclTokenConfig extends cdktf.TerraformMetaArguments {
   /**
   * Human-readable name for this token.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token#name AclToken#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token#name AclToken#name}
   */
   readonly name?: string;
   /**
   * The ACL policies to associate with the token, if it's a 'client' type.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token#policies AclToken#policies}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token#policies AclToken#policies}
   */
   readonly policies?: string[];
   /**
   * The type of token to create, 'client' or 'management'.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token#type AclToken#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token#type AclToken#type}
   */
   readonly type: string;
   /**
   * role block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token#role AclToken#role}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token#role AclToken#role}
   */
   readonly role?: AclTokenRole[] | cdktf.IResolvable;
 }
@@ -60,7 +60,7 @@ export interface AclTokenRole {
   /**
   * The ID of the ACL role to link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token#id AclToken#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token#id AclToken#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -181,7 +181,7 @@ export class AclTokenRoleList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token nomad_acl_token}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token nomad_acl_token}
 */
 export class AclToken extends cdktf.TerraformResource {
 
@@ -197,7 +197,7 @@ export class AclToken extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AclToken resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AclToken to import
-  * @param importFromId The id of the existing AclToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AclToken that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AclToken to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -209,7 +209,7 @@ export class AclToken extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_token nomad_acl_token} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_token nomad_acl_token} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -220,7 +220,7 @@ export class AclToken extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_acl_token',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.1.1',
+        providerVersion: '2.2.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

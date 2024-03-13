@@ -4,7 +4,7 @@
 
 ### Variable <a name="Variable" id="@cdktf/provider-nomad.variable.Variable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable nomad_variable}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable nomad_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.variable.Variable.Initializer"></a>
 
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Variable to import.
 
 The id of the existing Variable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -799,7 +799,7 @@ new VariableConfig {
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.items">Items</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | A map of strings to be added as items in the variable. |
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.path">Path</a></code> | <code>string</code> | The path at which the variable items will be stored, must be between 1 and 128 characters in length, be URL safe, and not include '@' or '.' characters. |
-| <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#id Variable#id}. |
+| <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#id Variable#id}. |
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.namespace">Namespace</a></code> | <code>string</code> | Variable namespace. |
 
 ---
@@ -884,7 +884,7 @@ public System.Collections.Generic.IDictionary<string, string> Items { get; set; 
 
 A map of strings to be added as items in the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#items Variable#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#items Variable#items}
 
 ---
 
@@ -898,7 +898,7 @@ public string Path { get; set; }
 
 The path at which the variable items will be stored, must be between 1 and 128 characters in length, be URL safe, and not include '@' or '.' characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#path Variable#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#path Variable#path}
 
 ---
 
@@ -910,7 +910,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#id Variable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#id Variable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -927,7 +927,7 @@ public string Namespace { get; set; }
 
 Variable namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#namespace Variable#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#namespace Variable#namespace}
 
 ---
 

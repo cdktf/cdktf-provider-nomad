@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule
+// https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,29 +15,29 @@ export interface AclBindingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Name of the auth method for which this rule applies to.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule#auth_method AclBindingRule#auth_method}
   */
   readonly authMethod: string;
   /**
   * Target of the binding.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule#bind_name AclBindingRule#bind_name}
   */
   readonly bindName?: string;
   /**
   * Adjusts how this binding rule is applied at login time. Valid values are "role" and "policy".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule#bind_type AclBindingRule#bind_type}
   */
   readonly bindType: string;
   /**
   * Description for this ACL binding rule.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule#description AclBindingRule#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule#description AclBindingRule#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule#id AclBindingRule#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule#id AclBindingRule#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -46,13 +46,13 @@ export interface AclBindingRuleConfig extends cdktf.TerraformMetaArguments {
   /**
   * A boolean expression that matches against verified identity attributes returned from the auth method during login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule#selector AclBindingRule#selector}
   */
   readonly selector?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule nomad_acl_binding_rule}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule nomad_acl_binding_rule}
 */
 export class AclBindingRule extends cdktf.TerraformResource {
 
@@ -68,7 +68,7 @@ export class AclBindingRule extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AclBindingRule resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AclBindingRule to import
-  * @param importFromId The id of the existing AclBindingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AclBindingRule that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AclBindingRule to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +80,7 @@ export class AclBindingRule extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_binding_rule nomad_acl_binding_rule} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +91,7 @@ export class AclBindingRule extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_acl_binding_rule',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.1.1',
+        providerVersion: '2.2.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

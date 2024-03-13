@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations
+// https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,20 +15,26 @@ export interface DataNomadAllocationsConfig extends cdktf.TerraformMetaArguments
   /**
   * Specifies the expression used to filter the results.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#filter DataNomadAllocations#filter}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#filter DataNomadAllocations#filter}
   */
   readonly filter?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#id DataNomadAllocations#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#id DataNomadAllocations#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
   */
   readonly id?: string;
   /**
+  * Specifies the namespace to search for allocations in.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#namespace DataNomadAllocations#namespace}
+  */
+  readonly namespace?: string;
+  /**
   * Specifies a string to filter node pools based on a name prefix.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#prefix DataNomadAllocations#prefix}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#prefix DataNomadAllocations#prefix}
   */
   readonly prefix?: string;
 }
@@ -199,7 +205,7 @@ export class DataNomadAllocationsAllocationsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations nomad_allocations}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations nomad_allocations}
 */
 export class DataNomadAllocations extends cdktf.TerraformDataSource {
 
@@ -215,7 +221,7 @@ export class DataNomadAllocations extends cdktf.TerraformDataSource {
   * Generates CDKTF code for importing a DataNomadAllocations resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DataNomadAllocations to import
-  * @param importFromId The id of the existing DataNomadAllocations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DataNomadAllocations that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DataNomadAllocations to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -227,7 +233,7 @@ export class DataNomadAllocations extends cdktf.TerraformDataSource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations nomad_allocations} Data Source
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations nomad_allocations} Data Source
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -238,7 +244,7 @@ export class DataNomadAllocations extends cdktf.TerraformDataSource {
       terraformResourceType: 'nomad_allocations',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.1.1',
+        providerVersion: '2.2.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -251,6 +257,7 @@ export class DataNomadAllocations extends cdktf.TerraformDataSource {
     });
     this._filter = config.filter;
     this._id = config.id;
+    this._namespace = config.namespace;
     this._prefix = config.prefix;
   }
 
@@ -296,6 +303,22 @@ export class DataNomadAllocations extends cdktf.TerraformDataSource {
     return this._id;
   }
 
+  // namespace - computed: false, optional: true, required: false
+  private _namespace?: string; 
+  public get namespace() {
+    return this.getStringAttribute('namespace');
+  }
+  public set namespace(value: string) {
+    this._namespace = value;
+  }
+  public resetNamespace() {
+    this._namespace = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get namespaceInput() {
+    return this._namespace;
+  }
+
   // prefix - computed: false, optional: true, required: false
   private _prefix?: string; 
   public get prefix() {
@@ -320,6 +343,7 @@ export class DataNomadAllocations extends cdktf.TerraformDataSource {
     return {
       filter: cdktf.stringToTerraform(this._filter),
       id: cdktf.stringToTerraform(this._id),
+      namespace: cdktf.stringToTerraform(this._namespace),
       prefix: cdktf.stringToTerraform(this._prefix),
     };
   }
@@ -334,6 +358,12 @@ export class DataNomadAllocations extends cdktf.TerraformDataSource {
       },
       id: {
         value: cdktf.stringToHclTerraform(this._id),
+        isBlock: false,
+        type: "simple",
+        storageClassType: "string",
+      },
+      namespace: {
+        value: cdktf.stringToHclTerraform(this._namespace),
         isBlock: false,
         type: "simple",
         storageClassType: "string",

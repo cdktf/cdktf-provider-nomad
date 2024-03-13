@@ -4,7 +4,7 @@
 
 ### Variable <a name="Variable" id="@cdktf/provider-nomad.variable.Variable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable nomad_variable}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable nomad_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.variable.Variable.Initializer"></a>
 
@@ -41,7 +41,7 @@ variable.Variable(
 | <code><a href="#@cdktf/provider-nomad.variable.Variable.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.variable.Variable.Initializer.parameter.items">items</a></code> | <code>typing.Mapping[str]</code> | A map of strings to be added as items in the variable. |
 | <code><a href="#@cdktf/provider-nomad.variable.Variable.Initializer.parameter.path">path</a></code> | <code>str</code> | The path at which the variable items will be stored, must be between 1 and 128 characters in length, be URL safe, and not include '@' or '.' characters. |
-| <code><a href="#@cdktf/provider-nomad.variable.Variable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#id Variable#id}. |
+| <code><a href="#@cdktf/provider-nomad.variable.Variable.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#id Variable#id}. |
 | <code><a href="#@cdktf/provider-nomad.variable.Variable.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Variable namespace. |
 
 ---
@@ -112,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 A map of strings to be added as items in the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#items Variable#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#items Variable#items}
 
 ---
 
@@ -122,7 +122,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The path at which the variable items will be stored, must be between 1 and 128 characters in length, be URL safe, and not include '@' or '.' characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#path Variable#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#path Variable#path}
 
 ---
 
@@ -130,7 +130,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#id Variable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#id Variable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -143,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Variable namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#namespace Variable#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#namespace Variable#namespace}
 
 ---
 
@@ -630,7 +630,7 @@ The construct id used in the generated config for the Variable to import.
 
 The id of the existing Variable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -948,7 +948,7 @@ variable.VariableConfig(
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.items">items</a></code> | <code>typing.Mapping[str]</code> | A map of strings to be added as items in the variable. |
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.path">path</a></code> | <code>str</code> | The path at which the variable items will be stored, must be between 1 and 128 characters in length, be URL safe, and not include '@' or '.' characters. |
-| <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#id Variable#id}. |
+| <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#id Variable#id}. |
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.namespace">namespace</a></code> | <code>str</code> | Variable namespace. |
 
 ---
@@ -1033,7 +1033,7 @@ items: typing.Mapping[str]
 
 A map of strings to be added as items in the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#items Variable#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#items Variable#items}
 
 ---
 
@@ -1047,7 +1047,7 @@ path: str
 
 The path at which the variable items will be stored, must be between 1 and 128 characters in length, be URL safe, and not include '@' or '.' characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#path Variable#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#path Variable#path}
 
 ---
 
@@ -1059,7 +1059,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#id Variable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#id Variable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1076,7 +1076,7 @@ namespace: str
 
 Variable namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/variable#namespace Variable#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#namespace Variable#namespace}
 
 ---
 

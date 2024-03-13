@@ -4,7 +4,7 @@
 
 ### CsiVolume <a name="CsiVolume" id="@cdktf/provider-nomad.csiVolume.CsiVolume"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume nomad_csi_volume}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume nomad_csi_volume}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer"></a>
 
@@ -596,7 +596,7 @@ The construct id used in the generated config for the CsiVolume to import.
 
 The id of the existing CsiVolume that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1293,7 +1293,7 @@ public readonly accessMode: string;
 
 Defines whether a volume should be available concurrently.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#access_mode CsiVolume#access_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#access_mode CsiVolume#access_mode}
 
 ---
 
@@ -1307,7 +1307,7 @@ public readonly attachmentMode: string;
 
 The storage API that will be used by the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#attachment_mode CsiVolume#attachment_mode}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#attachment_mode CsiVolume#attachment_mode}
 
 ---
 
@@ -1339,7 +1339,7 @@ const csiVolumeConfig: csiVolume.CsiVolumeConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.capacityMax">capacityMax</a></code> | <code>string</code> | Defines how large the volume can be. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.capacityMin">capacityMin</a></code> | <code>string</code> | Defines how small the volume can be. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.cloneId">cloneId</a></code> | <code>string</code> | The volume ID to clone when creating this volume. Storage provider must support cloning. Conflicts with 'snapshot_id'. |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#id CsiVolume#id}. |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#id CsiVolume#id}. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.mountOptions">mountOptions</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeMountOptions">CsiVolumeMountOptions</a></code> | mount_options block. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.namespace">namespace</a></code> | <code>string</code> | The namespace in which to create the volume. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.parameters">parameters</a></code> | <code>{[ key: string ]: string}</code> | An optional key-value map of strings passed directly to the CSI plugin to configure the volume. |
@@ -1430,7 +1430,7 @@ public readonly capability: IResolvable | CsiVolumeCapability[];
 
 capability block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#capability CsiVolume#capability}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#capability CsiVolume#capability}
 
 ---
 
@@ -1444,7 +1444,7 @@ public readonly name: string;
 
 The display name of the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#name CsiVolume#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#name CsiVolume#name}
 
 ---
 
@@ -1458,7 +1458,7 @@ public readonly pluginId: string;
 
 The ID of the CSI plugin that manages this volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#plugin_id CsiVolume#plugin_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#plugin_id CsiVolume#plugin_id}
 
 ---
 
@@ -1472,7 +1472,7 @@ public readonly volumeId: string;
 
 The unique ID of the volume, how jobs will refer to the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#volume_id CsiVolume#volume_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#volume_id CsiVolume#volume_id}
 
 ---
 
@@ -1488,7 +1488,7 @@ Defines how large the volume can be.
 
 The storage provider may return a volume that is smaller than this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#capacity_max CsiVolume#capacity_max}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#capacity_max CsiVolume#capacity_max}
 
 ---
 
@@ -1504,7 +1504,7 @@ Defines how small the volume can be.
 
 The storage provider may return a volume that is larger than this value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#capacity_min CsiVolume#capacity_min}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#capacity_min CsiVolume#capacity_min}
 
 ---
 
@@ -1518,7 +1518,7 @@ public readonly cloneId: string;
 
 The volume ID to clone when creating this volume. Storage provider must support cloning. Conflicts with 'snapshot_id'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#clone_id CsiVolume#clone_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#clone_id CsiVolume#clone_id}
 
 ---
 
@@ -1530,7 +1530,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#id CsiVolume#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#id CsiVolume#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1547,7 +1547,7 @@ public readonly mountOptions: CsiVolumeMountOptions;
 
 mount_options block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#mount_options CsiVolume#mount_options}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#mount_options CsiVolume#mount_options}
 
 ---
 
@@ -1561,7 +1561,7 @@ public readonly namespace: string;
 
 The namespace in which to create the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#namespace CsiVolume#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#namespace CsiVolume#namespace}
 
 ---
 
@@ -1575,7 +1575,7 @@ public readonly parameters: {[ key: string ]: string};
 
 An optional key-value map of strings passed directly to the CSI plugin to configure the volume.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#parameters CsiVolume#parameters}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#parameters CsiVolume#parameters}
 
 ---
 
@@ -1589,7 +1589,7 @@ public readonly secrets: {[ key: string ]: string};
 
 An optional key-value map of strings used as credentials for publishing and unpublishing volumes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#secrets CsiVolume#secrets}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#secrets CsiVolume#secrets}
 
 ---
 
@@ -1603,7 +1603,7 @@ public readonly snapshotId: string;
 
 The snapshot ID to restore when creating this volume. Storage provider must support snapshots. Conflicts with 'clone_id'.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#snapshot_id CsiVolume#snapshot_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#snapshot_id CsiVolume#snapshot_id}
 
 ---
 
@@ -1617,7 +1617,7 @@ public readonly timeouts: CsiVolumeTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#timeouts CsiVolume#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#timeouts CsiVolume#timeouts}
 
 ---
 
@@ -1631,7 +1631,7 @@ public readonly topologyRequest: CsiVolumeTopologyRequest;
 
 topology_request block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#topology_request CsiVolume#topology_request}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#topology_request CsiVolume#topology_request}
 
 ---
 
@@ -1664,7 +1664,7 @@ public readonly fsType: string;
 
 The file system type.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#fs_type CsiVolume#fs_type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#fs_type CsiVolume#fs_type}
 
 ---
 
@@ -1678,7 +1678,7 @@ public readonly mountFlags: string[];
 
 The flags passed to mount.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#mount_flags CsiVolume#mount_flags}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#mount_flags CsiVolume#mount_flags}
 
 ---
 
@@ -1696,8 +1696,8 @@ const csiVolumeTimeouts: csiVolume.CsiVolumeTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#create CsiVolume#create}. |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#delete CsiVolume#delete}. |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#create CsiVolume#create}. |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts.property.delete">delete</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#delete CsiVolume#delete}. |
 
 ---
 
@@ -1709,7 +1709,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#create CsiVolume#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#create CsiVolume#create}.
 
 ---
 
@@ -1721,7 +1721,7 @@ public readonly delete: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#delete CsiVolume#delete}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#delete CsiVolume#delete}.
 
 ---
 
@@ -1765,7 +1765,7 @@ public readonly preferred: CsiVolumeTopologyRequestPreferred;
 
 preferred block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#preferred CsiVolume#preferred}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#preferred CsiVolume#preferred}
 
 ---
 
@@ -1779,7 +1779,7 @@ public readonly required: CsiVolumeTopologyRequestRequired;
 
 required block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#required CsiVolume#required}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#required CsiVolume#required}
 
 ---
 
@@ -1811,7 +1811,7 @@ public readonly topology: IResolvable | CsiVolumeTopologyRequestPreferredTopolog
 
 topology block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#topology CsiVolume#topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#topology CsiVolume#topology}
 
 ---
 
@@ -1843,7 +1843,7 @@ public readonly segments: {[ key: string ]: string};
 
 Define the attributes for the topology request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#segments CsiVolume#segments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#segments CsiVolume#segments}
 
 ---
 
@@ -1875,7 +1875,7 @@ public readonly topology: IResolvable | CsiVolumeTopologyRequestRequiredTopology
 
 topology block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#topology CsiVolume#topology}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#topology CsiVolume#topology}
 
 ---
 
@@ -1907,7 +1907,7 @@ public readonly segments: {[ key: string ]: string};
 
 Define the attributes for the topology request.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/resources/csi_volume#segments CsiVolume#segments}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/csi_volume#segments CsiVolume#segments}
 
 ---
 

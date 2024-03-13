@@ -4,7 +4,7 @@
 
 ### DataNomadAllocations <a name="DataNomadAllocations" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations nomad_allocations}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations nomad_allocations}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer"></a>
 
@@ -23,6 +23,7 @@ dataNomadAllocations.DataNomadAllocations(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   filter: str = None,
   id: str = None,
+  namespace: str = None,
   prefix: str = None
 )
 ```
@@ -39,7 +40,8 @@ dataNomadAllocations.DataNomadAllocations(
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer.parameter.filter">filter</a></code> | <code>str</code> | Specifies the expression used to filter the results. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#id DataNomadAllocations#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#id DataNomadAllocations#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer.parameter.namespace">namespace</a></code> | <code>str</code> | Specifies the namespace to search for allocations in. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer.parameter.prefix">prefix</a></code> | <code>str</code> | Specifies a string to filter node pools based on a name prefix. |
 
 ---
@@ -110,7 +112,7 @@ Must be unique amongst siblings in the same scope
 
 Specifies the expression used to filter the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#filter DataNomadAllocations#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#filter DataNomadAllocations#filter}
 
 ---
 
@@ -118,10 +120,20 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#id DataNomadAllocations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#id DataNomadAllocations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer.parameter.namespace"></a>
+
+- *Type:* str
+
+Specifies the namespace to search for allocations in.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#namespace DataNomadAllocations#namespace}
 
 ---
 
@@ -131,7 +143,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Specifies a string to filter node pools based on a name prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#prefix DataNomadAllocations#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#prefix DataNomadAllocations#prefix}
 
 ---
 
@@ -158,6 +170,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.resetFilter">reset_filter</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.resetId">reset_id</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.resetNamespace">reset_namespace</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.resetPrefix">reset_prefix</a></code> | *No description.* |
 
 ---
@@ -391,6 +404,12 @@ def reset_filter() -> None
 def reset_id() -> None
 ```
 
+##### `reset_namespace` <a name="reset_namespace" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.resetNamespace"></a>
+
+```python
+def reset_namespace() -> None
+```
+
 ##### `reset_prefix` <a name="reset_prefix" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.resetPrefix"></a>
 
 ```python
@@ -511,7 +530,7 @@ The construct id used in the generated config for the DataNomadAllocations to im
 
 The id of the existing DataNomadAllocations that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -542,9 +561,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.allocations">allocations</a></code> | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsAllocationsList">DataNomadAllocationsAllocationsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.filterInput">filter_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.namespaceInput">namespace_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.prefixInput">prefix_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.filter">filter</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.id">id</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.namespace">namespace</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.prefix">prefix</a></code> | <code>str</code> | *No description.* |
 
 ---
@@ -701,6 +722,16 @@ id_input: str
 
 ---
 
+##### `namespace_input`<sup>Optional</sup> <a name="namespace_input" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.namespaceInput"></a>
+
+```python
+namespace_input: str
+```
+
+- *Type:* str
+
+---
+
 ##### `prefix_input`<sup>Optional</sup> <a name="prefix_input" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.prefixInput"></a>
 
 ```python
@@ -725,6 +756,16 @@ filter: str
 
 ```python
 id: str
+```
+
+- *Type:* str
+
+---
+
+##### `namespace`<sup>Required</sup> <a name="namespace" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.property.namespace"></a>
+
+```python
+namespace: str
 ```
 
 - *Type:* str
@@ -789,6 +830,7 @@ dataNomadAllocations.DataNomadAllocationsConfig(
   provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
   filter: str = None,
   id: str = None,
+  namespace: str = None,
   prefix: str = None
 )
 ```
@@ -805,7 +847,8 @@ dataNomadAllocations.DataNomadAllocationsConfig(
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsConfig.property.filter">filter</a></code> | <code>str</code> | Specifies the expression used to filter the results. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#id DataNomadAllocations#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#id DataNomadAllocations#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsConfig.property.namespace">namespace</a></code> | <code>str</code> | Specifies the namespace to search for allocations in. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsConfig.property.prefix">prefix</a></code> | <code>str</code> | Specifies a string to filter node pools based on a name prefix. |
 
 ---
@@ -890,7 +933,7 @@ filter: str
 
 Specifies the expression used to filter the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#filter DataNomadAllocations#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#filter DataNomadAllocations#filter}
 
 ---
 
@@ -902,10 +945,24 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#id DataNomadAllocations#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#id DataNomadAllocations#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
+
+---
+
+##### `namespace`<sup>Optional</sup> <a name="namespace" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsConfig.property.namespace"></a>
+
+```python
+namespace: str
+```
+
+- *Type:* str
+
+Specifies the namespace to search for allocations in.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#namespace DataNomadAllocations#namespace}
 
 ---
 
@@ -919,7 +976,7 @@ prefix: str
 
 Specifies a string to filter node pools based on a name prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.1.1/docs/data-sources/allocations#prefix DataNomadAllocations#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/allocations#prefix DataNomadAllocations#prefix}
 
 ---
 
