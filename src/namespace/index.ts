@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace
+// https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#description Namespace#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#description Namespace#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#id Namespace#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#id Namespace#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,31 +28,31 @@ export interface NamespaceConfig extends cdktf.TerraformMetaArguments {
   /**
   * Metadata associated with the namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#meta Namespace#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#meta Namespace#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
   * Unique name for this namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#name Namespace#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#name Namespace#name}
   */
   readonly name: string;
   /**
   * Quota to set for this namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#quota Namespace#quota}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#quota Namespace#quota}
   */
   readonly quota?: string;
   /**
   * capabilities block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#capabilities Namespace#capabilities}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#capabilities Namespace#capabilities}
   */
   readonly capabilities?: NamespaceCapabilities;
   /**
   * node_pool_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#node_pool_config Namespace#node_pool_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#node_pool_config Namespace#node_pool_config}
   */
   readonly nodePoolConfig?: NamespaceNodePoolConfig;
 }
@@ -60,13 +60,13 @@ export interface NamespaceCapabilities {
   /**
   * Disabled task drivers for the namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
   */
   readonly disabledTaskDrivers?: string[];
   /**
   * Enabled task drivers for the namespace.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
   */
   readonly enabledTaskDrivers?: string[];
 }
@@ -181,19 +181,19 @@ export interface NamespaceNodePoolConfig {
   /**
   * The list of node pools allowed to be used in this namespace. Cannot be used with denied.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#allowed Namespace#allowed}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#allowed Namespace#allowed}
   */
   readonly allowed?: string[];
   /**
   * The node pool to use when none are specified in the job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#default Namespace#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#default Namespace#default}
   */
   readonly default?: string;
   /**
   * The list of node pools not allowed to be used in this namespace. Cannot be used with allowed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#denied Namespace#denied}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#denied Namespace#denied}
   */
   readonly denied?: string[];
 }
@@ -335,7 +335,7 @@ export class NamespaceNodePoolConfigOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace nomad_namespace}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace nomad_namespace}
 */
 export class Namespace extends cdktf.TerraformResource {
 
@@ -351,7 +351,7 @@ export class Namespace extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Namespace resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Namespace to import
-  * @param importFromId The id of the existing Namespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Namespace that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Namespace to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -363,7 +363,7 @@ export class Namespace extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/namespace nomad_namespace} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/namespace nomad_namespace} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -374,7 +374,7 @@ export class Namespace extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_namespace',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

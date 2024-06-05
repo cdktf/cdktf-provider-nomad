@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataNomadDeployments](./dataNomadDeployments.python.md)
 - [dataNomadJob](./dataNomadJob.python.md)
 - [dataNomadJobParser](./dataNomadJobParser.python.md)
+- [dataNomadJwks](./dataNomadJwks.python.md)
 - [dataNomadNamespace](./dataNomadNamespace.python.md)
 - [dataNomadNamespaces](./dataNomadNamespaces.python.md)
 - [dataNomadNodePool](./dataNomadNodePool.python.md)

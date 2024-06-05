@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataNomadDeployments](./dataNomadDeployments.typescript.md)
 - [dataNomadJob](./dataNomadJob.typescript.md)
 - [dataNomadJobParser](./dataNomadJobParser.typescript.md)
+- [dataNomadJwks](./dataNomadJwks.typescript.md)
 - [dataNomadNamespace](./dataNomadNamespace.typescript.md)
 - [dataNomadNamespaces](./dataNomadNamespaces.typescript.md)
 - [dataNomadNodePool](./dataNomadNodePool.typescript.md)

@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataNomadDeployments](./dataNomadDeployments.go.md)
 - [dataNomadJob](./dataNomadJob.go.md)
 - [dataNomadJobParser](./dataNomadJobParser.go.md)
+- [dataNomadJwks](./dataNomadJwks.go.md)
 - [dataNomadNamespace](./dataNomadNamespace.go.md)
 - [dataNomadNamespaces](./dataNomadNamespaces.go.md)
 - [dataNomadNodePool](./dataNomadNodePool.go.md)

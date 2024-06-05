@@ -31,6 +31,7 @@ export * as dataNomadDatacenters from './data-nomad-datacenters';
 export * as dataNomadDeployments from './data-nomad-deployments';
 export * as dataNomadJob from './data-nomad-job';
 export * as dataNomadJobParser from './data-nomad-job-parser';
+export * as dataNomadJwks from './data-nomad-jwks';
 export * as dataNomadNamespace from './data-nomad-namespace';
 export * as dataNomadNamespaces from './data-nomad-namespaces';
 export * as dataNomadNodePool from './data-nomad-node-pool';

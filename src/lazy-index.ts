@@ -31,6 +31,7 @@ Object.defineProperty(exports, 'dataNomadDatacenters', { get: function () { retu
 Object.defineProperty(exports, 'dataNomadDeployments', { get: function () { return require('./data-nomad-deployments'); } });
 Object.defineProperty(exports, 'dataNomadJob', { get: function () { return require('./data-nomad-job'); } });
 Object.defineProperty(exports, 'dataNomadJobParser', { get: function () { return require('./data-nomad-job-parser'); } });
+Object.defineProperty(exports, 'dataNomadJwks', { get: function () { return require('./data-nomad-jwks'); } });
 Object.defineProperty(exports, 'dataNomadNamespace', { get: function () { return require('./data-nomad-namespace'); } });
 Object.defineProperty(exports, 'dataNomadNamespaces', { get: function () { return require('./data-nomad-namespaces'); } });
 Object.defineProperty(exports, 'dataNomadNodePool', { get: function () { return require('./data-nomad-node-pool'); } });
