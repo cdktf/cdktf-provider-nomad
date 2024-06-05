@@ -4,7 +4,7 @@
 
 ### AclAuthMethod <a name="AclAuthMethod" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethod"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method nomad_acl_auth_method}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method nomad_acl_auth_method}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethod.Initializer"></a>
 
@@ -501,7 +501,7 @@ The construct id used in the generated config for the AclAuthMethod to import.
 
 The id of the existing AclAuthMethod that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -899,7 +899,7 @@ const aclAuthMethodConfig: aclAuthMethod.AclAuthMethodConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfig.property.tokenLocality">tokenLocality</a></code> | <code>string</code> | Defines whether the ACL Auth Method creates a local or global token when performing SSO login. |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfig.property.type">type</a></code> | <code>string</code> | ACL Auth Method SSO workflow type. Currently, the only supported type is "OIDC.". |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfig.property.default">default</a></code> | <code>boolean \| cdktf.IResolvable</code> | Defines whether this ACL Auth Method is to be set as default. |
-| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#id AclAuthMethod#id}. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#id AclAuthMethod#id}. |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfig.property.tokenNameFormat">tokenNameFormat</a></code> | <code>string</code> | Defines the token format for the authenticated users. This can be lightly templated using HIL '${foo}' syntax. |
 
 ---
@@ -984,7 +984,7 @@ public readonly config: AclAuthMethodConfigA;
 
 config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#config AclAuthMethod#config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#config AclAuthMethod#config}
 
 ---
 
@@ -998,7 +998,7 @@ public readonly maxTokenTtl: string;
 
 Defines the maximum life of a token created by this method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
 
 ---
 
@@ -1012,7 +1012,7 @@ public readonly name: string;
 
 The identifier of the ACL Auth Method.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#name AclAuthMethod#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#name AclAuthMethod#name}
 
 ---
 
@@ -1028,7 +1028,7 @@ Defines whether the ACL Auth Method creates a local or global token when perform
 
 This field must be set to either "local" or "global".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#token_locality AclAuthMethod#token_locality}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#token_locality AclAuthMethod#token_locality}
 
 ---
 
@@ -1042,7 +1042,7 @@ public readonly type: string;
 
 ACL Auth Method SSO workflow type. Currently, the only supported type is "OIDC.".
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#type AclAuthMethod#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#type AclAuthMethod#type}
 
 ---
 
@@ -1056,7 +1056,7 @@ public readonly default: boolean | IResolvable;
 
 Defines whether this ACL Auth Method is to be set as default.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#default AclAuthMethod#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#default AclAuthMethod#default}
 
 ---
 
@@ -1068,7 +1068,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#id AclAuthMethod#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#id AclAuthMethod#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1085,7 +1085,7 @@ public readonly tokenNameFormat: string;
 
 Defines the token format for the authenticated users. This can be lightly templated using HIL '${foo}' syntax.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#token_name_format AclAuthMethod#token_name_format}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#token_name_format AclAuthMethod#token_name_format}
 
 ---
 
@@ -1104,20 +1104,27 @@ const aclAuthMethodConfigA: aclAuthMethod.AclAuthMethodConfigA = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.allowedRedirectUris">allowedRedirectUris</a></code> | <code>string[]</code> | A list of allowed values that can be used for the redirect URI. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.boundAudiences">boundAudiences</a></code> | <code>string[]</code> | List of auth claims that are valid for login. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.boundIssuer">boundIssuer</a></code> | <code>string[]</code> | The value against which to match the iss claim in a JWT. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.claimMappings">claimMappings</a></code> | <code>{[ key: string ]: string}</code> | Mappings of claims (key) that will be copied to a metadata field (value). |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.clockSkewLeeway">clockSkewLeeway</a></code> | <code>string</code> | Duration of leeway when validating all claims in the form of a time duration such as "5m" or "1h". |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.discoveryCaPem">discoveryCaPem</a></code> | <code>string[]</code> | PEM encoded CA certs for use by the TLS client used to talk with the OIDC Discovery URL. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.expirationLeeway">expirationLeeway</a></code> | <code>string</code> | Duration of leeway when validating expiration of a JWT in the form of a time duration such as "5m" or "1h". |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.jwksCaCert">jwksCaCert</a></code> | <code>string</code> | PEM encoded CA cert for use by the TLS client used to talk with the JWKS server. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.jwksUrl">jwksUrl</a></code> | <code>string</code> | JSON Web Key Sets url for authenticating signatures. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.jwtValidationPubKeys">jwtValidationPubKeys</a></code> | <code>string[]</code> | List of PEM-encoded public keys to use to authenticate signatures locally. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.listClaimMappings">listClaimMappings</a></code> | <code>{[ key: string ]: string}</code> | Mappings of list claims (key) that will be copied to a metadata field (value). |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.notBeforeLeeway">notBeforeLeeway</a></code> | <code>string</code> | Duration of leeway when validating not before values of a token in the form of a time duration such as "5m" or "1h". |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcClientId">oidcClientId</a></code> | <code>string</code> | The OAuth Client ID configured with the OIDC provider. |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcClientSecret">oidcClientSecret</a></code> | <code>string</code> | The OAuth Client Secret configured with the OIDC provider. |
-| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcDiscoveryUrl">oidcDiscoveryUrl</a></code> | <code>string</code> | The OIDC Discovery URL, without any .well-known component (base path). |
-| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.boundAudiences">boundAudiences</a></code> | <code>string[]</code> | List of auth claims that are valid for login. |
-| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.claimMappings">claimMappings</a></code> | <code>{[ key: string ]: string}</code> | Mappings of claims (key) that will be copied to a metadata field (value). |
-| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.discoveryCaPem">discoveryCaPem</a></code> | <code>string[]</code> | PEM encoded CA certs for use by the TLS client used to talk with the OIDC Discovery URL. |
-| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.listClaimMappings">listClaimMappings</a></code> | <code>{[ key: string ]: string}</code> | Mappings of list claims (key) that will be copied to a metadata field (value). |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcDisableUserinfo">oidcDisableUserinfo</a></code> | <code>boolean \| cdktf.IResolvable</code> | Nomad will not make a request to the identity provider to get OIDC UserInfo. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcDiscoveryUrl">oidcDiscoveryUrl</a></code> | <code>string</code> | The OIDC Discovery URL, without any .well-known component (base path). |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcScopes">oidcScopes</a></code> | <code>string[]</code> | List of OIDC scopes. |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.signingAlgs">signingAlgs</a></code> | <code>string[]</code> | A list of supported signing algorithms. |
 
 ---
 
-##### `allowedRedirectUris`<sup>Required</sup> <a name="allowedRedirectUris" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.allowedRedirectUris"></a>
+##### `allowedRedirectUris`<sup>Optional</sup> <a name="allowedRedirectUris" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.allowedRedirectUris"></a>
 
 ```typescript
 public readonly allowedRedirectUris: string[];
@@ -1127,49 +1134,7 @@ public readonly allowedRedirectUris: string[];
 
 A list of allowed values that can be used for the redirect URI.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#allowed_redirect_uris AclAuthMethod#allowed_redirect_uris}
-
----
-
-##### `oidcClientId`<sup>Required</sup> <a name="oidcClientId" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcClientId"></a>
-
-```typescript
-public readonly oidcClientId: string;
-```
-
-- *Type:* string
-
-The OAuth Client ID configured with the OIDC provider.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#oidc_client_id AclAuthMethod#oidc_client_id}
-
----
-
-##### `oidcClientSecret`<sup>Required</sup> <a name="oidcClientSecret" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcClientSecret"></a>
-
-```typescript
-public readonly oidcClientSecret: string;
-```
-
-- *Type:* string
-
-The OAuth Client Secret configured with the OIDC provider.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#oidc_client_secret AclAuthMethod#oidc_client_secret}
-
----
-
-##### `oidcDiscoveryUrl`<sup>Required</sup> <a name="oidcDiscoveryUrl" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcDiscoveryUrl"></a>
-
-```typescript
-public readonly oidcDiscoveryUrl: string;
-```
-
-- *Type:* string
-
-The OIDC Discovery URL, without any .well-known component (base path).
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#oidc_discovery_url AclAuthMethod#oidc_discovery_url}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#allowed_redirect_uris AclAuthMethod#allowed_redirect_uris}
 
 ---
 
@@ -1183,7 +1148,21 @@ public readonly boundAudiences: string[];
 
 List of auth claims that are valid for login.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#bound_audiences AclAuthMethod#bound_audiences}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#bound_audiences AclAuthMethod#bound_audiences}
+
+---
+
+##### `boundIssuer`<sup>Optional</sup> <a name="boundIssuer" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.boundIssuer"></a>
+
+```typescript
+public readonly boundIssuer: string[];
+```
+
+- *Type:* string[]
+
+The value against which to match the iss claim in a JWT.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#bound_issuer AclAuthMethod#bound_issuer}
 
 ---
 
@@ -1197,7 +1176,21 @@ public readonly claimMappings: {[ key: string ]: string};
 
 Mappings of claims (key) that will be copied to a metadata field (value).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#claim_mappings AclAuthMethod#claim_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#claim_mappings AclAuthMethod#claim_mappings}
+
+---
+
+##### `clockSkewLeeway`<sup>Optional</sup> <a name="clockSkewLeeway" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.clockSkewLeeway"></a>
+
+```typescript
+public readonly clockSkewLeeway: string;
+```
+
+- *Type:* string
+
+Duration of leeway when validating all claims in the form of a time duration such as "5m" or "1h".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#clock_skew_leeway AclAuthMethod#clock_skew_leeway}
 
 ---
 
@@ -1211,7 +1204,63 @@ public readonly discoveryCaPem: string[];
 
 PEM encoded CA certs for use by the TLS client used to talk with the OIDC Discovery URL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#discovery_ca_pem AclAuthMethod#discovery_ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#discovery_ca_pem AclAuthMethod#discovery_ca_pem}
+
+---
+
+##### `expirationLeeway`<sup>Optional</sup> <a name="expirationLeeway" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.expirationLeeway"></a>
+
+```typescript
+public readonly expirationLeeway: string;
+```
+
+- *Type:* string
+
+Duration of leeway when validating expiration of a JWT in the form of a time duration such as "5m" or "1h".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#expiration_leeway AclAuthMethod#expiration_leeway}
+
+---
+
+##### `jwksCaCert`<sup>Optional</sup> <a name="jwksCaCert" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.jwksCaCert"></a>
+
+```typescript
+public readonly jwksCaCert: string;
+```
+
+- *Type:* string
+
+PEM encoded CA cert for use by the TLS client used to talk with the JWKS server.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#jwks_ca_cert AclAuthMethod#jwks_ca_cert}
+
+---
+
+##### `jwksUrl`<sup>Optional</sup> <a name="jwksUrl" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.jwksUrl"></a>
+
+```typescript
+public readonly jwksUrl: string;
+```
+
+- *Type:* string
+
+JSON Web Key Sets url for authenticating signatures.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#jwks_url AclAuthMethod#jwks_url}
+
+---
+
+##### `jwtValidationPubKeys`<sup>Optional</sup> <a name="jwtValidationPubKeys" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.jwtValidationPubKeys"></a>
+
+```typescript
+public readonly jwtValidationPubKeys: string[];
+```
+
+- *Type:* string[]
+
+List of PEM-encoded public keys to use to authenticate signatures locally.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#jwt_validation_pub_keys AclAuthMethod#jwt_validation_pub_keys}
 
 ---
 
@@ -1225,7 +1274,49 @@ public readonly listClaimMappings: {[ key: string ]: string};
 
 Mappings of list claims (key) that will be copied to a metadata field (value).
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#list_claim_mappings AclAuthMethod#list_claim_mappings}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#list_claim_mappings AclAuthMethod#list_claim_mappings}
+
+---
+
+##### `notBeforeLeeway`<sup>Optional</sup> <a name="notBeforeLeeway" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.notBeforeLeeway"></a>
+
+```typescript
+public readonly notBeforeLeeway: string;
+```
+
+- *Type:* string
+
+Duration of leeway when validating not before values of a token in the form of a time duration such as "5m" or "1h".
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#not_before_leeway AclAuthMethod#not_before_leeway}
+
+---
+
+##### `oidcClientId`<sup>Optional</sup> <a name="oidcClientId" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcClientId"></a>
+
+```typescript
+public readonly oidcClientId: string;
+```
+
+- *Type:* string
+
+The OAuth Client ID configured with the OIDC provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#oidc_client_id AclAuthMethod#oidc_client_id}
+
+---
+
+##### `oidcClientSecret`<sup>Optional</sup> <a name="oidcClientSecret" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcClientSecret"></a>
+
+```typescript
+public readonly oidcClientSecret: string;
+```
+
+- *Type:* string
+
+The OAuth Client Secret configured with the OIDC provider.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#oidc_client_secret AclAuthMethod#oidc_client_secret}
 
 ---
 
@@ -1239,7 +1330,21 @@ public readonly oidcDisableUserinfo: boolean | IResolvable;
 
 Nomad will not make a request to the identity provider to get OIDC UserInfo.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#oidc_disable_userinfo AclAuthMethod#oidc_disable_userinfo}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#oidc_disable_userinfo AclAuthMethod#oidc_disable_userinfo}
+
+---
+
+##### `oidcDiscoveryUrl`<sup>Optional</sup> <a name="oidcDiscoveryUrl" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigA.property.oidcDiscoveryUrl"></a>
+
+```typescript
+public readonly oidcDiscoveryUrl: string;
+```
+
+- *Type:* string
+
+The OIDC Discovery URL, without any .well-known component (base path).
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#oidc_discovery_url AclAuthMethod#oidc_discovery_url}
 
 ---
 
@@ -1253,7 +1358,7 @@ public readonly oidcScopes: string[];
 
 List of OIDC scopes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#oidc_scopes AclAuthMethod#oidc_scopes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#oidc_scopes AclAuthMethod#oidc_scopes}
 
 ---
 
@@ -1267,7 +1372,7 @@ public readonly signingAlgs: string[];
 
 A list of supported signing algorithms.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/acl_auth_method#signing_algs AclAuthMethod#signing_algs}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/acl_auth_method#signing_algs AclAuthMethod#signing_algs}
 
 ---
 
@@ -1323,11 +1428,22 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.interpolationForAttribute">interpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetAllowedRedirectUris">resetAllowedRedirectUris</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetBoundAudiences">resetBoundAudiences</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetBoundIssuer">resetBoundIssuer</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetClaimMappings">resetClaimMappings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetClockSkewLeeway">resetClockSkewLeeway</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetDiscoveryCaPem">resetDiscoveryCaPem</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetExpirationLeeway">resetExpirationLeeway</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetJwksCaCert">resetJwksCaCert</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetJwksUrl">resetJwksUrl</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetJwtValidationPubKeys">resetJwtValidationPubKeys</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetListClaimMappings">resetListClaimMappings</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetNotBeforeLeeway">resetNotBeforeLeeway</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcClientId">resetOidcClientId</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcClientSecret">resetOidcClientSecret</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcDisableUserinfo">resetOidcDisableUserinfo</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcDiscoveryUrl">resetOidcDiscoveryUrl</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcScopes">resetOidcScopes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetSigningAlgs">resetSigningAlgs</a></code> | *No description.* |
 
@@ -1483,10 +1599,22 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `resetAllowedRedirectUris` <a name="resetAllowedRedirectUris" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetAllowedRedirectUris"></a>
+
+```typescript
+public resetAllowedRedirectUris(): void
+```
+
 ##### `resetBoundAudiences` <a name="resetBoundAudiences" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetBoundAudiences"></a>
 
 ```typescript
 public resetBoundAudiences(): void
+```
+
+##### `resetBoundIssuer` <a name="resetBoundIssuer" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetBoundIssuer"></a>
+
+```typescript
+public resetBoundIssuer(): void
 ```
 
 ##### `resetClaimMappings` <a name="resetClaimMappings" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetClaimMappings"></a>
@@ -1495,10 +1623,40 @@ public resetBoundAudiences(): void
 public resetClaimMappings(): void
 ```
 
+##### `resetClockSkewLeeway` <a name="resetClockSkewLeeway" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetClockSkewLeeway"></a>
+
+```typescript
+public resetClockSkewLeeway(): void
+```
+
 ##### `resetDiscoveryCaPem` <a name="resetDiscoveryCaPem" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetDiscoveryCaPem"></a>
 
 ```typescript
 public resetDiscoveryCaPem(): void
+```
+
+##### `resetExpirationLeeway` <a name="resetExpirationLeeway" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetExpirationLeeway"></a>
+
+```typescript
+public resetExpirationLeeway(): void
+```
+
+##### `resetJwksCaCert` <a name="resetJwksCaCert" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetJwksCaCert"></a>
+
+```typescript
+public resetJwksCaCert(): void
+```
+
+##### `resetJwksUrl` <a name="resetJwksUrl" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetJwksUrl"></a>
+
+```typescript
+public resetJwksUrl(): void
+```
+
+##### `resetJwtValidationPubKeys` <a name="resetJwtValidationPubKeys" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetJwtValidationPubKeys"></a>
+
+```typescript
+public resetJwtValidationPubKeys(): void
 ```
 
 ##### `resetListClaimMappings` <a name="resetListClaimMappings" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetListClaimMappings"></a>
@@ -1507,10 +1665,34 @@ public resetDiscoveryCaPem(): void
 public resetListClaimMappings(): void
 ```
 
+##### `resetNotBeforeLeeway` <a name="resetNotBeforeLeeway" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetNotBeforeLeeway"></a>
+
+```typescript
+public resetNotBeforeLeeway(): void
+```
+
+##### `resetOidcClientId` <a name="resetOidcClientId" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcClientId"></a>
+
+```typescript
+public resetOidcClientId(): void
+```
+
+##### `resetOidcClientSecret` <a name="resetOidcClientSecret" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcClientSecret"></a>
+
+```typescript
+public resetOidcClientSecret(): void
+```
+
 ##### `resetOidcDisableUserinfo` <a name="resetOidcDisableUserinfo" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcDisableUserinfo"></a>
 
 ```typescript
 public resetOidcDisableUserinfo(): void
+```
+
+##### `resetOidcDiscoveryUrl` <a name="resetOidcDiscoveryUrl" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcDiscoveryUrl"></a>
+
+```typescript
+public resetOidcDiscoveryUrl(): void
 ```
 
 ##### `resetOidcScopes` <a name="resetOidcScopes" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.resetOidcScopes"></a>
@@ -1534,9 +1716,16 @@ public resetSigningAlgs(): void
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.allowedRedirectUrisInput">allowedRedirectUrisInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.boundAudiencesInput">boundAudiencesInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.boundIssuerInput">boundIssuerInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.claimMappingsInput">claimMappingsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.clockSkewLeewayInput">clockSkewLeewayInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.discoveryCaPemInput">discoveryCaPemInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.expirationLeewayInput">expirationLeewayInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwksCaCertInput">jwksCaCertInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwksUrlInput">jwksUrlInput</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwtValidationPubKeysInput">jwtValidationPubKeysInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.listClaimMappingsInput">listClaimMappingsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.notBeforeLeewayInput">notBeforeLeewayInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.oidcClientIdInput">oidcClientIdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.oidcClientSecretInput">oidcClientSecretInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.oidcDisableUserinfoInput">oidcDisableUserinfoInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1545,9 +1734,16 @@ public resetSigningAlgs(): void
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.signingAlgsInput">signingAlgsInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.allowedRedirectUris">allowedRedirectUris</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.boundAudiences">boundAudiences</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.boundIssuer">boundIssuer</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.claimMappings">claimMappings</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.clockSkewLeeway">clockSkewLeeway</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.discoveryCaPem">discoveryCaPem</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.expirationLeeway">expirationLeeway</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwksCaCert">jwksCaCert</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwksUrl">jwksUrl</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwtValidationPubKeys">jwtValidationPubKeys</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.listClaimMappings">listClaimMappings</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.notBeforeLeeway">notBeforeLeeway</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.oidcClientId">oidcClientId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.oidcClientSecret">oidcClientSecret</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.oidcDisableUserinfo">oidcDisableUserinfo</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -1602,6 +1798,16 @@ public readonly boundAudiencesInput: string[];
 
 ---
 
+##### `boundIssuerInput`<sup>Optional</sup> <a name="boundIssuerInput" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.boundIssuerInput"></a>
+
+```typescript
+public readonly boundIssuerInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `claimMappingsInput`<sup>Optional</sup> <a name="claimMappingsInput" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.claimMappingsInput"></a>
 
 ```typescript
@@ -1609,6 +1815,16 @@ public readonly claimMappingsInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `clockSkewLeewayInput`<sup>Optional</sup> <a name="clockSkewLeewayInput" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.clockSkewLeewayInput"></a>
+
+```typescript
+public readonly clockSkewLeewayInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1622,6 +1838,46 @@ public readonly discoveryCaPemInput: string[];
 
 ---
 
+##### `expirationLeewayInput`<sup>Optional</sup> <a name="expirationLeewayInput" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.expirationLeewayInput"></a>
+
+```typescript
+public readonly expirationLeewayInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jwksCaCertInput`<sup>Optional</sup> <a name="jwksCaCertInput" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwksCaCertInput"></a>
+
+```typescript
+public readonly jwksCaCertInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jwksUrlInput`<sup>Optional</sup> <a name="jwksUrlInput" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwksUrlInput"></a>
+
+```typescript
+public readonly jwksUrlInput: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jwtValidationPubKeysInput`<sup>Optional</sup> <a name="jwtValidationPubKeysInput" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwtValidationPubKeysInput"></a>
+
+```typescript
+public readonly jwtValidationPubKeysInput: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `listClaimMappingsInput`<sup>Optional</sup> <a name="listClaimMappingsInput" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.listClaimMappingsInput"></a>
 
 ```typescript
@@ -1629,6 +1885,16 @@ public readonly listClaimMappingsInput: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `notBeforeLeewayInput`<sup>Optional</sup> <a name="notBeforeLeewayInput" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.notBeforeLeewayInput"></a>
+
+```typescript
+public readonly notBeforeLeewayInput: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1712,6 +1978,16 @@ public readonly boundAudiences: string[];
 
 ---
 
+##### `boundIssuer`<sup>Required</sup> <a name="boundIssuer" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.boundIssuer"></a>
+
+```typescript
+public readonly boundIssuer: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `claimMappings`<sup>Required</sup> <a name="claimMappings" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.claimMappings"></a>
 
 ```typescript
@@ -1719,6 +1995,16 @@ public readonly claimMappings: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `clockSkewLeeway`<sup>Required</sup> <a name="clockSkewLeeway" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.clockSkewLeeway"></a>
+
+```typescript
+public readonly clockSkewLeeway: string;
+```
+
+- *Type:* string
 
 ---
 
@@ -1732,6 +2018,46 @@ public readonly discoveryCaPem: string[];
 
 ---
 
+##### `expirationLeeway`<sup>Required</sup> <a name="expirationLeeway" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.expirationLeeway"></a>
+
+```typescript
+public readonly expirationLeeway: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jwksCaCert`<sup>Required</sup> <a name="jwksCaCert" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwksCaCert"></a>
+
+```typescript
+public readonly jwksCaCert: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jwksUrl`<sup>Required</sup> <a name="jwksUrl" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwksUrl"></a>
+
+```typescript
+public readonly jwksUrl: string;
+```
+
+- *Type:* string
+
+---
+
+##### `jwtValidationPubKeys`<sup>Required</sup> <a name="jwtValidationPubKeys" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.jwtValidationPubKeys"></a>
+
+```typescript
+public readonly jwtValidationPubKeys: string[];
+```
+
+- *Type:* string[]
+
+---
+
 ##### `listClaimMappings`<sup>Required</sup> <a name="listClaimMappings" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.listClaimMappings"></a>
 
 ```typescript
@@ -1739,6 +2065,16 @@ public readonly listClaimMappings: {[ key: string ]: string};
 ```
 
 - *Type:* {[ key: string ]: string}
+
+---
+
+##### `notBeforeLeeway`<sup>Required</sup> <a name="notBeforeLeeway" id="@cdktf/provider-nomad.aclAuthMethod.AclAuthMethodConfigAOutputReference.property.notBeforeLeeway"></a>
+
+```typescript
+public readonly notBeforeLeeway: string;
+```
+
+- *Type:* string
 
 ---
 

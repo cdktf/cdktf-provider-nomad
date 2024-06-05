@@ -4,12 +4,12 @@
 
 ### Variable <a name="Variable" id="@cdktf/provider-nomad.variable.Variable"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable nomad_variable}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable nomad_variable}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.variable.Variable.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/variable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/variable"
 
 variable.NewVariable(scope Construct, id *string, config VariableConfig) Variable
 ```
@@ -392,7 +392,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.variable.Variable.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/variable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/variable"
 
 variable.Variable_IsConstruct(x interface{}) *bool
 ```
@@ -424,7 +424,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.variable.Variable.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/variable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/variable"
 
 variable.Variable_IsTerraformElement(x interface{}) *bool
 ```
@@ -438,7 +438,7 @@ variable.Variable_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.variable.Variable.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/variable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/variable"
 
 variable.Variable_IsTerraformResource(x interface{}) *bool
 ```
@@ -452,7 +452,7 @@ variable.Variable_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.variable.Variable.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/variable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/variable"
 
 variable.Variable_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -481,7 +481,7 @@ The construct id used in the generated config for the Variable to import.
 
 The id of the existing Variable that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -769,7 +769,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.variable.VariableConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/variable"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/variable"
 
 &variable.VariableConfig {
 	Connection: interface{},
@@ -799,7 +799,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/variable"
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.items">Items</a></code> | <code>*map[string]*string</code> | A map of strings to be added as items in the variable. |
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.path">Path</a></code> | <code>*string</code> | The path at which the variable items will be stored, must be between 1 and 128 characters in length, be URL safe, and not include '@' or '.' characters. |
-| <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#id Variable#id}. |
+| <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable#id Variable#id}. |
 | <code><a href="#@cdktf/provider-nomad.variable.VariableConfig.property.namespace">Namespace</a></code> | <code>*string</code> | Variable namespace. |
 
 ---
@@ -884,7 +884,7 @@ Items *map[string]*string
 
 A map of strings to be added as items in the variable.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#items Variable#items}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable#items Variable#items}
 
 ---
 
@@ -898,7 +898,7 @@ Path *string
 
 The path at which the variable items will be stored, must be between 1 and 128 characters in length, be URL safe, and not include '@' or '.' characters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#path Variable#path}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable#path Variable#path}
 
 ---
 
@@ -910,7 +910,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#id Variable#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable#id Variable#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -927,7 +927,7 @@ Namespace *string
 
 Variable namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/variable#namespace Variable#namespace}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/variable#namespace Variable#namespace}
 
 ---
 

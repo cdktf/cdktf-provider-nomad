@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataNomadDeployments](./dataNomadDeployments.csharp.md)
 - [dataNomadJob](./dataNomadJob.csharp.md)
 - [dataNomadJobParser](./dataNomadJobParser.csharp.md)
+- [dataNomadJwks](./dataNomadJwks.csharp.md)
 - [dataNomadNamespace](./dataNomadNamespace.csharp.md)
 - [dataNomadNamespaces](./dataNomadNamespaces.csharp.md)
 - [dataNomadNodePool](./dataNomadNodePool.csharp.md)

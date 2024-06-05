@@ -22,6 +22,7 @@ The following submodules are available:
 - [dataNomadDeployments](./dataNomadDeployments.java.md)
 - [dataNomadJob](./dataNomadJob.java.md)
 - [dataNomadJobParser](./dataNomadJobParser.java.md)
+- [dataNomadJwks](./dataNomadJwks.java.md)
 - [dataNomadNamespace](./dataNomadNamespace.java.md)
 - [dataNomadNamespaces](./dataNomadNamespaces.java.md)
 - [dataNomadNodePool](./dataNomadNodePool.java.md)

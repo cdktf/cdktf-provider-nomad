@@ -4,12 +4,12 @@
 
 ### DataNomadDatacenters <a name="DataNomadDatacenters" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/datacenters nomad_datacenters}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/datacenters nomad_datacenters}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
 
 datanomaddatacenters.NewDataNomadDatacenters(scope Construct, id *string, config DataNomadDatacentersConfig) DataNomadDatacenters
 ```
@@ -297,7 +297,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datanomaddatacenters.DataNomadDatacenters_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datanomaddatacenters.DataNomadDatacenters_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacenters.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
 
 datanomaddatacenters.DataNomadDatacenters_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataNomadDatacenters to im
 
 The id of the existing DataNomadDatacenters that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/datacenters#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/datacenters#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddatacenters"
 
 &datanomaddatacenters.DataNomadDatacentersConfig {
 	Connection: interface{},
@@ -668,7 +668,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomaddatacenters"
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/datacenters#id DataNomadDatacenters#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/datacenters#id DataNomadDatacenters#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.property.ignoreDownNodes">IgnoreDownNodes</a></code> | <code>interface{}</code> | If enabled, this flag will ignore nodes that are down when listing datacenters. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadDatacenters.DataNomadDatacentersConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Prefix value used for filtering results. |
 
@@ -752,7 +752,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/datacenters#id DataNomadDatacenters#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/datacenters#id DataNomadDatacenters#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -769,7 +769,7 @@ IgnoreDownNodes interface{}
 
 If enabled, this flag will ignore nodes that are down when listing datacenters.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/datacenters#ignore_down_nodes DataNomadDatacenters#ignore_down_nodes}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/datacenters#ignore_down_nodes DataNomadDatacenters#ignore_down_nodes}
 
 ---
 
@@ -783,7 +783,7 @@ Prefix *string
 
 Prefix value used for filtering results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/data-sources/datacenters#prefix DataNomadDatacenters#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/datacenters#prefix DataNomadDatacenters#prefix}
 
 ---
 

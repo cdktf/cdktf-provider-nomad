@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/scheduler_config
+// https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/scheduler_config
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface SchedulerConfigConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/scheduler_config#id SchedulerConfig#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/scheduler_config#id SchedulerConfig#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +17,25 @@ export interface SchedulerConfigConfig extends cdktf.TerraformMetaArguments {
   /**
   * When true, tasks may exceed their reserved memory limit.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/scheduler_config#memory_oversubscription_enabled SchedulerConfig#memory_oversubscription_enabled}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/scheduler_config#memory_oversubscription_enabled SchedulerConfig#memory_oversubscription_enabled}
   */
   readonly memoryOversubscriptionEnabled?: boolean | cdktf.IResolvable;
   /**
   * Options to enable preemption for various schedulers.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/scheduler_config#preemption_config SchedulerConfig#preemption_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/scheduler_config#preemption_config SchedulerConfig#preemption_config}
   */
   readonly preemptionConfig?: { [key: string]: (boolean | cdktf.IResolvable) };
   /**
   * Specifies whether scheduler binpacks or spreads allocations on available nodes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/scheduler_config#scheduler_algorithm SchedulerConfig#scheduler_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/scheduler_config#scheduler_algorithm SchedulerConfig#scheduler_algorithm}
   */
   readonly schedulerAlgorithm?: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/scheduler_config nomad_scheduler_config}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/scheduler_config nomad_scheduler_config}
 */
 export class SchedulerConfig extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class SchedulerConfig extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SchedulerConfig resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SchedulerConfig to import
-  * @param importFromId The id of the existing SchedulerConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/scheduler_config#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SchedulerConfig that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/scheduler_config#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SchedulerConfig to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class SchedulerConfig extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.2.0/docs/resources/scheduler_config nomad_scheduler_config} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/scheduler_config nomad_scheduler_config} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class SchedulerConfig extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_scheduler_config',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.2.0',
+        providerVersion: '2.3.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
