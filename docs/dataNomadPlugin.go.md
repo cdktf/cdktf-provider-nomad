@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 
 datanomadplugin.NewDataNomadPlugin(scope Construct, id *string, config DataNomadPluginConfig) DataNomadPlugin
 ```
@@ -297,7 +297,7 @@ func ResetWaitForRegistration()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datanomadplugin.DataNomadPlugin_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datanomadplugin.DataNomadPlugin_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPlugin.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 
 datanomadplugin.DataNomadPlugin_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -740,7 +740,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 
 &datanomadplugin.DataNomadPluginConfig {
 	Connection: interface{},
@@ -907,7 +907,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginNodes.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 
 &datanomadplugin.DataNomadPluginNodes {
 
@@ -922,7 +922,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginNodesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 
 datanomadplugin.NewDataNomadPluginNodesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadPluginNodesList
 ```
@@ -1071,7 +1071,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugin.DataNomadPluginNodesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadplugin"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadplugin"
 
 datanomadplugin.NewDataNomadPluginNodesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadPluginNodesOutputReference
 ```
