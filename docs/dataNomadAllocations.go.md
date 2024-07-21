@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadallocations"
 
 datanomadallocations.NewDataNomadAllocations(scope Construct, id *string, config DataNomadAllocationsConfig) DataNomadAllocations
 ```
@@ -304,7 +304,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadallocations"
 
 datanomadallocations.DataNomadAllocations_IsConstruct(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadallocations"
 
 datanomadallocations.DataNomadAllocations_IsTerraformElement(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datanomadallocations.DataNomadAllocations_IsTerraformElement(x interface{}) *boo
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadallocations"
 
 datanomadallocations.DataNomadAllocations_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -364,7 +364,7 @@ datanomadallocations.DataNomadAllocations_IsTerraformDataSource(x interface{}) *
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocations.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadallocations"
 
 datanomadallocations.DataNomadAllocations_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -670,7 +670,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsAllocations.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadallocations"
 
 &datanomadallocations.DataNomadAllocationsAllocations {
 
@@ -683,7 +683,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadallocations"
 
 &datanomadallocations.DataNomadAllocationsConfig {
 	Connection: interface{},
@@ -852,7 +852,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsAllocationsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadallocations"
 
 datanomadallocations.NewDataNomadAllocationsAllocationsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadAllocationsAllocationsList
 ```
@@ -1001,7 +1001,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAllocations.DataNomadAllocationsAllocationsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadallocations"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadallocations"
 
 datanomadallocations.NewDataNomadAllocationsAllocationsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadAllocationsAllocationsOutputReference
 ```
