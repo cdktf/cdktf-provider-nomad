@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePool.DataNomadNodePool.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepool"
 
 datanomadnodepool.NewDataNomadNodePool(scope Construct, id *string, config DataNomadNodePoolConfig) DataNomadNodePool
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadNodePool.DataNomadNodePool.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepool"
 
 datanomadnodepool.DataNomadNodePool_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadNodePool.DataNomadNodePool.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepool"
 
 datanomadnodepool.DataNomadNodePool_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datanomadnodepool.DataNomadNodePool_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadNodePool.DataNomadNodePool.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepool"
 
 datanomadnodepool.DataNomadNodePool_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datanomadnodepool.DataNomadNodePool_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadNodePool.DataNomadNodePool.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepool"
 
 datanomadnodepool.DataNomadNodePool_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -627,7 +627,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNodePool.DataNomadNodePoolConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepool"
 
 &datanomadnodepool.DataNomadNodePoolConfig {
 	Connection: interface{},
@@ -762,7 +762,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNodePool.DataNomadNodePoolSchedulerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepool"
 
 &datanomadnodepool.DataNomadNodePoolSchedulerConfig {
 
@@ -777,7 +777,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePool.DataNomadNodePoolSchedulerConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepool"
 
 datanomadnodepool.NewDataNomadNodePoolSchedulerConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNodePoolSchedulerConfigList
 ```
@@ -926,7 +926,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePool.DataNomadNodePoolSchedulerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepool"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepool"
 
 datanomadnodepool.NewDataNomadNodePoolSchedulerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNodePoolSchedulerConfigOutputReference
 ```
