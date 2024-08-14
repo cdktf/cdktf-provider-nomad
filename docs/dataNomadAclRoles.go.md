@@ -4,12 +4,12 @@
 
 ### DataNomadAclRoles <a name="DataNomadAclRoles" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/acl_roles nomad_acl_roles}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/acl_roles nomad_acl_roles}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 datanomadaclroles.NewDataNomadAclRoles(scope Construct, id *string, config DataNomadAclRolesConfig) DataNomadAclRoles
 ```
@@ -290,7 +290,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 datanomadaclroles.DataNomadAclRoles_IsConstruct(x interface{}) *bool
 ```
@@ -322,7 +322,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 datanomadaclroles.DataNomadAclRoles_IsTerraformElement(x interface{}) *bool
 ```
@@ -336,7 +336,7 @@ datanomadaclroles.DataNomadAclRoles_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 datanomadaclroles.DataNomadAclRoles_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -350,7 +350,7 @@ datanomadaclroles.DataNomadAclRoles_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRoles.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 datanomadaclroles.DataNomadAclRoles_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataNomadAclRoles to impor
 
 The id of the existing DataNomadAclRoles that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/acl_roles#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/acl_roles#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -612,7 +612,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesAclRoles.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 &datanomadaclroles.DataNomadAclRolesAclRoles {
 
@@ -625,7 +625,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesAclRolesPolicies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 &datanomadaclroles.DataNomadAclRolesAclRolesPolicies {
 
@@ -638,7 +638,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 &datanomadaclroles.DataNomadAclRolesConfig {
 	Connection: interface{},
@@ -664,8 +664,8 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.lifecycle">Lifecycle</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/acl_roles#id DataNomadAclRoles#id}. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/acl_roles#id DataNomadAclRoles#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}. |
 
 ---
 
@@ -747,7 +747,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/acl_roles#id DataNomadAclRoles#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/acl_roles#id DataNomadAclRoles#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -762,7 +762,7 @@ Prefix *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/acl_roles#prefix DataNomadAclRoles#prefix}.
 
 ---
 
@@ -773,7 +773,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesAclRolesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 datanomadaclroles.NewDataNomadAclRolesAclRolesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadAclRolesAclRolesList
 ```
@@ -922,7 +922,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesAclRolesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 datanomadaclroles.NewDataNomadAclRolesAclRolesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadAclRolesAclRolesOutputReference
 ```
@@ -1233,7 +1233,7 @@ func InternalValue() DataNomadAclRolesAclRoles
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesAclRolesPoliciesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 datanomadaclroles.NewDataNomadAclRolesAclRolesPoliciesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadAclRolesAclRolesPoliciesList
 ```
@@ -1382,7 +1382,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadAclRoles.DataNomadAclRolesAclRolesPoliciesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadaclroles"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadaclroles"
 
 datanomadaclroles.NewDataNomadAclRolesAclRolesPoliciesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadAclRolesAclRolesPoliciesOutputReference
 ```

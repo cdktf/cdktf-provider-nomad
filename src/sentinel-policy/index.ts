@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy
+// https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,17 +10,17 @@ export interface SentinelPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy#description SentinelPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy#description SentinelPolicy#description}
   */
   readonly description?: string;
   /**
   * Specifies the enforcement level of the policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy#enforcement_level SentinelPolicy#enforcement_level}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy#enforcement_level SentinelPolicy#enforcement_level}
   */
   readonly enforcementLevel: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy#id SentinelPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy#id SentinelPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -34,25 +29,25 @@ export interface SentinelPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy#name SentinelPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy#name SentinelPolicy#name}
   */
   readonly name: string;
   /**
   * The Sentinel policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy#policy SentinelPolicy#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy#policy SentinelPolicy#policy}
   */
   readonly policy: string;
   /**
   * Specifies the scope for this policy. Only 'submit-job' is currently supported.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy#scope SentinelPolicy#scope}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy#scope SentinelPolicy#scope}
   */
   readonly scope: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy nomad_sentinel_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy nomad_sentinel_policy}
 */
 export class SentinelPolicy extends cdktf.TerraformResource {
 
@@ -68,7 +63,7 @@ export class SentinelPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a SentinelPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the SentinelPolicy to import
-  * @param importFromId The id of the existing SentinelPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing SentinelPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the SentinelPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -80,7 +75,7 @@ export class SentinelPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/resources/sentinel_policy nomad_sentinel_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/sentinel_policy nomad_sentinel_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -91,7 +86,7 @@ export class SentinelPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_sentinel_policy',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.3.0',
+        providerVersion: '2.3.1',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

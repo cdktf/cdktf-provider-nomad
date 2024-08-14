@@ -4,12 +4,12 @@
 
 ### DataNomadNodePools <a name="DataNomadNodePools" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/node_pools nomad_node_pools}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/node_pools nomad_node_pools}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePools(scope Construct, id *string, config DataNomadNodePoolsConfig) DataNomadNodePools
 ```
@@ -297,7 +297,7 @@ func ResetPrefix()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 datanomadnodepools.DataNomadNodePools_IsConstruct(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 datanomadnodepools.DataNomadNodePools_IsTerraformElement(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datanomadnodepools.DataNomadNodePools_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 datanomadnodepools.DataNomadNodePools_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -357,7 +357,7 @@ datanomadnodepools.DataNomadNodePools_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePools.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 datanomadnodepools.DataNomadNodePools_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -386,7 +386,7 @@ The construct id used in the generated config for the DataNomadNodePools to impo
 
 The id of the existing DataNomadNodePools that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/node_pools#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/node_pools#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -641,7 +641,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 &datanomadnodepools.DataNomadNodePoolsConfig {
 	Connection: interface{},
@@ -669,7 +669,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
 | <code><a href="#@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsConfig.property.provider">Provider</a></code> | <code>github.com/hashicorp/terraform-cdk-go/cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsConfig.property.provisioners">Provisioners</a></code> | <code>*[]interface{}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsConfig.property.filter">Filter</a></code> | <code>*string</code> | Specifies the expression used to filter the results. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/node_pools#id DataNomadNodePools#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsConfig.property.id">Id</a></code> | <code>*string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/node_pools#id DataNomadNodePools#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsConfig.property.prefix">Prefix</a></code> | <code>*string</code> | Specifies a string to filter node pools based on a name prefix. |
 
 ---
@@ -754,7 +754,7 @@ Filter *string
 
 Specifies the expression used to filter the results.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/node_pools#filter DataNomadNodePools#filter}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/node_pools#filter DataNomadNodePools#filter}
 
 ---
 
@@ -766,7 +766,7 @@ Id *string
 
 - *Type:* *string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/node_pools#id DataNomadNodePools#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/node_pools#id DataNomadNodePools#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -783,7 +783,7 @@ Prefix *string
 
 Specifies a string to filter node pools based on a name prefix.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.0/docs/data-sources/node_pools#prefix DataNomadNodePools#prefix}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/data-sources/node_pools#prefix DataNomadNodePools#prefix}
 
 ---
 
@@ -792,7 +792,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePools.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 &datanomadnodepools.DataNomadNodePoolsNodePools {
 
@@ -805,7 +805,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsSchedulerConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 &datanomadnodepools.DataNomadNodePoolsNodePoolsSchedulerConfig {
 
@@ -820,7 +820,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePoolsNodePoolsList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNodePoolsNodePoolsList
 ```
@@ -969,7 +969,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePoolsNodePoolsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNodePoolsNodePoolsOutputReference
 ```
@@ -1280,7 +1280,7 @@ func InternalValue() DataNomadNodePoolsNodePools
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsSchedulerConfigList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePoolsNodePoolsSchedulerConfigList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadNodePoolsNodePoolsSchedulerConfigList
 ```
@@ -1429,7 +1429,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadNodePools.DataNomadNodePoolsNodePoolsSchedulerConfigOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadnodepools"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadnodepools"
 
 datanomadnodepools.NewDataNomadNodePoolsNodePoolsSchedulerConfigOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadNodePoolsNodePoolsSchedulerConfigOutputReference
 ```
