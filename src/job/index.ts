@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job
+// https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,35 +10,29 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   /**
   * The Consul token used to submit this job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#consul_token Job#consul_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#consul_token Job#consul_token}
   */
   readonly consulToken?: string;
   /**
   * If true, the job will be deregistered on destroy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
   */
   readonly deregisterOnDestroy?: boolean | cdktf.IResolvable;
   /**
   * If true, the job will be deregistered when the job ID changes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
   */
   readonly deregisterOnIdChange?: boolean | cdktf.IResolvable;
   /**
   * If true, the provider will return immediately after creating or updating, instead of monitoring.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#detach Job#detach}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#detach Job#detach}
   */
   readonly detach?: boolean | cdktf.IResolvable;
   /**
-  * If true, the `jobspec` will be parsed using the HCL1 format.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#hcl1 Job#hcl1}
-  */
-  readonly hcl1?: boolean | cdktf.IResolvable;
-  /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#id Job#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#id Job#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -52,53 +41,53 @@ export interface JobConfig extends cdktf.TerraformMetaArguments {
   /**
   * Job specification. If you want to point to a file use the file() function.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#jobspec Job#jobspec}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#jobspec Job#jobspec}
   */
   readonly jobspec: string;
   /**
   * If true, the `jobspec` will be parsed as json instead of HCL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#json Job#json}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#json Job#json}
   */
   readonly json?: boolean | cdktf.IResolvable;
   /**
   * Override any soft-mandatory Sentinel policies that fail.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#policy_override Job#policy_override}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#policy_override Job#policy_override}
   */
   readonly policyOverride?: boolean | cdktf.IResolvable;
   /**
   * Whether to purge the job when the resource is destroyed.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
   */
   readonly purgeOnDestroy?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}
   */
   readonly readAllocationIds?: boolean | cdktf.IResolvable;
   /**
   * If true, forces the job to run again on apply if it is currently dead
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#rerun_if_dead Job#rerun_if_dead}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#rerun_if_dead Job#rerun_if_dead}
   */
   readonly rerunIfDead?: boolean | cdktf.IResolvable;
   /**
   * The Vault token used to submit this job.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#vault_token Job#vault_token}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#vault_token Job#vault_token}
   */
   readonly vaultToken?: string;
   /**
   * hcl2 block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#hcl2 Job#hcl2}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#hcl2 Job#hcl2}
   */
   readonly hcl2?: JobHcl2;
   /**
   * timeouts block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#timeouts Job#timeouts}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#timeouts Job#timeouts}
   */
   readonly timeouts?: JobTimeouts;
 }
@@ -471,19 +460,13 @@ export interface JobHcl2 {
   /**
   * If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#allow_fs Job#allow_fs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#allow_fs Job#allow_fs}
   */
   readonly allowFs?: boolean | cdktf.IResolvable;
   /**
-  * If true, the `jobspec` will be parsed as HCL2 instead of HCL.
-  *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#enabled Job#enabled}
-  */
-  readonly enabled?: boolean | cdktf.IResolvable;
-  /**
   * Additional variables to use when templating the job with HCL2
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#vars Job#vars}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#vars Job#vars}
   */
   readonly vars?: { [key: string]: string };
 }
@@ -495,7 +478,6 @@ export function jobHcl2ToTerraform(struct?: JobHcl2OutputReference | JobHcl2): a
   }
   return {
     allow_fs: cdktf.booleanToTerraform(struct!.allowFs),
-    enabled: cdktf.booleanToTerraform(struct!.enabled),
     vars: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.vars),
   }
 }
@@ -509,12 +491,6 @@ export function jobHcl2ToHclTerraform(struct?: JobHcl2OutputReference | JobHcl2)
   const attrs = {
     allow_fs: {
       value: cdktf.booleanToHclTerraform(struct!.allowFs),
-      isBlock: false,
-      type: "simple",
-      storageClassType: "boolean",
-    },
-    enabled: {
-      value: cdktf.booleanToHclTerraform(struct!.enabled),
       isBlock: false,
       type: "simple",
       storageClassType: "boolean",
@@ -549,10 +525,6 @@ export class JobHcl2OutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.allowFs = this._allowFs;
     }
-    if (this._enabled !== undefined) {
-      hasAnyValues = true;
-      internalValueResult.enabled = this._enabled;
-    }
     if (this._vars !== undefined) {
       hasAnyValues = true;
       internalValueResult.vars = this._vars;
@@ -564,13 +536,11 @@ export class JobHcl2OutputReference extends cdktf.ComplexObject {
     if (value === undefined) {
       this.isEmptyObject = false;
       this._allowFs = undefined;
-      this._enabled = undefined;
       this._vars = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
       this._allowFs = value.allowFs;
-      this._enabled = value.enabled;
       this._vars = value.vars;
     }
   }
@@ -591,22 +561,6 @@ export class JobHcl2OutputReference extends cdktf.ComplexObject {
     return this._allowFs;
   }
 
-  // enabled - computed: false, optional: true, required: false
-  private _enabled?: boolean | cdktf.IResolvable; 
-  public get enabled() {
-    return this.getBooleanAttribute('enabled');
-  }
-  public set enabled(value: boolean | cdktf.IResolvable) {
-    this._enabled = value;
-  }
-  public resetEnabled() {
-    this._enabled = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get enabledInput() {
-    return this._enabled;
-  }
-
   // vars - computed: false, optional: true, required: false
   private _vars?: { [key: string]: string }; 
   public get vars() {
@@ -625,11 +579,11 @@ export class JobHcl2OutputReference extends cdktf.ComplexObject {
 }
 export interface JobTimeouts {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#create Job#create}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#create Job#create}
   */
   readonly create?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#update Job#update}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#update Job#update}
   */
   readonly update?: string;
 }
@@ -752,7 +706,7 @@ export class JobTimeoutsOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job nomad_job}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job nomad_job}
 */
 export class Job extends cdktf.TerraformResource {
 
@@ -768,7 +722,7 @@ export class Job extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Job resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Job to import
-  * @param importFromId The id of the existing Job that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Job that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Job to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -780,7 +734,7 @@ export class Job extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job nomad_job} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job nomad_job} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -791,7 +745,7 @@ export class Job extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_job',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.3.1',
+        providerVersion: '2.4.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
@@ -806,7 +760,6 @@ export class Job extends cdktf.TerraformResource {
     this._deregisterOnDestroy = config.deregisterOnDestroy;
     this._deregisterOnIdChange = config.deregisterOnIdChange;
     this._detach = config.detach;
-    this._hcl1 = config.hcl1;
     this._id = config.id;
     this._jobspec = config.jobspec;
     this._json = config.json;
@@ -905,22 +858,6 @@ export class Job extends cdktf.TerraformResource {
   // Temporarily expose input value. Use with caution.
   public get detachInput() {
     return this._detach;
-  }
-
-  // hcl1 - computed: false, optional: true, required: false
-  private _hcl1?: boolean | cdktf.IResolvable; 
-  public get hcl1() {
-    return this.getBooleanAttribute('hcl1');
-  }
-  public set hcl1(value: boolean | cdktf.IResolvable) {
-    this._hcl1 = value;
-  }
-  public resetHcl1() {
-    this._hcl1 = undefined;
-  }
-  // Temporarily expose input value. Use with caution.
-  public get hcl1Input() {
-    return this._hcl1;
   }
 
   // id - computed: true, optional: true, required: false
@@ -1126,7 +1063,6 @@ export class Job extends cdktf.TerraformResource {
       deregister_on_destroy: cdktf.booleanToTerraform(this._deregisterOnDestroy),
       deregister_on_id_change: cdktf.booleanToTerraform(this._deregisterOnIdChange),
       detach: cdktf.booleanToTerraform(this._detach),
-      hcl1: cdktf.booleanToTerraform(this._hcl1),
       id: cdktf.stringToTerraform(this._id),
       jobspec: cdktf.stringToTerraform(this._jobspec),
       json: cdktf.booleanToTerraform(this._json),
@@ -1162,12 +1098,6 @@ export class Job extends cdktf.TerraformResource {
       },
       detach: {
         value: cdktf.booleanToHclTerraform(this._detach),
-        isBlock: false,
-        type: "simple",
-        storageClassType: "boolean",
-      },
-      hcl1: {
-        value: cdktf.booleanToHclTerraform(this._hcl1),
         isBlock: false,
         type: "simple",
         storageClassType: "boolean",

@@ -4,7 +4,7 @@
 
 ### Job <a name="Job" id="@cdktf/provider-nomad.job.Job"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job nomad_job}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job nomad_job}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.job.Job.Initializer"></a>
 
@@ -79,7 +79,6 @@ Must be unique amongst siblings in the same scope
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetDeregisterOnDestroy">resetDeregisterOnDestroy</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetDeregisterOnIdChange">resetDeregisterOnIdChange</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetDetach">resetDetach</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.resetHcl1">resetHcl1</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetHcl2">resetHcl2</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetId">resetId</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.resetJson">resetJson</a></code> | *No description.* |
@@ -428,12 +427,6 @@ public resetDeregisterOnIdChange(): void
 public resetDetach(): void
 ```
 
-##### `resetHcl1` <a name="resetHcl1" id="@cdktf/provider-nomad.job.Job.resetHcl1"></a>
-
-```typescript
-public resetHcl1(): void
-```
-
 ##### `resetHcl2` <a name="resetHcl2" id="@cdktf/provider-nomad.job.Job.resetHcl2"></a>
 
 ```typescript
@@ -591,7 +584,7 @@ The construct id used in the generated config for the Job to import.
 
 The id of the existing Job that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +631,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput">deregisterOnDestroyInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput">deregisterOnIdChangeInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.detachInput">detachInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.hcl1Input">hcl1Input</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.hcl2Input">hcl2Input</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.idInput">idInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspecInput">jobspecInput</a></code> | <code>string</code> | *No description.* |
@@ -653,7 +645,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange">deregisterOnIdChange</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.detach">detach</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.hcl1">hcl1</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.id">id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspec">jobspec</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.json">json</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
@@ -977,16 +968,6 @@ public readonly detachInput: boolean | IResolvable;
 
 ---
 
-##### `hcl1Input`<sup>Optional</sup> <a name="hcl1Input" id="@cdktf/provider-nomad.job.Job.property.hcl1Input"></a>
-
-```typescript
-public readonly hcl1Input: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
 ##### `hcl2Input`<sup>Optional</sup> <a name="hcl2Input" id="@cdktf/provider-nomad.job.Job.property.hcl2Input"></a>
 
 ```typescript
@@ -1127,16 +1108,6 @@ public readonly detach: boolean | IResolvable;
 
 ---
 
-##### `hcl1`<sup>Required</sup> <a name="hcl1" id="@cdktf/provider-nomad.job.Job.property.hcl1"></a>
-
-```typescript
-public readonly hcl1: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
 ##### `id`<sup>Required</sup> <a name="id" id="@cdktf/provider-nomad.job.Job.property.id"></a>
 
 ```typescript
@@ -1263,13 +1234,12 @@ const jobConfig: job.JobConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the job will be deregistered on destroy. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange">deregisterOnIdChange</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the job will be deregistered when the job ID changes. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">detach</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl1">hcl1</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the `jobspec` will be parsed using the HCL1 format. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl2">hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#id Job#id}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#id Job#id}. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">json</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">policyOverride</a></code> | <code>boolean \| cdktf.IResolvable</code> | Override any soft-mandatory Sentinel policies that fail. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">purgeOnDestroy</a></code> | <code>boolean \| cdktf.IResolvable</code> | Whether to purge the job when the resource is destroyed. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">readAllocationIds</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">readAllocationIds</a></code> | <code>boolean \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead">rerunIfDead</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, forces the job to run again on apply if it is currently dead. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.vaultToken">vaultToken</a></code> | <code>string</code> | The Vault token used to submit this job. |
@@ -1356,7 +1326,7 @@ public readonly jobspec: string;
 
 Job specification. If you want to point to a file use the file() function.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#jobspec Job#jobspec}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#jobspec Job#jobspec}
 
 ---
 
@@ -1370,7 +1340,7 @@ public readonly consulToken: string;
 
 The Consul token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#consul_token Job#consul_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#consul_token Job#consul_token}
 
 ---
 
@@ -1384,7 +1354,7 @@ public readonly deregisterOnDestroy: boolean | IResolvable;
 
 If true, the job will be deregistered on destroy.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#deregister_on_destroy Job#deregister_on_destroy}
 
 ---
 
@@ -1398,7 +1368,7 @@ public readonly deregisterOnIdChange: boolean | IResolvable;
 
 If true, the job will be deregistered when the job ID changes.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#deregister_on_id_change Job#deregister_on_id_change}
 
 ---
 
@@ -1412,21 +1382,7 @@ public readonly detach: boolean | IResolvable;
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#detach Job#detach}
-
----
-
-##### `hcl1`<sup>Optional</sup> <a name="hcl1" id="@cdktf/provider-nomad.job.JobConfig.property.hcl1"></a>
-
-```typescript
-public readonly hcl1: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
-If true, the `jobspec` will be parsed using the HCL1 format.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#hcl1 Job#hcl1}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#detach Job#detach}
 
 ---
 
@@ -1440,7 +1396,7 @@ public readonly hcl2: JobHcl2;
 
 hcl2 block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#hcl2 Job#hcl2}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#hcl2 Job#hcl2}
 
 ---
 
@@ -1452,7 +1408,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#id Job#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#id Job#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1469,7 +1425,7 @@ public readonly json: boolean | IResolvable;
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#json Job#json}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#json Job#json}
 
 ---
 
@@ -1483,7 +1439,7 @@ public readonly policyOverride: boolean | IResolvable;
 
 Override any soft-mandatory Sentinel policies that fail.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#policy_override Job#policy_override}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#policy_override Job#policy_override}
 
 ---
 
@@ -1497,7 +1453,7 @@ public readonly purgeOnDestroy: boolean | IResolvable;
 
 Whether to purge the job when the resource is destroyed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#purge_on_destroy Job#purge_on_destroy}
 
 ---
 
@@ -1509,7 +1465,7 @@ public readonly readAllocationIds: boolean | IResolvable;
 
 - *Type:* boolean | cdktf.IResolvable
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
 
 ---
 
@@ -1523,7 +1479,7 @@ public readonly rerunIfDead: boolean | IResolvable;
 
 If true, forces the job to run again on apply if it is currently dead.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#rerun_if_dead Job#rerun_if_dead}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#rerun_if_dead Job#rerun_if_dead}
 
 ---
 
@@ -1537,7 +1493,7 @@ public readonly timeouts: JobTimeouts;
 
 timeouts block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#timeouts Job#timeouts}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#timeouts Job#timeouts}
 
 ---
 
@@ -1551,7 +1507,7 @@ public readonly vaultToken: string;
 
 The Vault token used to submit this job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#vault_token Job#vault_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#vault_token Job#vault_token}
 
 ---
 
@@ -1570,7 +1526,6 @@ const jobHcl2: job.JobHcl2 = { ... }
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.allowFs">allowFs</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, HCL2 file system functions will be enabled when parsing the `jobspec`. |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as HCL2 instead of HCL. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | Additional variables to use when templating the job with HCL2. |
 
 ---
@@ -1585,21 +1540,7 @@ public readonly allowFs: boolean | IResolvable;
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#allow_fs Job#allow_fs}
-
----
-
-##### `enabled`<sup>Optional</sup> <a name="enabled" id="@cdktf/provider-nomad.job.JobHcl2.property.enabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
-If true, the `jobspec` will be parsed as HCL2 instead of HCL.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#enabled Job#enabled}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#allow_fs Job#allow_fs}
 
 ---
 
@@ -1613,7 +1554,7 @@ public readonly vars: {[ key: string ]: string};
 
 Additional variables to use when templating the job with HCL2.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#vars Job#vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#vars Job#vars}
 
 ---
 
@@ -1675,8 +1616,8 @@ const jobTimeouts: job.JobTimeouts = { ... }
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#create Job#create}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#update Job#update}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.create">create</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#create Job#create}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeouts.property.update">update</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#update Job#update}. |
 
 ---
 
@@ -1688,7 +1629,7 @@ public readonly create: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#create Job#create}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#create Job#create}.
 
 ---
 
@@ -1700,7 +1641,7 @@ public readonly update: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/job#update Job#update}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/job#update Job#update}.
 
 ---
 
@@ -1757,7 +1698,6 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.toString">toString</a></code> | Return a string representation of this resolvable object. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.resetAllowFs">resetAllowFs</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.resetEnabled">resetEnabled</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.resetVars">resetVars</a></code> | *No description.* |
 
 ---
@@ -1918,12 +1858,6 @@ Returns a reversible string representation.
 public resetAllowFs(): void
 ```
 
-##### `resetEnabled` <a name="resetEnabled" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.resetEnabled"></a>
-
-```typescript
-public resetEnabled(): void
-```
-
 ##### `resetVars` <a name="resetVars" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.resetVars"></a>
 
 ```typescript
@@ -1938,10 +1872,8 @@ public resetVars(): void
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.creationStack">creationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.fqn">fqn</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput">allowFsInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.enabledInput">enabledInput</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.varsInput">varsInput</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs">allowFs</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.enabled">enabled</a></code> | <code>boolean \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.vars">vars</a></code> | <code>{[ key: string ]: string}</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | *No description.* |
 
@@ -1981,16 +1913,6 @@ public readonly allowFsInput: boolean | IResolvable;
 
 ---
 
-##### `enabledInput`<sup>Optional</sup> <a name="enabledInput" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.property.enabledInput"></a>
-
-```typescript
-public readonly enabledInput: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
 ##### `varsInput`<sup>Optional</sup> <a name="varsInput" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.property.varsInput"></a>
 
 ```typescript
@@ -2005,16 +1927,6 @@ public readonly varsInput: {[ key: string ]: string};
 
 ```typescript
 public readonly allowFs: boolean | IResolvable;
-```
-
-- *Type:* boolean | cdktf.IResolvable
-
----
-
-##### `enabled`<sup>Required</sup> <a name="enabled" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.property.enabled"></a>
-
-```typescript
-public readonly enabled: boolean | IResolvable;
 ```
 
 - *Type:* boolean | cdktf.IResolvable
