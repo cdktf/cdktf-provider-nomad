@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy
+// https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface AclPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#description AclPolicy#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#description AclPolicy#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#id AclPolicy#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#id AclPolicy#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface AclPolicyConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name for this policy.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#name AclPolicy#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#name AclPolicy#name}
   */
   readonly name: string;
   /**
   * HCL or JSON representation of the rules to enforce on this policy. Use file() to specify a file as input.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#rules_hcl AclPolicy#rules_hcl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#rules_hcl AclPolicy#rules_hcl}
   */
   readonly rulesHcl: string;
   /**
   * job_acl block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#job_acl AclPolicy#job_acl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#job_acl AclPolicy#job_acl}
   */
   readonly jobAcl?: AclPolicyJobAcl;
 }
@@ -48,25 +48,25 @@ export interface AclPolicyJobAcl {
   /**
   * Group
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#group AclPolicy#group}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#group AclPolicy#group}
   */
   readonly group?: string;
   /**
   * Job
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#job_id AclPolicy#job_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#job_id AclPolicy#job_id}
   */
   readonly jobId: string;
   /**
   * Namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#namespace AclPolicy#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#namespace AclPolicy#namespace}
   */
   readonly namespace?: string;
   /**
   * Task
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#task AclPolicy#task}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#task AclPolicy#task}
   */
   readonly task?: string;
 }
@@ -234,7 +234,7 @@ export class AclPolicyJobAclOutputReference extends cdktf.ComplexObject {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy nomad_acl_policy}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy nomad_acl_policy}
 */
 export class AclPolicy extends cdktf.TerraformResource {
 
@@ -250,7 +250,7 @@ export class AclPolicy extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AclPolicy resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AclPolicy to import
-  * @param importFromId The id of the existing AclPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AclPolicy that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AclPolicy to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -262,7 +262,7 @@ export class AclPolicy extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.3.1/docs/resources/acl_policy nomad_acl_policy} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_policy nomad_acl_policy} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -273,7 +273,7 @@ export class AclPolicy extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_acl_policy',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.3.1',
+        providerVersion: '2.4.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
