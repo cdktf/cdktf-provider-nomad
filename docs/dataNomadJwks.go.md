@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJwks.DataNomadJwks.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadjwks"
 
 datanomadjwks.NewDataNomadJwks(scope Construct, id *string, config DataNomadJwksConfig) DataNomadJwks
 ```
@@ -283,7 +283,7 @@ func ResetId()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadJwks.DataNomadJwks.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadjwks"
 
 datanomadjwks.DataNomadJwks_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadJwks.DataNomadJwks.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadjwks"
 
 datanomadjwks.DataNomadJwks_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datanomadjwks.DataNomadJwks_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadJwks.DataNomadJwks.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadjwks"
 
 datanomadjwks.DataNomadJwks_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datanomadjwks.DataNomadJwks_IsTerraformDataSource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadJwks.DataNomadJwks.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadjwks"
 
 datanomadjwks.DataNomadJwks_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -594,7 +594,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJwks.DataNomadJwksConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadjwks"
 
 &datanomadjwks.DataNomadJwksConfig {
 	Connection: interface{},
@@ -713,7 +713,7 @@ If you experience problems setting this value it might not be settable. Please t
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadJwks.DataNomadJwksKeys.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadjwks"
 
 &datanomadjwks.DataNomadJwksKeys {
 
@@ -728,7 +728,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJwks.DataNomadJwksKeysList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadjwks"
 
 datanomadjwks.NewDataNomadJwksKeysList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadJwksKeysList
 ```
@@ -877,7 +877,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadJwks.DataNomadJwksKeysOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomadjwks"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v9/datanomadjwks"
 
 datanomadjwks.NewDataNomadJwksKeysOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadJwksKeysOutputReference
 ```
