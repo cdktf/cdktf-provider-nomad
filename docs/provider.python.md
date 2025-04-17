@@ -4,7 +4,7 @@
 
 ### NomadProvider <a name="NomadProvider" id="@cdktf/provider-nomad.provider.NomadProvider"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs nomad}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs nomad}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer"></a>
 
@@ -20,7 +20,6 @@ provider.NomadProvider(
   ca_pem: str = None,
   cert_file: str = None,
   cert_pem: str = None,
-  consul_token: str = None,
   headers: typing.Union[IResolvable, typing.List[NomadProviderHeaders]] = None,
   http_auth: str = None,
   ignore_env_vars: typing.Mapping[typing.Union[bool, IResolvable]] = None,
@@ -28,8 +27,7 @@ provider.NomadProvider(
   key_pem: str = None,
   region: str = None,
   secret_id: str = None,
-  skip_verify: typing.Union[bool, IResolvable] = None,
-  vault_token: str = None
+  skip_verify: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -43,7 +41,6 @@ provider.NomadProvider(
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.caPem">ca_pem</a></code> | <code>str</code> | PEM-encoded certificate authority used to verify the remote agent's certificate. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.certFile">cert_file</a></code> | <code>str</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.certPem">cert_pem</a></code> | <code>str</code> | PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.consulToken">consul_token</a></code> | <code>str</code> | Consul token to validate Consul Connect Service Identity policies specified in the job file. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]</code> | headers block. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.httpAuth">http_auth</a></code> | <code>str</code> | HTTP basic auth configuration. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.ignoreEnvVars">ignore_env_vars</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
@@ -52,7 +49,6 @@ provider.NomadProvider(
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.region">region</a></code> | <code>str</code> | Region of the target Nomad agent. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.secretId">secret_id</a></code> | <code>str</code> | ACL token secret for API requests. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.skipVerify">skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip TLS verification on client side. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.vaultToken">vault_token</a></code> | <code>str</code> | Vault token if policies are specified in the job file. |
 
 ---
 
@@ -80,7 +76,7 @@ Must be unique amongst siblings in the same scope
 
 URL of the root of the target Nomad agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#address NomadProvider#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#address NomadProvider#address}
 
 ---
 
@@ -90,7 +86,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#alias NomadProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#alias NomadProvider#alias}
 
 ---
 
@@ -100,7 +96,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#ca_file NomadProvider#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#ca_file NomadProvider#ca_file}
 
 ---
 
@@ -110,7 +106,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 PEM-encoded certificate authority used to verify the remote agent's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#ca_pem NomadProvider#ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#ca_pem NomadProvider#ca_pem}
 
 ---
 
@@ -120,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#cert_file NomadProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#cert_file NomadProvider#cert_file}
 
 ---
 
@@ -130,17 +126,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#cert_pem NomadProvider#cert_pem}
-
----
-
-##### `consul_token`<sup>Optional</sup> <a name="consul_token" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.consulToken"></a>
-
-- *Type:* str
-
-Consul token to validate Consul Connect Service Identity policies specified in the job file.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#consul_token NomadProvider#consul_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#cert_pem NomadProvider#cert_pem}
 
 ---
 
@@ -150,7 +136,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#headers NomadProvider#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#headers NomadProvider#headers}
 
 ---
 
@@ -160,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 HTTP basic auth configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#http_auth NomadProvider#http_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#http_auth NomadProvider#http_auth}
 
 ---
 
@@ -170,7 +156,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A set of environment variables that are ignored by the provider when configuring the Nomad API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#ignore_env_vars NomadProvider#ignore_env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#ignore_env_vars NomadProvider#ignore_env_vars}
 
 ---
 
@@ -180,7 +166,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 A path to a PEM-encoded private key, required if cert_file or cert_pem is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#key_file NomadProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#key_file NomadProvider#key_file}
 
 ---
 
@@ -190,7 +176,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 PEM-encoded private key, required if cert_file or cert_pem is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#key_pem NomadProvider#key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#key_pem NomadProvider#key_pem}
 
 ---
 
@@ -200,7 +186,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Region of the target Nomad agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#region NomadProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#region NomadProvider#region}
 
 ---
 
@@ -210,7 +196,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ACL token secret for API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#secret_id NomadProvider#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#secret_id NomadProvider#secret_id}
 
 ---
 
@@ -220,17 +206,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Skip TLS verification on client side.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#skip_verify NomadProvider#skip_verify}
-
----
-
-##### `vault_token`<sup>Optional</sup> <a name="vault_token" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.vaultToken"></a>
-
-- *Type:* str
-
-Vault token if policies are specified in the job file.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#vault_token NomadProvider#vault_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#skip_verify NomadProvider#skip_verify}
 
 ---
 
@@ -250,7 +226,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetCaPem">reset_ca_pem</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetCertFile">reset_cert_file</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetCertPem">reset_cert_pem</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetConsulToken">reset_consul_token</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetHeaders">reset_headers</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetHttpAuth">reset_http_auth</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetIgnoreEnvVars">reset_ignore_env_vars</a></code> | *No description.* |
@@ -259,7 +234,6 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetRegion">reset_region</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetSecretId">reset_secret_id</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetSkipVerify">reset_skip_verify</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.resetVaultToken">reset_vault_token</a></code> | *No description.* |
 
 ---
 
@@ -368,12 +342,6 @@ def reset_cert_file() -> None
 def reset_cert_pem() -> None
 ```
 
-##### `reset_consul_token` <a name="reset_consul_token" id="@cdktf/provider-nomad.provider.NomadProvider.resetConsulToken"></a>
-
-```python
-def reset_consul_token() -> None
-```
-
 ##### `reset_headers` <a name="reset_headers" id="@cdktf/provider-nomad.provider.NomadProvider.resetHeaders"></a>
 
 ```python
@@ -420,12 +388,6 @@ def reset_secret_id() -> None
 
 ```python
 def reset_skip_verify() -> None
-```
-
-##### `reset_vault_token` <a name="reset_vault_token" id="@cdktf/provider-nomad.provider.NomadProvider.resetVaultToken"></a>
-
-```python
-def reset_vault_token() -> None
 ```
 
 #### Static Functions <a name="Static Functions" id="Static Functions"></a>
@@ -542,7 +504,7 @@ The construct id used in the generated config for the NomadProvider to import.
 
 The id of the existing NomadProvider that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -573,7 +535,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caPemInput">ca_pem_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certFileInput">cert_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certPemInput">cert_pem_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.consulTokenInput">consul_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headersInput">headers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.httpAuthInput">http_auth_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput">ignore_env_vars_input</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | *No description.* |
@@ -582,13 +543,11 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretIdInput">secret_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput">skip_verify_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.vaultTokenInput">vault_token_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.address">address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caFile">ca_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caPem">ca_pem</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certFile">cert_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certPem">cert_pem</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.consulToken">consul_token</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.httpAuth">http_auth</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars">ignore_env_vars</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | *No description.* |
@@ -597,7 +556,6 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretId">secret_id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify">skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.vaultToken">vault_token</a></code> | <code>str</code> | *No description.* |
 
 ---
 
@@ -753,16 +711,6 @@ cert_pem_input: str
 
 ---
 
-##### `consul_token_input`<sup>Optional</sup> <a name="consul_token_input" id="@cdktf/provider-nomad.provider.NomadProvider.property.consulTokenInput"></a>
-
-```python
-consul_token_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `headers_input`<sup>Optional</sup> <a name="headers_input" id="@cdktf/provider-nomad.provider.NomadProvider.property.headersInput"></a>
 
 ```python
@@ -843,16 +791,6 @@ skip_verify_input: typing.Union[bool, IResolvable]
 
 ---
 
-##### `vault_token_input`<sup>Optional</sup> <a name="vault_token_input" id="@cdktf/provider-nomad.provider.NomadProvider.property.vaultTokenInput"></a>
-
-```python
-vault_token_input: str
-```
-
-- *Type:* str
-
----
-
 ##### `address`<sup>Optional</sup> <a name="address" id="@cdktf/provider-nomad.provider.NomadProvider.property.address"></a>
 
 ```python
@@ -897,16 +835,6 @@ cert_file: str
 
 ```python
 cert_pem: str
-```
-
-- *Type:* str
-
----
-
-##### `consul_token`<sup>Optional</sup> <a name="consul_token" id="@cdktf/provider-nomad.provider.NomadProvider.property.consulToken"></a>
-
-```python
-consul_token: str
 ```
 
 - *Type:* str
@@ -993,16 +921,6 @@ skip_verify: typing.Union[bool, IResolvable]
 
 ---
 
-##### `vault_token`<sup>Optional</sup> <a name="vault_token" id="@cdktf/provider-nomad.provider.NomadProvider.property.vaultToken"></a>
-
-```python
-vault_token: str
-```
-
-- *Type:* str
-
----
-
 #### Constants <a name="Constants" id="Constants"></a>
 
 | **Name** | **Type** | **Description** |
@@ -1037,7 +955,6 @@ provider.NomadProviderConfig(
   ca_pem: str = None,
   cert_file: str = None,
   cert_pem: str = None,
-  consul_token: str = None,
   headers: typing.Union[IResolvable, typing.List[NomadProviderHeaders]] = None,
   http_auth: str = None,
   ignore_env_vars: typing.Mapping[typing.Union[bool, IResolvable]] = None,
@@ -1045,8 +962,7 @@ provider.NomadProviderConfig(
   key_pem: str = None,
   region: str = None,
   secret_id: str = None,
-  skip_verify: typing.Union[bool, IResolvable] = None,
-  vault_token: str = None
+  skip_verify: typing.Union[bool, IResolvable] = None
 )
 ```
 
@@ -1060,7 +976,6 @@ provider.NomadProviderConfig(
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.caPem">ca_pem</a></code> | <code>str</code> | PEM-encoded certificate authority used to verify the remote agent's certificate. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.certFile">cert_file</a></code> | <code>str</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.certPem">cert_pem</a></code> | <code>str</code> | PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.consulToken">consul_token</a></code> | <code>str</code> | Consul token to validate Consul Connect Service Identity policies specified in the job file. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]</code> | headers block. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.httpAuth">http_auth</a></code> | <code>str</code> | HTTP basic auth configuration. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars">ignore_env_vars</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
@@ -1069,7 +984,6 @@ provider.NomadProviderConfig(
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.region">region</a></code> | <code>str</code> | Region of the target Nomad agent. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.secretId">secret_id</a></code> | <code>str</code> | ACL token secret for API requests. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify">skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip TLS verification on client side. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.vaultToken">vault_token</a></code> | <code>str</code> | Vault token if policies are specified in the job file. |
 
 ---
 
@@ -1083,7 +997,7 @@ address: str
 
 URL of the root of the target Nomad agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#address NomadProvider#address}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#address NomadProvider#address}
 
 ---
 
@@ -1097,7 +1011,7 @@ alias: str
 
 Alias name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#alias NomadProvider#alias}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#alias NomadProvider#alias}
 
 ---
 
@@ -1111,7 +1025,7 @@ ca_file: str
 
 A path to a PEM-encoded certificate authority used to verify the remote agent's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#ca_file NomadProvider#ca_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#ca_file NomadProvider#ca_file}
 
 ---
 
@@ -1125,7 +1039,7 @@ ca_pem: str
 
 PEM-encoded certificate authority used to verify the remote agent's certificate.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#ca_pem NomadProvider#ca_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#ca_pem NomadProvider#ca_pem}
 
 ---
 
@@ -1139,7 +1053,7 @@ cert_file: str
 
 A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#cert_file NomadProvider#cert_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#cert_file NomadProvider#cert_file}
 
 ---
 
@@ -1153,21 +1067,7 @@ cert_pem: str
 
 PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#cert_pem NomadProvider#cert_pem}
-
----
-
-##### `consul_token`<sup>Optional</sup> <a name="consul_token" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.consulToken"></a>
-
-```python
-consul_token: str
-```
-
-- *Type:* str
-
-Consul token to validate Consul Connect Service Identity policies specified in the job file.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#consul_token NomadProvider#consul_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#cert_pem NomadProvider#cert_pem}
 
 ---
 
@@ -1181,7 +1081,7 @@ headers: typing.Union[IResolvable, typing.List[NomadProviderHeaders]]
 
 headers block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#headers NomadProvider#headers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#headers NomadProvider#headers}
 
 ---
 
@@ -1195,7 +1095,7 @@ http_auth: str
 
 HTTP basic auth configuration.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#http_auth NomadProvider#http_auth}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#http_auth NomadProvider#http_auth}
 
 ---
 
@@ -1209,7 +1109,7 @@ ignore_env_vars: typing.Mapping[typing.Union[bool, IResolvable]]
 
 A set of environment variables that are ignored by the provider when configuring the Nomad API client.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#ignore_env_vars NomadProvider#ignore_env_vars}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#ignore_env_vars NomadProvider#ignore_env_vars}
 
 ---
 
@@ -1223,7 +1123,7 @@ key_file: str
 
 A path to a PEM-encoded private key, required if cert_file or cert_pem is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#key_file NomadProvider#key_file}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#key_file NomadProvider#key_file}
 
 ---
 
@@ -1237,7 +1137,7 @@ key_pem: str
 
 PEM-encoded private key, required if cert_file or cert_pem is specified.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#key_pem NomadProvider#key_pem}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#key_pem NomadProvider#key_pem}
 
 ---
 
@@ -1251,7 +1151,7 @@ region: str
 
 Region of the target Nomad agent.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#region NomadProvider#region}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#region NomadProvider#region}
 
 ---
 
@@ -1265,7 +1165,7 @@ secret_id: str
 
 ACL token secret for API requests.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#secret_id NomadProvider#secret_id}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#secret_id NomadProvider#secret_id}
 
 ---
 
@@ -1279,21 +1179,7 @@ skip_verify: typing.Union[bool, IResolvable]
 
 Skip TLS verification on client side.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#skip_verify NomadProvider#skip_verify}
-
----
-
-##### `vault_token`<sup>Optional</sup> <a name="vault_token" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.vaultToken"></a>
-
-```python
-vault_token: str
-```
-
-- *Type:* str
-
-Vault token if policies are specified in the job file.
-
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#vault_token NomadProvider#vault_token}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#skip_verify NomadProvider#skip_verify}
 
 ---
 
@@ -1329,7 +1215,7 @@ name: str
 
 The header name.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#name NomadProvider#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#name NomadProvider#name}
 
 ---
 
@@ -1343,7 +1229,7 @@ value: str
 
 The header value.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs#value NomadProvider#value}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs#value NomadProvider#value}
 
 ---
 

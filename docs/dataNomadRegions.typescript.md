@@ -4,7 +4,7 @@
 
 ### DataNomadRegions <a name="DataNomadRegions" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/regions nomad_regions}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/data-sources/regions nomad_regions}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadRegions.DataNomadRegions.Initializer"></a>
 
@@ -372,7 +372,7 @@ The construct id used in the generated config for the DataNomadRegions to import
 
 The id of the existing DataNomadRegions that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/regions#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/data-sources/regions#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -599,7 +599,7 @@ const dataNomadRegionsConfig: dataNomadRegions.DataNomadRegionsConfig = { ... }
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.provisioners">provisioners</a></code> | <code>cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/regions#id DataNomadRegions#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadRegions.DataNomadRegionsConfig.property.id">id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/data-sources/regions#id DataNomadRegions#id}. |
 
 ---
 
@@ -681,7 +681,7 @@ public readonly id: string;
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/data-sources/regions#id DataNomadRegions#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/data-sources/regions#id DataNomadRegions#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.

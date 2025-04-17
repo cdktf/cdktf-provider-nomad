@@ -4,7 +4,7 @@
 
 ### NodePool <a name="NodePool" id="@cdktf/provider-nomad.nodePool.NodePool"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool nomad_node_pool}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool nomad_node_pool}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.nodePool.NodePool.Initializer"></a>
 
@@ -42,7 +42,7 @@ nodePool.NodePool(
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePool.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePool.Initializer.parameter.name">name</a></code> | <code>str</code> | Unique name for this node pool. |
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePool.Initializer.parameter.description">description</a></code> | <code>str</code> | Description for this node pool. |
-| <code><a href="#@cdktf/provider-nomad.nodePool.NodePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#id NodePool#id}. |
+| <code><a href="#@cdktf/provider-nomad.nodePool.NodePool.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#id NodePool#id}. |
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePool.Initializer.parameter.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Metadata associated with the node pool. |
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePool.Initializer.parameter.schedulerConfig">scheduler_config</a></code> | <code><a href="#@cdktf/provider-nomad.nodePool.NodePoolSchedulerConfig">NodePoolSchedulerConfig</a></code> | scheduler_config block. |
 
@@ -114,7 +114,7 @@ Must be unique amongst siblings in the same scope
 
 Unique name for this node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#name NodePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#name NodePool#name}
 
 ---
 
@@ -124,7 +124,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description for this node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#description NodePool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#description NodePool#description}
 
 ---
 
@@ -132,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#id NodePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#id NodePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -145,7 +145,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Metadata associated with the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#meta NodePool#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#meta NodePool#meta}
 
 ---
 
@@ -155,7 +155,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 scheduler_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#scheduler_config NodePool#scheduler_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#scheduler_config NodePool#scheduler_config}
 
 ---
 
@@ -534,7 +534,7 @@ def put_scheduler_config(
 
 If true, the node pool will have memory oversubscription enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#memory_oversubscription NodePool#memory_oversubscription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#memory_oversubscription NodePool#memory_oversubscription}
 
 ---
 
@@ -544,7 +544,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The scheduler algorithm to use in the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#scheduler_algorithm NodePool#scheduler_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#scheduler_algorithm NodePool#scheduler_algorithm}
 
 ---
 
@@ -686,7 +686,7 @@ The construct id used in the generated config for the NodePool to import.
 
 The id of the existing NodePool that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1027,7 +1027,7 @@ nodePool.NodePoolConfig(
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePoolConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePoolConfig.property.name">name</a></code> | <code>str</code> | Unique name for this node pool. |
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePoolConfig.property.description">description</a></code> | <code>str</code> | Description for this node pool. |
-| <code><a href="#@cdktf/provider-nomad.nodePool.NodePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#id NodePool#id}. |
+| <code><a href="#@cdktf/provider-nomad.nodePool.NodePoolConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#id NodePool#id}. |
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePoolConfig.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Metadata associated with the node pool. |
 | <code><a href="#@cdktf/provider-nomad.nodePool.NodePoolConfig.property.schedulerConfig">scheduler_config</a></code> | <code><a href="#@cdktf/provider-nomad.nodePool.NodePoolSchedulerConfig">NodePoolSchedulerConfig</a></code> | scheduler_config block. |
 
@@ -1113,7 +1113,7 @@ name: str
 
 Unique name for this node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#name NodePool#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#name NodePool#name}
 
 ---
 
@@ -1127,7 +1127,7 @@ description: str
 
 Description for this node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#description NodePool#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#description NodePool#description}
 
 ---
 
@@ -1139,7 +1139,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#id NodePool#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#id NodePool#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1156,7 +1156,7 @@ meta: typing.Mapping[str]
 
 Metadata associated with the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#meta NodePool#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#meta NodePool#meta}
 
 ---
 
@@ -1170,7 +1170,7 @@ scheduler_config: NodePoolSchedulerConfig
 
 scheduler_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#scheduler_config NodePool#scheduler_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#scheduler_config NodePool#scheduler_config}
 
 ---
 
@@ -1206,7 +1206,7 @@ memory_oversubscription: str
 
 If true, the node pool will have memory oversubscription enabled.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#memory_oversubscription NodePool#memory_oversubscription}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#memory_oversubscription NodePool#memory_oversubscription}
 
 ---
 
@@ -1220,7 +1220,7 @@ scheduler_algorithm: str
 
 The scheduler algorithm to use in the node pool.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/node_pool#scheduler_algorithm NodePool#scheduler_algorithm}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/node_pool#scheduler_algorithm NodePool#scheduler_algorithm}
 
 ---
 
