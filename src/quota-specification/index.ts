@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification
+// https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface QuotaSpecificationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this quota specification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification#description QuotaSpecification#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification#description QuotaSpecification#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification#id QuotaSpecification#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification#id QuotaSpecification#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,23 +23,23 @@ export interface QuotaSpecificationConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name for this quota specification.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification#name QuotaSpecification#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification#name QuotaSpecification#name}
   */
   readonly name: string;
   /**
   * limits block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification#limits QuotaSpecification#limits}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification#limits QuotaSpecification#limits}
   */
   readonly limits: QuotaSpecificationLimits[] | cdktf.IResolvable;
 }
 export interface QuotaSpecificationLimitsRegionLimit {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification#cpu QuotaSpecification#cpu}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification#cpu QuotaSpecification#cpu}
   */
   readonly cpu?: number;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification#memory_mb QuotaSpecification#memory_mb}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification#memory_mb QuotaSpecification#memory_mb}
   */
   readonly memoryMb?: number;
 }
@@ -159,13 +154,13 @@ export interface QuotaSpecificationLimits {
   /**
   * Region in which this limit has affect.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification#region QuotaSpecification#region}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification#region QuotaSpecification#region}
   */
   readonly region: string;
   /**
   * region_limit block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification#region_limit QuotaSpecification#region_limit}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification#region_limit QuotaSpecification#region_limit}
   */
   readonly regionLimit: QuotaSpecificationLimitsRegionLimit;
 }
@@ -304,7 +299,7 @@ export class QuotaSpecificationLimitsList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification nomad_quota_specification}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification nomad_quota_specification}
 */
 export class QuotaSpecification extends cdktf.TerraformResource {
 
@@ -320,7 +315,7 @@ export class QuotaSpecification extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a QuotaSpecification resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the QuotaSpecification to import
-  * @param importFromId The id of the existing QuotaSpecification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing QuotaSpecification that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the QuotaSpecification to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -332,7 +327,7 @@ export class QuotaSpecification extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/quota_specification nomad_quota_specification} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/quota_specification nomad_quota_specification} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -343,7 +338,7 @@ export class QuotaSpecification extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_quota_specification',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.4.0',
+        providerVersion: '2.5.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

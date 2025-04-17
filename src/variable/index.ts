@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/variable
+// https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/variable
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -13,7 +8,7 @@ import * as cdktf from 'cdktf';
 
 export interface VariableConfig extends cdktf.TerraformMetaArguments {
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/variable#id Variable#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/variable#id Variable#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -22,25 +17,25 @@ export interface VariableConfig extends cdktf.TerraformMetaArguments {
   /**
   * A map of strings to be added as items in the variable
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/variable#items Variable#items}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/variable#items Variable#items}
   */
   readonly items: { [key: string]: string };
   /**
   * Variable namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/variable#namespace Variable#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/variable#namespace Variable#namespace}
   */
   readonly namespace?: string;
   /**
   * The path at which the variable items will be stored, must be between 1 and 128 characters in length, be URL safe, and not include '@' or '.' characters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/variable#path Variable#path}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/variable#path Variable#path}
   */
   readonly path: string;
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/variable nomad_variable}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/variable nomad_variable}
 */
 export class Variable extends cdktf.TerraformResource {
 
@@ -56,7 +51,7 @@ export class Variable extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a Variable resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the Variable to import
-  * @param importFromId The id of the existing Variable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing Variable that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/variable#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the Variable to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -68,7 +63,7 @@ export class Variable extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/variable nomad_variable} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/variable nomad_variable} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -79,7 +74,7 @@ export class Variable extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_variable',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.4.0',
+        providerVersion: '2.5.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

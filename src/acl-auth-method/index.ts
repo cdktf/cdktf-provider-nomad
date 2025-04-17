@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method
+// https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface AclAuthMethodConfig extends cdktf.TerraformMetaArguments {
   /**
   * Defines whether this ACL Auth Method is to be set as default.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#default AclAuthMethod#default}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#default AclAuthMethod#default}
   */
   readonly default?: boolean | cdktf.IResolvable;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#id AclAuthMethod#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#id AclAuthMethod#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,149 +23,651 @@ export interface AclAuthMethodConfig extends cdktf.TerraformMetaArguments {
   /**
   * Defines the maximum life of a token created by this method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#max_token_ttl AclAuthMethod#max_token_ttl}
   */
   readonly maxTokenTtl: string;
   /**
   * The identifier of the ACL Auth Method.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#name AclAuthMethod#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#name AclAuthMethod#name}
   */
   readonly name: string;
   /**
   * Defines whether the ACL Auth Method creates a local or global token when performing SSO login. This field must be set to either "local" or "global".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#token_locality AclAuthMethod#token_locality}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#token_locality AclAuthMethod#token_locality}
   */
   readonly tokenLocality: string;
   /**
   * Defines the token format for the authenticated users. This can be lightly templated using HIL '${foo}' syntax.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#token_name_format AclAuthMethod#token_name_format}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#token_name_format AclAuthMethod#token_name_format}
   */
   readonly tokenNameFormat?: string;
   /**
   * ACL Auth Method SSO workflow type. Currently, the only supported type is "OIDC."
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#type AclAuthMethod#type}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#type AclAuthMethod#type}
   */
   readonly type: string;
   /**
   * config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#config AclAuthMethod#config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#config AclAuthMethod#config}
   */
   readonly config: AclAuthMethodConfigA;
+}
+export interface AclAuthMethodConfigOidcClientAssertionPrivateKey {
+  /**
+  * Specific 'kid' header to set on the JWT.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#key_id AclAuthMethod#key_id}
+  */
+  readonly keyId?: string;
+  /**
+  * Name of the header the IDP will use to find the cert to verify the JWT signature.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#key_id_header AclAuthMethod#key_id_header}
+  */
+  readonly keyIdHeader?: string;
+  /**
+  * An x509 certificate PEM to derive a key ID header.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#pem_cert AclAuthMethod#pem_cert}
+  */
+  readonly pemCert?: string;
+  /**
+  * Path to an x509 certificate PEM on Nomad servers to derive a key ID header.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#pem_cert_file AclAuthMethod#pem_cert_file}
+  */
+  readonly pemCertFile?: string;
+  /**
+  * RSA private key PEM to use to sign the JWT.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#pem_key AclAuthMethod#pem_key}
+  */
+  readonly pemKey?: string;
+  /**
+  * Path to an RSA private key PEM on Nomad servers to use to sign the JWT.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#pem_key_file AclAuthMethod#pem_key_file}
+  */
+  readonly pemKeyFile?: string;
+}
+
+export function aclAuthMethodConfigOidcClientAssertionPrivateKeyToTerraform(struct?: AclAuthMethodConfigOidcClientAssertionPrivateKeyOutputReference | AclAuthMethodConfigOidcClientAssertionPrivateKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    key_id: cdktf.stringToTerraform(struct!.keyId),
+    key_id_header: cdktf.stringToTerraform(struct!.keyIdHeader),
+    pem_cert: cdktf.stringToTerraform(struct!.pemCert),
+    pem_cert_file: cdktf.stringToTerraform(struct!.pemCertFile),
+    pem_key: cdktf.stringToTerraform(struct!.pemKey),
+    pem_key_file: cdktf.stringToTerraform(struct!.pemKeyFile),
+  }
+}
+
+
+export function aclAuthMethodConfigOidcClientAssertionPrivateKeyToHclTerraform(struct?: AclAuthMethodConfigOidcClientAssertionPrivateKeyOutputReference | AclAuthMethodConfigOidcClientAssertionPrivateKey): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    key_id: {
+      value: cdktf.stringToHclTerraform(struct!.keyId),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_id_header: {
+      value: cdktf.stringToHclTerraform(struct!.keyIdHeader),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pem_cert: {
+      value: cdktf.stringToHclTerraform(struct!.pemCert),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pem_cert_file: {
+      value: cdktf.stringToHclTerraform(struct!.pemCertFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pem_key: {
+      value: cdktf.stringToHclTerraform(struct!.pemKey),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    pem_key_file: {
+      value: cdktf.stringToHclTerraform(struct!.pemKeyFile),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AclAuthMethodConfigOidcClientAssertionPrivateKeyOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AclAuthMethodConfigOidcClientAssertionPrivateKey | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._keyId !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyId = this._keyId;
+    }
+    if (this._keyIdHeader !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyIdHeader = this._keyIdHeader;
+    }
+    if (this._pemCert !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pemCert = this._pemCert;
+    }
+    if (this._pemCertFile !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pemCertFile = this._pemCertFile;
+    }
+    if (this._pemKey !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pemKey = this._pemKey;
+    }
+    if (this._pemKeyFile !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.pemKeyFile = this._pemKeyFile;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AclAuthMethodConfigOidcClientAssertionPrivateKey | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._keyId = undefined;
+      this._keyIdHeader = undefined;
+      this._pemCert = undefined;
+      this._pemCertFile = undefined;
+      this._pemKey = undefined;
+      this._pemKeyFile = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._keyId = value.keyId;
+      this._keyIdHeader = value.keyIdHeader;
+      this._pemCert = value.pemCert;
+      this._pemCertFile = value.pemCertFile;
+      this._pemKey = value.pemKey;
+      this._pemKeyFile = value.pemKeyFile;
+    }
+  }
+
+  // key_id - computed: false, optional: true, required: false
+  private _keyId?: string; 
+  public get keyId() {
+    return this.getStringAttribute('key_id');
+  }
+  public set keyId(value: string) {
+    this._keyId = value;
+  }
+  public resetKeyId() {
+    this._keyId = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdInput() {
+    return this._keyId;
+  }
+
+  // key_id_header - computed: false, optional: true, required: false
+  private _keyIdHeader?: string; 
+  public get keyIdHeader() {
+    return this.getStringAttribute('key_id_header');
+  }
+  public set keyIdHeader(value: string) {
+    this._keyIdHeader = value;
+  }
+  public resetKeyIdHeader() {
+    this._keyIdHeader = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyIdHeaderInput() {
+    return this._keyIdHeader;
+  }
+
+  // pem_cert - computed: false, optional: true, required: false
+  private _pemCert?: string; 
+  public get pemCert() {
+    return this.getStringAttribute('pem_cert');
+  }
+  public set pemCert(value: string) {
+    this._pemCert = value;
+  }
+  public resetPemCert() {
+    this._pemCert = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pemCertInput() {
+    return this._pemCert;
+  }
+
+  // pem_cert_file - computed: false, optional: true, required: false
+  private _pemCertFile?: string; 
+  public get pemCertFile() {
+    return this.getStringAttribute('pem_cert_file');
+  }
+  public set pemCertFile(value: string) {
+    this._pemCertFile = value;
+  }
+  public resetPemCertFile() {
+    this._pemCertFile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pemCertFileInput() {
+    return this._pemCertFile;
+  }
+
+  // pem_key - computed: false, optional: true, required: false
+  private _pemKey?: string; 
+  public get pemKey() {
+    return this.getStringAttribute('pem_key');
+  }
+  public set pemKey(value: string) {
+    this._pemKey = value;
+  }
+  public resetPemKey() {
+    this._pemKey = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pemKeyInput() {
+    return this._pemKey;
+  }
+
+  // pem_key_file - computed: false, optional: true, required: false
+  private _pemKeyFile?: string; 
+  public get pemKeyFile() {
+    return this.getStringAttribute('pem_key_file');
+  }
+  public set pemKeyFile(value: string) {
+    this._pemKeyFile = value;
+  }
+  public resetPemKeyFile() {
+    this._pemKeyFile = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get pemKeyFileInput() {
+    return this._pemKeyFile;
+  }
+}
+export interface AclAuthMethodConfigOidcClientAssertion {
+  /**
+  * List of audiences to accept the JWT.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#audience AclAuthMethod#audience}
+  */
+  readonly audience?: string[];
+  /**
+  * Additional headers to include on the JWT.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#extra_headers AclAuthMethod#extra_headers}
+  */
+  readonly extraHeaders?: { [key: string]: string };
+  /**
+  * Algorithm of the key used to sign the JWT.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#key_algorithm AclAuthMethod#key_algorithm}
+  */
+  readonly keyAlgorithm?: string;
+  /**
+  * The source of the key Nomad will use to sign the JWT.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#key_source AclAuthMethod#key_source}
+  */
+  readonly keySource: string;
+  /**
+  * private_key block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#private_key AclAuthMethod#private_key}
+  */
+  readonly privateKey?: AclAuthMethodConfigOidcClientAssertionPrivateKey;
+}
+
+export function aclAuthMethodConfigOidcClientAssertionToTerraform(struct?: AclAuthMethodConfigOidcClientAssertionOutputReference | AclAuthMethodConfigOidcClientAssertion): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  return {
+    audience: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.audience),
+    extra_headers: cdktf.hashMapper(cdktf.stringToTerraform)(struct!.extraHeaders),
+    key_algorithm: cdktf.stringToTerraform(struct!.keyAlgorithm),
+    key_source: cdktf.stringToTerraform(struct!.keySource),
+    private_key: aclAuthMethodConfigOidcClientAssertionPrivateKeyToTerraform(struct!.privateKey),
+  }
+}
+
+
+export function aclAuthMethodConfigOidcClientAssertionToHclTerraform(struct?: AclAuthMethodConfigOidcClientAssertionOutputReference | AclAuthMethodConfigOidcClientAssertion): any {
+  if (!cdktf.canInspect(struct) || cdktf.Tokenization.isResolvable(struct)) { return struct; }
+  if (cdktf.isComplexElement(struct)) {
+    throw new Error("A complex element was used as configuration, this is not supported: https://cdk.tf/complex-object-as-configuration");
+  }
+  const attrs = {
+    audience: {
+      value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.audience),
+      isBlock: false,
+      type: "list",
+      storageClassType: "stringList",
+    },
+    extra_headers: {
+      value: cdktf.hashMapperHcl(cdktf.stringToHclTerraform)(struct!.extraHeaders),
+      isBlock: false,
+      type: "map",
+      storageClassType: "stringMap",
+    },
+    key_algorithm: {
+      value: cdktf.stringToHclTerraform(struct!.keyAlgorithm),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    key_source: {
+      value: cdktf.stringToHclTerraform(struct!.keySource),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "string",
+    },
+    private_key: {
+      value: aclAuthMethodConfigOidcClientAssertionPrivateKeyToHclTerraform(struct!.privateKey),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AclAuthMethodConfigOidcClientAssertionPrivateKeyList",
+    },
+  };
+
+  // remove undefined attributes
+  return Object.fromEntries(Object.entries(attrs).filter(([_, value]) => value !== undefined && value.value !== undefined));
+}
+
+export class AclAuthMethodConfigOidcClientAssertionOutputReference extends cdktf.ComplexObject {
+  private isEmptyObject = false;
+
+  /**
+  * @param terraformResource The parent resource
+  * @param terraformAttribute The attribute on the parent resource this class is referencing
+  */
+  public constructor(terraformResource: cdktf.IInterpolatingParent, terraformAttribute: string) {
+    super(terraformResource, terraformAttribute, false, 0);
+  }
+
+  public get internalValue(): AclAuthMethodConfigOidcClientAssertion | undefined {
+    let hasAnyValues = this.isEmptyObject;
+    const internalValueResult: any = {};
+    if (this._audience !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.audience = this._audience;
+    }
+    if (this._extraHeaders !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.extraHeaders = this._extraHeaders;
+    }
+    if (this._keyAlgorithm !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keyAlgorithm = this._keyAlgorithm;
+    }
+    if (this._keySource !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.keySource = this._keySource;
+    }
+    if (this._privateKey?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.privateKey = this._privateKey?.internalValue;
+    }
+    return hasAnyValues ? internalValueResult : undefined;
+  }
+
+  public set internalValue(value: AclAuthMethodConfigOidcClientAssertion | undefined) {
+    if (value === undefined) {
+      this.isEmptyObject = false;
+      this._audience = undefined;
+      this._extraHeaders = undefined;
+      this._keyAlgorithm = undefined;
+      this._keySource = undefined;
+      this._privateKey.internalValue = undefined;
+    }
+    else {
+      this.isEmptyObject = Object.keys(value).length === 0;
+      this._audience = value.audience;
+      this._extraHeaders = value.extraHeaders;
+      this._keyAlgorithm = value.keyAlgorithm;
+      this._keySource = value.keySource;
+      this._privateKey.internalValue = value.privateKey;
+    }
+  }
+
+  // audience - computed: true, optional: true, required: false
+  private _audience?: string[]; 
+  public get audience() {
+    return this.getListAttribute('audience');
+  }
+  public set audience(value: string[]) {
+    this._audience = value;
+  }
+  public resetAudience() {
+    this._audience = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get audienceInput() {
+    return this._audience;
+  }
+
+  // extra_headers - computed: false, optional: true, required: false
+  private _extraHeaders?: { [key: string]: string }; 
+  public get extraHeaders() {
+    return this.getStringMapAttribute('extra_headers');
+  }
+  public set extraHeaders(value: { [key: string]: string }) {
+    this._extraHeaders = value;
+  }
+  public resetExtraHeaders() {
+    this._extraHeaders = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get extraHeadersInput() {
+    return this._extraHeaders;
+  }
+
+  // key_algorithm - computed: true, optional: true, required: false
+  private _keyAlgorithm?: string; 
+  public get keyAlgorithm() {
+    return this.getStringAttribute('key_algorithm');
+  }
+  public set keyAlgorithm(value: string) {
+    this._keyAlgorithm = value;
+  }
+  public resetKeyAlgorithm() {
+    this._keyAlgorithm = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keyAlgorithmInput() {
+    return this._keyAlgorithm;
+  }
+
+  // key_source - computed: false, optional: false, required: true
+  private _keySource?: string; 
+  public get keySource() {
+    return this.getStringAttribute('key_source');
+  }
+  public set keySource(value: string) {
+    this._keySource = value;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get keySourceInput() {
+    return this._keySource;
+  }
+
+  // private_key - computed: false, optional: true, required: false
+  private _privateKey = new AclAuthMethodConfigOidcClientAssertionPrivateKeyOutputReference(this, "private_key");
+  public get privateKey() {
+    return this._privateKey;
+  }
+  public putPrivateKey(value: AclAuthMethodConfigOidcClientAssertionPrivateKey) {
+    this._privateKey.internalValue = value;
+  }
+  public resetPrivateKey() {
+    this._privateKey.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get privateKeyInput() {
+    return this._privateKey.internalValue;
+  }
 }
 export interface AclAuthMethodConfigA {
   /**
   * A list of allowed values that can be used for the redirect URI.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#allowed_redirect_uris AclAuthMethod#allowed_redirect_uris}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#allowed_redirect_uris AclAuthMethod#allowed_redirect_uris}
   */
   readonly allowedRedirectUris?: string[];
   /**
   * List of auth claims that are valid for login.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#bound_audiences AclAuthMethod#bound_audiences}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#bound_audiences AclAuthMethod#bound_audiences}
   */
   readonly boundAudiences?: string[];
   /**
   * The value against which to match the iss claim in a JWT.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#bound_issuer AclAuthMethod#bound_issuer}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#bound_issuer AclAuthMethod#bound_issuer}
   */
   readonly boundIssuer?: string[];
   /**
   * Mappings of claims (key) that will be copied to a metadata field (value).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#claim_mappings AclAuthMethod#claim_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#claim_mappings AclAuthMethod#claim_mappings}
   */
   readonly claimMappings?: { [key: string]: string };
   /**
   * Duration of leeway when validating all claims in the form of a time duration such as "5m" or "1h".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#clock_skew_leeway AclAuthMethod#clock_skew_leeway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#clock_skew_leeway AclAuthMethod#clock_skew_leeway}
   */
   readonly clockSkewLeeway?: string;
   /**
   * PEM encoded CA certs for use by the TLS client used to talk with the OIDC Discovery URL.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#discovery_ca_pem AclAuthMethod#discovery_ca_pem}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#discovery_ca_pem AclAuthMethod#discovery_ca_pem}
   */
   readonly discoveryCaPem?: string[];
   /**
   * Duration of leeway when validating expiration of a JWT in the form of a time duration such as "5m" or "1h".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#expiration_leeway AclAuthMethod#expiration_leeway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#expiration_leeway AclAuthMethod#expiration_leeway}
   */
   readonly expirationLeeway?: string;
   /**
   * PEM encoded CA cert for use by the TLS client used to talk with the JWKS server.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#jwks_ca_cert AclAuthMethod#jwks_ca_cert}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#jwks_ca_cert AclAuthMethod#jwks_ca_cert}
   */
   readonly jwksCaCert?: string;
   /**
   * JSON Web Key Sets url for authenticating signatures.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#jwks_url AclAuthMethod#jwks_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#jwks_url AclAuthMethod#jwks_url}
   */
   readonly jwksUrl?: string;
   /**
   * List of PEM-encoded public keys to use to authenticate signatures locally.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#jwt_validation_pub_keys AclAuthMethod#jwt_validation_pub_keys}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#jwt_validation_pub_keys AclAuthMethod#jwt_validation_pub_keys}
   */
   readonly jwtValidationPubKeys?: string[];
   /**
   * Mappings of list claims (key) that will be copied to a metadata field (value).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#list_claim_mappings AclAuthMethod#list_claim_mappings}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#list_claim_mappings AclAuthMethod#list_claim_mappings}
   */
   readonly listClaimMappings?: { [key: string]: string };
   /**
   * Duration of leeway when validating not before values of a token in the form of a time duration such as "5m" or "1h".
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#not_before_leeway AclAuthMethod#not_before_leeway}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#not_before_leeway AclAuthMethod#not_before_leeway}
   */
   readonly notBeforeLeeway?: string;
   /**
   * The OAuth Client ID configured with the OIDC provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#oidc_client_id AclAuthMethod#oidc_client_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#oidc_client_id AclAuthMethod#oidc_client_id}
   */
   readonly oidcClientId?: string;
   /**
   * The OAuth Client Secret configured with the OIDC provider.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#oidc_client_secret AclAuthMethod#oidc_client_secret}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#oidc_client_secret AclAuthMethod#oidc_client_secret}
   */
   readonly oidcClientSecret?: string;
   /**
   * Nomad will not make a request to the identity provider to get OIDC UserInfo.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#oidc_disable_userinfo AclAuthMethod#oidc_disable_userinfo}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#oidc_disable_userinfo AclAuthMethod#oidc_disable_userinfo}
   */
   readonly oidcDisableUserinfo?: boolean | cdktf.IResolvable;
   /**
   * The OIDC Discovery URL, without any .well-known component (base path).
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#oidc_discovery_url AclAuthMethod#oidc_discovery_url}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#oidc_discovery_url AclAuthMethod#oidc_discovery_url}
   */
   readonly oidcDiscoveryUrl?: string;
   /**
+  * Nomad include PKCE challenge in OIDC auth requests.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#oidc_enable_pkce AclAuthMethod#oidc_enable_pkce}
+  */
+  readonly oidcEnablePkce?: boolean | cdktf.IResolvable;
+  /**
   * List of OIDC scopes.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#oidc_scopes AclAuthMethod#oidc_scopes}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#oidc_scopes AclAuthMethod#oidc_scopes}
   */
   readonly oidcScopes?: string[];
   /**
   * A list of supported signing algorithms.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#signing_algs AclAuthMethod#signing_algs}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#signing_algs AclAuthMethod#signing_algs}
   */
   readonly signingAlgs?: string[];
+  /**
+  * Enable OIDC verbose logging on the Nomad server.
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#verbose_logging AclAuthMethod#verbose_logging}
+  */
+  readonly verboseLogging?: boolean | cdktf.IResolvable;
+  /**
+  * oidc_client_assertion block
+  *
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#oidc_client_assertion AclAuthMethod#oidc_client_assertion}
+  */
+  readonly oidcClientAssertion?: AclAuthMethodConfigOidcClientAssertion;
 }
 
 export function aclAuthMethodConfigAToTerraform(struct?: AclAuthMethodConfigAOutputReference | AclAuthMethodConfigA): any {
@@ -195,8 +692,11 @@ export function aclAuthMethodConfigAToTerraform(struct?: AclAuthMethodConfigAOut
     oidc_client_secret: cdktf.stringToTerraform(struct!.oidcClientSecret),
     oidc_disable_userinfo: cdktf.booleanToTerraform(struct!.oidcDisableUserinfo),
     oidc_discovery_url: cdktf.stringToTerraform(struct!.oidcDiscoveryUrl),
+    oidc_enable_pkce: cdktf.booleanToTerraform(struct!.oidcEnablePkce),
     oidc_scopes: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.oidcScopes),
     signing_algs: cdktf.listMapper(cdktf.stringToTerraform, false)(struct!.signingAlgs),
+    verbose_logging: cdktf.booleanToTerraform(struct!.verboseLogging),
+    oidc_client_assertion: aclAuthMethodConfigOidcClientAssertionToTerraform(struct!.oidcClientAssertion),
   }
 }
 
@@ -303,6 +803,12 @@ export function aclAuthMethodConfigAToHclTerraform(struct?: AclAuthMethodConfigA
       type: "simple",
       storageClassType: "string",
     },
+    oidc_enable_pkce: {
+      value: cdktf.booleanToHclTerraform(struct!.oidcEnablePkce),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
     oidc_scopes: {
       value: cdktf.listMapperHcl(cdktf.stringToHclTerraform, false)(struct!.oidcScopes),
       isBlock: false,
@@ -314,6 +820,18 @@ export function aclAuthMethodConfigAToHclTerraform(struct?: AclAuthMethodConfigA
       isBlock: false,
       type: "list",
       storageClassType: "stringList",
+    },
+    verbose_logging: {
+      value: cdktf.booleanToHclTerraform(struct!.verboseLogging),
+      isBlock: false,
+      type: "simple",
+      storageClassType: "boolean",
+    },
+    oidc_client_assertion: {
+      value: aclAuthMethodConfigOidcClientAssertionToHclTerraform(struct!.oidcClientAssertion),
+      isBlock: true,
+      type: "list",
+      storageClassType: "AclAuthMethodConfigOidcClientAssertionList",
     },
   };
 
@@ -399,6 +917,10 @@ export class AclAuthMethodConfigAOutputReference extends cdktf.ComplexObject {
       hasAnyValues = true;
       internalValueResult.oidcDiscoveryUrl = this._oidcDiscoveryUrl;
     }
+    if (this._oidcEnablePkce !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oidcEnablePkce = this._oidcEnablePkce;
+    }
     if (this._oidcScopes !== undefined) {
       hasAnyValues = true;
       internalValueResult.oidcScopes = this._oidcScopes;
@@ -406,6 +928,14 @@ export class AclAuthMethodConfigAOutputReference extends cdktf.ComplexObject {
     if (this._signingAlgs !== undefined) {
       hasAnyValues = true;
       internalValueResult.signingAlgs = this._signingAlgs;
+    }
+    if (this._verboseLogging !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.verboseLogging = this._verboseLogging;
+    }
+    if (this._oidcClientAssertion?.internalValue !== undefined) {
+      hasAnyValues = true;
+      internalValueResult.oidcClientAssertion = this._oidcClientAssertion?.internalValue;
     }
     return hasAnyValues ? internalValueResult : undefined;
   }
@@ -429,8 +959,11 @@ export class AclAuthMethodConfigAOutputReference extends cdktf.ComplexObject {
       this._oidcClientSecret = undefined;
       this._oidcDisableUserinfo = undefined;
       this._oidcDiscoveryUrl = undefined;
+      this._oidcEnablePkce = undefined;
       this._oidcScopes = undefined;
       this._signingAlgs = undefined;
+      this._verboseLogging = undefined;
+      this._oidcClientAssertion.internalValue = undefined;
     }
     else {
       this.isEmptyObject = Object.keys(value).length === 0;
@@ -450,8 +983,11 @@ export class AclAuthMethodConfigAOutputReference extends cdktf.ComplexObject {
       this._oidcClientSecret = value.oidcClientSecret;
       this._oidcDisableUserinfo = value.oidcDisableUserinfo;
       this._oidcDiscoveryUrl = value.oidcDiscoveryUrl;
+      this._oidcEnablePkce = value.oidcEnablePkce;
       this._oidcScopes = value.oidcScopes;
       this._signingAlgs = value.signingAlgs;
+      this._verboseLogging = value.verboseLogging;
+      this._oidcClientAssertion.internalValue = value.oidcClientAssertion;
     }
   }
 
@@ -711,6 +1247,22 @@ export class AclAuthMethodConfigAOutputReference extends cdktf.ComplexObject {
     return this._oidcDiscoveryUrl;
   }
 
+  // oidc_enable_pkce - computed: false, optional: true, required: false
+  private _oidcEnablePkce?: boolean | cdktf.IResolvable; 
+  public get oidcEnablePkce() {
+    return this.getBooleanAttribute('oidc_enable_pkce');
+  }
+  public set oidcEnablePkce(value: boolean | cdktf.IResolvable) {
+    this._oidcEnablePkce = value;
+  }
+  public resetOidcEnablePkce() {
+    this._oidcEnablePkce = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oidcEnablePkceInput() {
+    return this._oidcEnablePkce;
+  }
+
   // oidc_scopes - computed: false, optional: true, required: false
   private _oidcScopes?: string[]; 
   public get oidcScopes() {
@@ -742,10 +1294,42 @@ export class AclAuthMethodConfigAOutputReference extends cdktf.ComplexObject {
   public get signingAlgsInput() {
     return this._signingAlgs;
   }
+
+  // verbose_logging - computed: false, optional: true, required: false
+  private _verboseLogging?: boolean | cdktf.IResolvable; 
+  public get verboseLogging() {
+    return this.getBooleanAttribute('verbose_logging');
+  }
+  public set verboseLogging(value: boolean | cdktf.IResolvable) {
+    this._verboseLogging = value;
+  }
+  public resetVerboseLogging() {
+    this._verboseLogging = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get verboseLoggingInput() {
+    return this._verboseLogging;
+  }
+
+  // oidc_client_assertion - computed: false, optional: true, required: false
+  private _oidcClientAssertion = new AclAuthMethodConfigOidcClientAssertionOutputReference(this, "oidc_client_assertion");
+  public get oidcClientAssertion() {
+    return this._oidcClientAssertion;
+  }
+  public putOidcClientAssertion(value: AclAuthMethodConfigOidcClientAssertion) {
+    this._oidcClientAssertion.internalValue = value;
+  }
+  public resetOidcClientAssertion() {
+    this._oidcClientAssertion.internalValue = undefined;
+  }
+  // Temporarily expose input value. Use with caution.
+  public get oidcClientAssertionInput() {
+    return this._oidcClientAssertion.internalValue;
+  }
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method nomad_acl_auth_method}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method nomad_acl_auth_method}
 */
 export class AclAuthMethod extends cdktf.TerraformResource {
 
@@ -761,7 +1345,7 @@ export class AclAuthMethod extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AclAuthMethod resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AclAuthMethod to import
-  * @param importFromId The id of the existing AclAuthMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AclAuthMethod that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AclAuthMethod to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -773,7 +1357,7 @@ export class AclAuthMethod extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_auth_method nomad_acl_auth_method} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_auth_method nomad_acl_auth_method} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -784,7 +1368,7 @@ export class AclAuthMethod extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_acl_auth_method',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.4.0',
+        providerVersion: '2.5.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

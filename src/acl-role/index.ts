@@ -1,9 +1,4 @@
-/**
- * Copyright (c) HashiCorp, Inc.
- * SPDX-License-Identifier: MPL-2.0
- */
-
-// https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_role
+// https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_role
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +10,11 @@ export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this ACL role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_role#description AclRole#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_role#description AclRole#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_role#id AclRole#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_role#id AclRole#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,13 +23,13 @@ export interface AclRoleConfig extends cdktf.TerraformMetaArguments {
   /**
   * Unique name for this ACL role.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_role#name AclRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_role#name AclRole#name}
   */
   readonly name: string;
   /**
   * policy block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_role#policy AclRole#policy}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_role#policy AclRole#policy}
   */
   readonly policy: AclRolePolicy[] | cdktf.IResolvable;
 }
@@ -42,7 +37,7 @@ export interface AclRolePolicy {
   /**
   * The name of the ACL policy to link.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_role#name AclRole#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_role#name AclRole#name}
   */
   readonly name: string;
 }
@@ -155,7 +150,7 @@ export class AclRolePolicyList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_role nomad_acl_role}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_role nomad_acl_role}
 */
 export class AclRole extends cdktf.TerraformResource {
 
@@ -171,7 +166,7 @@ export class AclRole extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a AclRole resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the AclRole to import
-  * @param importFromId The id of the existing AclRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_role#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing AclRole that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_role#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the AclRole to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -183,7 +178,7 @@ export class AclRole extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.4.0/docs/resources/acl_role nomad_acl_role} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/acl_role nomad_acl_role} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -194,7 +189,7 @@ export class AclRole extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_acl_role',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.4.0',
+        providerVersion: '2.5.0',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,
