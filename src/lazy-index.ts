@@ -11,6 +11,8 @@ Object.defineProperty(exports, 'aclRole', { get: function () { return require('.
 Object.defineProperty(exports, 'aclToken', { get: function () { return require('./acl-token'); } });
 Object.defineProperty(exports, 'csiVolume', { get: function () { return require('./csi-volume'); } });
 Object.defineProperty(exports, 'csiVolumeRegistration', { get: function () { return require('./csi-volume-registration'); } });
+Object.defineProperty(exports, 'dynamicHostVolume', { get: function () { return require('./dynamic-host-volume'); } });
+Object.defineProperty(exports, 'dynamicHostVolumeRegistration', { get: function () { return require('./dynamic-host-volume-registration'); } });
 Object.defineProperty(exports, 'externalVolume', { get: function () { return require('./external-volume'); } });
 Object.defineProperty(exports, 'job', { get: function () { return require('./job'); } });
 Object.defineProperty(exports, 'namespace', { get: function () { return require('./namespace'); } });
@@ -29,6 +31,7 @@ Object.defineProperty(exports, 'dataNomadAclTokens', { get: function () { return
 Object.defineProperty(exports, 'dataNomadAllocations', { get: function () { return require('./data-nomad-allocations'); } });
 Object.defineProperty(exports, 'dataNomadDatacenters', { get: function () { return require('./data-nomad-datacenters'); } });
 Object.defineProperty(exports, 'dataNomadDeployments', { get: function () { return require('./data-nomad-deployments'); } });
+Object.defineProperty(exports, 'dataNomadDynamicHostVolume', { get: function () { return require('./data-nomad-dynamic-host-volume'); } });
 Object.defineProperty(exports, 'dataNomadJob', { get: function () { return require('./data-nomad-job'); } });
 Object.defineProperty(exports, 'dataNomadJobParser', { get: function () { return require('./data-nomad-job-parser'); } });
 Object.defineProperty(exports, 'dataNomadJwks', { get: function () { return require('./data-nomad-jwks'); } });
