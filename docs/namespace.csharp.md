@@ -4,7 +4,7 @@
 
 ### Namespace <a name="Namespace" id="@cdktf/provider-nomad.namespace.Namespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace nomad_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace nomad_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.namespace.Namespace.Initializer"></a>
 
@@ -535,7 +535,7 @@ The construct id used in the generated config for the Namespace to import.
 
 The id of the existing Namespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -892,7 +892,9 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Nomad;
 
 new NamespaceCapabilities {
+    string[] DisabledNetworkModes = null,
     string[] DisabledTaskDrivers = null,
+    string[] EnabledNetworkModes = null,
     string[] EnabledTaskDrivers = null
 };
 ```
@@ -901,8 +903,24 @@ new NamespaceCapabilities {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.disabledNetworkModes">DisabledNetworkModes</a></code> | <code>string[]</code> | Disabled network modes for the namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.disabledTaskDrivers">DisabledTaskDrivers</a></code> | <code>string[]</code> | Disabled task drivers for the namespace. |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.enabledNetworkModes">EnabledNetworkModes</a></code> | <code>string[]</code> | Enabled network modes for the namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.enabledTaskDrivers">EnabledTaskDrivers</a></code> | <code>string[]</code> | Enabled task drivers for the namespace. |
+
+---
+
+##### `DisabledNetworkModes`<sup>Optional</sup> <a name="DisabledNetworkModes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.disabledNetworkModes"></a>
+
+```csharp
+public string[] DisabledNetworkModes { get; set; }
+```
+
+- *Type:* string[]
+
+Disabled network modes for the namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#disabled_network_modes Namespace#disabled_network_modes}
 
 ---
 
@@ -916,7 +934,21 @@ public string[] DisabledTaskDrivers { get; set; }
 
 Disabled task drivers for the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
+
+---
+
+##### `EnabledNetworkModes`<sup>Optional</sup> <a name="EnabledNetworkModes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.enabledNetworkModes"></a>
+
+```csharp
+public string[] EnabledNetworkModes { get; set; }
+```
+
+- *Type:* string[]
+
+Enabled network modes for the namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#enabled_network_modes Namespace#enabled_network_modes}
 
 ---
 
@@ -930,7 +962,7 @@ public string[] EnabledTaskDrivers { get; set; }
 
 Enabled task drivers for the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
 
 ---
 
@@ -973,7 +1005,7 @@ new NamespaceConfig {
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.name">Name</a></code> | <code>string</code> | Unique name for this namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.capabilities">Capabilities</a></code> | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities">NamespaceCapabilities</a></code> | capabilities block. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.description">Description</a></code> | <code>string</code> | Description for this namespace. |
-| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#id Namespace#id}. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.meta">Meta</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Metadata associated with the namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.nodePoolConfig">NodePoolConfig</a></code> | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceNodePoolConfig">NamespaceNodePoolConfig</a></code> | node_pool_config block. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.quota">Quota</a></code> | <code>string</code> | Quota to set for this namespace. |
@@ -1060,7 +1092,7 @@ public string Name { get; set; }
 
 Unique name for this namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#name Namespace#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#name Namespace#name}
 
 ---
 
@@ -1074,7 +1106,7 @@ public NamespaceCapabilities Capabilities { get; set; }
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#capabilities Namespace#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#capabilities Namespace#capabilities}
 
 ---
 
@@ -1088,7 +1120,7 @@ public string Description { get; set; }
 
 Description for this namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#description Namespace#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#description Namespace#description}
 
 ---
 
@@ -1100,7 +1132,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1117,7 +1149,7 @@ public System.Collections.Generic.IDictionary<string, string> Meta { get; set; }
 
 Metadata associated with the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#meta Namespace#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#meta Namespace#meta}
 
 ---
 
@@ -1131,7 +1163,7 @@ public NamespaceNodePoolConfig NodePoolConfig { get; set; }
 
 node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#node_pool_config Namespace#node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#node_pool_config Namespace#node_pool_config}
 
 ---
 
@@ -1145,7 +1177,7 @@ public string Quota { get; set; }
 
 Quota to set for this namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#quota Namespace#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#quota Namespace#quota}
 
 ---
 
@@ -1183,7 +1215,7 @@ public string[] Allowed { get; set; }
 
 The list of node pools allowed to be used in this namespace. Cannot be used with denied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#allowed Namespace#allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#allowed Namespace#allowed}
 
 ---
 
@@ -1197,7 +1229,7 @@ public string Default { get; set; }
 
 The node pool to use when none are specified in the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#default Namespace#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#default Namespace#default}
 
 ---
 
@@ -1211,7 +1243,7 @@ public string[] Denied { get; set; }
 
 The list of node pools not allowed to be used in this namespace. Cannot be used with allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#denied Namespace#denied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#denied Namespace#denied}
 
 ---
 
@@ -1267,7 +1299,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.interpolationForAttribute">InterpolationForAttribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resolve">Resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.toString">ToString</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetDisabledNetworkModes">ResetDisabledNetworkModes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetDisabledTaskDrivers">ResetDisabledTaskDrivers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetEnabledNetworkModes">ResetEnabledNetworkModes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetEnabledTaskDrivers">ResetEnabledTaskDrivers</a></code> | *No description.* |
 
 ---
@@ -1422,10 +1456,22 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `ResetDisabledNetworkModes` <a name="ResetDisabledNetworkModes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetDisabledNetworkModes"></a>
+
+```csharp
+private void ResetDisabledNetworkModes()
+```
+
 ##### `ResetDisabledTaskDrivers` <a name="ResetDisabledTaskDrivers" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetDisabledTaskDrivers"></a>
 
 ```csharp
 private void ResetDisabledTaskDrivers()
+```
+
+##### `ResetEnabledNetworkModes` <a name="ResetEnabledNetworkModes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetEnabledNetworkModes"></a>
+
+```csharp
+private void ResetEnabledNetworkModes()
 ```
 
 ##### `ResetEnabledTaskDrivers` <a name="ResetEnabledTaskDrivers" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetEnabledTaskDrivers"></a>
@@ -1441,9 +1487,13 @@ private void ResetEnabledTaskDrivers()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledNetworkModesInput">DisabledNetworkModesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledTaskDriversInput">DisabledTaskDriversInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledNetworkModesInput">EnabledNetworkModesInput</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledTaskDriversInput">EnabledTaskDriversInput</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledNetworkModes">DisabledNetworkModes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledTaskDrivers">DisabledTaskDrivers</a></code> | <code>string[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledNetworkModes">EnabledNetworkModes</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledTaskDrivers">EnabledTaskDrivers</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities">NamespaceCapabilities</a></code> | *No description.* |
 
@@ -1473,10 +1523,30 @@ public string Fqn { get; }
 
 ---
 
+##### `DisabledNetworkModesInput`<sup>Optional</sup> <a name="DisabledNetworkModesInput" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledNetworkModesInput"></a>
+
+```csharp
+public string[] DisabledNetworkModesInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `DisabledTaskDriversInput`<sup>Optional</sup> <a name="DisabledTaskDriversInput" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledTaskDriversInput"></a>
 
 ```csharp
 public string[] DisabledTaskDriversInput { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `EnabledNetworkModesInput`<sup>Optional</sup> <a name="EnabledNetworkModesInput" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledNetworkModesInput"></a>
+
+```csharp
+public string[] EnabledNetworkModesInput { get; }
 ```
 
 - *Type:* string[]
@@ -1493,10 +1563,30 @@ public string[] EnabledTaskDriversInput { get; }
 
 ---
 
+##### `DisabledNetworkModes`<sup>Required</sup> <a name="DisabledNetworkModes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledNetworkModes"></a>
+
+```csharp
+public string[] DisabledNetworkModes { get; }
+```
+
+- *Type:* string[]
+
+---
+
 ##### `DisabledTaskDrivers`<sup>Required</sup> <a name="DisabledTaskDrivers" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledTaskDrivers"></a>
 
 ```csharp
 public string[] DisabledTaskDrivers { get; }
+```
+
+- *Type:* string[]
+
+---
+
+##### `EnabledNetworkModes`<sup>Required</sup> <a name="EnabledNetworkModes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledNetworkModes"></a>
+
+```csharp
+public string[] EnabledNetworkModes { get; }
 ```
 
 - *Type:* string[]
