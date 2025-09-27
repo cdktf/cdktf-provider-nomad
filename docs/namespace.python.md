@@ -4,7 +4,7 @@
 
 ### Namespace <a name="Namespace" id="@cdktf/provider-nomad.namespace.Namespace"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace nomad_namespace}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace nomad_namespace}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.namespace.Namespace.Initializer"></a>
 
@@ -45,7 +45,7 @@ namespace.Namespace(
 | <code><a href="#@cdktf/provider-nomad.namespace.Namespace.Initializer.parameter.name">name</a></code> | <code>str</code> | Unique name for this namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.Namespace.Initializer.parameter.capabilities">capabilities</a></code> | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities">NamespaceCapabilities</a></code> | capabilities block. |
 | <code><a href="#@cdktf/provider-nomad.namespace.Namespace.Initializer.parameter.description">description</a></code> | <code>str</code> | Description for this namespace. |
-| <code><a href="#@cdktf/provider-nomad.namespace.Namespace.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-nomad.namespace.Namespace.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#id Namespace#id}. |
 | <code><a href="#@cdktf/provider-nomad.namespace.Namespace.Initializer.parameter.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Metadata associated with the namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.Namespace.Initializer.parameter.nodePoolConfig">node_pool_config</a></code> | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceNodePoolConfig">NamespaceNodePoolConfig</a></code> | node_pool_config block. |
 | <code><a href="#@cdktf/provider-nomad.namespace.Namespace.Initializer.parameter.quota">quota</a></code> | <code>str</code> | Quota to set for this namespace. |
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 Unique name for this namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#name Namespace#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#name Namespace#name}
 
 ---
 
@@ -128,7 +128,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#capabilities Namespace#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#capabilities Namespace#capabilities}
 
 ---
 
@@ -138,7 +138,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Description for this namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#description Namespace#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#description Namespace#description}
 
 ---
 
@@ -146,7 +146,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -159,7 +159,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 Metadata associated with the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#meta Namespace#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#meta Namespace#meta}
 
 ---
 
@@ -169,7 +169,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#node_pool_config Namespace#node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#node_pool_config Namespace#node_pool_config}
 
 ---
 
@@ -179,7 +179,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Quota to set for this namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#quota Namespace#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#quota Namespace#quota}
 
 ---
 
@@ -550,10 +550,22 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_capabilities(
+  disabled_network_modes: typing.List[str] = None,
   disabled_task_drivers: typing.List[str] = None,
+  enabled_network_modes: typing.List[str] = None,
   enabled_task_drivers: typing.List[str] = None
 ) -> None
 ```
+
+###### `disabled_network_modes`<sup>Optional</sup> <a name="disabled_network_modes" id="@cdktf/provider-nomad.namespace.Namespace.putCapabilities.parameter.disabledNetworkModes"></a>
+
+- *Type:* typing.List[str]
+
+Disabled network modes for the namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#disabled_network_modes Namespace#disabled_network_modes}
+
+---
 
 ###### `disabled_task_drivers`<sup>Optional</sup> <a name="disabled_task_drivers" id="@cdktf/provider-nomad.namespace.Namespace.putCapabilities.parameter.disabledTaskDrivers"></a>
 
@@ -561,7 +573,17 @@ def put_capabilities(
 
 Disabled task drivers for the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
+
+---
+
+###### `enabled_network_modes`<sup>Optional</sup> <a name="enabled_network_modes" id="@cdktf/provider-nomad.namespace.Namespace.putCapabilities.parameter.enabledNetworkModes"></a>
+
+- *Type:* typing.List[str]
+
+Enabled network modes for the namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#enabled_network_modes Namespace#enabled_network_modes}
 
 ---
 
@@ -571,7 +593,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 Enabled task drivers for the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
 
 ---
 
@@ -591,7 +613,7 @@ def put_node_pool_config(
 
 The list of node pools allowed to be used in this namespace. Cannot be used with denied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#allowed Namespace#allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#allowed Namespace#allowed}
 
 ---
 
@@ -601,7 +623,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The node pool to use when none are specified in the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#default Namespace#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#default Namespace#default}
 
 ---
 
@@ -611,7 +633,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 The list of node pools not allowed to be used in this namespace. Cannot be used with allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#denied Namespace#denied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#denied Namespace#denied}
 
 ---
 
@@ -765,7 +787,7 @@ The construct id used in the generated config for the Namespace to import.
 
 The id of the existing Namespace that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -1122,7 +1144,9 @@ tfResourceType: str
 from cdktf_cdktf_provider_nomad import namespace
 
 namespace.NamespaceCapabilities(
+  disabled_network_modes: typing.List[str] = None,
   disabled_task_drivers: typing.List[str] = None,
+  enabled_network_modes: typing.List[str] = None,
   enabled_task_drivers: typing.List[str] = None
 )
 ```
@@ -1131,8 +1155,24 @@ namespace.NamespaceCapabilities(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.disabledNetworkModes">disabled_network_modes</a></code> | <code>typing.List[str]</code> | Disabled network modes for the namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.disabledTaskDrivers">disabled_task_drivers</a></code> | <code>typing.List[str]</code> | Disabled task drivers for the namespace. |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.enabledNetworkModes">enabled_network_modes</a></code> | <code>typing.List[str]</code> | Enabled network modes for the namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.enabledTaskDrivers">enabled_task_drivers</a></code> | <code>typing.List[str]</code> | Enabled task drivers for the namespace. |
+
+---
+
+##### `disabled_network_modes`<sup>Optional</sup> <a name="disabled_network_modes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.disabledNetworkModes"></a>
+
+```python
+disabled_network_modes: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Disabled network modes for the namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#disabled_network_modes Namespace#disabled_network_modes}
 
 ---
 
@@ -1146,7 +1186,21 @@ disabled_task_drivers: typing.List[str]
 
 Disabled task drivers for the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#disabled_task_drivers Namespace#disabled_task_drivers}
+
+---
+
+##### `enabled_network_modes`<sup>Optional</sup> <a name="enabled_network_modes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilities.property.enabledNetworkModes"></a>
+
+```python
+enabled_network_modes: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+Enabled network modes for the namespace.
+
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#enabled_network_modes Namespace#enabled_network_modes}
 
 ---
 
@@ -1160,7 +1214,7 @@ enabled_task_drivers: typing.List[str]
 
 Enabled task drivers for the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#enabled_task_drivers Namespace#enabled_task_drivers}
 
 ---
 
@@ -1203,7 +1257,7 @@ namespace.NamespaceConfig(
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.name">name</a></code> | <code>str</code> | Unique name for this namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.capabilities">capabilities</a></code> | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities">NamespaceCapabilities</a></code> | capabilities block. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.description">description</a></code> | <code>str</code> | Description for this namespace. |
-| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#id Namespace#id}. |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#id Namespace#id}. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.meta">meta</a></code> | <code>typing.Mapping[str]</code> | Metadata associated with the namespace. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.nodePoolConfig">node_pool_config</a></code> | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceNodePoolConfig">NamespaceNodePoolConfig</a></code> | node_pool_config block. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceConfig.property.quota">quota</a></code> | <code>str</code> | Quota to set for this namespace. |
@@ -1290,7 +1344,7 @@ name: str
 
 Unique name for this namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#name Namespace#name}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#name Namespace#name}
 
 ---
 
@@ -1304,7 +1358,7 @@ capabilities: NamespaceCapabilities
 
 capabilities block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#capabilities Namespace#capabilities}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#capabilities Namespace#capabilities}
 
 ---
 
@@ -1318,7 +1372,7 @@ description: str
 
 Description for this namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#description Namespace#description}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#description Namespace#description}
 
 ---
 
@@ -1330,7 +1384,7 @@ id: str
 
 - *Type:* str
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#id Namespace#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#id Namespace#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -1347,7 +1401,7 @@ meta: typing.Mapping[str]
 
 Metadata associated with the namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#meta Namespace#meta}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#meta Namespace#meta}
 
 ---
 
@@ -1361,7 +1415,7 @@ node_pool_config: NamespaceNodePoolConfig
 
 node_pool_config block.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#node_pool_config Namespace#node_pool_config}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#node_pool_config Namespace#node_pool_config}
 
 ---
 
@@ -1375,7 +1429,7 @@ quota: str
 
 Quota to set for this namespace.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#quota Namespace#quota}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#quota Namespace#quota}
 
 ---
 
@@ -1413,7 +1467,7 @@ allowed: typing.List[str]
 
 The list of node pools allowed to be used in this namespace. Cannot be used with denied.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#allowed Namespace#allowed}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#allowed Namespace#allowed}
 
 ---
 
@@ -1427,7 +1481,7 @@ default: str
 
 The node pool to use when none are specified in the job.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#default Namespace#default}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#default Namespace#default}
 
 ---
 
@@ -1441,7 +1495,7 @@ denied: typing.List[str]
 
 The list of node pools not allowed to be used in this namespace. Cannot be used with allowed.
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.0/docs/resources/namespace#denied Namespace#denied}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/namespace#denied Namespace#denied}
 
 ---
 
@@ -1500,7 +1554,9 @@ The attribute on the parent resource this class is referencing.
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.interpolationForAttribute">interpolation_for_attribute</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resolve">resolve</a></code> | Produce the Token's value at resolution time. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.toString">to_string</a></code> | Return a string representation of this resolvable object. |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetDisabledNetworkModes">reset_disabled_network_modes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetDisabledTaskDrivers">reset_disabled_task_drivers</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetEnabledNetworkModes">reset_enabled_network_modes</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetEnabledTaskDrivers">reset_enabled_task_drivers</a></code> | *No description.* |
 
 ---
@@ -1677,10 +1733,22 @@ Return a string representation of this resolvable object.
 
 Returns a reversible string representation.
 
+##### `reset_disabled_network_modes` <a name="reset_disabled_network_modes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetDisabledNetworkModes"></a>
+
+```python
+def reset_disabled_network_modes() -> None
+```
+
 ##### `reset_disabled_task_drivers` <a name="reset_disabled_task_drivers" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetDisabledTaskDrivers"></a>
 
 ```python
 def reset_disabled_task_drivers() -> None
+```
+
+##### `reset_enabled_network_modes` <a name="reset_enabled_network_modes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetEnabledNetworkModes"></a>
+
+```python
+def reset_enabled_network_modes() -> None
 ```
 
 ##### `reset_enabled_task_drivers` <a name="reset_enabled_task_drivers" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.resetEnabledTaskDrivers"></a>
@@ -1696,9 +1764,13 @@ def reset_enabled_task_drivers() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledNetworkModesInput">disabled_network_modes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledTaskDriversInput">disabled_task_drivers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledNetworkModesInput">enabled_network_modes_input</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledTaskDriversInput">enabled_task_drivers_input</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledNetworkModes">disabled_network_modes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledTaskDrivers">disabled_task_drivers</a></code> | <code>typing.List[str]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledNetworkModes">enabled_network_modes</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledTaskDrivers">enabled_task_drivers</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-nomad.namespace.NamespaceCapabilities">NamespaceCapabilities</a></code> | *No description.* |
 
@@ -1728,10 +1800,30 @@ fqn: str
 
 ---
 
+##### `disabled_network_modes_input`<sup>Optional</sup> <a name="disabled_network_modes_input" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledNetworkModesInput"></a>
+
+```python
+disabled_network_modes_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `disabled_task_drivers_input`<sup>Optional</sup> <a name="disabled_task_drivers_input" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledTaskDriversInput"></a>
 
 ```python
 disabled_task_drivers_input: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `enabled_network_modes_input`<sup>Optional</sup> <a name="enabled_network_modes_input" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledNetworkModesInput"></a>
+
+```python
+enabled_network_modes_input: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
@@ -1748,10 +1840,30 @@ enabled_task_drivers_input: typing.List[str]
 
 ---
 
+##### `disabled_network_modes`<sup>Required</sup> <a name="disabled_network_modes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledNetworkModes"></a>
+
+```python
+disabled_network_modes: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
 ##### `disabled_task_drivers`<sup>Required</sup> <a name="disabled_task_drivers" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.disabledTaskDrivers"></a>
 
 ```python
 disabled_task_drivers: typing.List[str]
+```
+
+- *Type:* typing.List[str]
+
+---
+
+##### `enabled_network_modes`<sup>Required</sup> <a name="enabled_network_modes" id="@cdktf/provider-nomad.namespace.NamespaceCapabilitiesOutputReference.property.enabledNetworkModes"></a>
+
+```python
+enabled_network_modes: typing.List[str]
 ```
 
 - *Type:* typing.List[str]
