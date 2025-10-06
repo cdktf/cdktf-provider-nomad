@@ -19,17 +19,14 @@ NomadProvider.Builder.create(Construct scope, java.lang.String id)
 //  .caPem(java.lang.String)
 //  .certFile(java.lang.String)
 //  .certPem(java.lang.String)
-//  .headers(IResolvable)
-//  .headers(java.util.List<NomadProviderHeaders>)
+//  .headers(IResolvable|java.util.List<NomadProviderHeaders>)
 //  .httpAuth(java.lang.String)
-//  .ignoreEnvVars(java.util.Map<java.lang.String, java.lang.Boolean)
-//  .ignoreEnvVars(IResolvable>)
+//  .ignoreEnvVars(java.util.Map<java.lang.String, java.lang.Boolean|IResolvable>)
 //  .keyFile(java.lang.String)
 //  .keyPem(java.lang.String)
 //  .region(java.lang.String)
 //  .secretId(java.lang.String)
-//  .skipVerify(java.lang.Boolean)
-//  .skipVerify(IResolvable)
+//  .skipVerify(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -44,14 +41,14 @@ NomadProvider.Builder.create(Construct scope, java.lang.String id)
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.caPem">caPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate authority used to verify the remote agent's certificate. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.certFile">certFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.certPem">certPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>></code> | headers block. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>></code> | headers block. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | HTTP basic auth configuration. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.ignoreEnvVars">ignoreEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.Boolean OR com.hashicorp.cdktf.IResolvable></code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.ignoreEnvVars">ignoreEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.Boolean\|com.hashicorp.cdktf.IResolvable></code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.keyFile">keyFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.keyPem">keyPem</a></code> | <code>java.lang.String</code> | PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.region">region</a></code> | <code>java.lang.String</code> | Region of the target Nomad agent. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.secretId">secretId</a></code> | <code>java.lang.String</code> | ACL token secret for API requests. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip TLS verification on client side. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip TLS verification on client side. |
 
 ---
 
@@ -145,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.headers"></a>
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>>
 
 headers block.
 
@@ -165,7 +162,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ignoreEnvVars`<sup>Optional</sup> <a name="ignoreEnvVars" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.ignoreEnvVars"></a>
 
-- *Type:* java.util.Map<java.lang.String, java.lang.Boolean OR com.hashicorp.cdktf.IResolvable>
+- *Type:* java.util.Map<java.lang.String, java.lang.Boolean|com.hashicorp.cdktf.IResolvable>
 
 A set of environment variables that are ignored by the provider when configuring the Nomad API client.
 
@@ -215,7 +212,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skipVerify`<sup>Optional</sup> <a name="skipVerify" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.skipVerify"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip TLS verification on client side.
 
@@ -540,28 +537,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caPemInput">caPemInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certFileInput">certFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certPemInput">certPemInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headersInput">headersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headersInput">headersInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.httpAuthInput">httpAuthInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput">ignoreEnvVarsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.Boolean OR com.hashicorp.cdktf.IResolvable></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput">ignoreEnvVarsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.Boolean\|com.hashicorp.cdktf.IResolvable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyFileInput">keyFileInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyPemInput">keyPemInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.regionInput">regionInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretIdInput">secretIdInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput">skipVerifyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput">skipVerifyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.address">address</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.authJwt">authJwt</a></code> | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderAuthJwt">NomadProviderAuthJwt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caFile">caFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caPem">caPem</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certFile">certFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certPem">certPem</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars">ignoreEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.Boolean OR com.hashicorp.cdktf.IResolvable></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars">ignoreEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.Boolean\|com.hashicorp.cdktf.IResolvable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyPem">keyPem</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.region">region</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretId">secretId</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -730,10 +727,10 @@ public java.lang.String getCertPemInput();
 ##### `headersInput`<sup>Optional</sup> <a name="headersInput" id="@cdktf/provider-nomad.provider.NomadProvider.property.headersInput"></a>
 
 ```java
-public java.lang.Object getHeadersInput();
+public IResolvable|java.util.List<NomadProviderHeaders> getHeadersInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>>
 
 ---
 
@@ -750,10 +747,10 @@ public java.lang.String getHttpAuthInput();
 ##### `ignoreEnvVarsInput`<sup>Optional</sup> <a name="ignoreEnvVarsInput" id="@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput"></a>
 
 ```java
-public java.lang.Object getIgnoreEnvVarsInput();
+public java.util.Map<java.lang.String, java.lang.Boolean|IResolvable> getIgnoreEnvVarsInput();
 ```
 
-- *Type:* java.util.Map<java.lang.String, java.lang.Boolean OR com.hashicorp.cdktf.IResolvable>
+- *Type:* java.util.Map<java.lang.String, java.lang.Boolean|com.hashicorp.cdktf.IResolvable>
 
 ---
 
@@ -800,10 +797,10 @@ public java.lang.String getSecretIdInput();
 ##### `skipVerifyInput`<sup>Optional</sup> <a name="skipVerifyInput" id="@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput"></a>
 
 ```java
-public java.lang.Object getSkipVerifyInput();
+public java.lang.Boolean|IResolvable getSkipVerifyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -870,10 +867,10 @@ public java.lang.String getCertPem();
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-nomad.provider.NomadProvider.property.headers"></a>
 
 ```java
-public java.lang.Object getHeaders();
+public IResolvable|java.util.List<NomadProviderHeaders> getHeaders();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>>
 
 ---
 
@@ -890,10 +887,10 @@ public java.lang.String getHttpAuth();
 ##### `ignoreEnvVars`<sup>Optional</sup> <a name="ignoreEnvVars" id="@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars"></a>
 
 ```java
-public java.lang.Object getIgnoreEnvVars();
+public java.util.Map<java.lang.String, java.lang.Boolean|IResolvable> getIgnoreEnvVars();
 ```
 
-- *Type:* java.util.Map<java.lang.String, java.lang.Boolean OR com.hashicorp.cdktf.IResolvable>
+- *Type:* java.util.Map<java.lang.String, java.lang.Boolean|com.hashicorp.cdktf.IResolvable>
 
 ---
 
@@ -940,10 +937,10 @@ public java.lang.String getSecretId();
 ##### `skipVerify`<sup>Optional</sup> <a name="skipVerify" id="@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify"></a>
 
 ```java
-public java.lang.Object getSkipVerify();
+public java.lang.Boolean|IResolvable getSkipVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1032,17 +1029,14 @@ NomadProviderConfig.builder()
 //  .caPem(java.lang.String)
 //  .certFile(java.lang.String)
 //  .certPem(java.lang.String)
-//  .headers(IResolvable)
-//  .headers(java.util.List<NomadProviderHeaders>)
+//  .headers(IResolvable|java.util.List<NomadProviderHeaders>)
 //  .httpAuth(java.lang.String)
-//  .ignoreEnvVars(java.util.Map<java.lang.String, java.lang.Boolean)
-//  .ignoreEnvVars(IResolvable>)
+//  .ignoreEnvVars(java.util.Map<java.lang.String, java.lang.Boolean|IResolvable>)
 //  .keyFile(java.lang.String)
 //  .keyPem(java.lang.String)
 //  .region(java.lang.String)
 //  .secretId(java.lang.String)
-//  .skipVerify(java.lang.Boolean)
-//  .skipVerify(IResolvable)
+//  .skipVerify(java.lang.Boolean|IResolvable)
     .build();
 ```
 
@@ -1057,14 +1051,14 @@ NomadProviderConfig.builder()
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.caPem">caPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate authority used to verify the remote agent's certificate. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.certFile">certFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.certPem">certPem</a></code> | <code>java.lang.String</code> | PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>></code> | headers block. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers">headers</a></code> | <code>com.hashicorp.cdktf.IResolvable\|java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>></code> | headers block. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.httpAuth">httpAuth</a></code> | <code>java.lang.String</code> | HTTP basic auth configuration. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars">ignoreEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.Boolean OR com.hashicorp.cdktf.IResolvable></code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars">ignoreEnvVars</a></code> | <code>java.util.Map<java.lang.String, java.lang.Boolean\|com.hashicorp.cdktf.IResolvable></code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.keyFile">keyFile</a></code> | <code>java.lang.String</code> | A path to a PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.keyPem">keyPem</a></code> | <code>java.lang.String</code> | PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.region">region</a></code> | <code>java.lang.String</code> | Region of the target Nomad agent. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.secretId">secretId</a></code> | <code>java.lang.String</code> | ACL token secret for API requests. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Skip TLS verification on client side. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify">skipVerify</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Skip TLS verification on client side. |
 
 ---
 
@@ -1169,10 +1163,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers"></a>
 
 ```java
-public java.lang.Object getHeaders();
+public IResolvable|java.util.List<NomadProviderHeaders> getHeaders();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>>
+- *Type:* com.hashicorp.cdktf.IResolvable|java.util.List<<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>>
 
 headers block.
 
@@ -1197,10 +1191,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ignoreEnvVars`<sup>Optional</sup> <a name="ignoreEnvVars" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars"></a>
 
 ```java
-public java.lang.Object getIgnoreEnvVars();
+public java.util.Map<java.lang.String, java.lang.Boolean|IResolvable> getIgnoreEnvVars();
 ```
 
-- *Type:* java.util.Map<java.lang.String, java.lang.Boolean OR com.hashicorp.cdktf.IResolvable>
+- *Type:* java.util.Map<java.lang.String, java.lang.Boolean|com.hashicorp.cdktf.IResolvable>
 
 A set of environment variables that are ignored by the provider when configuring the Nomad API client.
 
@@ -1267,10 +1261,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skipVerify`<sup>Optional</sup> <a name="skipVerify" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify"></a>
 
 ```java
-public java.lang.Object getSkipVerify();
+public java.lang.Boolean|IResolvable getSkipVerify();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Skip TLS verification on client side.
 

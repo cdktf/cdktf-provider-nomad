@@ -14,24 +14,24 @@ from cdktf_cdktf_provider_nomad import job
 job.Job(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   jobspec: str,
-  deregister_on_destroy: typing.Union[bool, IResolvable] = None,
-  deregister_on_id_change: typing.Union[bool, IResolvable] = None,
-  detach: typing.Union[bool, IResolvable] = None,
+  deregister_on_destroy: bool | IResolvable = None,
+  deregister_on_id_change: bool | IResolvable = None,
+  detach: bool | IResolvable = None,
   hcl2: JobHcl2 = None,
   id: str = None,
-  json: typing.Union[bool, IResolvable] = None,
-  policy_override: typing.Union[bool, IResolvable] = None,
-  purge_on_destroy: typing.Union[bool, IResolvable] = None,
-  read_allocation_ids: typing.Union[bool, IResolvable] = None,
-  rerun_if_dead: typing.Union[bool, IResolvable] = None,
+  json: bool | IResolvable = None,
+  policy_override: bool | IResolvable = None,
+  purge_on_destroy: bool | IResolvable = None,
+  read_allocation_ids: bool | IResolvable = None,
+  rerun_if_dead: bool | IResolvable = None,
   timeouts: JobTimeouts = None
 )
 ```
@@ -40,24 +40,24 @@ job.Job(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.jobspec">jobspec</a></code> | <code>str</code> | Job specification. If you want to point to a file use the file() function. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the job will be deregistered on destroy. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnIdChange">deregister_on_id_change</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the job will be deregistered when the job ID changes. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.detach">detach</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the job will be deregistered on destroy. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnIdChange">deregister_on_id_change</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the job will be deregistered when the job ID changes. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.detach">detach</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.hcl2">hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#id Job#id}. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.json">json</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.policyOverride">policy_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Override any soft-mandatory Sentinel policies that fail. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.purgeOnDestroy">purge_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to purge the job when the resource is destroyed. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.readAllocationIds">read_allocation_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.rerunIfDead">rerun_if_dead</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, forces the job to run again on apply if it is currently dead. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.json">json</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.policyOverride">policy_override</a></code> | <code>bool \| cdktf.IResolvable</code> | Override any soft-mandatory Sentinel policies that fail. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.purgeOnDestroy">purge_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to purge the job when the resource is destroyed. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.readAllocationIds">read_allocation_ids</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.rerunIfDead">rerun_if_dead</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, forces the job to run again on apply if it is currently dead. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -82,13 +82,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -118,7 +118,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -134,7 +134,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `deregister_on_destroy`<sup>Optional</sup> <a name="deregister_on_destroy" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnDestroy"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the job will be deregistered on destroy.
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `deregister_on_id_change`<sup>Optional</sup> <a name="deregister_on_id_change" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnIdChange"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the job will be deregistered when the job ID changes.
 
@@ -154,7 +154,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `detach`<sup>Optional</sup> <a name="detach" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.detach"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
@@ -185,7 +185,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `json`<sup>Optional</sup> <a name="json" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.json"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
@@ -195,7 +195,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `policy_override`<sup>Optional</sup> <a name="policy_override" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.policyOverride"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Override any soft-mandatory Sentinel policies that fail.
 
@@ -205,7 +205,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `purge_on_destroy`<sup>Optional</sup> <a name="purge_on_destroy" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.purgeOnDestroy"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to purge the job when the resource is destroyed.
 
@@ -215,7 +215,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `read_allocation_ids`<sup>Optional</sup> <a name="read_allocation_ids" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.readAllocationIds"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
 
@@ -223,7 +223,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `rerun_if_dead`<sup>Optional</sup> <a name="rerun_if_dead" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.rerunIfDead"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, forces the job to run again on apply if it is currently dead.
 
@@ -506,7 +506,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-nomad.job.Job.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-nomad.job.Job.importFrom"></a>
@@ -569,7 +569,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -585,7 +585,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-nomad.job.Job.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -613,14 +613,14 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_hcl2(
-  allow_fs: typing.Union[bool, IResolvable] = None,
+  allow_fs: bool | IResolvable = None,
   vars: typing.Mapping[str] = None
 ) -> None
 ```
 
 ###### `allow_fs`<sup>Optional</sup> <a name="allow_fs" id="@cdktf/provider-nomad.job.Job.putHcl2.parameter.allowFs"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
@@ -866,13 +866,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.allocationIds">allocation_ids</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.datacenters">datacenters</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deploymentId">deployment_id</a></code> | <code>str</code> | *No description.* |
@@ -886,28 +886,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.taskGroups">task_groups</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsList">JobTaskGroupsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference">JobTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.type">type</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput">deregister_on_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput">deregister_on_id_change_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.detachInput">detach_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput">deregister_on_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput">deregister_on_id_change_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.detachInput">detach_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.hcl2Input">hcl2_input</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspecInput">jobspec_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.jsonInput">json_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">policy_override_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">purge_on_destroy_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput">read_allocation_ids_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput">rerun_if_dead_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange">deregister_on_id_change</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.detach">detach</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.jsonInput">json_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">policy_override_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">purge_on_destroy_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput">read_allocation_ids_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput">rerun_if_dead_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange">deregister_on_id_change</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.detach">detach</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.id">id</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspec">jobspec</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.json">json</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverride">policy_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroy">purge_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIds">read_allocation_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDead">rerun_if_dead</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.json">json</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverride">policy_override</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroy">purge_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIds">read_allocation_ids</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDead">rerun_if_dead</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -986,20 +986,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.job.Job.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.job.Job.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1046,10 +1046,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.job.Job.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1186,30 +1186,30 @@ type: str
 ##### `deregister_on_destroy_input`<sup>Optional</sup> <a name="deregister_on_destroy_input" id="@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput"></a>
 
 ```python
-deregister_on_destroy_input: typing.Union[bool, IResolvable]
+deregister_on_destroy_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `deregister_on_id_change_input`<sup>Optional</sup> <a name="deregister_on_id_change_input" id="@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput"></a>
 
 ```python
-deregister_on_id_change_input: typing.Union[bool, IResolvable]
+deregister_on_id_change_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `detach_input`<sup>Optional</sup> <a name="detach_input" id="@cdktf/provider-nomad.job.Job.property.detachInput"></a>
 
 ```python
-detach_input: typing.Union[bool, IResolvable]
+detach_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1246,90 +1246,90 @@ jobspec_input: str
 ##### `json_input`<sup>Optional</sup> <a name="json_input" id="@cdktf/provider-nomad.job.Job.property.jsonInput"></a>
 
 ```python
-json_input: typing.Union[bool, IResolvable]
+json_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `policy_override_input`<sup>Optional</sup> <a name="policy_override_input" id="@cdktf/provider-nomad.job.Job.property.policyOverrideInput"></a>
 
 ```python
-policy_override_input: typing.Union[bool, IResolvable]
+policy_override_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `purge_on_destroy_input`<sup>Optional</sup> <a name="purge_on_destroy_input" id="@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput"></a>
 
 ```python
-purge_on_destroy_input: typing.Union[bool, IResolvable]
+purge_on_destroy_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `read_allocation_ids_input`<sup>Optional</sup> <a name="read_allocation_ids_input" id="@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput"></a>
 
 ```python
-read_allocation_ids_input: typing.Union[bool, IResolvable]
+read_allocation_ids_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `rerun_if_dead_input`<sup>Optional</sup> <a name="rerun_if_dead_input" id="@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput"></a>
 
 ```python
-rerun_if_dead_input: typing.Union[bool, IResolvable]
+rerun_if_dead_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-nomad.job.Job.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, JobTimeouts]
+timeouts_input: IResolvable | JobTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
 
 ---
 
 ##### `deregister_on_destroy`<sup>Required</sup> <a name="deregister_on_destroy" id="@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy"></a>
 
 ```python
-deregister_on_destroy: typing.Union[bool, IResolvable]
+deregister_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `deregister_on_id_change`<sup>Required</sup> <a name="deregister_on_id_change" id="@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange"></a>
 
 ```python
-deregister_on_id_change: typing.Union[bool, IResolvable]
+deregister_on_id_change: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `detach`<sup>Required</sup> <a name="detach" id="@cdktf/provider-nomad.job.Job.property.detach"></a>
 
 ```python
-detach: typing.Union[bool, IResolvable]
+detach: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1356,50 +1356,50 @@ jobspec: str
 ##### `json`<sup>Required</sup> <a name="json" id="@cdktf/provider-nomad.job.Job.property.json"></a>
 
 ```python
-json: typing.Union[bool, IResolvable]
+json: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `policy_override`<sup>Required</sup> <a name="policy_override" id="@cdktf/provider-nomad.job.Job.property.policyOverride"></a>
 
 ```python
-policy_override: typing.Union[bool, IResolvable]
+policy_override: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `purge_on_destroy`<sup>Required</sup> <a name="purge_on_destroy" id="@cdktf/provider-nomad.job.Job.property.purgeOnDestroy"></a>
 
 ```python
-purge_on_destroy: typing.Union[bool, IResolvable]
+purge_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `read_allocation_ids`<sup>Required</sup> <a name="read_allocation_ids" id="@cdktf/provider-nomad.job.Job.property.readAllocationIds"></a>
 
 ```python
-read_allocation_ids: typing.Union[bool, IResolvable]
+read_allocation_ids: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
 ##### `rerun_if_dead`<sup>Required</sup> <a name="rerun_if_dead" id="@cdktf/provider-nomad.job.Job.property.rerunIfDead"></a>
 
 ```python
-rerun_if_dead: typing.Union[bool, IResolvable]
+rerun_if_dead: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1431,24 +1431,24 @@ tfResourceType: str
 from cdktf_cdktf_provider_nomad import job
 
 job.JobConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   jobspec: str,
-  deregister_on_destroy: typing.Union[bool, IResolvable] = None,
-  deregister_on_id_change: typing.Union[bool, IResolvable] = None,
-  detach: typing.Union[bool, IResolvable] = None,
+  deregister_on_destroy: bool | IResolvable = None,
+  deregister_on_id_change: bool | IResolvable = None,
+  detach: bool | IResolvable = None,
   hcl2: JobHcl2 = None,
   id: str = None,
-  json: typing.Union[bool, IResolvable] = None,
-  policy_override: typing.Union[bool, IResolvable] = None,
-  purge_on_destroy: typing.Union[bool, IResolvable] = None,
-  read_allocation_ids: typing.Union[bool, IResolvable] = None,
-  rerun_if_dead: typing.Union[bool, IResolvable] = None,
+  json: bool | IResolvable = None,
+  policy_override: bool | IResolvable = None,
+  purge_on_destroy: bool | IResolvable = None,
+  read_allocation_ids: bool | IResolvable = None,
+  rerun_if_dead: bool | IResolvable = None,
   timeouts: JobTimeouts = None
 )
 ```
@@ -1457,24 +1457,24 @@ job.JobConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.jobspec">jobspec</a></code> | <code>str</code> | Job specification. If you want to point to a file use the file() function. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the job will be deregistered on destroy. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange">deregister_on_id_change</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the job will be deregistered when the job ID changes. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">detach</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy">deregister_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the job will be deregistered on destroy. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange">deregister_on_id_change</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the job will be deregistered when the job ID changes. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">detach</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl2">hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#id Job#id}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">json</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">policy_override</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Override any soft-mandatory Sentinel policies that fail. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">purge_on_destroy</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Whether to purge the job when the resource is destroyed. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">read_allocation_ids</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead">rerun_if_dead</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, forces the job to run again on apply if it is currently dead. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">json</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">policy_override</a></code> | <code>bool \| cdktf.IResolvable</code> | Override any soft-mandatory Sentinel policies that fail. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">purge_on_destroy</a></code> | <code>bool \| cdktf.IResolvable</code> | Whether to purge the job when the resource is destroyed. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">read_allocation_ids</a></code> | <code>bool \| cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead">rerun_if_dead</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, forces the job to run again on apply if it is currently dead. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1482,20 +1482,20 @@ job.JobConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.job.JobConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.job.JobConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1542,10 +1542,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.job.JobConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1566,10 +1566,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `deregister_on_destroy`<sup>Optional</sup> <a name="deregister_on_destroy" id="@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy"></a>
 
 ```python
-deregister_on_destroy: typing.Union[bool, IResolvable]
+deregister_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the job will be deregistered on destroy.
 
@@ -1580,10 +1580,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `deregister_on_id_change`<sup>Optional</sup> <a name="deregister_on_id_change" id="@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange"></a>
 
 ```python
-deregister_on_id_change: typing.Union[bool, IResolvable]
+deregister_on_id_change: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the job will be deregistered when the job ID changes.
 
@@ -1594,10 +1594,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `detach`<sup>Optional</sup> <a name="detach" id="@cdktf/provider-nomad.job.JobConfig.property.detach"></a>
 
 ```python
-detach: typing.Union[bool, IResolvable]
+detach: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
@@ -1637,10 +1637,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `json`<sup>Optional</sup> <a name="json" id="@cdktf/provider-nomad.job.JobConfig.property.json"></a>
 
 ```python
-json: typing.Union[bool, IResolvable]
+json: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
@@ -1651,10 +1651,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `policy_override`<sup>Optional</sup> <a name="policy_override" id="@cdktf/provider-nomad.job.JobConfig.property.policyOverride"></a>
 
 ```python
-policy_override: typing.Union[bool, IResolvable]
+policy_override: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Override any soft-mandatory Sentinel policies that fail.
 
@@ -1665,10 +1665,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `purge_on_destroy`<sup>Optional</sup> <a name="purge_on_destroy" id="@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy"></a>
 
 ```python
-purge_on_destroy: typing.Union[bool, IResolvable]
+purge_on_destroy: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Whether to purge the job when the resource is destroyed.
 
@@ -1679,10 +1679,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `read_allocation_ids`<sup>Optional</sup> <a name="read_allocation_ids" id="@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds"></a>
 
 ```python
-read_allocation_ids: typing.Union[bool, IResolvable]
+read_allocation_ids: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
 
@@ -1691,10 +1691,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `rerun_if_dead`<sup>Optional</sup> <a name="rerun_if_dead" id="@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead"></a>
 
 ```python
-rerun_if_dead: typing.Union[bool, IResolvable]
+rerun_if_dead: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, forces the job to run again on apply if it is currently dead.
 
@@ -1724,7 +1724,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_nomad import job
 
 job.JobHcl2(
-  allow_fs: typing.Union[bool, IResolvable] = None,
+  allow_fs: bool | IResolvable = None,
   vars: typing.Mapping[str] = None
 )
 ```
@@ -1733,7 +1733,7 @@ job.JobHcl2(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.allowFs">allow_fs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | If true, HCL2 file system functions will be enabled when parsing the `jobspec`. |
+| <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.allowFs">allow_fs</a></code> | <code>bool \| cdktf.IResolvable</code> | If true, HCL2 file system functions will be enabled when parsing the `jobspec`. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.vars">vars</a></code> | <code>typing.Mapping[str]</code> | Additional variables to use when templating the job with HCL2. |
 
 ---
@@ -1741,10 +1741,10 @@ job.JobHcl2(
 ##### `allow_fs`<sup>Optional</sup> <a name="allow_fs" id="@cdktf/provider-nomad.job.JobHcl2.property.allowFs"></a>
 
 ```python
-allow_fs: typing.Union[bool, IResolvable]
+allow_fs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
@@ -2107,9 +2107,9 @@ def reset_vars() -> None
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput">allow_fs_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput">allow_fs_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.varsInput">vars_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs">allow_fs</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs">allow_fs</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.vars">vars</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | *No description.* |
 
@@ -2142,10 +2142,10 @@ fqn: str
 ##### `allow_fs_input`<sup>Optional</sup> <a name="allow_fs_input" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput"></a>
 
 ```python
-allow_fs_input: typing.Union[bool, IResolvable]
+allow_fs_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -2162,10 +2162,10 @@ vars_input: typing.Mapping[str]
 ##### `allow_fs`<sup>Required</sup> <a name="allow_fs" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs"></a>
 
 ```python
-allow_fs: typing.Union[bool, IResolvable]
+allow_fs: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -4431,7 +4431,7 @@ def reset_update() -> None
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.updateInput">update_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.update">update</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4502,10 +4502,10 @@ update: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, JobTimeouts]
+internal_value: IResolvable | JobTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
 
 ---
 

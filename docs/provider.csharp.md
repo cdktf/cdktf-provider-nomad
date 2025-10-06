@@ -363,28 +363,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caPemInput">CaPemInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certFileInput">CertFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certPemInput">CertPemInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headersInput">HeadersInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headersInput">HeadersInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.httpAuthInput">HttpAuthInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput">IgnoreEnvVarsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput">IgnoreEnvVarsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, bool\|HashiCorp.Cdktf.IResolvable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyFileInput">KeyFileInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyPemInput">KeyPemInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.regionInput">RegionInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretIdInput">SecretIdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput">SkipVerifyInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput">SkipVerifyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.address">Address</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.authJwt">AuthJwt</a></code> | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderAuthJwt">NomadProviderAuthJwt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caFile">CaFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caPem">CaPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certFile">CertFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certPem">CertPem</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headers">Headers</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headers">Headers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.httpAuth">HttpAuth</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars">IgnoreEnvVars</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars">IgnoreEnvVars</a></code> | <code>System.Collections.Generic.IDictionary<string, bool\|HashiCorp.Cdktf.IResolvable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyFile">KeyFile</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyPem">KeyPem</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.region">Region</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretId">SecretId</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify">SkipVerify</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify">SkipVerify</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -553,10 +553,10 @@ public string CertPemInput { get; }
 ##### `HeadersInput`<sup>Optional</sup> <a name="HeadersInput" id="@cdktf/provider-nomad.provider.NomadProvider.property.headersInput"></a>
 
 ```csharp
-public object HeadersInput { get; }
+public IResolvable|NomadProviderHeaders[] HeadersInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>[]
 
 ---
 
@@ -573,10 +573,10 @@ public string HttpAuthInput { get; }
 ##### `IgnoreEnvVarsInput`<sup>Optional</sup> <a name="IgnoreEnvVarsInput" id="@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput"></a>
 
 ```csharp
-public System.Collections.Generic.IDictionary<string, object> IgnoreEnvVarsInput { get; }
+public System.Collections.Generic.IDictionary<string, bool|IResolvable> IgnoreEnvVarsInput { get; }
 ```
 
-- *Type:* System.Collections.Generic.IDictionary<string, object>
+- *Type:* System.Collections.Generic.IDictionary<string, bool|HashiCorp.Cdktf.IResolvable>
 
 ---
 
@@ -623,10 +623,10 @@ public string SecretIdInput { get; }
 ##### `SkipVerifyInput`<sup>Optional</sup> <a name="SkipVerifyInput" id="@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput"></a>
 
 ```csharp
-public object SkipVerifyInput { get; }
+public bool|IResolvable SkipVerifyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -693,10 +693,10 @@ public string CertPem { get; }
 ##### `Headers`<sup>Optional</sup> <a name="Headers" id="@cdktf/provider-nomad.provider.NomadProvider.property.headers"></a>
 
 ```csharp
-public object Headers { get; }
+public IResolvable|NomadProviderHeaders[] Headers { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>[]
 
 ---
 
@@ -713,10 +713,10 @@ public string HttpAuth { get; }
 ##### `IgnoreEnvVars`<sup>Optional</sup> <a name="IgnoreEnvVars" id="@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars"></a>
 
 ```csharp
-public System.Collections.Generic.IDictionary<string, object> IgnoreEnvVars { get; }
+public System.Collections.Generic.IDictionary<string, bool|IResolvable> IgnoreEnvVars { get; }
 ```
 
-- *Type:* System.Collections.Generic.IDictionary<string, object>
+- *Type:* System.Collections.Generic.IDictionary<string, bool|HashiCorp.Cdktf.IResolvable>
 
 ---
 
@@ -763,10 +763,10 @@ public string SecretId { get; }
 ##### `SkipVerify`<sup>Optional</sup> <a name="SkipVerify" id="@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify"></a>
 
 ```csharp
-public object SkipVerify { get; }
+public bool|IResolvable SkipVerify { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -855,14 +855,14 @@ new NomadProviderConfig {
     string CaPem = null,
     string CertFile = null,
     string CertPem = null,
-    object Headers = null,
+    IResolvable|NomadProviderHeaders[] Headers = null,
     string HttpAuth = null,
-    System.Collections.Generic.IDictionary<string, object> IgnoreEnvVars = null,
+    System.Collections.Generic.IDictionary<string, bool|IResolvable> IgnoreEnvVars = null,
     string KeyFile = null,
     string KeyPem = null,
     string Region = null,
     string SecretId = null,
-    object SkipVerify = null
+    bool|IResolvable SkipVerify = null
 };
 ```
 
@@ -877,14 +877,14 @@ new NomadProviderConfig {
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.caPem">CaPem</a></code> | <code>string</code> | PEM-encoded certificate authority used to verify the remote agent's certificate. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.certFile">CertFile</a></code> | <code>string</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.certPem">CertPem</a></code> | <code>string</code> | PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers">Headers</a></code> | <code>object</code> | headers block. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers">Headers</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>[]</code> | headers block. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.httpAuth">HttpAuth</a></code> | <code>string</code> | HTTP basic auth configuration. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars">IgnoreEnvVars</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars">IgnoreEnvVars</a></code> | <code>System.Collections.Generic.IDictionary<string, bool\|HashiCorp.Cdktf.IResolvable></code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.keyFile">KeyFile</a></code> | <code>string</code> | A path to a PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.keyPem">KeyPem</a></code> | <code>string</code> | PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.region">Region</a></code> | <code>string</code> | Region of the target Nomad agent. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.secretId">SecretId</a></code> | <code>string</code> | ACL token secret for API requests. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify">SkipVerify</a></code> | <code>object</code> | Skip TLS verification on client side. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify">SkipVerify</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Skip TLS verification on client side. |
 
 ---
 
@@ -989,10 +989,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Headers`<sup>Optional</sup> <a name="Headers" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers"></a>
 
 ```csharp
-public object Headers { get; set; }
+public IResolvable|NomadProviderHeaders[] Headers { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>[]
 
 headers block.
 
@@ -1017,10 +1017,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `IgnoreEnvVars`<sup>Optional</sup> <a name="IgnoreEnvVars" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars"></a>
 
 ```csharp
-public System.Collections.Generic.IDictionary<string, object> IgnoreEnvVars { get; set; }
+public System.Collections.Generic.IDictionary<string, bool|IResolvable> IgnoreEnvVars { get; set; }
 ```
 
-- *Type:* System.Collections.Generic.IDictionary<string, object>
+- *Type:* System.Collections.Generic.IDictionary<string, bool|HashiCorp.Cdktf.IResolvable>
 
 A set of environment variables that are ignored by the provider when configuring the Nomad API client.
 
@@ -1087,10 +1087,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `SkipVerify`<sup>Optional</sup> <a name="SkipVerify" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify"></a>
 
 ```csharp
-public object SkipVerify { get; set; }
+public bool|IResolvable SkipVerify { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Skip TLS verification on client side.
 

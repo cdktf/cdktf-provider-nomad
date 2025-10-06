@@ -14,15 +14,15 @@ from cdktf_cdktf_provider_nomad import data_nomad_job_parser
 dataNomadJobParser.DataNomadJobParser(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   hcl: str,
-  canonicalize: typing.Union[bool, IResolvable] = None,
+  canonicalize: bool | IResolvable = None,
   id: str = None
 )
 ```
@@ -31,15 +31,15 @@ dataNomadJobParser.DataNomadJobParser(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.hcl">hcl</a></code> | <code>str</code> | Specifies the HCL definition of the job encoded in a JSON string. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.canonicalize">canonicalize</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable setting any unset fields to their default values. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.canonicalize">canonicalize</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to enable setting any unset fields to their default values. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/data-sources/job_parser#id DataNomadJobParser#id}. |
 
 ---
@@ -64,13 +64,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -100,7 +100,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -116,7 +116,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `canonicalize`<sup>Optional</sup> <a name="canonicalize" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.Initializer.parameter.canonicalize"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to enable setting any unset fields to their default values.
 
@@ -527,16 +527,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.json">json</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalizeInput">canonicalize_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalizeInput">canonicalize_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.hclInput">hcl_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.idInput">id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalize">canonicalize</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalize">canonicalize</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.hcl">hcl</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.id">id</a></code> | <code>str</code> | *No description.* |
 
@@ -617,10 +617,10 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -677,10 +677,10 @@ json: str
 ##### `canonicalize_input`<sup>Optional</sup> <a name="canonicalize_input" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalizeInput"></a>
 
 ```python
-canonicalize_input: typing.Union[bool, IResolvable]
+canonicalize_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -707,10 +707,10 @@ id_input: str
 ##### `canonicalize`<sup>Required</sup> <a name="canonicalize" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalize"></a>
 
 ```python
-canonicalize: typing.Union[bool, IResolvable]
+canonicalize: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -762,15 +762,15 @@ tfResourceType: str
 from cdktf_cdktf_provider_nomad import data_nomad_job_parser
 
 dataNomadJobParser.DataNomadJobParserConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
   hcl: str,
-  canonicalize: typing.Union[bool, IResolvable] = None,
+  canonicalize: bool | IResolvable = None,
   id: str = None
 )
 ```
@@ -779,15 +779,15 @@ dataNomadJobParser.DataNomadJobParserConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.hcl">hcl</a></code> | <code>str</code> | Specifies the HCL definition of the job encoded in a JSON string. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.canonicalize">canonicalize</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Flag to enable setting any unset fields to their default values. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.canonicalize">canonicalize</a></code> | <code>bool \| cdktf.IResolvable</code> | Flag to enable setting any unset fields to their default values. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.id">id</a></code> | <code>str</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/data-sources/job_parser#id DataNomadJobParser#id}. |
 
 ---
@@ -795,20 +795,20 @@ dataNomadJobParser.DataNomadJobParserConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -855,10 +855,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -879,10 +879,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `canonicalize`<sup>Optional</sup> <a name="canonicalize" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.canonicalize"></a>
 
 ```python
-canonicalize: typing.Union[bool, IResolvable]
+canonicalize: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Flag to enable setting any unset fields to their default values.
 
