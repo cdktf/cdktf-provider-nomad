@@ -286,7 +286,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-nomad.job.Job.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-nomad.job.Job.importFrom"></a>
@@ -340,7 +340,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-nomad.job.Job.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -355,7 +355,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-nomad.job.Job.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -593,13 +593,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.allocationIds">AllocationIds</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.datacenters">Datacenters</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deploymentId">DeploymentId</a></code> | <code>string</code> | *No description.* |
@@ -613,28 +613,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.taskGroups">TaskGroups</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsList">JobTaskGroupsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference">JobTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.type">Type</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput">DeregisterOnDestroyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput">DeregisterOnIdChangeInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.detachInput">DetachInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput">DeregisterOnDestroyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput">DeregisterOnIdChangeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.detachInput">DetachInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.hcl2Input">Hcl2Input</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspecInput">JobspecInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.jsonInput">JsonInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">PolicyOverrideInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">PurgeOnDestroyInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput">ReadAllocationIdsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput">RerunIfDeadInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">TimeoutsInput</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">DeregisterOnDestroy</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange">DeregisterOnIdChange</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.detach">Detach</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.jsonInput">JsonInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">PolicyOverrideInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">PurgeOnDestroyInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput">ReadAllocationIdsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput">RerunIfDeadInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">TimeoutsInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">DeregisterOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange">DeregisterOnIdChange</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.detach">Detach</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspec">Jobspec</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.json">Json</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverride">PolicyOverride</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroy">PurgeOnDestroy</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIds">ReadAllocationIds</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDead">RerunIfDead</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.json">Json</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverride">PolicyOverride</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroy">PurgeOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIds">ReadAllocationIds</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDead">RerunIfDead</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -713,20 +713,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-nomad.job.Job.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.job.Job.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -773,10 +773,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-nomad.job.Job.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -913,30 +913,30 @@ public string Type { get; }
 ##### `DeregisterOnDestroyInput`<sup>Optional</sup> <a name="DeregisterOnDestroyInput" id="@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput"></a>
 
 ```csharp
-public object DeregisterOnDestroyInput { get; }
+public bool|IResolvable DeregisterOnDestroyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DeregisterOnIdChangeInput`<sup>Optional</sup> <a name="DeregisterOnIdChangeInput" id="@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput"></a>
 
 ```csharp
-public object DeregisterOnIdChangeInput { get; }
+public bool|IResolvable DeregisterOnIdChangeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DetachInput`<sup>Optional</sup> <a name="DetachInput" id="@cdktf/provider-nomad.job.Job.property.detachInput"></a>
 
 ```csharp
-public object DetachInput { get; }
+public bool|IResolvable DetachInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -973,90 +973,90 @@ public string JobspecInput { get; }
 ##### `JsonInput`<sup>Optional</sup> <a name="JsonInput" id="@cdktf/provider-nomad.job.Job.property.jsonInput"></a>
 
 ```csharp
-public object JsonInput { get; }
+public bool|IResolvable JsonInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PolicyOverrideInput`<sup>Optional</sup> <a name="PolicyOverrideInput" id="@cdktf/provider-nomad.job.Job.property.policyOverrideInput"></a>
 
 ```csharp
-public object PolicyOverrideInput { get; }
+public bool|IResolvable PolicyOverrideInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PurgeOnDestroyInput`<sup>Optional</sup> <a name="PurgeOnDestroyInput" id="@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput"></a>
 
 ```csharp
-public object PurgeOnDestroyInput { get; }
+public bool|IResolvable PurgeOnDestroyInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ReadAllocationIdsInput`<sup>Optional</sup> <a name="ReadAllocationIdsInput" id="@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput"></a>
 
 ```csharp
-public object ReadAllocationIdsInput { get; }
+public bool|IResolvable ReadAllocationIdsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RerunIfDeadInput`<sup>Optional</sup> <a name="RerunIfDeadInput" id="@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput"></a>
 
 ```csharp
-public object RerunIfDeadInput { get; }
+public bool|IResolvable RerunIfDeadInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `TimeoutsInput`<sup>Optional</sup> <a name="TimeoutsInput" id="@cdktf/provider-nomad.job.Job.property.timeoutsInput"></a>
 
 ```csharp
-public object TimeoutsInput { get; }
+public IResolvable|JobTimeouts TimeoutsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
 
 ---
 
 ##### `DeregisterOnDestroy`<sup>Required</sup> <a name="DeregisterOnDestroy" id="@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy"></a>
 
 ```csharp
-public object DeregisterOnDestroy { get; }
+public bool|IResolvable DeregisterOnDestroy { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `DeregisterOnIdChange`<sup>Required</sup> <a name="DeregisterOnIdChange" id="@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange"></a>
 
 ```csharp
-public object DeregisterOnIdChange { get; }
+public bool|IResolvable DeregisterOnIdChange { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `Detach`<sup>Required</sup> <a name="Detach" id="@cdktf/provider-nomad.job.Job.property.detach"></a>
 
 ```csharp
-public object Detach { get; }
+public bool|IResolvable Detach { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1083,50 +1083,50 @@ public string Jobspec { get; }
 ##### `Json`<sup>Required</sup> <a name="Json" id="@cdktf/provider-nomad.job.Job.property.json"></a>
 
 ```csharp
-public object Json { get; }
+public bool|IResolvable Json { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PolicyOverride`<sup>Required</sup> <a name="PolicyOverride" id="@cdktf/provider-nomad.job.Job.property.policyOverride"></a>
 
 ```csharp
-public object PolicyOverride { get; }
+public bool|IResolvable PolicyOverride { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `PurgeOnDestroy`<sup>Required</sup> <a name="PurgeOnDestroy" id="@cdktf/provider-nomad.job.Job.property.purgeOnDestroy"></a>
 
 ```csharp
-public object PurgeOnDestroy { get; }
+public bool|IResolvable PurgeOnDestroy { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `ReadAllocationIds`<sup>Required</sup> <a name="ReadAllocationIds" id="@cdktf/provider-nomad.job.Job.property.readAllocationIds"></a>
 
 ```csharp
-public object ReadAllocationIds { get; }
+public bool|IResolvable ReadAllocationIds { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
 ##### `RerunIfDead`<sup>Required</sup> <a name="RerunIfDead" id="@cdktf/provider-nomad.job.Job.property.rerunIfDead"></a>
 
 ```csharp
-public object RerunIfDead { get; }
+public bool|IResolvable RerunIfDead { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1158,24 +1158,24 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Nomad;
 
 new JobConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Jobspec,
-    object DeregisterOnDestroy = null,
-    object DeregisterOnIdChange = null,
-    object Detach = null,
+    bool|IResolvable DeregisterOnDestroy = null,
+    bool|IResolvable DeregisterOnIdChange = null,
+    bool|IResolvable Detach = null,
     JobHcl2 Hcl2 = null,
     string Id = null,
-    object Json = null,
-    object PolicyOverride = null,
-    object PurgeOnDestroy = null,
-    object ReadAllocationIds = null,
-    object RerunIfDead = null,
+    bool|IResolvable Json = null,
+    bool|IResolvable PolicyOverride = null,
+    bool|IResolvable PurgeOnDestroy = null,
+    bool|IResolvable ReadAllocationIds = null,
+    bool|IResolvable RerunIfDead = null,
     JobTimeouts Timeouts = null
 };
 ```
@@ -1184,24 +1184,24 @@ new JobConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.jobspec">Jobspec</a></code> | <code>string</code> | Job specification. If you want to point to a file use the file() function. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy">DeregisterOnDestroy</a></code> | <code>object</code> | If true, the job will be deregistered on destroy. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange">DeregisterOnIdChange</a></code> | <code>object</code> | If true, the job will be deregistered when the job ID changes. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">Detach</a></code> | <code>object</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy">DeregisterOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, the job will be deregistered on destroy. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange">DeregisterOnIdChange</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, the job will be deregistered when the job ID changes. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">Detach</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl2">Hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#id Job#id}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">Json</a></code> | <code>object</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">PolicyOverride</a></code> | <code>object</code> | Override any soft-mandatory Sentinel policies that fail. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">PurgeOnDestroy</a></code> | <code>object</code> | Whether to purge the job when the resource is destroyed. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">ReadAllocationIds</a></code> | <code>object</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead">RerunIfDead</a></code> | <code>object</code> | If true, forces the job to run again on apply if it is currently dead. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">Json</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">PolicyOverride</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Override any soft-mandatory Sentinel policies that fail. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">PurgeOnDestroy</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether to purge the job when the resource is destroyed. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">ReadAllocationIds</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead">RerunIfDead</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, forces the job to run again on apply if it is currently dead. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.timeouts">Timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1209,20 +1209,20 @@ new JobConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-nomad.job.JobConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.job.JobConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1269,10 +1269,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-nomad.job.JobConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1293,10 +1293,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DeregisterOnDestroy`<sup>Optional</sup> <a name="DeregisterOnDestroy" id="@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy"></a>
 
 ```csharp
-public object DeregisterOnDestroy { get; set; }
+public bool|IResolvable DeregisterOnDestroy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, the job will be deregistered on destroy.
 
@@ -1307,10 +1307,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `DeregisterOnIdChange`<sup>Optional</sup> <a name="DeregisterOnIdChange" id="@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange"></a>
 
 ```csharp
-public object DeregisterOnIdChange { get; set; }
+public bool|IResolvable DeregisterOnIdChange { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, the job will be deregistered when the job ID changes.
 
@@ -1321,10 +1321,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Detach`<sup>Optional</sup> <a name="Detach" id="@cdktf/provider-nomad.job.JobConfig.property.detach"></a>
 
 ```csharp
-public object Detach { get; set; }
+public bool|IResolvable Detach { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
@@ -1364,10 +1364,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `Json`<sup>Optional</sup> <a name="Json" id="@cdktf/provider-nomad.job.JobConfig.property.json"></a>
 
 ```csharp
-public object Json { get; set; }
+public bool|IResolvable Json { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
@@ -1378,10 +1378,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PolicyOverride`<sup>Optional</sup> <a name="PolicyOverride" id="@cdktf/provider-nomad.job.JobConfig.property.policyOverride"></a>
 
 ```csharp
-public object PolicyOverride { get; set; }
+public bool|IResolvable PolicyOverride { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Override any soft-mandatory Sentinel policies that fail.
 
@@ -1392,10 +1392,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `PurgeOnDestroy`<sup>Optional</sup> <a name="PurgeOnDestroy" id="@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy"></a>
 
 ```csharp
-public object PurgeOnDestroy { get; set; }
+public bool|IResolvable PurgeOnDestroy { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether to purge the job when the resource is destroyed.
 
@@ -1406,10 +1406,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ReadAllocationIds`<sup>Optional</sup> <a name="ReadAllocationIds" id="@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds"></a>
 
 ```csharp
-public object ReadAllocationIds { get; set; }
+public bool|IResolvable ReadAllocationIds { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
 
@@ -1418,10 +1418,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `RerunIfDead`<sup>Optional</sup> <a name="RerunIfDead" id="@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead"></a>
 
 ```csharp
-public object RerunIfDead { get; set; }
+public bool|IResolvable RerunIfDead { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, forces the job to run again on apply if it is currently dead.
 
@@ -1451,7 +1451,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 using HashiCorp.Cdktf.Providers.Nomad;
 
 new JobHcl2 {
-    object AllowFs = null,
+    bool|IResolvable AllowFs = null,
     System.Collections.Generic.IDictionary<string, string> Vars = null
 };
 ```
@@ -1460,7 +1460,7 @@ new JobHcl2 {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.allowFs">AllowFs</a></code> | <code>object</code> | If true, HCL2 file system functions will be enabled when parsing the `jobspec`. |
+| <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.allowFs">AllowFs</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | If true, HCL2 file system functions will be enabled when parsing the `jobspec`. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.vars">Vars</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | Additional variables to use when templating the job with HCL2. |
 
 ---
@@ -1468,10 +1468,10 @@ new JobHcl2 {
 ##### `AllowFs`<sup>Optional</sup> <a name="AllowFs" id="@cdktf/provider-nomad.job.JobHcl2.property.allowFs"></a>
 
 ```csharp
-public object AllowFs { get; set; }
+public bool|IResolvable AllowFs { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
@@ -1817,9 +1817,9 @@ private void ResetVars()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput">AllowFsInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput">AllowFsInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.varsInput">VarsInput</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs">AllowFs</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs">AllowFs</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.vars">Vars</a></code> | <code>System.Collections.Generic.IDictionary<string, string></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.internalValue">InternalValue</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | *No description.* |
 
@@ -1852,10 +1852,10 @@ public string Fqn { get; }
 ##### `AllowFsInput`<sup>Optional</sup> <a name="AllowFsInput" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput"></a>
 
 ```csharp
-public object AllowFsInput { get; }
+public bool|IResolvable AllowFsInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -1872,10 +1872,10 @@ public System.Collections.Generic.IDictionary<string, string> VarsInput { get; }
 ##### `AllowFs`<sup>Required</sup> <a name="AllowFs" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs"></a>
 
 ```csharp
-public object AllowFs { get; }
+public bool|IResolvable AllowFs { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -3968,7 +3968,7 @@ private void ResetUpdate()
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.updateInput">UpdateInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.create">Create</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.update">Update</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4039,10 +4039,10 @@ public string Update { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|JobTimeouts InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
 
 ---
 

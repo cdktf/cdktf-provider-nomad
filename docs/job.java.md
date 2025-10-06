@@ -12,36 +12,24 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 import com.hashicorp.cdktf.providers.nomad.job.Job;
 
 Job.Builder.create(Construct scope, java.lang.String id)
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .jobspec(java.lang.String)
-//  .deregisterOnDestroy(java.lang.Boolean)
-//  .deregisterOnDestroy(IResolvable)
-//  .deregisterOnIdChange(java.lang.Boolean)
-//  .deregisterOnIdChange(IResolvable)
-//  .detach(java.lang.Boolean)
-//  .detach(IResolvable)
+//  .deregisterOnDestroy(java.lang.Boolean|IResolvable)
+//  .deregisterOnIdChange(java.lang.Boolean|IResolvable)
+//  .detach(java.lang.Boolean|IResolvable)
 //  .hcl2(JobHcl2)
 //  .id(java.lang.String)
-//  .json(java.lang.Boolean)
-//  .json(IResolvable)
-//  .policyOverride(java.lang.Boolean)
-//  .policyOverride(IResolvable)
-//  .purgeOnDestroy(java.lang.Boolean)
-//  .purgeOnDestroy(IResolvable)
-//  .readAllocationIds(java.lang.Boolean)
-//  .readAllocationIds(IResolvable)
-//  .rerunIfDead(java.lang.Boolean)
-//  .rerunIfDead(IResolvable)
+//  .json(java.lang.Boolean|IResolvable)
+//  .policyOverride(java.lang.Boolean|IResolvable)
+//  .purgeOnDestroy(java.lang.Boolean|IResolvable)
+//  .readAllocationIds(java.lang.Boolean|IResolvable)
+//  .rerunIfDead(java.lang.Boolean|IResolvable)
 //  .timeouts(JobTimeouts)
     .build();
 ```
@@ -50,24 +38,24 @@ Job.Builder.create(Construct scope, java.lang.String id)
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.scope">scope</a></code> | <code>software.constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.jobspec">jobspec</a></code> | <code>java.lang.String</code> | Job specification. If you want to point to a file use the file() function. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the job will be deregistered on destroy. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnIdChange">deregisterOnIdChange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the job will be deregistered when the job ID changes. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.detach">detach</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, the job will be deregistered on destroy. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnIdChange">deregisterOnIdChange</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, the job will be deregistered when the job ID changes. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.detach">detach</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.hcl2">hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#id Job#id}. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.json">json</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.policyOverride">policyOverride</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Override any soft-mandatory Sentinel policies that fail. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.purgeOnDestroy">purgeOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to purge the job when the resource is destroyed. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.readAllocationIds">readAllocationIds</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
-| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.rerunIfDead">rerunIfDead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, forces the job to run again on apply if it is currently dead. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.json">json</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.policyOverride">policyOverride</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Override any soft-mandatory Sentinel policies that fail. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.purgeOnDestroy">purgeOnDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to purge the job when the resource is destroyed. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.readAllocationIds">readAllocationIds</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
+| <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.rerunIfDead">rerunIfDead</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, forces the job to run again on apply if it is currently dead. |
 | <code><a href="#@cdktf/provider-nomad.job.Job.Initializer.parameter.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -92,13 +80,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.connection"></a>
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.count"></a>
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -128,7 +116,7 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.provisioners"></a>
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -144,7 +132,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `deregisterOnDestroy`<sup>Optional</sup> <a name="deregisterOnDestroy" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnDestroy"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, the job will be deregistered on destroy.
 
@@ -154,7 +142,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `deregisterOnIdChange`<sup>Optional</sup> <a name="deregisterOnIdChange" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.deregisterOnIdChange"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, the job will be deregistered when the job ID changes.
 
@@ -164,7 +152,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `detach`<sup>Optional</sup> <a name="detach" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.detach"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
@@ -195,7 +183,7 @@ If you experience problems setting this value it might not be settable. Please t
 
 ##### `json`<sup>Optional</sup> <a name="json" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.json"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
@@ -205,7 +193,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `policyOverride`<sup>Optional</sup> <a name="policyOverride" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.policyOverride"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Override any soft-mandatory Sentinel policies that fail.
 
@@ -215,7 +203,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `purgeOnDestroy`<sup>Optional</sup> <a name="purgeOnDestroy" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.purgeOnDestroy"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to purge the job when the resource is destroyed.
 
@@ -225,7 +213,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `readAllocationIds`<sup>Optional</sup> <a name="readAllocationIds" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.readAllocationIds"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
 
@@ -233,7 +221,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `rerunIfDead`<sup>Optional</sup> <a name="rerunIfDead" id="@cdktf/provider-nomad.job.Job.Initializer.parameter.rerunIfDead"></a>
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, forces the job to run again on apply if it is currently dead.
 
@@ -491,7 +479,7 @@ public java.util.Map<java.lang.String, java.lang.String> getStringMapAttribute(j
 ##### `hasResourceMove` <a name="hasResourceMove" id="@cdktf/provider-nomad.job.Job.hasResourceMove"></a>
 
 ```java
-public TerraformResourceMoveByTarget OR TerraformResourceMoveById hasResourceMove()
+public TerraformResourceMoveByTarget|TerraformResourceMoveById hasResourceMove()
 ```
 
 ##### `importFrom` <a name="importFrom" id="@cdktf/provider-nomad.job.Job.importFrom"></a>
@@ -547,7 +535,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 
 ```java
 public void moveTo(java.lang.String moveTarget)
-public void moveTo(java.lang.String moveTarget, java.lang.String OR java.lang.Number index)
+public void moveTo(java.lang.String moveTarget, java.lang.String|java.lang.Number index)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -562,7 +550,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-nomad.job.Job.moveTo.parameter.index"></a>
 
-- *Type:* java.lang.String OR java.lang.Number
+- *Type:* java.lang.String|java.lang.Number
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -800,13 +788,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformMetaArguments">terraformMetaArguments</a></code> | <code>java.util.Map<java.lang.String, java.lang.Object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformResourceType">terraformResourceType</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.terraformGeneratorMetadata">terraformGeneratorMetadata</a></code> | <code>com.hashicorp.cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.dependsOn">dependsOn</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.allocationIds">allocationIds</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.datacenters">datacenters</a></code> | <code>java.util.List<java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.deploymentId">deploymentId</a></code> | <code>java.lang.String</code> | *No description.* |
@@ -820,28 +808,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.taskGroups">taskGroups</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTaskGroupsList">JobTaskGroupsList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference">JobTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.type">type</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput">deregisterOnDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput">deregisterOnIdChangeInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.detachInput">detachInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput">deregisterOnDestroyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput">deregisterOnIdChangeInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.detachInput">detachInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.hcl2Input">hcl2Input</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.idInput">idInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspecInput">jobspecInput</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.jsonInput">jsonInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">policyOverrideInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">purgeOnDestroyInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput">readAllocationIdsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput">rerunIfDeadInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange">deregisterOnIdChange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.detach">detach</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.jsonInput">jsonInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverrideInput">policyOverrideInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput">purgeOnDestroyInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput">readAllocationIdsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput">rerunIfDeadInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.timeoutsInput">timeoutsInput</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange">deregisterOnIdChange</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.detach">detach</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.id">id</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.Job.property.jobspec">jobspec</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.json">json</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverride">policyOverride</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroy">purgeOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIds">readAllocationIds</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDead">rerunIfDead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.json">json</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.policyOverride">policyOverride</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.purgeOnDestroy">purgeOnDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.readAllocationIds">readAllocationIds</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.Job.property.rerunIfDead">rerunIfDead</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -920,20 +908,20 @@ public TerraformProviderGeneratorMetadata getTerraformGeneratorMetadata();
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.job.Job.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.job.Job.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -980,10 +968,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.job.Job.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1120,30 +1108,30 @@ public java.lang.String getType();
 ##### `deregisterOnDestroyInput`<sup>Optional</sup> <a name="deregisterOnDestroyInput" id="@cdktf/provider-nomad.job.Job.property.deregisterOnDestroyInput"></a>
 
 ```java
-public java.lang.Object getDeregisterOnDestroyInput();
+public java.lang.Boolean|IResolvable getDeregisterOnDestroyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `deregisterOnIdChangeInput`<sup>Optional</sup> <a name="deregisterOnIdChangeInput" id="@cdktf/provider-nomad.job.Job.property.deregisterOnIdChangeInput"></a>
 
 ```java
-public java.lang.Object getDeregisterOnIdChangeInput();
+public java.lang.Boolean|IResolvable getDeregisterOnIdChangeInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `detachInput`<sup>Optional</sup> <a name="detachInput" id="@cdktf/provider-nomad.job.Job.property.detachInput"></a>
 
 ```java
-public java.lang.Object getDetachInput();
+public java.lang.Boolean|IResolvable getDetachInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1180,90 +1168,90 @@ public java.lang.String getJobspecInput();
 ##### `jsonInput`<sup>Optional</sup> <a name="jsonInput" id="@cdktf/provider-nomad.job.Job.property.jsonInput"></a>
 
 ```java
-public java.lang.Object getJsonInput();
+public java.lang.Boolean|IResolvable getJsonInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `policyOverrideInput`<sup>Optional</sup> <a name="policyOverrideInput" id="@cdktf/provider-nomad.job.Job.property.policyOverrideInput"></a>
 
 ```java
-public java.lang.Object getPolicyOverrideInput();
+public java.lang.Boolean|IResolvable getPolicyOverrideInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `purgeOnDestroyInput`<sup>Optional</sup> <a name="purgeOnDestroyInput" id="@cdktf/provider-nomad.job.Job.property.purgeOnDestroyInput"></a>
 
 ```java
-public java.lang.Object getPurgeOnDestroyInput();
+public java.lang.Boolean|IResolvable getPurgeOnDestroyInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `readAllocationIdsInput`<sup>Optional</sup> <a name="readAllocationIdsInput" id="@cdktf/provider-nomad.job.Job.property.readAllocationIdsInput"></a>
 
 ```java
-public java.lang.Object getReadAllocationIdsInput();
+public java.lang.Boolean|IResolvable getReadAllocationIdsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `rerunIfDeadInput`<sup>Optional</sup> <a name="rerunIfDeadInput" id="@cdktf/provider-nomad.job.Job.property.rerunIfDeadInput"></a>
 
 ```java
-public java.lang.Object getRerunIfDeadInput();
+public java.lang.Boolean|IResolvable getRerunIfDeadInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `timeoutsInput`<sup>Optional</sup> <a name="timeoutsInput" id="@cdktf/provider-nomad.job.Job.property.timeoutsInput"></a>
 
 ```java
-public java.lang.Object getTimeoutsInput();
+public IResolvable|JobTimeouts getTimeoutsInput();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
 
 ---
 
 ##### `deregisterOnDestroy`<sup>Required</sup> <a name="deregisterOnDestroy" id="@cdktf/provider-nomad.job.Job.property.deregisterOnDestroy"></a>
 
 ```java
-public java.lang.Object getDeregisterOnDestroy();
+public java.lang.Boolean|IResolvable getDeregisterOnDestroy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `deregisterOnIdChange`<sup>Required</sup> <a name="deregisterOnIdChange" id="@cdktf/provider-nomad.job.Job.property.deregisterOnIdChange"></a>
 
 ```java
-public java.lang.Object getDeregisterOnIdChange();
+public java.lang.Boolean|IResolvable getDeregisterOnIdChange();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `detach`<sup>Required</sup> <a name="detach" id="@cdktf/provider-nomad.job.Job.property.detach"></a>
 
 ```java
-public java.lang.Object getDetach();
+public java.lang.Boolean|IResolvable getDetach();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1290,50 +1278,50 @@ public java.lang.String getJobspec();
 ##### `json`<sup>Required</sup> <a name="json" id="@cdktf/provider-nomad.job.Job.property.json"></a>
 
 ```java
-public java.lang.Object getJson();
+public java.lang.Boolean|IResolvable getJson();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `policyOverride`<sup>Required</sup> <a name="policyOverride" id="@cdktf/provider-nomad.job.Job.property.policyOverride"></a>
 
 ```java
-public java.lang.Object getPolicyOverride();
+public java.lang.Boolean|IResolvable getPolicyOverride();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `purgeOnDestroy`<sup>Required</sup> <a name="purgeOnDestroy" id="@cdktf/provider-nomad.job.Job.property.purgeOnDestroy"></a>
 
 ```java
-public java.lang.Object getPurgeOnDestroy();
+public java.lang.Boolean|IResolvable getPurgeOnDestroy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `readAllocationIds`<sup>Required</sup> <a name="readAllocationIds" id="@cdktf/provider-nomad.job.Job.property.readAllocationIds"></a>
 
 ```java
-public java.lang.Object getReadAllocationIds();
+public java.lang.Boolean|IResolvable getReadAllocationIds();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
 ##### `rerunIfDead`<sup>Required</sup> <a name="rerunIfDead" id="@cdktf/provider-nomad.job.Job.property.rerunIfDead"></a>
 
 ```java
-public java.lang.Object getRerunIfDead();
+public java.lang.Boolean|IResolvable getRerunIfDead();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -1365,36 +1353,24 @@ public java.lang.String getTfResourceType();
 import com.hashicorp.cdktf.providers.nomad.job.JobConfig;
 
 JobConfig.builder()
-//  .connection(SSHProvisionerConnection)
-//  .connection(WinrmProvisionerConnection)
-//  .count(java.lang.Number)
-//  .count(TerraformCount)
+//  .connection(SSHProvisionerConnection|WinrmProvisionerConnection)
+//  .count(java.lang.Number|TerraformCount)
 //  .dependsOn(java.util.List<ITerraformDependable>)
 //  .forEach(ITerraformIterator)
 //  .lifecycle(TerraformResourceLifecycle)
 //  .provider(TerraformProvider)
-//  .provisioners(java.util.List<FileProvisioner)
-//  .provisioners(LocalExecProvisioner)
-//  .provisioners(RemoteExecProvisioner>)
+//  .provisioners(java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner>)
     .jobspec(java.lang.String)
-//  .deregisterOnDestroy(java.lang.Boolean)
-//  .deregisterOnDestroy(IResolvable)
-//  .deregisterOnIdChange(java.lang.Boolean)
-//  .deregisterOnIdChange(IResolvable)
-//  .detach(java.lang.Boolean)
-//  .detach(IResolvable)
+//  .deregisterOnDestroy(java.lang.Boolean|IResolvable)
+//  .deregisterOnIdChange(java.lang.Boolean|IResolvable)
+//  .detach(java.lang.Boolean|IResolvable)
 //  .hcl2(JobHcl2)
 //  .id(java.lang.String)
-//  .json(java.lang.Boolean)
-//  .json(IResolvable)
-//  .policyOverride(java.lang.Boolean)
-//  .policyOverride(IResolvable)
-//  .purgeOnDestroy(java.lang.Boolean)
-//  .purgeOnDestroy(IResolvable)
-//  .readAllocationIds(java.lang.Boolean)
-//  .readAllocationIds(IResolvable)
-//  .rerunIfDead(java.lang.Boolean)
-//  .rerunIfDead(IResolvable)
+//  .json(java.lang.Boolean|IResolvable)
+//  .policyOverride(java.lang.Boolean|IResolvable)
+//  .purgeOnDestroy(java.lang.Boolean|IResolvable)
+//  .readAllocationIds(java.lang.Boolean|IResolvable)
+//  .rerunIfDead(java.lang.Boolean|IResolvable)
 //  .timeouts(JobTimeouts)
     .build();
 ```
@@ -1403,24 +1379,24 @@ JobConfig.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.count">count</a></code> | <code>java.lang.Number OR com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.connection">connection</a></code> | <code>com.hashicorp.cdktf.SSHProvisionerConnection\|com.hashicorp.cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.count">count</a></code> | <code>java.lang.Number\|com.hashicorp.cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.dependsOn">dependsOn</a></code> | <code>java.util.List<com.hashicorp.cdktf.ITerraformDependable></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.forEach">forEach</a></code> | <code>com.hashicorp.cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.lifecycle">lifecycle</a></code> | <code>com.hashicorp.cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.provider">provider</a></code> | <code>com.hashicorp.cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.provisioners">provisioners</a></code> | <code>java.util.List<com.hashicorp.cdktf.FileProvisioner\|com.hashicorp.cdktf.LocalExecProvisioner\|com.hashicorp.cdktf.RemoteExecProvisioner></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.jobspec">jobspec</a></code> | <code>java.lang.String</code> | Job specification. If you want to point to a file use the file() function. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the job will be deregistered on destroy. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange">deregisterOnIdChange</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the job will be deregistered when the job ID changes. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">detach</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy">deregisterOnDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, the job will be deregistered on destroy. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange">deregisterOnIdChange</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, the job will be deregistered when the job ID changes. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.detach">detach</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, the provider will return immediately after creating or updating, instead of monitoring. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.hcl2">hcl2</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | hcl2 block. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.id">id</a></code> | <code>java.lang.String</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#id Job#id}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">json</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">policyOverride</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Override any soft-mandatory Sentinel policies that fail. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">purgeOnDestroy</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Whether to purge the job when the resource is destroyed. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">readAllocationIds</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
-| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead">rerunIfDead</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, forces the job to run again on apply if it is currently dead. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.json">json</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, the `jobspec` will be parsed as json instead of HCL. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.policyOverride">policyOverride</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Override any soft-mandatory Sentinel policies that fail. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy">purgeOnDestroy</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Whether to purge the job when the resource is destroyed. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds">readAllocationIds</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}. |
+| <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead">rerunIfDead</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, forces the job to run again on apply if it is currently dead. |
 | <code><a href="#@cdktf/provider-nomad.job.JobConfig.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | timeouts block. |
 
 ---
@@ -1428,20 +1404,20 @@ JobConfig.builder()
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.job.JobConfig.property.connection"></a>
 
 ```java
-public java.lang.Object getConnection();
+public SSHProvisionerConnection|WinrmProvisionerConnection getConnection();
 ```
 
-- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection OR com.hashicorp.cdktf.WinrmProvisionerConnection
+- *Type:* com.hashicorp.cdktf.SSHProvisionerConnection|com.hashicorp.cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.job.JobConfig.property.count"></a>
 
 ```java
-public java.lang.Object getCount();
+public java.lang.Number|TerraformCount getCount();
 ```
 
-- *Type:* java.lang.Number OR com.hashicorp.cdktf.TerraformCount
+- *Type:* java.lang.Number|com.hashicorp.cdktf.TerraformCount
 
 ---
 
@@ -1488,10 +1464,10 @@ public TerraformProvider getProvider();
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.job.JobConfig.property.provisioners"></a>
 
 ```java
-public java.lang.Object getProvisioners();
+public java.util.List<FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner> getProvisioners();
 ```
 
-- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner OR com.hashicorp.cdktf.LocalExecProvisioner OR com.hashicorp.cdktf.RemoteExecProvisioner>
+- *Type:* java.util.List<com.hashicorp.cdktf.FileProvisioner|com.hashicorp.cdktf.LocalExecProvisioner|com.hashicorp.cdktf.RemoteExecProvisioner>
 
 ---
 
@@ -1512,10 +1488,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `deregisterOnDestroy`<sup>Optional</sup> <a name="deregisterOnDestroy" id="@cdktf/provider-nomad.job.JobConfig.property.deregisterOnDestroy"></a>
 
 ```java
-public java.lang.Object getDeregisterOnDestroy();
+public java.lang.Boolean|IResolvable getDeregisterOnDestroy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, the job will be deregistered on destroy.
 
@@ -1526,10 +1502,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `deregisterOnIdChange`<sup>Optional</sup> <a name="deregisterOnIdChange" id="@cdktf/provider-nomad.job.JobConfig.property.deregisterOnIdChange"></a>
 
 ```java
-public java.lang.Object getDeregisterOnIdChange();
+public java.lang.Boolean|IResolvable getDeregisterOnIdChange();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, the job will be deregistered when the job ID changes.
 
@@ -1540,10 +1516,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `detach`<sup>Optional</sup> <a name="detach" id="@cdktf/provider-nomad.job.JobConfig.property.detach"></a>
 
 ```java
-public java.lang.Object getDetach();
+public java.lang.Boolean|IResolvable getDetach();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, the provider will return immediately after creating or updating, instead of monitoring.
 
@@ -1583,10 +1559,10 @@ If you experience problems setting this value it might not be settable. Please t
 ##### `json`<sup>Optional</sup> <a name="json" id="@cdktf/provider-nomad.job.JobConfig.property.json"></a>
 
 ```java
-public java.lang.Object getJson();
+public java.lang.Boolean|IResolvable getJson();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, the `jobspec` will be parsed as json instead of HCL.
 
@@ -1597,10 +1573,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `policyOverride`<sup>Optional</sup> <a name="policyOverride" id="@cdktf/provider-nomad.job.JobConfig.property.policyOverride"></a>
 
 ```java
-public java.lang.Object getPolicyOverride();
+public java.lang.Boolean|IResolvable getPolicyOverride();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Override any soft-mandatory Sentinel policies that fail.
 
@@ -1611,10 +1587,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `purgeOnDestroy`<sup>Optional</sup> <a name="purgeOnDestroy" id="@cdktf/provider-nomad.job.JobConfig.property.purgeOnDestroy"></a>
 
 ```java
-public java.lang.Object getPurgeOnDestroy();
+public java.lang.Boolean|IResolvable getPurgeOnDestroy();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Whether to purge the job when the resource is destroyed.
 
@@ -1625,10 +1601,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `readAllocationIds`<sup>Optional</sup> <a name="readAllocationIds" id="@cdktf/provider-nomad.job.JobConfig.property.readAllocationIds"></a>
 
 ```java
-public java.lang.Object getReadAllocationIds();
+public java.lang.Boolean|IResolvable getReadAllocationIds();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/job#read_allocation_ids Job#read_allocation_ids}.
 
@@ -1637,10 +1613,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `rerunIfDead`<sup>Optional</sup> <a name="rerunIfDead" id="@cdktf/provider-nomad.job.JobConfig.property.rerunIfDead"></a>
 
 ```java
-public java.lang.Object getRerunIfDead();
+public java.lang.Boolean|IResolvable getRerunIfDead();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, forces the job to run again on apply if it is currently dead.
 
@@ -1670,8 +1646,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 import com.hashicorp.cdktf.providers.nomad.job.JobHcl2;
 
 JobHcl2.builder()
-//  .allowFs(java.lang.Boolean)
-//  .allowFs(IResolvable)
+//  .allowFs(java.lang.Boolean|IResolvable)
 //  .vars(java.util.Map<java.lang.String, java.lang.String>)
     .build();
 ```
@@ -1680,7 +1655,7 @@ JobHcl2.builder()
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.allowFs">allowFs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | If true, HCL2 file system functions will be enabled when parsing the `jobspec`. |
+| <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.allowFs">allowFs</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | If true, HCL2 file system functions will be enabled when parsing the `jobspec`. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2.property.vars">vars</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | Additional variables to use when templating the job with HCL2. |
 
 ---
@@ -1688,10 +1663,10 @@ JobHcl2.builder()
 ##### `allowFs`<sup>Optional</sup> <a name="allowFs" id="@cdktf/provider-nomad.job.JobHcl2.property.allowFs"></a>
 
 ```java
-public java.lang.Object getAllowFs();
+public java.lang.Boolean|IResolvable getAllowFs();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 If true, HCL2 file system functions will be enabled when parsing the `jobspec`.
 
@@ -2033,9 +2008,9 @@ public void resetVars()
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.creationStack">creationStack</a></code> | <code>java.util.List<java.lang.String></code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.fqn">fqn</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput">allowFsInput</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput">allowFsInput</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.varsInput">varsInput</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs">allowFs</a></code> | <code>java.lang.Boolean OR com.hashicorp.cdktf.IResolvable</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs">allowFs</a></code> | <code>java.lang.Boolean\|com.hashicorp.cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.vars">vars</a></code> | <code>java.util.Map<java.lang.String, java.lang.String></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobHcl2OutputReference.property.internalValue">internalValue</a></code> | <code><a href="#@cdktf/provider-nomad.job.JobHcl2">JobHcl2</a></code> | *No description.* |
 
@@ -2068,10 +2043,10 @@ public java.lang.String getFqn();
 ##### `allowFsInput`<sup>Optional</sup> <a name="allowFsInput" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFsInput"></a>
 
 ```java
-public java.lang.Object getAllowFsInput();
+public java.lang.Boolean|IResolvable getAllowFsInput();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -2088,10 +2063,10 @@ public java.util.Map<java.lang.String, java.lang.String> getVarsInput();
 ##### `allowFs`<sup>Required</sup> <a name="allowFs" id="@cdktf/provider-nomad.job.JobHcl2OutputReference.property.allowFs"></a>
 
 ```java
-public java.lang.Object getAllowFs();
+public java.lang.Boolean|IResolvable getAllowFs();
 ```
 
-- *Type:* java.lang.Boolean OR com.hashicorp.cdktf.IResolvable
+- *Type:* java.lang.Boolean|com.hashicorp.cdktf.IResolvable
 
 ---
 
@@ -4184,7 +4159,7 @@ public void resetUpdate()
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.updateInput">updateInput</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.create">create</a></code> | <code>java.lang.String</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.update">update</a></code> | <code>java.lang.String</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue">internalValue</a></code> | <code>com.hashicorp.cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -4255,10 +4230,10 @@ public java.lang.String getUpdate();
 ##### `internalValue`<sup>Optional</sup> <a name="internalValue" id="@cdktf/provider-nomad.job.JobTimeoutsOutputReference.property.internalValue"></a>
 
 ```java
-public java.lang.Object getInternalValue();
+public IResolvable|JobTimeouts getInternalValue();
 ```
 
-- *Type:* com.hashicorp.cdktf.IResolvable OR <a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
+- *Type:* com.hashicorp.cdktf.IResolvable|<a href="#@cdktf/provider-nomad.job.JobTimeouts">JobTimeouts</a>
 
 ---
 

@@ -402,16 +402,16 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.json">Json</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalizeInput">CanonicalizeInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalizeInput">CanonicalizeInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.hclInput">HclInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalize">Canonicalize</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalize">Canonicalize</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.hcl">Hcl</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.id">Id</a></code> | <code>string</code> | *No description.* |
 
@@ -492,10 +492,10 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -552,10 +552,10 @@ public string Json { get; }
 ##### `CanonicalizeInput`<sup>Optional</sup> <a name="CanonicalizeInput" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalizeInput"></a>
 
 ```csharp
-public object CanonicalizeInput { get; }
+public bool|IResolvable CanonicalizeInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -582,10 +582,10 @@ public string IdInput { get; }
 ##### `Canonicalize`<sup>Required</sup> <a name="Canonicalize" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParser.property.canonicalize"></a>
 
 ```csharp
-public object Canonicalize { get; }
+public bool|IResolvable Canonicalize { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -637,15 +637,15 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Nomad;
 
 new DataNomadJobParserConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Hcl,
-    object Canonicalize = null,
+    bool|IResolvable Canonicalize = null,
     string Id = null
 };
 ```
@@ -654,15 +654,15 @@ new DataNomadJobParserConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.hcl">Hcl</a></code> | <code>string</code> | Specifies the HCL definition of the job encoded in a JSON string. |
-| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.canonicalize">Canonicalize</a></code> | <code>object</code> | Flag to enable setting any unset fields to their default values. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.canonicalize">Canonicalize</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Flag to enable setting any unset fields to their default values. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/data-sources/job_parser#id DataNomadJobParser#id}. |
 
 ---
@@ -670,20 +670,20 @@ new DataNomadJobParserConfig {
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -730,10 +730,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -754,10 +754,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Canonicalize`<sup>Optional</sup> <a name="Canonicalize" id="@cdktf/provider-nomad.dataNomadJobParser.DataNomadJobParserConfig.property.canonicalize"></a>
 
 ```csharp
-public object Canonicalize { get; set; }
+public bool|IResolvable Canonicalize { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Flag to enable setting any unset fields to their default values.
 

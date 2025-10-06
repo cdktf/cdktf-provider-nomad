@@ -14,14 +14,14 @@ from cdktf_cdktf_provider_nomad import csi_volume
 csiVolume.CsiVolume(
   scope: Construct,
   id: str,
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  capability: typing.Union[IResolvable, typing.List[CsiVolumeCapability]],
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  capability: IResolvable | typing.List[CsiVolumeCapability],
   name: str,
   plugin_id: str,
   volume_id: str,
@@ -43,14 +43,14 @@ csiVolume.CsiVolume(
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.scope">scope</a></code> | <code>constructs.Construct</code> | The scope in which to define this construct. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.id">id</a></code> | <code>str</code> | The scoped construct ID. |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.capability">capability</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]]</code> | capability block. |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.capability">capability</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]</code> | capability block. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.name">name</a></code> | <code>str</code> | The display name of the volume. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.pluginId">plugin_id</a></code> | <code>str</code> | The ID of the CSI plugin that manages this volume. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.volumeId">volume_id</a></code> | <code>str</code> | The unique ID of the volume, how jobs will refer to the volume. |
@@ -88,13 +88,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.connection"></a>
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.count"></a>
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -124,13 +124,13 @@ Must be unique amongst siblings in the same scope
 
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.provisioners"></a>
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `capability`<sup>Required</sup> <a name="capability" id="@cdktf/provider-nomad.csiVolume.CsiVolume.Initializer.parameter.capability"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]
 
 capability block.
 
@@ -550,7 +550,7 @@ def get_string_map_attribute(
 ##### `has_resource_move` <a name="has_resource_move" id="@cdktf/provider-nomad.csiVolume.CsiVolume.hasResourceMove"></a>
 
 ```python
-def has_resource_move() -> typing.Union[TerraformResourceMoveByTarget, TerraformResourceMoveById]
+def has_resource_move() -> TerraformResourceMoveByTarget | TerraformResourceMoveById
 ```
 
 ##### `import_from` <a name="import_from" id="@cdktf/provider-nomad.csiVolume.CsiVolume.importFrom"></a>
@@ -613,7 +613,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ```python
 def move_to(
   move_target: str,
-  index: typing.Union[str, typing.Union[int, float]] = None
+  index: str | typing.Union[int, float] = None
 ) -> None
 ```
 
@@ -629,7 +629,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `index`<sup>Optional</sup> <a name="index" id="@cdktf/provider-nomad.csiVolume.CsiVolume.moveTo.parameter.index"></a>
 
-- *Type:* typing.Union[str, typing.Union[int, float]]
+- *Type:* str | typing.Union[int, float]
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -657,13 +657,13 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 
 ```python
 def put_capability(
-  value: typing.Union[IResolvable, typing.List[CsiVolumeCapability]]
+  value: IResolvable | typing.List[CsiVolumeCapability]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-nomad.csiVolume.CsiVolume.putCapability.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]
 
 ---
 
@@ -953,13 +953,13 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.terraformMetaArguments">terraform_meta_arguments</a></code> | <code>typing.Mapping[typing.Any]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.terraformResourceType">terraform_resource_type</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.terraformGeneratorMetadata">terraform_generator_metadata</a></code> | <code>cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.dependsOn">depends_on</a></code> | <code>typing.List[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.capability">capability</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityList">CsiVolumeCapabilityList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.capacity">capacity</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.capacityMaxBytes">capacity_max_bytes</a></code> | <code>typing.Union[int, float]</code> | *No description.* |
@@ -978,7 +978,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.timeouts">timeouts</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeoutsOutputReference">CsiVolumeTimeoutsOutputReference</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.topologies">topologies</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologiesList">CsiVolumeTopologiesList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.topologyRequest">topology_request</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestOutputReference">CsiVolumeTopologyRequestOutputReference</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.capabilityInput">capability_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.capabilityInput">capability_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.capacityMaxInput">capacity_max_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.capacityMinInput">capacity_min_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.cloneIdInput">clone_id_input</a></code> | <code>str</code> | *No description.* |
@@ -990,7 +990,7 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.pluginIdInput">plugin_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.secretsInput">secrets_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.snapshotIdInput">snapshot_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.timeoutsInput">timeouts_input</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts">CsiVolumeTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.timeoutsInput">timeouts_input</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts">CsiVolumeTimeouts</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.topologyRequestInput">topology_request_input</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequest">CsiVolumeTopologyRequest</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.volumeIdInput">volume_id_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolume.property.capacityMax">capacity_max</a></code> | <code>str</code> | *No description.* |
@@ -1082,20 +1082,20 @@ terraform_generator_metadata: TerraformProviderGeneratorMetadata
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.csiVolume.CsiVolume.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.csiVolume.CsiVolume.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1142,10 +1142,10 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.csiVolume.CsiVolume.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
@@ -1332,10 +1332,10 @@ topology_request: CsiVolumeTopologyRequestOutputReference
 ##### `capability_input`<sup>Optional</sup> <a name="capability_input" id="@cdktf/provider-nomad.csiVolume.CsiVolume.property.capabilityInput"></a>
 
 ```python
-capability_input: typing.Union[IResolvable, typing.List[CsiVolumeCapability]]
+capability_input: IResolvable | typing.List[CsiVolumeCapability]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]
 
 ---
 
@@ -1452,10 +1452,10 @@ snapshot_id_input: str
 ##### `timeouts_input`<sup>Optional</sup> <a name="timeouts_input" id="@cdktf/provider-nomad.csiVolume.CsiVolume.property.timeoutsInput"></a>
 
 ```python
-timeouts_input: typing.Union[IResolvable, CsiVolumeTimeouts]
+timeouts_input: IResolvable | CsiVolumeTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts">CsiVolumeTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts">CsiVolumeTimeouts</a>
 
 ---
 
@@ -1667,14 +1667,14 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_nomad import csi_volume
 
 csiVolume.CsiVolumeConfig(
-  connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection] = None,
-  count: typing.Union[typing.Union[int, float], TerraformCount] = None,
+  connection: SSHProvisionerConnection | WinrmProvisionerConnection = None,
+  count: typing.Union[int, float] | TerraformCount = None,
   depends_on: typing.List[ITerraformDependable] = None,
   for_each: ITerraformIterator = None,
   lifecycle: TerraformResourceLifecycle = None,
   provider: TerraformProvider = None,
-  provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]] = None,
-  capability: typing.Union[IResolvable, typing.List[CsiVolumeCapability]],
+  provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner] = None,
+  capability: IResolvable | typing.List[CsiVolumeCapability],
   name: str,
   plugin_id: str,
   volume_id: str,
@@ -1696,14 +1696,14 @@ csiVolume.CsiVolumeConfig(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.connection">connection</a></code> | <code>typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.count">count</a></code> | <code>typing.Union[typing.Union[int, float], cdktf.TerraformCount]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.connection">connection</a></code> | <code>cdktf.SSHProvisionerConnection \| cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.count">count</a></code> | <code>typing.Union[int, float] \| cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.dependsOn">depends_on</a></code> | <code>typing.List[cdktf.ITerraformDependable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.forEach">for_each</a></code> | <code>cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.lifecycle">lifecycle</a></code> | <code>cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.provider">provider</a></code> | <code>cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.capability">capability</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]]</code> | capability block. |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.provisioners">provisioners</a></code> | <code>typing.List[cdktf.FileProvisioner \| cdktf.LocalExecProvisioner \| cdktf.RemoteExecProvisioner]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.capability">capability</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]</code> | capability block. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.name">name</a></code> | <code>str</code> | The display name of the volume. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.pluginId">plugin_id</a></code> | <code>str</code> | The ID of the CSI plugin that manages this volume. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.volumeId">volume_id</a></code> | <code>str</code> | The unique ID of the volume, how jobs will refer to the volume. |
@@ -1724,20 +1724,20 @@ csiVolume.CsiVolumeConfig(
 ##### `connection`<sup>Optional</sup> <a name="connection" id="@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.connection"></a>
 
 ```python
-connection: typing.Union[SSHProvisionerConnection, WinrmProvisionerConnection]
+connection: SSHProvisionerConnection | WinrmProvisionerConnection
 ```
 
-- *Type:* typing.Union[cdktf.SSHProvisionerConnection, cdktf.WinrmProvisionerConnection]
+- *Type:* cdktf.SSHProvisionerConnection | cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `count`<sup>Optional</sup> <a name="count" id="@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.count"></a>
 
 ```python
-count: typing.Union[typing.Union[int, float], TerraformCount]
+count: typing.Union[int, float] | TerraformCount
 ```
 
-- *Type:* typing.Union[typing.Union[int, float], cdktf.TerraformCount]
+- *Type:* typing.Union[int, float] | cdktf.TerraformCount
 
 ---
 
@@ -1784,20 +1784,20 @@ provider: TerraformProvider
 ##### `provisioners`<sup>Optional</sup> <a name="provisioners" id="@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.provisioners"></a>
 
 ```python
-provisioners: typing.List[typing.Union[FileProvisioner, LocalExecProvisioner, RemoteExecProvisioner]]
+provisioners: typing.List[FileProvisioner | LocalExecProvisioner | RemoteExecProvisioner]
 ```
 
-- *Type:* typing.List[typing.Union[cdktf.FileProvisioner, cdktf.LocalExecProvisioner, cdktf.RemoteExecProvisioner]]
+- *Type:* typing.List[cdktf.FileProvisioner | cdktf.LocalExecProvisioner | cdktf.RemoteExecProvisioner]
 
 ---
 
 ##### `capability`<sup>Required</sup> <a name="capability" id="@cdktf/provider-nomad.csiVolume.CsiVolumeConfig.property.capability"></a>
 
 ```python
-capability: typing.Union[IResolvable, typing.List[CsiVolumeCapability]]
+capability: IResolvable | typing.List[CsiVolumeCapability]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]
 
 capability block.
 
@@ -2171,7 +2171,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_nomad import csi_volume
 
 csiVolume.CsiVolumeTopologyRequestPreferred(
-  topology: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestPreferredTopology]]
+  topology: IResolvable | typing.List[CsiVolumeTopologyRequestPreferredTopology]
 )
 ```
 
@@ -2179,17 +2179,17 @@ csiVolume.CsiVolumeTopologyRequestPreferred(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferred.property.topology">topology</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]]</code> | topology block. |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferred.property.topology">topology</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]</code> | topology block. |
 
 ---
 
 ##### `topology`<sup>Required</sup> <a name="topology" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferred.property.topology"></a>
 
 ```python
-topology: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestPreferredTopology]]
+topology: IResolvable | typing.List[CsiVolumeTopologyRequestPreferredTopology]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]
 
 topology block.
 
@@ -2239,7 +2239,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 from cdktf_cdktf_provider_nomad import csi_volume
 
 csiVolume.CsiVolumeTopologyRequestRequired(
-  topology: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestRequiredTopology]]
+  topology: IResolvable | typing.List[CsiVolumeTopologyRequestRequiredTopology]
 )
 ```
 
@@ -2247,17 +2247,17 @@ csiVolume.CsiVolumeTopologyRequestRequired(
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequired.property.topology">topology</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]]</code> | topology block. |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequired.property.topology">topology</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]</code> | topology block. |
 
 ---
 
 ##### `topology`<sup>Required</sup> <a name="topology" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequired.property.topology"></a>
 
 ```python
-topology: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestRequiredTopology]]
+topology: IResolvable | typing.List[CsiVolumeTopologyRequestRequiredTopology]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]
 
 topology block.
 
@@ -2432,7 +2432,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]</code> | *No description.* |
 
 ---
 
@@ -2463,10 +2463,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[CsiVolumeCapability]]
+internal_value: IResolvable | typing.List[CsiVolumeCapability]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]
 
 ---
 
@@ -2730,7 +2730,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityOutputReference.property.attachmentModeInput">attachment_mode_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityOutputReference.property.accessMode">access_mode</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityOutputReference.property.attachmentMode">attachment_mode</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a></code> | *No description.* |
 
 ---
 
@@ -2801,10 +2801,10 @@ attachment_mode: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.csiVolume.CsiVolumeCapabilityOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, CsiVolumeCapability]
+internal_value: IResolvable | CsiVolumeCapability
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeCapability">CsiVolumeCapability</a>
 
 ---
 
@@ -3394,7 +3394,7 @@ def reset_delete() -> None
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeoutsOutputReference.property.deleteInput">delete_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeoutsOutputReference.property.create">create</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeoutsOutputReference.property.delete">delete</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts">CsiVolumeTimeouts</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeoutsOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts">CsiVolumeTimeouts</a></code> | *No description.* |
 
 ---
 
@@ -3465,10 +3465,10 @@ delete: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTimeoutsOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, CsiVolumeTimeouts]
+internal_value: IResolvable | CsiVolumeTimeouts
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts">CsiVolumeTimeouts</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTimeouts">CsiVolumeTimeouts</a>
 
 ---
 
@@ -4173,13 +4173,13 @@ Returns a reversible string representation.
 
 ```python
 def put_preferred(
-  topology: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestPreferredTopology]]
+  topology: IResolvable | typing.List[CsiVolumeTopologyRequestPreferredTopology]
 ) -> None
 ```
 
 ###### `topology`<sup>Required</sup> <a name="topology" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestOutputReference.putPreferred.parameter.topology"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]
 
 topology block.
 
@@ -4191,13 +4191,13 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ```python
 def put_required(
-  topology: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestRequiredTopology]]
+  topology: IResolvable | typing.List[CsiVolumeTopologyRequestRequiredTopology]
 ) -> None
 ```
 
 ###### `topology`<sup>Required</sup> <a name="topology" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestOutputReference.putRequired.parameter.topology"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]
 
 topology block.
 
@@ -4540,13 +4540,13 @@ Returns a reversible string representation.
 
 ```python
 def put_topology(
-  value: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestPreferredTopology]]
+  value: IResolvable | typing.List[CsiVolumeTopologyRequestPreferredTopology]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredOutputReference.putTopology.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]
 
 ---
 
@@ -4558,7 +4558,7 @@ def put_topology(
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredOutputReference.property.topology">topology</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyList">CsiVolumeTopologyRequestPreferredTopologyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredOutputReference.property.topologyInput">topology_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredOutputReference.property.topologyInput">topology_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferred">CsiVolumeTopologyRequestPreferred</a></code> | *No description.* |
 
 ---
@@ -4600,10 +4600,10 @@ topology: CsiVolumeTopologyRequestPreferredTopologyList
 ##### `topology_input`<sup>Optional</sup> <a name="topology_input" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredOutputReference.property.topologyInput"></a>
 
 ```python
-topology_input: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestPreferredTopology]]
+topology_input: IResolvable | typing.List[CsiVolumeTopologyRequestPreferredTopology]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]
 
 ---
 
@@ -4749,7 +4749,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]</code> | *No description.* |
 
 ---
 
@@ -4780,10 +4780,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestPreferredTopology]]
+internal_value: IResolvable | typing.List[CsiVolumeTopologyRequestPreferredTopology]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]
 
 ---
 
@@ -5045,7 +5045,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyOutputReference.property.segmentsInput">segments_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyOutputReference.property.segments">segments</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a></code> | *No description.* |
 
 ---
 
@@ -5096,10 +5096,10 @@ segments: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopologyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, CsiVolumeTopologyRequestPreferredTopology]
+internal_value: IResolvable | CsiVolumeTopologyRequestPreferredTopology
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestPreferredTopology">CsiVolumeTopologyRequestPreferredTopology</a>
 
 ---
 
@@ -5337,13 +5337,13 @@ Returns a reversible string representation.
 
 ```python
 def put_topology(
-  value: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestRequiredTopology]]
+  value: IResolvable | typing.List[CsiVolumeTopologyRequestRequiredTopology]
 ) -> None
 ```
 
 ###### `value`<sup>Required</sup> <a name="value" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredOutputReference.putTopology.parameter.value"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]
 
 ---
 
@@ -5355,7 +5355,7 @@ def put_topology(
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredOutputReference.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredOutputReference.property.topology">topology</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyList">CsiVolumeTopologyRequestRequiredTopologyList</a></code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredOutputReference.property.topologyInput">topology_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredOutputReference.property.topologyInput">topology_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredOutputReference.property.internalValue">internal_value</a></code> | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequired">CsiVolumeTopologyRequestRequired</a></code> | *No description.* |
 
 ---
@@ -5397,10 +5397,10 @@ topology: CsiVolumeTopologyRequestRequiredTopologyList
 ##### `topology_input`<sup>Optional</sup> <a name="topology_input" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredOutputReference.property.topologyInput"></a>
 
 ```python
-topology_input: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestRequiredTopology]]
+topology_input: IResolvable | typing.List[CsiVolumeTopologyRequestRequiredTopology]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]
 
 ---
 
@@ -5546,7 +5546,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyList.property.creationStack">creation_stack</a></code> | <code>typing.List[str]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyList.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyList.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyList.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]</code> | *No description.* |
 
 ---
 
@@ -5577,10 +5577,10 @@ fqn: str
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyList.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, typing.List[CsiVolumeTopologyRequestRequiredTopology]]
+internal_value: IResolvable | typing.List[CsiVolumeTopologyRequestRequiredTopology]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]
 
 ---
 
@@ -5842,7 +5842,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyOutputReference.property.fqn">fqn</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyOutputReference.property.segmentsInput">segments_input</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyOutputReference.property.segments">segments</a></code> | <code>typing.Mapping[str]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyOutputReference.property.internalValue">internal_value</a></code> | <code>typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyOutputReference.property.internalValue">internal_value</a></code> | <code>cdktf.IResolvable \| <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a></code> | *No description.* |
 
 ---
 
@@ -5893,10 +5893,10 @@ segments: typing.Mapping[str]
 ##### `internal_value`<sup>Optional</sup> <a name="internal_value" id="@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopologyOutputReference.property.internalValue"></a>
 
 ```python
-internal_value: typing.Union[IResolvable, CsiVolumeTopologyRequestRequiredTopology]
+internal_value: IResolvable | CsiVolumeTopologyRequestRequiredTopology
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>]
+- *Type:* cdktf.IResolvable | <a href="#@cdktf/provider-nomad.csiVolume.CsiVolumeTopologyRequestRequiredTopology">CsiVolumeTopologyRequestRequiredTopology</a>
 
 ---
 

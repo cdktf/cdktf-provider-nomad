@@ -280,7 +280,7 @@ private System.Collections.Generic.IDictionary<string, string> GetStringMapAttri
 ##### `HasResourceMove` <a name="HasResourceMove" id="@cdktf/provider-nomad.aclToken.AclToken.hasResourceMove"></a>
 
 ```csharp
-private object HasResourceMove()
+private TerraformResourceMoveByTarget|TerraformResourceMoveById HasResourceMove()
 ```
 
 ##### `ImportFrom` <a name="ImportFrom" id="@cdktf/provider-nomad.aclToken.AclToken.importFrom"></a>
@@ -334,7 +334,7 @@ Full id of resource being moved from, e.g. "aws_s3_bucket.example".
 ##### `MoveTo` <a name="MoveTo" id="@cdktf/provider-nomad.aclToken.AclToken.moveTo"></a>
 
 ```csharp
-private void MoveTo(string MoveTarget, object Index = null)
+private void MoveTo(string MoveTarget, string|double Index = null)
 ```
 
 Moves this resource to the target resource given by moveTarget.
@@ -349,7 +349,7 @@ The previously set user defined string set by .addMoveTarget() corresponding to 
 
 ###### `Index`<sup>Optional</sup> <a name="Index" id="@cdktf/provider-nomad.aclToken.AclToken.moveTo.parameter.index"></a>
 
-- *Type:* object
+- *Type:* string|double
 
 Optional The index corresponding to the key the resource is to appear in the foreach of a resource to move to.
 
@@ -374,12 +374,12 @@ Full id of resource to move to, e.g. "aws_s3_bucket.example".
 ##### `PutRole` <a name="PutRole" id="@cdktf/provider-nomad.aclToken.AclToken.putRole"></a>
 
 ```csharp
-private void PutRole(object Value)
+private void PutRole(IResolvable|AclTokenRole[] Value)
 ```
 
 ###### `Value`<sup>Required</sup> <a name="Value" id="@cdktf/provider-nomad.aclToken.AclToken.putRole.parameter.value"></a>
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.aclToken.AclTokenRole">AclTokenRole</a>[]
 
 ---
 
@@ -545,27 +545,27 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.terraformMetaArguments">TerraformMetaArguments</a></code> | <code>System.Collections.Generic.IDictionary<string, object></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.terraformResourceType">TerraformResourceType</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.terraformGeneratorMetadata">TerraformGeneratorMetadata</a></code> | <code>HashiCorp.Cdktf.TerraformProviderGeneratorMetadata</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.dependsOn">DependsOn</a></code> | <code>string[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.accessorId">AccessorId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.createTime">CreateTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.expirationTime">ExpirationTime</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.role">Role</a></code> | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleList">AclTokenRoleList</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.secretId">SecretId</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.expirationTtlInput">ExpirationTtlInput</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.globalInput">GlobalInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.globalInput">GlobalInput</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.nameInput">NameInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.policiesInput">PoliciesInput</a></code> | <code>string[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.roleInput">RoleInput</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.roleInput">RoleInput</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.aclToken.AclTokenRole">AclTokenRole</a>[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.typeInput">TypeInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.expirationTtl">ExpirationTtl</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.global">Global</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.global">Global</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.id">Id</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclToken.property.policies">Policies</a></code> | <code>string[]</code> | *No description.* |
@@ -648,20 +648,20 @@ public TerraformProviderGeneratorMetadata TerraformGeneratorMetadata { get; }
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-nomad.aclToken.AclToken.property.connection"></a>
 
 ```csharp
-public object Connection { get; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.aclToken.AclToken.property.count"></a>
 
 ```csharp
-public object Count { get; }
+public double|TerraformCount Count { get; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -708,10 +708,10 @@ public TerraformProvider Provider { get; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-nomad.aclToken.AclToken.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -778,10 +778,10 @@ public string ExpirationTtlInput { get; }
 ##### `GlobalInput`<sup>Optional</sup> <a name="GlobalInput" id="@cdktf/provider-nomad.aclToken.AclToken.property.globalInput"></a>
 
 ```csharp
-public object GlobalInput { get; }
+public bool|IResolvable GlobalInput { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -818,10 +818,10 @@ public string[] PoliciesInput { get; }
 ##### `RoleInput`<sup>Optional</sup> <a name="RoleInput" id="@cdktf/provider-nomad.aclToken.AclToken.property.roleInput"></a>
 
 ```csharp
-public object RoleInput { get; }
+public IResolvable|AclTokenRole[] RoleInput { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.aclToken.AclTokenRole">AclTokenRole</a>[]
 
 ---
 
@@ -848,10 +848,10 @@ public string ExpirationTtl { get; }
 ##### `Global`<sup>Required</sup> <a name="Global" id="@cdktf/provider-nomad.aclToken.AclToken.property.global"></a>
 
 ```csharp
-public object Global { get; }
+public bool|IResolvable Global { get; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 ---
 
@@ -923,20 +923,20 @@ public string TfResourceType { get; }
 using HashiCorp.Cdktf.Providers.Nomad;
 
 new AclTokenConfig {
-    object Connection = null,
-    object Count = null,
+    SSHProvisionerConnection|WinrmProvisionerConnection Connection = null,
+    double|TerraformCount Count = null,
     ITerraformDependable[] DependsOn = null,
     ITerraformIterator ForEach = null,
     TerraformResourceLifecycle Lifecycle = null,
     TerraformProvider Provider = null,
-    object[] Provisioners = null,
+    (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners = null,
     string Type,
     string ExpirationTtl = null,
-    object Global = null,
+    bool|IResolvable Global = null,
     string Id = null,
     string Name = null,
     string[] Policies = null,
-    object Role = null
+    IResolvable|AclTokenRole[] Role = null
 };
 ```
 
@@ -944,40 +944,40 @@ new AclTokenConfig {
 
 | **Name** | **Type** | **Description** |
 | --- | --- | --- |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.connection">Connection</a></code> | <code>object</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.count">Count</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.connection">Connection</a></code> | <code>HashiCorp.Cdktf.SSHProvisionerConnection\|HashiCorp.Cdktf.WinrmProvisionerConnection</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.count">Count</a></code> | <code>double\|HashiCorp.Cdktf.TerraformCount</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.dependsOn">DependsOn</a></code> | <code>HashiCorp.Cdktf.ITerraformDependable[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.forEach">ForEach</a></code> | <code>HashiCorp.Cdktf.ITerraformIterator</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.provisioners">Provisioners</a></code> | <code>object[]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.type">Type</a></code> | <code>string</code> | The type of token to create, 'client' or 'management'. |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.expirationTtl">ExpirationTtl</a></code> | <code>string</code> | Provides a TTL for the token in the form of a time duration such as "5m" or "1h". |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.global">Global</a></code> | <code>object</code> | Whether the token should be replicated to all regions or not. |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.global">Global</a></code> | <code>bool\|HashiCorp.Cdktf.IResolvable</code> | Whether the token should be replicated to all regions or not. |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/acl_token#id AclToken#id}. |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.name">Name</a></code> | <code>string</code> | Human-readable name for this token. |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.policies">Policies</a></code> | <code>string[]</code> | The ACL policies to associate with the token, if it's a 'client' type. |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.role">Role</a></code> | <code>object</code> | role block. |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenConfig.property.role">Role</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.aclToken.AclTokenRole">AclTokenRole</a>[]</code> | role block. |
 
 ---
 
 ##### `Connection`<sup>Optional</sup> <a name="Connection" id="@cdktf/provider-nomad.aclToken.AclTokenConfig.property.connection"></a>
 
 ```csharp
-public object Connection { get; set; }
+public SSHProvisionerConnection|WinrmProvisionerConnection Connection { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.SSHProvisionerConnection|HashiCorp.Cdktf.WinrmProvisionerConnection
 
 ---
 
 ##### `Count`<sup>Optional</sup> <a name="Count" id="@cdktf/provider-nomad.aclToken.AclTokenConfig.property.count"></a>
 
 ```csharp
-public object Count { get; set; }
+public double|TerraformCount Count { get; set; }
 ```
 
-- *Type:* object
+- *Type:* double|HashiCorp.Cdktf.TerraformCount
 
 ---
 
@@ -1024,10 +1024,10 @@ public TerraformProvider Provider { get; set; }
 ##### `Provisioners`<sup>Optional</sup> <a name="Provisioners" id="@cdktf/provider-nomad.aclToken.AclTokenConfig.property.provisioners"></a>
 
 ```csharp
-public object[] Provisioners { get; set; }
+public (FileProvisioner|LocalExecProvisioner|RemoteExecProvisioner)[] Provisioners { get; set; }
 ```
 
-- *Type:* object[]
+- *Type:* HashiCorp.Cdktf.FileProvisioner|HashiCorp.Cdktf.LocalExecProvisioner|HashiCorp.Cdktf.RemoteExecProvisioner[]
 
 ---
 
@@ -1062,10 +1062,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Global`<sup>Optional</sup> <a name="Global" id="@cdktf/provider-nomad.aclToken.AclTokenConfig.property.global"></a>
 
 ```csharp
-public object Global { get; set; }
+public bool|IResolvable Global { get; set; }
 ```
 
-- *Type:* object
+- *Type:* bool|HashiCorp.Cdktf.IResolvable
 
 Whether the token should be replicated to all regions or not.
 
@@ -1119,10 +1119,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `Role`<sup>Optional</sup> <a name="Role" id="@cdktf/provider-nomad.aclToken.AclTokenConfig.property.role"></a>
 
 ```csharp
-public object Role { get; set; }
+public IResolvable|AclTokenRole[] Role { get; set; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.aclToken.AclTokenRole">AclTokenRole</a>[]
 
 role block.
 
@@ -1290,7 +1290,7 @@ the index of the item to return.
 | --- | --- | --- |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleList.property.creationStack">CreationStack</a></code> | <code>string[]</code> | The creation stack of this resolvable which will be appended to errors thrown during resolution. |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleList.property.fqn">Fqn</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleList.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleList.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.aclToken.AclTokenRole">AclTokenRole</a>[]</code> | *No description.* |
 
 ---
 
@@ -1321,10 +1321,10 @@ public string Fqn { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-nomad.aclToken.AclTokenRoleList.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AclTokenRole[] InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.aclToken.AclTokenRole">AclTokenRole</a>[]
 
 ---
 
@@ -1560,7 +1560,7 @@ Returns a reversible string representation.
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleOutputReference.property.name">Name</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleOutputReference.property.idInput">IdInput</a></code> | <code>string</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleOutputReference.property.id">Id</a></code> | <code>string</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleOutputReference.property.internalValue">InternalValue</a></code> | <code>object</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.aclToken.AclTokenRoleOutputReference.property.internalValue">InternalValue</a></code> | <code>HashiCorp.Cdktf.IResolvable\|<a href="#@cdktf/provider-nomad.aclToken.AclTokenRole">AclTokenRole</a></code> | *No description.* |
 
 ---
 
@@ -1621,10 +1621,10 @@ public string Id { get; }
 ##### `InternalValue`<sup>Optional</sup> <a name="InternalValue" id="@cdktf/provider-nomad.aclToken.AclTokenRoleOutputReference.property.internalValue"></a>
 
 ```csharp
-public object InternalValue { get; }
+public IResolvable|AclTokenRole InternalValue { get; }
 ```
 
-- *Type:* object
+- *Type:* HashiCorp.Cdktf.IResolvable|<a href="#@cdktf/provider-nomad.aclToken.AclTokenRole">AclTokenRole</a>
 
 ---
 

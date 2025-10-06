@@ -21,14 +21,14 @@ provider.NomadProvider(
   ca_pem: str = None,
   cert_file: str = None,
   cert_pem: str = None,
-  headers: typing.Union[IResolvable, typing.List[NomadProviderHeaders]] = None,
+  headers: IResolvable | typing.List[NomadProviderHeaders] = None,
   http_auth: str = None,
-  ignore_env_vars: typing.Mapping[typing.Union[bool, IResolvable]] = None,
+  ignore_env_vars: typing.Mapping[bool | IResolvable] = None,
   key_file: str = None,
   key_pem: str = None,
   region: str = None,
   secret_id: str = None,
-  skip_verify: typing.Union[bool, IResolvable] = None
+  skip_verify: bool | IResolvable = None
 )
 ```
 
@@ -43,14 +43,14 @@ provider.NomadProvider(
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.caPem">ca_pem</a></code> | <code>str</code> | PEM-encoded certificate authority used to verify the remote agent's certificate. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.certFile">cert_file</a></code> | <code>str</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.certPem">cert_pem</a></code> | <code>str</code> | PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]</code> | headers block. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]</code> | headers block. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.httpAuth">http_auth</a></code> | <code>str</code> | HTTP basic auth configuration. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.ignoreEnvVars">ignore_env_vars</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.ignoreEnvVars">ignore_env_vars</a></code> | <code>typing.Mapping[bool \| cdktf.IResolvable]</code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.keyFile">key_file</a></code> | <code>str</code> | A path to a PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.keyPem">key_pem</a></code> | <code>str</code> | PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.region">region</a></code> | <code>str</code> | Region of the target Nomad agent. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.secretId">secret_id</a></code> | <code>str</code> | ACL token secret for API requests. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.skipVerify">skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip TLS verification on client side. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.skipVerify">skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip TLS verification on client side. |
 
 ---
 
@@ -144,7 +144,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.headers"></a>
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]
 
 headers block.
 
@@ -164,7 +164,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `ignore_env_vars`<sup>Optional</sup> <a name="ignore_env_vars" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.ignoreEnvVars"></a>
 
-- *Type:* typing.Mapping[typing.Union[bool, cdktf.IResolvable]]
+- *Type:* typing.Mapping[bool | cdktf.IResolvable]
 
 A set of environment variables that are ignored by the provider when configuring the Nomad API client.
 
@@ -214,7 +214,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 
 ##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktf/provider-nomad.provider.NomadProvider.Initializer.parameter.skipVerify"></a>
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip TLS verification on client side.
 
@@ -555,28 +555,28 @@ Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caPemInput">ca_pem_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certFileInput">cert_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certPemInput">cert_pem_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headersInput">headers_input</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headersInput">headers_input</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.httpAuthInput">http_auth_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput">ignore_env_vars_input</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput">ignore_env_vars_input</a></code> | <code>typing.Mapping[bool \| cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyFileInput">key_file_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyPemInput">key_pem_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.regionInput">region_input</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretIdInput">secret_id_input</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput">skip_verify_input</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput">skip_verify_input</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.address">address</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.authJwt">auth_jwt</a></code> | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderAuthJwt">NomadProviderAuthJwt</a></code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caFile">ca_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.caPem">ca_pem</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certFile">cert_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.certPem">cert_pem</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.httpAuth">http_auth</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars">ignore_env_vars</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars">ignore_env_vars</a></code> | <code>typing.Mapping[bool \| cdktf.IResolvable]</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyFile">key_file</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.keyPem">key_pem</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.region">region</a></code> | <code>str</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.secretId">secret_id</a></code> | <code>str</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify">skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | *No description.* |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | *No description.* |
 
 ---
 
@@ -745,10 +745,10 @@ cert_pem_input: str
 ##### `headers_input`<sup>Optional</sup> <a name="headers_input" id="@cdktf/provider-nomad.provider.NomadProvider.property.headersInput"></a>
 
 ```python
-headers_input: typing.Union[IResolvable, typing.List[NomadProviderHeaders]]
+headers_input: IResolvable | typing.List[NomadProviderHeaders]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]
 
 ---
 
@@ -765,10 +765,10 @@ http_auth_input: str
 ##### `ignore_env_vars_input`<sup>Optional</sup> <a name="ignore_env_vars_input" id="@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVarsInput"></a>
 
 ```python
-ignore_env_vars_input: typing.Mapping[typing.Union[bool, IResolvable]]
+ignore_env_vars_input: typing.Mapping[bool | IResolvable]
 ```
 
-- *Type:* typing.Mapping[typing.Union[bool, cdktf.IResolvable]]
+- *Type:* typing.Mapping[bool | cdktf.IResolvable]
 
 ---
 
@@ -815,10 +815,10 @@ secret_id_input: str
 ##### `skip_verify_input`<sup>Optional</sup> <a name="skip_verify_input" id="@cdktf/provider-nomad.provider.NomadProvider.property.skipVerifyInput"></a>
 
 ```python
-skip_verify_input: typing.Union[bool, IResolvable]
+skip_verify_input: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -885,10 +885,10 @@ cert_pem: str
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-nomad.provider.NomadProvider.property.headers"></a>
 
 ```python
-headers: typing.Union[IResolvable, typing.List[NomadProviderHeaders]]
+headers: IResolvable | typing.List[NomadProviderHeaders]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]
 
 ---
 
@@ -905,10 +905,10 @@ http_auth: str
 ##### `ignore_env_vars`<sup>Optional</sup> <a name="ignore_env_vars" id="@cdktf/provider-nomad.provider.NomadProvider.property.ignoreEnvVars"></a>
 
 ```python
-ignore_env_vars: typing.Mapping[typing.Union[bool, IResolvable]]
+ignore_env_vars: typing.Mapping[bool | IResolvable]
 ```
 
-- *Type:* typing.Mapping[typing.Union[bool, cdktf.IResolvable]]
+- *Type:* typing.Mapping[bool | cdktf.IResolvable]
 
 ---
 
@@ -955,10 +955,10 @@ secret_id: str
 ##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktf/provider-nomad.provider.NomadProvider.property.skipVerify"></a>
 
 ```python
-skip_verify: typing.Union[bool, IResolvable]
+skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 ---
 
@@ -1047,14 +1047,14 @@ provider.NomadProviderConfig(
   ca_pem: str = None,
   cert_file: str = None,
   cert_pem: str = None,
-  headers: typing.Union[IResolvable, typing.List[NomadProviderHeaders]] = None,
+  headers: IResolvable | typing.List[NomadProviderHeaders] = None,
   http_auth: str = None,
-  ignore_env_vars: typing.Mapping[typing.Union[bool, IResolvable]] = None,
+  ignore_env_vars: typing.Mapping[bool | IResolvable] = None,
   key_file: str = None,
   key_pem: str = None,
   region: str = None,
   secret_id: str = None,
-  skip_verify: typing.Union[bool, IResolvable] = None
+  skip_verify: bool | IResolvable = None
 )
 ```
 
@@ -1069,14 +1069,14 @@ provider.NomadProviderConfig(
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.caPem">ca_pem</a></code> | <code>str</code> | PEM-encoded certificate authority used to verify the remote agent's certificate. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.certFile">cert_file</a></code> | <code>str</code> | A path to a PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.certPem">cert_pem</a></code> | <code>str</code> | PEM-encoded certificate provided to the remote agent; requires use of key_file or key_pem. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers">headers</a></code> | <code>typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]</code> | headers block. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers">headers</a></code> | <code>cdktf.IResolvable \| typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]</code> | headers block. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.httpAuth">http_auth</a></code> | <code>str</code> | HTTP basic auth configuration. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars">ignore_env_vars</a></code> | <code>typing.Mapping[typing.Union[bool, cdktf.IResolvable]]</code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars">ignore_env_vars</a></code> | <code>typing.Mapping[bool \| cdktf.IResolvable]</code> | A set of environment variables that are ignored by the provider when configuring the Nomad API client. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.keyFile">key_file</a></code> | <code>str</code> | A path to a PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.keyPem">key_pem</a></code> | <code>str</code> | PEM-encoded private key, required if cert_file or cert_pem is specified. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.region">region</a></code> | <code>str</code> | Region of the target Nomad agent. |
 | <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.secretId">secret_id</a></code> | <code>str</code> | ACL token secret for API requests. |
-| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify">skip_verify</a></code> | <code>typing.Union[bool, cdktf.IResolvable]</code> | Skip TLS verification on client side. |
+| <code><a href="#@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify">skip_verify</a></code> | <code>bool \| cdktf.IResolvable</code> | Skip TLS verification on client side. |
 
 ---
 
@@ -1181,10 +1181,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `headers`<sup>Optional</sup> <a name="headers" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.headers"></a>
 
 ```python
-headers: typing.Union[IResolvable, typing.List[NomadProviderHeaders]]
+headers: IResolvable | typing.List[NomadProviderHeaders]
 ```
 
-- *Type:* typing.Union[cdktf.IResolvable, typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]]
+- *Type:* cdktf.IResolvable | typing.List[<a href="#@cdktf/provider-nomad.provider.NomadProviderHeaders">NomadProviderHeaders</a>]
 
 headers block.
 
@@ -1209,10 +1209,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `ignore_env_vars`<sup>Optional</sup> <a name="ignore_env_vars" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.ignoreEnvVars"></a>
 
 ```python
-ignore_env_vars: typing.Mapping[typing.Union[bool, IResolvable]]
+ignore_env_vars: typing.Mapping[bool | IResolvable]
 ```
 
-- *Type:* typing.Mapping[typing.Union[bool, cdktf.IResolvable]]
+- *Type:* typing.Mapping[bool | cdktf.IResolvable]
 
 A set of environment variables that are ignored by the provider when configuring the Nomad API client.
 
@@ -1279,10 +1279,10 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 ##### `skip_verify`<sup>Optional</sup> <a name="skip_verify" id="@cdktf/provider-nomad.provider.NomadProviderConfig.property.skipVerify"></a>
 
 ```python
-skip_verify: typing.Union[bool, IResolvable]
+skip_verify: bool | IResolvable
 ```
 
-- *Type:* typing.Union[bool, cdktf.IResolvable]
+- *Type:* bool | cdktf.IResolvable
 
 Skip TLS verification on client side.
 
