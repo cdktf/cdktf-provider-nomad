@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool
+// https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,11 +15,11 @@ export interface NodePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Description for this node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool#description NodePool#description}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool#description NodePool#description}
   */
   readonly description?: string;
   /**
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool#id NodePool#id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool#id NodePool#id}
   *
   * Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
   * If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -28,19 +28,19 @@ export interface NodePoolConfig extends cdktf.TerraformMetaArguments {
   /**
   * Metadata associated with the node pool
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool#meta NodePool#meta}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool#meta NodePool#meta}
   */
   readonly meta?: { [key: string]: string };
   /**
   * Unique name for this node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool#name NodePool#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool#name NodePool#name}
   */
   readonly name: string;
   /**
   * scheduler_config block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool#scheduler_config NodePool#scheduler_config}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool#scheduler_config NodePool#scheduler_config}
   */
   readonly schedulerConfig?: NodePoolSchedulerConfig;
 }
@@ -48,13 +48,13 @@ export interface NodePoolSchedulerConfig {
   /**
   * If true, the node pool will have memory oversubscription enabled.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool#memory_oversubscription NodePool#memory_oversubscription}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool#memory_oversubscription NodePool#memory_oversubscription}
   */
   readonly memoryOversubscription?: string;
   /**
   * The scheduler algorithm to use in the node pool.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool#scheduler_algorithm NodePool#scheduler_algorithm}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool#scheduler_algorithm NodePool#scheduler_algorithm}
   */
   readonly schedulerAlgorithm?: string;
 }
@@ -167,7 +167,7 @@ export class NodePoolSchedulerConfigOutputReference extends cdktf.ComplexObject 
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool nomad_node_pool}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool nomad_node_pool}
 */
 export class NodePool extends cdktf.TerraformResource {
 
@@ -183,7 +183,7 @@ export class NodePool extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a NodePool resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the NodePool to import
-  * @param importFromId The id of the existing NodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing NodePool that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the NodePool to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -195,7 +195,7 @@ export class NodePool extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/node_pool nomad_node_pool} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/node_pool nomad_node_pool} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -206,7 +206,7 @@ export class NodePool extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_node_pool',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.5.1',
+        providerVersion: '2.5.2',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

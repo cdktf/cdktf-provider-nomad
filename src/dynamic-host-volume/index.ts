@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: MPL-2.0
  */
 
-// https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume
+// https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume
 // generated from terraform resource schema
 
 import { Construct } from 'constructs';
@@ -15,61 +15,61 @@ export interface DynamicHostVolumeConfig extends cdktf.TerraformMetaArguments {
   /**
   * Requested maximum capacity
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#capacity_max DynamicHostVolume#capacity_max}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#capacity_max DynamicHostVolume#capacity_max}
   */
   readonly capacityMax?: string;
   /**
   * Requested minimum capacity
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#capacity_min DynamicHostVolume#capacity_min}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#capacity_min DynamicHostVolume#capacity_min}
   */
   readonly capacityMin?: string;
   /**
   * Volume name
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#name DynamicHostVolume#name}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#name DynamicHostVolume#name}
   */
   readonly name: string;
   /**
   * Volume namespace
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#namespace DynamicHostVolume#namespace}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#namespace DynamicHostVolume#namespace}
   */
   readonly namespace?: string;
   /**
   * Node ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#node_id DynamicHostVolume#node_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#node_id DynamicHostVolume#node_id}
   */
   readonly nodeId?: string;
   /**
   * Node pool
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#node_pool DynamicHostVolume#node_pool}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#node_pool DynamicHostVolume#node_pool}
   */
   readonly nodePool?: string;
   /**
   * Parameters
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#parameters DynamicHostVolume#parameters}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#parameters DynamicHostVolume#parameters}
   */
   readonly parameters?: { [key: string]: string };
   /**
   * Plugin ID
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#plugin_id DynamicHostVolume#plugin_id}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#plugin_id DynamicHostVolume#plugin_id}
   */
   readonly pluginId: string;
   /**
   * capability block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#capability DynamicHostVolume#capability}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#capability DynamicHostVolume#capability}
   */
   readonly capability: DynamicHostVolumeCapability[] | cdktf.IResolvable;
   /**
   * constraint block
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#constraint DynamicHostVolume#constraint}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#constraint DynamicHostVolume#constraint}
   */
   readonly constraint?: DynamicHostVolumeConstraint[] | cdktf.IResolvable;
 }
@@ -77,13 +77,13 @@ export interface DynamicHostVolumeCapability {
   /**
   * An access mode available for the volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#access_mode DynamicHostVolume#access_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#access_mode DynamicHostVolume#access_mode}
   */
   readonly accessMode: string;
   /**
   * An attachment mode available for the volume.
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#attachment_mode DynamicHostVolume#attachment_mode}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#attachment_mode DynamicHostVolume#attachment_mode}
   */
   readonly attachmentMode: string;
 }
@@ -224,19 +224,19 @@ export interface DynamicHostVolumeConstraint {
   /**
   * An attribute to check to constrain volume placement
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#attribute DynamicHostVolume#attribute}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#attribute DynamicHostVolume#attribute}
   */
   readonly attribute: string;
   /**
   * The operator to use for comparison
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#operator DynamicHostVolume#operator}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#operator DynamicHostVolume#operator}
   */
   readonly operator?: string;
   /**
   * The requested value of the attribute
   *
-  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#value DynamicHostVolume#value}
+  * Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#value DynamicHostVolume#value}
   */
   readonly value?: string;
 }
@@ -407,7 +407,7 @@ export class DynamicHostVolumeConstraintList extends cdktf.ComplexList {
 }
 
 /**
-* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume nomad_dynamic_host_volume}
+* Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume nomad_dynamic_host_volume}
 */
 export class DynamicHostVolume extends cdktf.TerraformResource {
 
@@ -423,7 +423,7 @@ export class DynamicHostVolume extends cdktf.TerraformResource {
   * Generates CDKTF code for importing a DynamicHostVolume resource upon running "cdktf plan <stack-name>"
   * @param scope The scope in which to define this construct
   * @param importToId The construct id used in the generated config for the DynamicHostVolume to import
-  * @param importFromId The id of the existing DynamicHostVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume#import import section} in the documentation of this resource for the id to use
+  * @param importFromId The id of the existing DynamicHostVolume that should be imported. Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume#import import section} in the documentation of this resource for the id to use
   * @param provider? Optional instance of the provider where the DynamicHostVolume to import is found
   */
   public static generateConfigForImport(scope: Construct, importToId: string, importFromId: string, provider?: cdktf.TerraformProvider) {
@@ -435,7 +435,7 @@ export class DynamicHostVolume extends cdktf.TerraformResource {
   // ===========
 
   /**
-  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/resources/dynamic_host_volume nomad_dynamic_host_volume} Resource
+  * Create a new {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/resources/dynamic_host_volume nomad_dynamic_host_volume} Resource
   *
   * @param scope The scope in which to define this construct
   * @param id The scoped construct ID. Must be unique amongst siblings in the same scope
@@ -446,7 +446,7 @@ export class DynamicHostVolume extends cdktf.TerraformResource {
       terraformResourceType: 'nomad_dynamic_host_volume',
       terraformGeneratorMetadata: {
         providerName: 'nomad',
-        providerVersion: '2.5.1',
+        providerVersion: '2.5.2',
         providerVersionConstraint: '~> 2.0'
       },
       provider: config.provider,

@@ -4,7 +4,7 @@
 
 ### DataNomadPlugins <a name="DataNomadPlugins" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins"></a>
 
-Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/data-sources/plugins nomad_plugins}.
+Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/data-sources/plugins nomad_plugins}.
 
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadPlugins.DataNomadPlugins.Initializer"></a>
 
@@ -379,7 +379,7 @@ The construct id used in the generated config for the DataNomadPlugins to import
 
 The id of the existing DataNomadPlugins that should be imported.
 
-Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/data-sources/plugins#import import section} in the documentation of this resource for the id to use
+Refer to the {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/data-sources/plugins#import import section} in the documentation of this resource for the id to use
 
 ---
 
@@ -638,7 +638,7 @@ new DataNomadPluginsConfig {
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugins.DataNomadPluginsConfig.property.lifecycle">Lifecycle</a></code> | <code>HashiCorp.Cdktf.TerraformResourceLifecycle</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugins.DataNomadPluginsConfig.property.provider">Provider</a></code> | <code>HashiCorp.Cdktf.TerraformProvider</code> | *No description.* |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugins.DataNomadPluginsConfig.property.provisioners">Provisioners</a></code> | <code>HashiCorp.Cdktf.FileProvisioner\|HashiCorp.Cdktf.LocalExecProvisioner\|HashiCorp.Cdktf.RemoteExecProvisioner[]</code> | *No description.* |
-| <code><a href="#@cdktf/provider-nomad.dataNomadPlugins.DataNomadPluginsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/data-sources/plugins#id DataNomadPlugins#id}. |
+| <code><a href="#@cdktf/provider-nomad.dataNomadPlugins.DataNomadPluginsConfig.property.id">Id</a></code> | <code>string</code> | Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/data-sources/plugins#id DataNomadPlugins#id}. |
 | <code><a href="#@cdktf/provider-nomad.dataNomadPlugins.DataNomadPluginsConfig.property.type">Type</a></code> | <code>string</code> | Volume Type (currently only 'csi'). |
 
 ---
@@ -721,7 +721,7 @@ public string Id { get; set; }
 
 - *Type:* string
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/data-sources/plugins#id DataNomadPlugins#id}.
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/data-sources/plugins#id DataNomadPlugins#id}.
 
 Please be aware that the id field is automatically added to all resources in Terraform providers using a Terraform provider SDK version below 2.
 If you experience problems setting this value it might not be settable. Please take a look at the provider documentation to ensure it should be settable.
@@ -738,7 +738,7 @@ public string Type { get; set; }
 
 Volume Type (currently only 'csi').
 
-Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.1/docs/data-sources/plugins#type DataNomadPlugins#type}
+Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.2/docs/data-sources/plugins#type DataNomadPlugins#type}
 
 ---
 
