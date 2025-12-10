@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.Volume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolume(scope Construct, id *string, config VolumeConfig) Volume
 ```
@@ -501,7 +501,7 @@ func ResetType()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.volume.Volume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.Volume_IsConstruct(x interface{}) *bool
 ```
@@ -533,7 +533,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.volume.Volume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.Volume_IsTerraformElement(x interface{}) *bool
 ```
@@ -547,7 +547,7 @@ volume.Volume_IsTerraformElement(x interface{}) *bool
 ##### `IsTerraformResource` <a name="IsTerraformResource" id="@cdktf/provider-nomad.volume.Volume.isTerraformResource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.Volume_IsTerraformResource(x interface{}) *bool
 ```
@@ -561,7 +561,7 @@ volume.Volume_IsTerraformResource(x interface{}) *bool
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.volume.Volume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.Volume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -1241,7 +1241,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.volume.VolumeCapability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 &volume.VolumeCapability {
 	AccessMode: *string,
@@ -1291,7 +1291,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.volume.VolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 &volume.VolumeConfig {
 	Connection: interface{},
@@ -1311,11 +1311,11 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
 	Context: *map[string]*string,
 	DeregisterOnDestroy: interface{},
 	Id: *string,
-	MountOptions: github.com/cdktf/cdktf-provider-nomad-go/nomad/v10.volume.VolumeMountOptions,
+	MountOptions: github.com/cdktf/cdktf-provider-nomad-go/nomad.volume.VolumeMountOptions,
 	Namespace: *string,
 	Parameters: *map[string]*string,
 	Secrets: *map[string]*string,
-	TopologyRequest: github.com/cdktf/cdktf-provider-nomad-go/nomad/v10.volume.VolumeTopologyRequest,
+	TopologyRequest: github.com/cdktf/cdktf-provider-nomad-go/nomad.volume.VolumeTopologyRequest,
 	Type: *string,
 }
 ```
@@ -1650,7 +1650,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.volume.VolumeMountOptions.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 &volume.VolumeMountOptions {
 	FsType: *string,
@@ -1700,7 +1700,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.volume.VolumeTopologies.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 &volume.VolumeTopologies {
 
@@ -1713,10 +1713,10 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.volume.VolumeTopologyRequest.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 &volume.VolumeTopologyRequest {
-	Required: github.com/cdktf/cdktf-provider-nomad-go/nomad/v10.volume.VolumeTopologyRequestRequired,
+	Required: github.com/cdktf/cdktf-provider-nomad-go/nomad.volume.VolumeTopologyRequestRequired,
 }
 ```
 
@@ -1747,7 +1747,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.volume.VolumeTopologyRequestRequired.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 &volume.VolumeTopologyRequestRequired {
 	Topology: interface{},
@@ -1781,7 +1781,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopology.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 &volume.VolumeTopologyRequestRequiredTopology {
 	Segments: *map[string]*string,
@@ -1817,7 +1817,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.VolumeCapabilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolumeCapabilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VolumeCapabilityList
 ```
@@ -1977,7 +1977,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.VolumeCapabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolumeCapabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VolumeCapabilityOutputReference
 ```
@@ -2288,7 +2288,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.VolumeMountOptionsOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolumeMountOptionsOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VolumeMountOptionsOutputReference
 ```
@@ -2595,7 +2595,7 @@ func InternalValue() VolumeMountOptions
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.VolumeTopologiesList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolumeTopologiesList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VolumeTopologiesList
 ```
@@ -2744,7 +2744,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.VolumeTopologiesOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolumeTopologiesOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VolumeTopologiesOutputReference
 ```
@@ -3022,7 +3022,7 @@ func InternalValue() VolumeTopologies
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.VolumeTopologyRequestOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolumeTopologyRequestOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VolumeTopologyRequestOutputReference
 ```
@@ -3313,7 +3313,7 @@ func InternalValue() VolumeTopologyRequest
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolumeTopologyRequestRequiredOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string) VolumeTopologyRequestRequiredOutputReference
 ```
@@ -3597,7 +3597,7 @@ func InternalValue() VolumeTopologyRequestRequired
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopologyList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolumeTopologyRequestRequiredTopologyList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) VolumeTopologyRequestRequiredTopologyList
 ```
@@ -3757,7 +3757,7 @@ func InternalValue() interface{}
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.volume.VolumeTopologyRequestRequiredTopologyOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/volume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/volume"
 
 volume.NewVolumeTopologyRequestRequiredTopologyOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) VolumeTopologyRequestRequiredTopologyOutputReference
 ```
