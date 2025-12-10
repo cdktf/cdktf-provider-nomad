@@ -9,7 +9,7 @@ Represents a {@link https://registry.terraform.io/providers/hashicorp/nomad/2.5.
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolume.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 datanomaddynamichostvolume.NewDataNomadDynamicHostVolume(scope Construct, id *string, config DataNomadDynamicHostVolumeConfig) DataNomadDynamicHostVolume
 ```
@@ -283,7 +283,7 @@ func ResetNamespace()
 ##### `IsConstruct` <a name="IsConstruct" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolume.isConstruct"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 datanomaddynamichostvolume.DataNomadDynamicHostVolume_IsConstruct(x interface{}) *bool
 ```
@@ -315,7 +315,7 @@ Any object.
 ##### `IsTerraformElement` <a name="IsTerraformElement" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolume.isTerraformElement"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 datanomaddynamichostvolume.DataNomadDynamicHostVolume_IsTerraformElement(x interface{}) *bool
 ```
@@ -329,7 +329,7 @@ datanomaddynamichostvolume.DataNomadDynamicHostVolume_IsTerraformElement(x inter
 ##### `IsTerraformDataSource` <a name="IsTerraformDataSource" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolume.isTerraformDataSource"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 datanomaddynamichostvolume.DataNomadDynamicHostVolume_IsTerraformDataSource(x interface{}) *bool
 ```
@@ -343,7 +343,7 @@ datanomaddynamichostvolume.DataNomadDynamicHostVolume_IsTerraformDataSource(x in
 ##### `GenerateConfigForImport` <a name="GenerateConfigForImport" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolume.generateConfigForImport"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 datanomaddynamichostvolume.DataNomadDynamicHostVolume_GenerateConfigForImport(scope Construct, importToId *string, importFromId *string, provider TerraformProvider) ImportableResource
 ```
@@ -759,7 +759,7 @@ func TfResourceType() *string
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolumeCapability.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 &datanomaddynamichostvolume.DataNomadDynamicHostVolumeCapability {
 
@@ -772,7 +772,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolum
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolumeConfig.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 &datanomaddynamichostvolume.DataNomadDynamicHostVolumeConfig {
 	Connection: interface{},
@@ -909,7 +909,7 @@ Docs at Terraform Registry: {@link https://registry.terraform.io/providers/hashi
 #### Initializer <a name="Initializer" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolumeConstraint.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 &datanomaddynamichostvolume.DataNomadDynamicHostVolumeConstraint {
 
@@ -924,7 +924,7 @@ import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolum
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolumeCapabilityList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 datanomaddynamichostvolume.NewDataNomadDynamicHostVolumeCapabilityList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadDynamicHostVolumeCapabilityList
 ```
@@ -1073,7 +1073,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolumeCapabilityOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 datanomaddynamichostvolume.NewDataNomadDynamicHostVolumeCapabilityOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadDynamicHostVolumeCapabilityOutputReference
 ```
@@ -1362,7 +1362,7 @@ func InternalValue() DataNomadDynamicHostVolumeCapability
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolumeConstraintList.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 datanomaddynamichostvolume.NewDataNomadDynamicHostVolumeConstraintList(terraformResource IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataNomadDynamicHostVolumeConstraintList
 ```
@@ -1511,7 +1511,7 @@ func Fqn() *string
 #### Initializers <a name="Initializers" id="@cdktf/provider-nomad.dataNomadDynamicHostVolume.DataNomadDynamicHostVolumeConstraintOutputReference.Initializer"></a>
 
 ```go
-import "github.com/cdktf/cdktf-provider-nomad-go/nomad/datanomaddynamichostvolume"
+import "github.com/cdktf/cdktf-provider-nomad-go/nomad/v10/datanomaddynamichostvolume"
 
 datanomaddynamichostvolume.NewDataNomadDynamicHostVolumeConstraintOutputReference(terraformResource IInterpolatingParent, terraformAttribute *string, complexObjectIndex *f64, complexObjectIsFromSet *bool) DataNomadDynamicHostVolumeConstraintOutputReference
 ```
